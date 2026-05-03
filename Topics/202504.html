@@ -1,0 +1,2158 @@
+<!DOCTYPE html><html><head>
+      <title>202504</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\masah\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.18\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+.markdown-preview.markdown-preview {
+  /* ---- Abstract ---- */
+  /* ---- Note ---- */
+  /* ---- Hint ---- */
+  /* ---- Example ---- */
+  /* ---- Thinking ---- */
+  /* ---- Information ---- */
+  /* ---- Reference ---- */
+  /* ---- Important ---- */
+  /* ---- Warning ---- */
+  /* CSSだけでブルブル震わせる | q-Az https://q-az.net/buruburu-hurueru-css/ */
+  /* ---- Error ---- */
+  /* ---- Fatal ---- */
+  /* ---- Question ---- */
+  /* ---- Answer ---- */
+  /* ---- Topic ---- */
+  /* ---- Quote ---- */
+  /* ---- Secret ---- */
+  /* PRE */
+  /* text-color-animation https://codepen.io/alvarotrigo/pen/PoKMyNO */
+  /* Pure CSS text basic animations https://codepen.io/alvarotrigo/pen/NWvQObB */
+  /* flip around X */
+  /* flip around Y */
+}
+.markdown-preview.markdown-preview h1,
+.markdown-preview.markdown-preview h2,
+.markdown-preview.markdown-preview h3,
+.markdown-preview.markdown-preview h4 {
+  border-style: none none none solid;
+  border-color: #336699;
+  font-weight: bold;
+}
+.markdown-preview.markdown-preview h1 {
+  border-style: none none none solid;
+  background-color: lightblue;
+  border-left-width: 20px;
+  padding: 0.6ex 0.6ex 0.6ex 0.6ex;
+}
+.markdown-preview.markdown-preview h2 {
+  border-style: none none solid solid;
+  background-color: lightblue;
+  border-left-width: 15px;
+  border-bottom-width: 5px;
+  padding: 0.4ex 0.4ex 0ex 0.6ex;
+}
+.markdown-preview.markdown-preview h3 {
+  border-style: none none solid solid;
+  background-color: white;
+  border-left-width: 10px;
+  padding: 0.2ex 0.2ex 0.2ex 0.6ex;
+}
+.markdown-preview.markdown-preview h4 {
+  border-style: none;
+  background-color: white;
+  border-left-width: 10px;
+  text-decoration: underline solid green;
+  padding: 0.2ex 0.2ex 0.2ex 10px;
+}
+.markdown-preview.markdown-preview a:link:hover,
+.markdown-preview.markdown-preview a:visited:hover {
+  color: darkred;
+  background-color: yellow;
+}
+.markdown-preview.markdown-preview body {
+  background-color: white;
+  color: black;
+}
+.markdown-preview.markdown-preview code,
+.markdown-preview.markdown-preview tt {
+  font-family: monospace;
+  font-weight: bold;
+  font-style: normal;
+}
+.markdown-preview.markdown-preview table th {
+  background-color: #88efcc;
+}
+.markdown-preview.markdown-preview fieldset.abstract {
+  margin: auto 5% auto 5%;
+  border: ridge #8fbc8f;
+  font-size: small;
+  padding: 0.5em;
+  border-radius: 1em;
+}
+.markdown-preview.markdown-preview fieldset.abstract legend {
+  margin: 0pt;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #006400;
+}
+.markdown-preview.markdown-preview fieldset.compact_note {
+  margin: auto 1em auto 1em;
+  border: solid #00bfff 1pt;
+  font-size: 75%;
+  padding: 0.5em 1em 0.5em 1em;
+  border-radius: 5pt;
+  color: #808080;
+}
+.markdown-preview.markdown-preview fieldset.compact_note legend {
+  margin: 0pt;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #191970;
+}
+.markdown-preview.markdown-preview h2.toc {
+  margin: 1em;
+  border-left: none;
+  border-bottom: dashed #786201 2pt;
+  padding-left: 0.5em;
+}
+.markdown-preview.markdown-preview dt {
+  background-color: #36A9AE;
+  background-image: linear-gradient(#37ADB2, #329CA0);
+  border: 1px solid #2A8387;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+  color: #FFFFFF;
+  display: inline-block;
+  line-height: 120%;
+}
+.markdown-preview.markdown-preview dt:before {
+  content: " ";
+  margin-left: 5pt;
+  font-style: normal;
+}
+.markdown-preview.markdown-preview dt:after {
+  content: " ";
+  margin-right: 5pt;
+  font-style: normal;
+}
+.markdown-preview.markdown-preview dd {
+  border-left: 6px solid #36A9AE;
+  margin: 0;
+  font-size: 0.75rem;
+}
+.markdown-preview.markdown-preview table.minutes_table {
+  table-layout: auto;
+  width: 100vw;
+  border-style: none;
+  border-collapse: collapse;
+  font-size: 80%;
+}
+.markdown-preview.markdown-preview table.minutes_table tr > td:nth-child(1) {
+  border-style: none;
+  padding: 0pt;
+  vertical-align: top;
+  text-align: right;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview table.minutes_table tr > td:nth-child(2) {
+  min-width: 60em;
+  border-style: none none solid none;
+  padding: 0 1em 0 0.5em;
+  vertical-align: top;
+  text-align: left;
+}
+.markdown-preview.markdown-preview table.minutes_table td > p {
+  margin: 0;
+  padding: 0;
+}
+.markdown-preview.markdown-preview strong:hover {
+  background-color: #b5f5a8;
+}
+.markdown-preview.markdown-preview h3.change_header {
+  display: block;
+  width: fit-content;
+  border: 2pt outset;
+  border-radius: 5pt;
+  background-color: #e6f8f4;
+  margin-top: 1ex;
+  margin-bottom: 0;
+  padding: 0;
+  font-size: 110%;
+  font-weight: bolder;
+  color: blue;
+  text-align: center;
+}
+.markdown-preview.markdown-preview h3.change_header + ul {
+  margin-left: 1ex;
+  border-left: 4pt solid lightgrey;
+}
+@counter-style qa_list_style {
+  system: numeric;
+  symbols: "𝟬" "𝟭" "𝟮" "𝟯" "𝟰" "𝟱" "𝟲" "𝟳" "𝟴" "𝟵";
+  suffix: "";
+  pad: 2 "𝟬";
+}
+.markdown-preview.markdown-preview ul.qa_section {
+  counter-reset: q_item;
+}
+.markdown-preview.markdown-preview li.question {
+  margin-left: 5.5ex;
+  margin-top: 1em;
+  margin-bottom: 0.25em;
+  list-style-type: none;
+  line-height: 140%;
+  text-indent: -7ex;
+}
+.markdown-preview.markdown-preview li.question:before {
+  counter-increment: q_item;
+  content: "𝗤" counter(q_item, qa_list_style) ": ";
+  background-color: whitesmoke;
+  border-radius: 2pt;
+  padding-left: 0.5ex;
+  font-size: 140%;
+  color: blue;
+}
+.markdown-preview.markdown-preview li.answer {
+  margin-left: 6ex;
+  list-style-type: none;
+  line-height: 140%;
+  text-indent: -4ex;
+  color: rebeccapurple;
+}
+.markdown-preview.markdown-preview li.answer:before {
+  content: "𝗔: ";
+  background-color: whitesmoke;
+  border-radius: 2pt;
+  padding-left: 0.5ex;
+  font-size: 140%;
+  color: red;
+}
+.markdown-preview.markdown-preview li.information {
+  margin-left: 7ex;
+  list-style-type: none;
+  line-height: 140%;
+  text-indent: -5ex;
+  color: #79b585;
+  font-size: 90%;
+}
+.markdown-preview.markdown-preview li.information:before {
+  content: "ⓘ: ";
+  background-color: whitesmoke;
+  border-radius: 2pt;
+  padding-left: 0.5ex;
+  font-size: 120%;
+  font-weight: bolder;
+  color: darkgreen;
+}
+.markdown-preview.markdown-preview li.comment {
+  margin-left: 5.5ex;
+  list-style-type: none;
+  line-height: 140%;
+  text-indent: -4ex;
+  color: #b5af79;
+  font-size: 80%;
+}
+.markdown-preview.markdown-preview li.comment:before {
+  border-style: solid;
+  border-width: 1pt;
+  border-radius: 6pt;
+  content: "Comment";
+  background-color: whitesmoke;
+  border-radius: 2pt;
+  padding-left: 0.5ex;
+  padding-right: 0.5ex;
+  font-size: 100%;
+  font-weight: bolder;
+  color: #746702;
+}
+.markdown-preview.markdown-preview p.todo {
+  margin-left: 5em;
+  font-size: 75%;
+  text-indent: -3.6em;
+  background-color: rgba(144, 238, 144, 0.16);
+}
+.markdown-preview.markdown-preview span.todo {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border-radius: 4px;
+}
+.markdown-preview.markdown-preview span.todo_charge {
+  font-weight: bold;
+  text-decoration: underline 3px;
+  padding-left: 0.2em;
+}
+.markdown-preview.markdown-preview span.todo_charge:after {
+  content: ":";
+}
+.markdown-preview.markdown-preview span.todo_period {
+  font-weight: bold;
+  text-decoration: underline 3px;
+}
+.markdown-preview.markdown-preview span.todo_period:after {
+  content: ":";
+}
+.markdown-preview.markdown-preview .admonitions {
+  margin: 1em 10% 1em 10%;
+  padding: 0;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  border-left-width: 1em;
+  border-style: solid;
+}
+.markdown-preview.markdown-preview .admonitions > .title {
+  padding: 0.5em 1em 0.5em 0.5em;
+  border-radius: 0px;
+  text-align: left;
+  font-family: apple color emoji,segoe ui emoji,noto color emoji,android emoji,emojisymbols,emojione mozilla,twemoji mozilla,segoe ui symbol;
+}
+.markdown-preview.markdown-preview .admonitions > div {
+  padding: 0.5em 1em 0.5em 1em;
+}
+.markdown-preview.markdown-preview .abstract {
+  border-color: #929393;
+  border-left-color: #505151;
+}
+.markdown-preview.markdown-preview .abstract > .title {
+  background-color: #fcfcfc;
+  border-bottom: solid #c1bfbf;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .abstract > .title::before {
+  content: "📜";
+  font-size: 150% ;
+  display: inline-block;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .abstract > .icon2::before {
+  content: "📃";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .abstract > .icon3::before {
+  content: "🧾";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .note {
+  border-color: lightblue;
+  border-left-color: #2aa7fa;
+}
+.markdown-preview.markdown-preview .note > .title {
+  background-color: #b0eff7;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .note > .title::before {
+  content: "📝";
+  font-size: 150% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .note > .icon2::before {
+  content: "📌";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .note > .icon3::before {
+  content: "☕";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .note > .icon4::before {
+  content: "🍵";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .note > .icon5::before {
+  content: "📧";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .hint {
+  border-color: lightgreen;
+  border-left-color: #2afa92;
+}
+.markdown-preview.markdown-preview .hint > .title {
+  background-color: #d0fdde;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .hint > .title::before {
+  content: "🔎";
+  font-size: 150% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .hint > .icon2::before {
+  content: "🔰";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .hint > .icon3::before {
+  content: "💡";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .hint > .icon4::before {
+  content: "👩‍🏫";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .hint > .icon5::before {
+  content: "🔮";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .hint > .icon6::before {
+  content: "💭";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .hint > .icon7::before {
+  content: "🗯";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .example {
+  border-color: #00fef1;
+  border-left-color: #a5eded;
+}
+.markdown-preview.markdown-preview .example > .title {
+  background-color: #a5eded;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .example pre {
+  background-color: #ebfcfc;
+  font-family: monospace;
+  font-size: 90%;
+  color: darkblue;
+  text-align: left;
+  white-space: pre;
+  word-break: keep-all;
+  border-left: solid 4pt #8f8ff4;
+  border-right: solid 1pt black;
+  margin: 0.5em 1em 0.5em 1em;
+  padding: 0.5em 0 0.5em 0.5em;
+  display: block;
+  overflow-y: auto;
+}
+.markdown-preview.markdown-preview .example > .title::before {
+  margin-right: 0.25em;
+  content: "👣";
+  font-size: 150% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .example > .icon2::before {
+  content: "🐾";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .example > .icon3::before {
+  content: "🍽";
+  font-size: 150% ;
+}
+@keyframes animation_thinking_rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(-10deg);
+  }
+  66% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.markdown-preview.markdown-preview .thinking {
+  border-color: #90c377;
+  border-left-color: #019249;
+}
+.markdown-preview.markdown-preview .thinking > .title {
+  background-color: #99d4ac;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .thinking > .title::before {
+  content: "⏳";
+  font-size: 150% ;
+  vertical-align: middle;
+  animation: animation_thinking_rotation 3s infinite linear;
+  display: inline-block;
+}
+.markdown-preview.markdown-preview .thinking > .icon2::before {
+  content: "⏲";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .thinking > .icon3::before {
+  content: "💬";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .thinking > .icon4::before {
+  content: "🤔";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .thinking > .icon5::before {
+  content: "✏";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .thinking > .icon6::before {
+  content: "🌲";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .thinking > .icon7::before {
+  content: "🕛";
+  font-size: 150% ;
+  animation: clock_animation 12s infinite linear;
+}
+.markdown-preview.markdown-preview .thinking > .icon8::before {
+  width: 1.5em;
+  content: "🥚";
+  font-size: 150% ;
+  text-align: center;
+  animation: thinking_bird_growth_animation 3s steps(1, jump-end) infinite;
+}
+@keyframes thinking_bird_growth_animation {
+  0% {
+    content: "🥚";
+  }
+  15% {
+    content: "🐣";
+  }
+  30% {
+    content: "🐥";
+  }
+  45% {
+    content: "🐤";
+  }
+  60% {
+    content: "🐓";
+  }
+  100% {
+    content: "🥚";
+  }
+}
+@keyframes clock_animation {
+  0% {
+    content: "🕛";
+  }
+  8.33% {
+    content: "🕐";
+  }
+  16.67% {
+    content: "🕑";
+  }
+  25% {
+    content: "🕒";
+  }
+  33.33% {
+    content: "🕓";
+  }
+  41.67% {
+    content: "🕔";
+  }
+  50% {
+    content: "🕕";
+  }
+  58.33% {
+    content: "🕖";
+  }
+  66.67% {
+    content: "🕗";
+  }
+  75% {
+    content: "🕘";
+  }
+  83.33% {
+    content: "🕙";
+  }
+  91.67% {
+    content: "🕚";
+  }
+  100% {
+    content: "🕛";
+  }
+}
+.markdown-preview.markdown-preview .information {
+  border-color: lightblue;
+  border-left-color: #2aa7fa;
+}
+.markdown-preview.markdown-preview .information > .title {
+  background-color: #b9f6fd;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .information > .title::before {
+  margin-right: 0.25em;
+  content: "ⓘ";
+  font-size: 175% ;
+  font-weight: bolder;
+  color: #022bf3;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .information > .icon2::before {
+  content: "🎁";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .information > .icon2::before {
+  content: "🔖";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .information > .icon3::before {
+  content: "👍";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .information > .icon4::before {
+  content: "🧐";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .reference {
+  border-color: lightgrey;
+  border-left-color: #c9c9c9;
+}
+.markdown-preview.markdown-preview .reference > .title {
+  background-color: #f4f4f4;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .reference > .title::before {
+  margin-right: 0.25em;
+  content: "📘";
+  font-size: 150% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .reference > .icon2::before {
+  content: "📖";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .reference > .icon3::before {
+  content: "📚";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .reference > .icon4::before {
+  content: "🌏";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .reference > .icon5::before {
+  content: "🗺";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .important {
+  border-color: #cee9ff;
+  border-left-color: #0155d2;
+}
+.markdown-preview.markdown-preview .important > .title {
+  background-color: #cee9ff;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .important > .title::before {
+  margin-right: 0.25em;
+  content: "🧿";
+  font-size: 150% ;
+  font-weight: bolder;
+  vertical-align: middle;
+  display: inline-block;
+  animation: important_press_animation 2s infinite linear;
+}
+.markdown-preview.markdown-preview .important > .icon2::before {
+  content: "👊";
+  font-size: 150% ;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .important > .icon3::before {
+  content: "👀";
+  font-size: 150% ;
+  font-weight: bolder;
+  display: inline-block;
+  animation: 2s anim-flipX steps(2, jump-none) infinite;
+}
+.markdown-preview.markdown-preview .important > .icon4::before {
+  content: "✍";
+  font-size: 150% ;
+  font-weight: bolder;
+  color: red;
+  display: inline-block;
+  animation: animation_thinking_rotation 1.5s infinite linear;
+}
+.markdown-preview.markdown-preview .important > .icon5::before {
+  content: "🗣";
+  font-size: 150% ;
+  font-weight: bolder;
+  color: red;
+}
+.markdown-preview.markdown-preview span.important_phrase {
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  display: inline-block;
+  font-weight: bolder;
+  color: red;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview span.important_phrase::before {
+  width: 1em;
+  margin-right: 0.25em;
+  display: inline-block;
+  content: "▏";
+  font-weight: bolder;
+  color: red;
+  animation: 1s important_phrase_animation linear infinite;
+}
+.markdown-preview.markdown-preview span.important_phrase::after {
+  width: 1em;
+  margin-left: 0.25em;
+  display: inline-block;
+  content: "▏";
+  font-weight: bolder;
+  color: red;
+  animation: 1s important_phrase_animation linear infinite;
+  transform: scale(-1, 1);
+}
+.markdown-preview.markdown-preview span.important_phrase2 {
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  display: inline-block;
+  font-weight: bolder;
+  color: blue;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview span.important_phrase2::before {
+  width: 1em;
+  margin-right: 0.25em;
+  display: inline-block;
+  content: "▏";
+  font-weight: bolder;
+  color: blue;
+  animation: 1s important_phrase_animation linear infinite;
+  transform: scale(-1, 1);
+}
+.markdown-preview.markdown-preview span.important_phrase2::after {
+  width: 1em;
+  margin-left: 0.25em;
+  display: inline-block;
+  content: "▏";
+  font-weight: bolder;
+  color: blue;
+  animation: 1s important_phrase_animation linear infinite;
+}
+@keyframes important_phrase_animation {
+  0% {
+    content: "▏";
+  }
+  12.5% {
+    content: "▎";
+  }
+  25% {
+    content: "▍";
+  }
+  37.5% {
+    content: "▌";
+  }
+  50% {
+    content: "▋";
+  }
+  62.5% {
+    content: "▊";
+  }
+  75% {
+    content: "▉";
+  }
+  100% {
+    content: "█";
+  }
+}
+.markdown-preview.markdown-preview span.important_phrase3 {
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  display: inline-block;
+  font-weight: bolder;
+  color: red;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview span.important_phrase3::before {
+  width: 1.5em;
+  content: "🔈";
+  text-align: left;
+  display: inline-block;
+  animation: important_siren_animation 0.6s infinite;
+}
+@keyframes important_siren_animation {
+  0% {
+    content: "🔈";
+  }
+  33% {
+    content: "🔉";
+  }
+  66% {
+    content: "🔊";
+  }
+  100% {
+    content: "🔈";
+  }
+}
+.markdown-preview.markdown-preview .warning {
+  border-color: lightgoldenrodyellow;
+  border-left-color: #ede502;
+}
+.markdown-preview.markdown-preview .warning > .title {
+  background-color: #fdffce;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .warning > .title::before {
+  margin-right: 0.25em;
+  content: "⚠";
+  font-size: 150% ;
+  font-weight: bolder;
+  font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-emoji: emoji;
+  color: red;
+  vertical-align: middle;
+  display: inline-block;
+  animation: vibration_horizontal_animation 0.5s infinite;
+}
+.markdown-preview.markdown-preview .warning > .icon2::before {
+  content: "💣";
+  font-size: 150% ;
+  animation: vibration_animation 0.5s infinite;
+}
+.markdown-preview.markdown-preview .warning > .icon3::before {
+  content: "🌋";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .warning > .icon4::before {
+  content: "😨";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .warning > .icon5::before {
+  content: "🚧";
+  font-size: 150% ;
+}
+@keyframes vibration_animation {
+  0% {
+    transform: translate(0px, 0px) rotateZ(0deg);
+  }
+  25% {
+    transform: translate(2px, 2px) rotateZ(1deg);
+  }
+  50% {
+    transform: translate(0px, 2px) rotateZ(0deg);
+  }
+  75% {
+    transform: translate(2px, 0px) rotateZ(-1deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotateZ(0deg);
+  }
+}
+@keyframes vibration_horizontal_animation {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(2px, 0px);
+  }
+  50% {
+    transform: translate(0px, 0px);
+  }
+  75% {
+    transform: translate(2px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes vibration_vertical_animation {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(0px, 2px);
+  }
+  50% {
+    transform: translate(0px, 0px);
+  }
+  75% {
+    transform: translate(0px, 2px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes animation_error_color {
+  0% {
+    border-color: #faa07c;
+  }
+  50% {
+    border-color: #f15c21;
+  }
+  100% {
+    border-color: #faa07c;
+  }
+}
+.markdown-preview.markdown-preview .error {
+  border-color: lightsalmon;
+  border-left-color: #f8a065;
+  animation: animation_error_color 3s infinite linear;
+}
+.markdown-preview.markdown-preview .error > .title {
+  background-color: #fbc4af;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .error > .title::before {
+  margin-right: 0.25em;
+  content: "🔥";
+  font-size: 175% ;
+  vertical-align: middle;
+  display: inline-block;
+  animation-name: spin, depth;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+}
+.markdown-preview.markdown-preview .error > .icon2::before {
+  content: "🚨";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .error > .icon3::before {
+  content: "😡";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .error > .icon4::before {
+  content: "💢";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .error > .icon5::before {
+  content: "😵";
+  font-size: 175% ;
+  animation: rotate_360_animation 2s linear infinite;
+}
+@keyframes animation_fatal_color {
+  0% {
+    border-color: #f94949;
+  }
+  50% {
+    border-color: #f8a8a8;
+  }
+  100% {
+    border-color: #f94949;
+  }
+}
+.markdown-preview.markdown-preview .fatal {
+  border-color: lightcoral;
+  border-left-color: #f86565;
+  animation: animation_fatal_color 2s infinite linear;
+}
+.markdown-preview.markdown-preview .fatal > .title {
+  background-color: #fbafaf;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .fatal > .title::before {
+  margin-right: 0.25em;
+  content: "💀";
+  font-size: 175% ;
+  vertical-align: middle;
+  display: inline-block;
+  animation: 4s anim-rotateX ease infinite;
+}
+.markdown-preview.markdown-preview .fatal > .icon2::before {
+  content: "⛔";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .fatal > .icon3::before {
+  content: "🆖";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .fatal > .icon4::before {
+  content: "🥵";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .question {
+  border-color: lightblue;
+  border-left-color: #6571f8;
+}
+.markdown-preview.markdown-preview .question > .title {
+  background-color: lightskyblue;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .question > .title::before {
+  margin-right: 0.25em;
+  content: "❓";
+  font-size: 175% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .question > .icon2::before {
+  content: "Q";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .question > .icon3::before {
+  content: "🤨";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .answer {
+  border-color: lightblue;
+  border-left-color: #6571f8;
+}
+.markdown-preview.markdown-preview .answer > .title {
+  background-color: lightskyblue;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .answer > .title::before {
+  margin-right: 0.25em;
+  content: "✔";
+  font-size: 175% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .answer > .icon2::before {
+  content: "A";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .answer > .icon3::before {
+  content: "😉";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .topic {
+  border-color: #89acab;
+  border-left-color: #6dcd98;
+}
+.markdown-preview.markdown-preview .topic > .title {
+  background-color: #a2d4ae;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .topic > .title::before {
+  margin-right: 0.25em;
+  content: "🛎";
+  font-size: 175% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .topic > .icon2::before {
+  content: "🔊";
+  font-size: 175% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .topic > .icon3::before {
+  content: "🐬";
+  font-size: 175% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .topic > .icon4::before {
+  content: "🏮";
+  font-size: 175% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .topic > .icon5::before {
+  content: "🚦";
+  font-size: 175% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .quote {
+  border-color: lightslategray;
+  border-left-color: #4b4a4a;
+}
+.markdown-preview.markdown-preview .quote > .title {
+  background-color: #b0afaf;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .quote > .title::before {
+  margin-right: 0.25em;
+  content: "📦";
+  font-size: 175% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .quote > .title::after {
+  content: "";
+}
+.markdown-preview.markdown-preview .quote > .icon2::before {
+  content: "🗨";
+  font-size: 200% ;
+  color: white;
+}
+.markdown-preview.markdown-preview .quote blockquote {
+  margin-top: 0em;
+  margin-left: 0em;
+  padding-left: 2em;
+  text-indent: -1.25em;
+}
+.markdown-preview.markdown-preview .quote blockquote::before {
+  content: "❝";
+  font-size: 200% ;
+  color: #9f9f9f;
+}
+.markdown-preview.markdown-preview .quote blockquote::after {
+  content: "\A\A❞";
+  font-size: 200% ;
+  white-space: pre;
+  line-height: 0.5em;
+  color: #9f9f9f;
+}
+.markdown-preview.markdown-preview .quote2 blockquote::before {
+  content: "『\A";
+  white-space: pre;
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .quote2 blockquote::after {
+  content: "\A\A』";
+  font-size: 150% ;
+  white-space: pre;
+  line-height: 0.5em;
+}
+.markdown-preview.markdown-preview .secret {
+  border-color: #fd0101;
+  border-left-color: #ff0101;
+}
+.markdown-preview.markdown-preview .secret > .title {
+  background-color: #fccbcb;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .secret > .title::before {
+  margin-right: 0.25em;
+  content: "㊙";
+  font-size: 200% ;
+  font-weight: bolder;
+  font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-emoji: emoji;
+  color: red;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .secret > .icon2::before {
+  content: "🔐";
+  font-size: 150% ;
+  font-weight: bolder;
+  font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-emoji: emoji;
+  color: red;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .secret > .icon3::before {
+  content: "🛂";
+  font-size: 150% ;
+  font-weight: bolder;
+  font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-emoji: emoji;
+  color: red;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .secret > .icon4::before {
+  content: "🤐";
+  font-size: 150% ;
+  font-weight: bolder;
+  font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-emoji: emoji;
+  color: red;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .secret > .icon5::before {
+  content: "🤫";
+  font-size: 150% ;
+  font-weight: bolder;
+  font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-emoji: emoji;
+  color: red;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .secret > .icon6::before {
+  content: "🈲";
+  font-size: 200%;
+  font-weight: bolder;
+  font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-emoji: emoji;
+  color: red;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .secret > .icon7::before {
+  content: "🔇";
+  font-size: 150% ;
+  font-weight: bolder;
+  font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-emoji: emoji;
+  color: red;
+  vertical-align: middle;
+}
+@keyframes secret_monkey_animation {
+  0% {
+    content: "🙈";
+  }
+  33% {
+    content: "🙉";
+  }
+  66% {
+    content: "🙊";
+  }
+  100% {
+    content: "🙈";
+  }
+}
+.markdown-preview.markdown-preview .secret > .icon8::before {
+  content: "🙈";
+  margin-right: 0.25em;
+  font-size: 150% ;
+  font-weight: bolder;
+  font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-emoji: emoji;
+  color: red;
+  vertical-align: middle;
+  display: inline-block;
+  animation: secret_monkey_animation 3s steps(3, jump-end) infinite;
+}
+.markdown-preview.markdown-preview pre.code_example {
+  background-color: #ebfcfc;
+  font-family: monospace;
+  font-size: 90%;
+  color: darkblue;
+  text-align: left;
+  white-space: pre;
+  word-break: keep-all;
+  border-left: solid 4pt #8f8ff4;
+  border-right: dotted 1pt black;
+  margin: 0.5em 5% 0.5em 5%;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  display: block;
+  overflow-y: auto;
+}
+.markdown-preview.markdown-preview .rotate_360 {
+  animation: rotate_360_animation 2s linear infinite;
+}
+@keyframes rotate_360_animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.markdown-preview.markdown-preview .colorful-animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.markdown-preview.markdown-preview .flipX {
+  display: inline-block;
+  animation: 2s anim-flipX steps(2, jump-none) infinite;
+}
+@keyframes anim-flipX {
+  0% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(-1, 1);
+  }
+  100% {
+    /* animate nothing to pause animation at the end */
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+.markdown-preview.markdown-preview .important_press {
+  display: inline-block;
+  animation: important_press_animation 2s infinite linear;
+}
+@keyframes important_press_animation {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.markdown-preview.markdown-preview .rotateX {
+  display: block;
+  animation: 4s anim-rotateX ease infinite;
+}
+@keyframes anim-rotateX {
+  0% {
+    opacity: 0;
+    transform: rotateX(90deg);
+  }
+  50% {
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+  100% {
+    /* animate nothing to pause animation at the end */
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+}
+.markdown-preview.markdown-preview .rotateY {
+  animation-name: spin, depth;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+}
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(-360deg);
+  }
+}
+@keyframes depth {
+  0% {
+    text-shadow: 0 0 black;
+  }
+  25% {
+    text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black;
+  }
+  50% {
+    text-shadow: 0 0 black;
+  }
+  75% {
+    text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black;
+  }
+  100% {
+    text-shadow: 0 0 black;
+  }
+}
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<div style="text-align:right;font-size:small;margin:0pt;padding:0pt">
+Last-modified: 2025/05/03 12:37:46
+</div>
+<p><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script></p>
+<p><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"></p>
+<h1 id="202504">202504 </h1>
+
+<div class="md-toc">
+<details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#202504" class="md-toc-link"><p>202504</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#sumpoのspc認証-国内8社がパイロット認証を取得-httpscehubjpnewssumpo-certification-pilot-project" class="md-toc-link">
+            </a><p><a href="#sumpoのspc認証-国内8社がパイロット認証を取得-httpscehubjpnewssumpo-certification-pilot-project" class="md-toc-link"></a><a href="https://cehub.jp/news/sumpo-certification-pilot-project/">SuMPOのSPC認証、国内8社がパイロット認証を取得 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#first-web3-global-battery-passport-implementation-for-current-and-future-regulatory-compliance-httpsdltmobigbps-release" class="md-toc-link">
+            </a><p><a href="#first-web3-global-battery-passport-implementation-for-current-and-future-regulatory-compliance-httpsdltmobigbps-release" class="md-toc-link"></a><a href="https://dlt.mobi/gbps-release/">First Web3 Global Battery Passport Implementation for Current and Future Regulatory Compliance </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#バッテリーパスポート-実装に向けた3年間のプロジェクト最終報告会開催eu-httpswwwjetrogojpbiznews202503504baad2c2bce94bhtml" class="md-toc-link">
+            </a><p><a href="#バッテリーパスポート-実装に向けた3年間のプロジェクト最終報告会開催eu-httpswwwjetrogojpbiznews202503504baad2c2bce94bhtml" class="md-toc-link"></a><a href="https://www.jetro.go.jp/biznews/2025/03/504baad2c2bce94b.html">バッテリーパスポート、実装に向けた3年間のプロジェクト最終報告会開催（EU） </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#2024年の総発電量に占める再エネ比率は469" class="md-toc-link">
+            <p>[2024年の総発電量に占める再エネ比率は46.9％</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#digital-europe-programme-unveiled-13-billion-to-support-ai-cybersecurity-and-digital-skills-httpsgaia-xeudigital-europe-programme-unveiled-e1-3-billion-to-support-ai-cybersecurity-and-digital-skills" class="md-toc-link">
+            </a><p><a href="#digital-europe-programme-unveiled-13-billion-to-support-ai-cybersecurity-and-digital-skills-httpsgaia-xeudigital-europe-programme-unveiled-e1-3-billion-to-support-ai-cybersecurity-and-digital-skills" class="md-toc-link"></a><a href="https://gaia-x.eu/digital-europe-programme-unveiled-e1-3-billion-to-support-ai-cybersecurity-and-digital-skills/">Digital Europe Programme unveiled: €1.3 billion to support AI, cybersecurity, and digital skills </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#パナソニックと住友金属鉱山-リチウムイオン電池のクローズドループリサイクルで連携-httpscehubjpnewspanasonic-smm-lithium-ion-recycle" class="md-toc-link">
+            </a><p><a href="#パナソニックと住友金属鉱山-リチウムイオン電池のクローズドループリサイクルで連携-httpscehubjpnewspanasonic-smm-lithium-ion-recycle" class="md-toc-link"></a><a href="https://cehub.jp/news/panasonic-smm-lithium-ion-recycle/">パナソニックと住友金属鉱山、リチウムイオン電池のクローズドループリサイクルで連携 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#pwc-2025年脱炭素化レポートを発表-httpsesgjournaljapancomworld-news44942" class="md-toc-link">
+            </a><p><a href="#pwc-2025年脱炭素化レポートを発表-httpsesgjournaljapancomworld-news44942" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/44942">PwC、2025年脱炭素化レポートを発表 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#issb基準採用に向けたロードマップ策定ツールを発表各国の戦略的導入を支援-httpsesgjournaljapancomworld-news44993" class="md-toc-link">
+            </a><p><a href="#issb基準採用に向けたロードマップ策定ツールを発表各国の戦略的導入を支援-httpsesgjournaljapancomworld-news44993" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/44993">ISSB基準採用に向けた「ロードマップ策定ツール」を発表―各国の戦略的導入を支援 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ドイツ銀行傘下の資産運用会社dws-グリーンウォッシングで約40億4090万円の罰金-httpsesgjournaljapancomworld-news45071" class="md-toc-link">
+            </a><p><a href="#ドイツ銀行傘下の資産運用会社dws-グリーンウォッシングで約40億4090万円の罰金-httpsesgjournaljapancomworld-news45071" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45071">ドイツ銀行傘下の資産運用会社DWS、グリーンウォッシングで約40億4,090万円の罰金 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#オーストラリア証券投資委員会-企業の気候関連財務情報開示を支援-httpsesgjournaljapancomworld-news45023" class="md-toc-link">
+            </a><p><a href="#オーストラリア証券投資委員会-企業の気候関連財務情報開示を支援-httpsesgjournaljapancomworld-news45023" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45023">オーストラリア証券投資委員会、企業の気候関連財務情報開示を支援 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#第1四半期の新規登録台数-bevとphevが急増米国-ドイツ--ビジネス短信-ジェトロの海外ニュース---ジェトロhttpswwwjetrogojpbiznews202504fff4a1b4d2df05bdhtml" class="md-toc-link">
+            </a><p><a href="#第1四半期の新規登録台数-bevとphevが急増米国-ドイツ--ビジネス短信-ジェトロの海外ニュース---ジェトロhttpswwwjetrogojpbiznews202504fff4a1b4d2df05bdhtml" class="md-toc-link"></a><a href="https://www.jetro.go.jp/biznews/2025/04/fff4a1b4d2df05bd.html">第1四半期の新規登録台数、BEVとPHEVが急増(米国、ドイツ) | ビジネス短信 ―ジェトロの海外ニュース - ジェトロ</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#住友商事-アフリカで初めてカーボンクレジット事業に参入マダガスカル-モザンビーク--ビジネス短信-ジェトロの海外ニュース---ジェトロhttpswwwjetrogojpbiznews202504235b83e4802eeedahtml" class="md-toc-link">
+            </a><p><a href="#住友商事-アフリカで初めてカーボンクレジット事業に参入マダガスカル-モザンビーク--ビジネス短信-ジェトロの海外ニュース---ジェトロhttpswwwjetrogojpbiznews202504235b83e4802eeedahtml" class="md-toc-link"></a><a href="https://www.jetro.go.jp/biznews/2025/04/235b83e4802eeeda.html">住友商事、アフリカで初めてカーボンクレジット事業に参入(マダガスカル、モザンビーク) | ビジネス短信 ―ジェトロの海外ニュース - ジェトロ</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#中国bydがナイジェリアで電気自動車投入を発表中国-ナイジェリア--ビジネス短信-ジェトロの海外ニュース---ジェトロhttpswwwjetrogojpbiznews20250426d2e2b94bd65407html" class="md-toc-link">
+            </a><p><a href="#中国bydがナイジェリアで電気自動車投入を発表中国-ナイジェリア--ビジネス短信-ジェトロの海外ニュース---ジェトロhttpswwwjetrogojpbiznews20250426d2e2b94bd65407html" class="md-toc-link"></a><a href="https://www.jetro.go.jp/biznews/2025/04/26d2e2b94bd65407.html">中国BYDがナイジェリアで電気自動車投入を発表(中国、ナイジェリア) | ビジネス短信 ―ジェトロの海外ニュース - ジェトロ</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#矢崎総業-ev電池のリユースに参入-2兆円市場に照準-httpswwwnikkeicomarticledgxzqouc215ez0r20c25a3000000" class="md-toc-link">
+            </a><p><a href="#矢崎総業-ev電池のリユースに参入-2兆円市場に照準-httpswwwnikkeicomarticledgxzqouc215ez0r20c25a3000000" class="md-toc-link"></a><a href="https://www.nikkei.com/article/DGXZQOUC215EZ0R20C25A3000000/">矢崎総業、EV電池のリユースに参入　2兆円市場に照準 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#協業で使用済みリチウムイオン電池のニッケルをリサイクルリサイクルニュース---monoisthttpsmonoistitmediacojpmnarticles250411news056html" class="md-toc-link">
+            </a><p><a href="#協業で使用済みリチウムイオン電池のニッケルをリサイクルリサイクルニュース---monoisthttpsmonoistitmediacojpmnarticles250411news056html" class="md-toc-link"></a><a href="https://monoist.itmedia.co.jp/mn/articles/2504/11/news056.html">協業で使用済みリチウムイオン電池のニッケルをリサイクル：リサイクルニュース - MONOist</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#eu排出量取引制度により排出量を50削減-httpsesgjournaljapancomworld-news45142" class="md-toc-link">
+            </a><p><a href="#eu排出量取引制度により排出量を50削減-httpsesgjournaljapancomworld-news45142" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45142">EU排出量取引制度により排出量を50%削減 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#isoとunece-デジタル製品パスポートに関する国際規格策定を開始-httpscehubjpnewsiso-pwi-25534-1" class="md-toc-link">
+            </a><p><a href="#isoとunece-デジタル製品パスポートに関する国際規格策定を開始-httpscehubjpnewsiso-pwi-25534-1" class="md-toc-link"></a><a href="https://cehub.jp/news/iso-pwi-25534-1/">ISOとUNECE、デジタル製品パスポートに関する国際規格策定を開始 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#kick-off-meeting-of-isopwi-25534-1-httpsuneceorgtradeeventskick-meeting-isopwi-25534-1" class="md-toc-link">
+            </a><p><a href="#kick-off-meeting-of-isopwi-25534-1-httpsuneceorgtradeeventskick-meeting-isopwi-25534-1" class="md-toc-link"></a><a href="https://unece.org/trade/events/kick-meeting-isopwi-25534-1">Kick-off Meeting of ISO/PWI 25534-1 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#terradot-マイクロソフトと12万トンのco2除去契約を締結強化風化法erwの科学的信頼性構築へ-httpsesgjournaljapancomworld-news45104" class="md-toc-link">
+            </a><p><a href="#terradot-マイクロソフトと12万トンのco2除去契約を締結強化風化法erwの科学的信頼性構築へ-httpsesgjournaljapancomworld-news45104" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45104">Terradot、マイクロソフトと1.2万トンのCO2除去契約を締結―強化風化法（ERW）の科学的信頼性構築へ </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#totalenergies-欧州アフリカカナダでの再エネ買収を完了統合型電力事業を強化-httpsesgjournaljapancomworld-news45103" class="md-toc-link">
+            </a><p><a href="#totalenergies-欧州アフリカカナダでの再エネ買収を完了統合型電力事業を強化-httpsesgjournaljapancomworld-news45103" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45103">TotalEnergies、欧州・アフリカ・カナダでの再エネ買収を完了―統合型電力事業を強化 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#schneider-electric-one-click-lcaと提携し5万点超の環境製品宣言を公開-httpsesgjournaljapancomworld-news45125" class="md-toc-link">
+            </a><p><a href="#schneider-electric-one-click-lcaと提携し5万点超の環境製品宣言を公開-httpsesgjournaljapancomworld-news45125" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45125">Schneider Electric、One Click LCAと提携し5万点超の環境製品宣言を公開 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ifrs財団とtnfd-自然関連財務情報開示で正式に協働へ-httpsesgjournaljapancomworld-news45159" class="md-toc-link">
+            </a><p><a href="#ifrs財団とtnfd-自然関連財務情報開示で正式に協働へ-httpsesgjournaljapancomworld-news45159" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45159">IFRS財団とTNFD、自然関連財務情報開示で正式に協働へ </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#環境省と廃棄物3r研究財団-二酸化炭素排出抑制対策事業費等補助金の公募を開始-httpscehubjpnewsenv-gov-jwrf-decarbonization" class="md-toc-link">
+            </a><p><a href="#環境省と廃棄物3r研究財団-二酸化炭素排出抑制対策事業費等補助金の公募を開始-httpscehubjpnewsenv-gov-jwrf-decarbonization" class="md-toc-link"></a><a href="https://cehub.jp/news/env-gov-jwrf-decarbonization/">環境省と廃棄物・3R研究財団、二酸化炭素排出抑制対策事業費等補助金の公募を開始 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#commission-rolls-out-plan-to-boost-circular-and-efficient-products-in-the-eu-httpseceuropaeucommissionpresscornerdetailenip_25_1071" class="md-toc-link">
+            </a><p><a href="#commission-rolls-out-plan-to-boost-circular-and-efficient-products-in-the-eu-httpseceuropaeucommissionpresscornerdetailenip_25_1071" class="md-toc-link"></a><a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_25_1071">Commission rolls out plan to boost circular and efficient products in the EU </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#サプライチェーン強化に向けたセキュリティ対策評価制度構築に向けた中間取りまとめを公表しました-httpswwwmetigojppress2025042025041400220250414002html" class="md-toc-link">
+            </a><p><a href="#サプライチェーン強化に向けたセキュリティ対策評価制度構築に向けた中間取りまとめを公表しました-httpswwwmetigojppress2025042025041400220250414002html" class="md-toc-link"></a><a href="https://www.meti.go.jp/press/2025/04/20250414002/20250414002.html">「サプライチェーン強化に向けたセキュリティ対策評価制度構築に向けた中間取りまとめ」を公表しました </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#esa---sea-surface-warming-faster-than-expectedhttpswwwesaintapplicationsobserving_the_earthspace_for_our_climatesea_surface_warming_faster_than_expected" class="md-toc-link">
+            </a><p><a href="#esa---sea-surface-warming-faster-than-expectedhttpswwwesaintapplicationsobserving_the_earthspace_for_our_climatesea_surface_warming_faster_than_expected" class="md-toc-link"></a><a href="https://www.esa.int/Applications/Observing_the_Earth/Space_for_our_climate/Sea_surface_warming_faster_than_expected">ESA - Sea surface warming faster than expected</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#jaxa--北極の冬季海氷域面積が衛星観測史上最小を記録httpswwwjaxajppress20250420250418-1_jhtml" class="md-toc-link">
+            </a><p><a href="#jaxa--北極の冬季海氷域面積が衛星観測史上最小を記録httpswwwjaxajppress20250420250418-1_jhtml" class="md-toc-link"></a><a href="https://www.jaxa.jp/press/2025/04/20250418-1_j.html">JAXA | 北極の冬季海氷域面積が衛星観測史上最小を記録</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#euで人権デューディリジェンス義務化1日本企業の対応は--地域分析レポート---海外ビジネス情報---ジェトロhttpswwwjetrogojpbizareareports202549401891df8059e1html" class="md-toc-link">
+            </a><p><a href="#euで人権デューディリジェンス義務化1日本企業の対応は--地域分析レポート---海外ビジネス情報---ジェトロhttpswwwjetrogojpbizareareports202549401891df8059e1html" class="md-toc-link"></a><a href="https://www.jetro.go.jp/biz/areareports/2025/49401891df8059e1.html">EUで人権デューディリジェンス義務化（1）日本企業の対応は？ | 地域・分析レポート - 海外ビジネス情報 - ジェトロ</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#industrial-decarbonisation-accelerator-act---speeding-up-decarbonisationhttpseceuropaeuinfolawbetter-regulationhave-your-sayinitiatives14505-industrial-decarbonisation-accelerator-act-speeding-up-decarbonisation_en" class="md-toc-link">
+            </a><p><a href="#industrial-decarbonisation-accelerator-act---speeding-up-decarbonisationhttpseceuropaeuinfolawbetter-regulationhave-your-sayinitiatives14505-industrial-decarbonisation-accelerator-act-speeding-up-decarbonisation_en" class="md-toc-link"></a><a href="https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14505-Industrial-Decarbonisation-Accelerator-Act-speeding-up-decarbonisation_en">Industrial Decarbonisation Accelerator Act - speeding up decarbonisation</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#circularise-帝人のdpp導入製品展開を支援欧州規制対応へ-httpscehubjpnewscircularise-teijin-dpp" class="md-toc-link">
+            </a><p><a href="#circularise-帝人のdpp導入製品展開を支援欧州規制対応へ-httpscehubjpnewscircularise-teijin-dpp" class="md-toc-link"></a><a href="https://cehub.jp/news/circularise-teijin-dpp/">Circularise、帝人のDPP導入製品展開を支援。欧州規制対応へ </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#中国財政部-6億元規模の人民元建てグリーンボンドをロンドン証券取引所に上場-httpsesgjournaljapancomworld-news45119" class="md-toc-link">
+            </a><p><a href="#中国財政部-6億元規模の人民元建てグリーンボンドをロンドン証券取引所に上場-httpsesgjournaljapancomworld-news45119" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45119">中国財政部、6億元規模の人民元建てグリーンボンドをロンドン証券取引所に上場 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#elv規則案は循環性向上の大きな機会欧州リサイクル産業連盟と欧州廃棄物管理協会-httpscehubjpnewseuric-fead-elv-regulation" class="md-toc-link">
+            </a><p><a href="#elv規則案は循環性向上の大きな機会欧州リサイクル産業連盟と欧州廃棄物管理協会-httpscehubjpnewseuric-fead-elv-regulation" class="md-toc-link"></a><a href="https://cehub.jp/news/euric-fead-elv-regulation/">ELV規則案は循環性向上の大きな機会。欧州リサイクル産業連盟と欧州廃棄物管理協会 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#北極の海氷域面積-衛星観測史上最小を記録-httpssoraeinfoesnarctic-sea-ice-extenthtml" class="md-toc-link">
+            </a><p><a href="#北極の海氷域面積-衛星観測史上最小を記録-httpssoraeinfoesnarctic-sea-ice-extenthtml" class="md-toc-link"></a><a href="https://sorae.info/esn/arctic-sea-ice-extent.html">北極の海氷域面積　衛星観測史上最小を記録 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#三井住友銀行など3社-ce意識調査を実施企業のce対応に二極化--circular-economy-hub---サーキュラーエコノミー循環経済メディアhttpscehubjpnewssmbc-ce-research" class="md-toc-link">
+            </a><p><a href="#三井住友銀行など3社-ce意識調査を実施企業のce対応に二極化--circular-economy-hub---サーキュラーエコノミー循環経済メディアhttpscehubjpnewssmbc-ce-research" class="md-toc-link"></a><a href="https://cehub.jp/news/smbc-ce-research/">三井住友銀行など3社、CE意識調査を実施。企業のCE対応に二極化 | Circular Economy Hub - サーキュラーエコノミー（循環経済）メディア</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#国土交通省港湾局-気候変動を考慮した港湾施設の設計事例集を発表---esg-journalhttpsesgjournaljapancomdomestic-news45191" class="md-toc-link">
+            </a><p><a href="#国土交通省港湾局-気候変動を考慮した港湾施設の設計事例集を発表---esg-journalhttpsesgjournaljapancomdomestic-news45191" class="md-toc-link"></a><a href="https://esgjournaljapan.com/domestic-news/45191">国土交通省港湾局、気候変動を考慮した港湾施設の設計事例集を発表 - ESG Journal</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#低コストな顔料でco2をcoへ高効率に変換できる電解技術研究開発の最前線---monoisthttpsmonoistitmediacojpmnarticles250417news163html" class="md-toc-link">
+            </a><p><a href="#低コストな顔料でco2をcoへ高効率に変換できる電解技術研究開発の最前線---monoisthttpsmonoistitmediacojpmnarticles250417news163html" class="md-toc-link"></a><a href="https://monoist.itmedia.co.jp/mn/articles/2504/17/news163.html">低コストな顔料でCO2をCOへ高効率に変換できる電解技術：研究開発の最前線 - MONOist</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#オムロンがドイツに新共創拠点-重要市場欧州のモノづくり革新を後押しfaニュース12-ページ---monoisthttpsmonoistitmediacojpmnarticles250417news096html" class="md-toc-link">
+            </a><p><a href="#オムロンがドイツに新共創拠点-重要市場欧州のモノづくり革新を後押しfaニュース12-ページ---monoisthttpsmonoistitmediacojpmnarticles250417news096html" class="md-toc-link"></a><a href="https://monoist.itmedia.co.jp/mn/articles/2504/17/news096.html">オムロンがドイツに新共創拠点、重要市場「欧州」のモノづくり革新を後押し：FAニュース（1/2 ページ） - MONOist</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#高度物質効率化で導く2050年カーボンニュートラル--物質利用効率4倍-循環利用率2倍を目標に2025年度国立環境研究所httpswwwniesgojpwhatsnew20252025042120250421html" class="md-toc-link">
+            </a><p><a href="#高度物質効率化で導く2050年カーボンニュートラル--物質利用効率4倍-循環利用率2倍を目標に2025年度国立環境研究所httpswwwniesgojpwhatsnew20252025042120250421html" class="md-toc-link"></a><a href="https://www.nies.go.jp/whatsnew/2025/20250421/20250421.html">「高度物質効率化」で導く2050年カーボンニュートラル ～物質利用効率4倍、循環利用率2倍を目標に〜｜2025年度｜国立環境研究所</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#circular-economy-how-porsche-reconditions-defective-vehicle-components---porsche-newsroomhttpsnewsroomporschecomen2025sustainabilityporsche-remanufacturing-circular-economy-vehicle-components-39167html" class="md-toc-link">
+            </a><p><a href="#circular-economy-how-porsche-reconditions-defective-vehicle-components---porsche-newsroomhttpsnewsroomporschecomen2025sustainabilityporsche-remanufacturing-circular-economy-vehicle-components-39167html" class="md-toc-link"></a><a href="https://newsroom.porsche.com/en/2025/sustainability/porsche-remanufacturing-circular-economy-vehicle-components-39167.html">Circular economy: How Porsche reconditions defective vehicle components - Porsche Newsroom</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#洗濯機は長持ち度で選ぶフランス-家電の耐久性ラベルを導入httpscehubjpnewsthe-durability-index" class="md-toc-link">
+            </a><p><a href="#洗濯機は長持ち度で選ぶフランス-家電の耐久性ラベルを導入httpscehubjpnewsthe-durability-index" class="md-toc-link"></a><a href="https://cehub.jp/news/the-durability-index/">洗濯機は“長持ち度”で選ぶ？フランス、家電の「耐久性ラベル」を導入</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#imo-海運の温室効果ガス排出実質ゼロに向けた歴史的合意を採択-httpsesgjournaljapancomworld-news45203" class="md-toc-link">
+            </a><p><a href="#imo-海運の温室効果ガス排出実質ゼロに向けた歴史的合意を採択-httpsesgjournaljapancomworld-news45203" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45203">IMO、海運の温室効果ガス排出実質ゼロに向けた歴史的合意を採択 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#apple-unveils-environmental-progress-surpassing-60-percent-reduction-in-global-greenhouse-gas-emissions-httpswwwwbcsdorgnewsapple-unveils-environmental-progress-surpassing-60-percent-reduction-in-global-greenhouse-gas-emissions" class="md-toc-link">
+            </a><p><a href="#apple-unveils-environmental-progress-surpassing-60-percent-reduction-in-global-greenhouse-gas-emissions-httpswwwwbcsdorgnewsapple-unveils-environmental-progress-surpassing-60-percent-reduction-in-global-greenhouse-gas-emissions" class="md-toc-link"></a><a href="https://www.wbcsd.org/news/apple-unveils-environmental-progress-surpassing-60-percent-reduction-in-global-greenhouse-gas-emissions/">Apple unveils environmental progress, surpassing 60 percent reduction in global greenhouse gas emissions </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#readiness-assessment-tool-preparing-for-the-ecodesign-for-sustainable-products-regulation-espr-httpswwwwbcsdorgresourcesreadiness-assessment-tool-preparing-for-the-ecodesign-for-sustainable-products-regulation-espr" class="md-toc-link">
+            </a><p><a href="#readiness-assessment-tool-preparing-for-the-ecodesign-for-sustainable-products-regulation-espr-httpswwwwbcsdorgresourcesreadiness-assessment-tool-preparing-for-the-ecodesign-for-sustainable-products-regulation-espr" class="md-toc-link"></a><a href="https://www.wbcsd.org/resources/readiness-assessment-tool-preparing-for-the-ecodesign-for-sustainable-products-regulation-espr/">Readiness Assessment Tool: Preparing for the Ecodesign for Sustainable Products Regulation (ESPR) </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#european-digital-identity---documents-httpscommissioneuropaeupublicationseuropean-digital-identity-documents_en" class="md-toc-link">
+            </a><p><a href="#european-digital-identity---documents-httpscommissioneuropaeupublicationseuropean-digital-identity-documents_en" class="md-toc-link"></a><a href="https://commission.europa.eu/publications/european-digital-identity-documents_en">European Digital Identity - Documents </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#euで人権デューディリジェンス義務化2ドイツ企業の先進事例--地域分析レポート---海外ビジネス情報---ジェトロhttpswwwjetrogojpbizareareports20251ea8c27402313d1ahtml" class="md-toc-link">
+            </a><p><a href="#euで人権デューディリジェンス義務化2ドイツ企業の先進事例--地域分析レポート---海外ビジネス情報---ジェトロhttpswwwjetrogojpbizareareports20251ea8c27402313d1ahtml" class="md-toc-link"></a><a href="https://www.jetro.go.jp/biz/areareports/2025/1ea8c27402313d1a.html">EUで人権デューディリジェンス義務化（2）ドイツ企業の先進事例 | 地域・分析レポート - 海外ビジネス情報 - ジェトロ</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ベスタス-三菱電機富士電機と風車部品開発で合意-httpswwwnikkeicomarticledgxzqouc258ni0v20c25a4000000" class="md-toc-link">
+            </a><p><a href="#ベスタス-三菱電機富士電機と風車部品開発で合意-httpswwwnikkeicomarticledgxzqouc258ni0v20c25a4000000" class="md-toc-link"></a><a href="https://www.nikkei.com/article/DGXZQOUC258NI0V20C25A4000000/">ベスタス、三菱電機・富士電機と風車部品開発で合意 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#明治安田生命-竹中工務店-三協立山ら6社-解体建物のアルミ建材水平リサイクルの実証事業を開始--circular-economy-hub---サーキュラーエコノミー循環経済メディアhttpscehubjpnewsst-grp-alumi-recycle" class="md-toc-link">
+            </a><p><a href="#明治安田生命-竹中工務店-三協立山ら6社-解体建物のアルミ建材水平リサイクルの実証事業を開始--circular-economy-hub---サーキュラーエコノミー循環経済メディアhttpscehubjpnewsst-grp-alumi-recycle" class="md-toc-link"></a><a href="https://cehub.jp/news/st-grp-alumi-recycle/">明治安田生命、竹中工務店、三協立山ら6社、解体建物のアルミ建材水平リサイクルの実証事業を開始 | Circular Economy Hub - サーキュラーエコノミー（循環経済）メディア</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#nzba-実体経済の脱炭素化への資金提供機会の創出に重点を置いた新たなマンデートを更新---esg-journalhttpsesgjournaljapancomdomestic-news45242" class="md-toc-link">
+            </a><p><a href="#nzba-実体経済の脱炭素化への資金提供機会の創出に重点を置いた新たなマンデートを更新---esg-journalhttpsesgjournaljapancomdomestic-news45242" class="md-toc-link"></a><a href="https://esgjournaljapan.com/domestic-news/45242">NZBA、実体経済の脱炭素化への資金提供機会の創出に重点を置いた新たなマンデートを更新 - ESG Journal</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#住友林業とレンゴーがバイオエタノール生産で協業-建設現場の木くずを活用脱炭素---monoisthttpsmonoistitmediacojpmnarticles250428news046html" class="md-toc-link">
+            </a><p><a href="#住友林業とレンゴーがバイオエタノール生産で協業-建設現場の木くずを活用脱炭素---monoisthttpsmonoistitmediacojpmnarticles250428news046html" class="md-toc-link"></a><a href="https://monoist.itmedia.co.jp/mn/articles/2504/28/news046.html">住友林業とレンゴーがバイオエタノール生産で協業 建設現場の木くずを活用：脱炭素 - MONOist</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#マイナンバーカードを用いた公的個人認証サービスjpki導入事業者及び事例一覧デジタル庁httpswwwdigitalgojppoliciesmynumberprivate-businessjpki-introductionmynumbercard-user-list" class="md-toc-link">
+            </a><p><a href="#マイナンバーカードを用いた公的個人認証サービスjpki導入事業者及び事例一覧デジタル庁httpswwwdigitalgojppoliciesmynumberprivate-businessjpki-introductionmynumbercard-user-list" class="md-toc-link"></a><a href="https://www.digital.go.jp/policies/mynumber/private-business/jpki-introduction/mynumbercard-user-list">マイナンバーカードを用いた公的個人認証サービス（JPKI）導入事業者及び事例一覧｜デジタル庁</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#2023年度の我が国の温室効果ガス排出量及び吸収量について2025年度国立環境研究所httpswwwniesgojpwhatsnew20252025042520250425-3html" class="md-toc-link">
+            </a><p><a href="#2023年度の我が国の温室効果ガス排出量及び吸収量について2025年度国立環境研究所httpswwwniesgojpwhatsnew20252025042520250425-3html" class="md-toc-link"></a><a href="https://www.nies.go.jp/whatsnew/2025/20250425/20250425-3.html">2023年度の我が国の温室効果ガス排出量及び吸収量について｜2025年度｜国立環境研究所</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#総務省デジタル空間における情報流通の諸課題への対処に関する検討会デジタル空間における情報流通の諸課題への対処に関する検討会httpswwwsoumugojpmain_sosikikenkyudigital_shokadaiindexhtml" class="md-toc-link">
+            </a><p><a href="#総務省デジタル空間における情報流通の諸課題への対処に関する検討会デジタル空間における情報流通の諸課題への対処に関する検討会httpswwwsoumugojpmain_sosikikenkyudigital_shokadaiindexhtml" class="md-toc-link"></a><a href="https://www.soumu.go.jp/main_sosiki/kenkyu/digital_shokadai/index.html">総務省｜デジタル空間における情報流通の諸課題への対処に関する検討会｜デジタル空間における情報流通の諸課題への対処に関する検討会</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#競合や異業種と連携する共同物流の動向電子ブックレットモビリティ---monoisthttpsmonoistitmediacojpmnarticles250428news033html" class="md-toc-link">
+            </a><p><a href="#競合や異業種と連携する共同物流の動向電子ブックレットモビリティ---monoisthttpsmonoistitmediacojpmnarticles250428news033html" class="md-toc-link"></a><a href="https://monoist.itmedia.co.jp/mn/articles/2504/28/news033.html">競合や異業種と連携する共同物流の動向：電子ブックレット（モビリティ） - MONOist</a></p>
+
+          </div>
+        </div>
+      </details>
+    
+</div>
+<h2 id="sumpoのspc認証-国内8社がパイロット認証を取得-httpscehubjpnewssumpo-certification-pilot-project"><a href="https://cehub.jp/news/sumpo-certification-pilot-project/">SuMPOのSPC認証、国内8社がパイロット認証を取得 </a> </h2>
+<p>「一般社団法人サステナブル経営推進機構（SuMPO、さんぽ）は3月27日、同団体が開発する「SPC認証」において、2025年2月に再生プラスチック事業を行う国内8社がパイロット認証を取得したことを発表した。SPC（Sustainable Plastics Certification）認証は、再生プラスチックの品質、安定供給、安全、環境対応の管理体制を総合的に評価する事業所単位の第三者認証である。</p>
+<p>SPC認証では、再生プラスチックのマテリアルリサイクル工程を「再生資源調達」「再生原料製造」「成形用再生材料製造」の3カテゴリに分類し、各カテゴリに応じた基準で評価を行う。パイロット認証では後者2カテゴリに絞り、認証基準（ver.0）を用いて試行審査を実施した。</p>
+<p>認証レベルには「Standard」と「Gold」の2段階が設けられており、各事業所の取組の成熟度を反映する仕組みとなっている。認証審査は、SuMPOがSPC認証機関として認定した日本化学キューエイ株式会社が実施した。」</p>
+<h2 id="first-web3-global-battery-passport-implementation-for-current-and-future-regulatory-compliance-httpsdltmobigbps-release"><a href="https://dlt.mobi/gbps-release/">First Web3 Global Battery Passport Implementation for Current and Future Regulatory Compliance </a> </h2>
+<p>「MOBI, a nonprofit Web3 consortium of global industry leaders, announces the successful completion of the first year in its three-year initiative to build the Global Battery Passport System (GBPS). This milestone marks a significant step in creating a secure, Self-Sovereign Identity and Data framework for seamless data spaces interoperability and digital product passports. MOBI is actively demonstrating data spaces interoperability with other global consortia such as Gaia-X. While the GBPS initiative focuses on battery data exchange as its use case, the underlying technology is agnostic and can be leveraged to enhance trust, compliance, and operational efficiency for all digital transactions and traceability.」<br>
+「世界の業界リーダーによる非営利 Web3 コンソーシアム MOBI は、グローバル バッテリー パスポート システム (GBPS) を構築する 3 年間の取り組みの 1 年目を無事に完了したことを発表しました。このマイルストーンは、シームレスなデータ空間の相互運用性とデジタル製品パスポートのための、安全で自己主権型の ID とデータのフレームワークを作成する上で重要な一歩となります。MOBI は、Gaia-X などの他のグローバル コンソーシアムとのデータ空間の相互運用性を積極的に実証しています。GBPS の取り組みは、そのユースケースとしてバッテリー データ交換に重点を置いていますが、基盤となるテクノロジーは非依存であり、あらゆるデジタル取引とトレーサビリティの信頼性、コンプライアンス、運用効率を高めるために活用できます。」</p>
+<h2 id="バッテリーパスポート-実装に向けた3年間のプロジェクト最終報告会開催eu-httpswwwjetrogojpbiznews202503504baad2c2bce94bhtml"><a href="https://www.jetro.go.jp/biznews/2025/03/504baad2c2bce94b.html">バッテリーパスポート、実装に向けた3年間のプロジェクト最終報告会開催（EU） </a> </h2>
+<p>「バッテリー規則（2023年8月21日記事参照）の一環として、2027年2月から導入予定の「バッテリーパスポート」の実装に向け、ドイツ経済・気候保護省の支援を受けた「バッテリーパス」（2023年4月25日記事参照）は2025年2月25日、3年間のプロジェクトを総括する報告会外部サイトへ、新しいウィンドウで開きますを開催した。<br>
+バッテリーパスポートは、コバルトなどの必要重要原材料が責任あるかたちで調達され、製造から廃棄・リサイクルまでのカーボンフットプリントを示し、消費者が購買を決定する際に参照できる情報を提供することを目的としている。バッテリー規則は、循環性を高めるため、廃棄バッテリーの回収率、リサイクル効率、再資源化なども定めている。例えば、携帯型廃棄バッテリーの回収率は2027年末までに63％と定められている。EU統計局によると、携帯型バッテリーの回収率は高まっており、2022年はEU全体で46.5％だった（添付資料図、表参照）。」<br>
+「報告会では、バッテリーパスポートの実務労力は、システム構築に約20％、オペレーション・管理に約25％、データ管理に約55％が割かれるため、効率的なデータ管理のための適切なプロセスと技術の必要性が確認された。実務の9割は固定費に換算されるため、設計時点での実施戦略が重要となり、自動化とデジタル化がカギとした。」</p>
+<h2 id="2024年の総発電量に占める再エネ比率は469">[2024年の総発電量に占める再エネ比率は46.9％ </h2>
+<p>（EU） ](<a href="https://www.jetro.go.jp/biznews/2025/03/9fa623a7ee981254.html">https://www.jetro.go.jp/biznews/2025/03/9fa623a7ee981254.html</a>)<br>
+「EU統計局（ユーロスタット）は3月19日、EUの2024年の総発電量の46.9％が再生可能エネルギー（再エネ）由来だったと発表（プレスリリース外部サイトへ、新しいウィンドウで開きます）した。<br>
+加盟国の中で、総発電量に占める再エネ率が最も高かったのはデンマークの88.4％で、ほとんどが風力発電だった。次いでポルトガル（87.5％、主に風力と水力）、クロアチア（73.7％、主に水力）となった。再エネ比率が最も低かったのは、ルクセンブルク（5.1％）で、次いでマルタ（15.1％）、チェコ（15.9％）だった。<br>
+再エネ発電の構成をみると、風力と水力発電で総発電量の3分の2以上を占め、それぞれ39.1％、29.9％だった。残りの約3分の1は太陽光が22.4％、加熱燃料（バイオ燃料など）が8.1％で地熱は0.5％程度となった。」</p>
+<h2 id="digital-europe-programme-unveiled-13-billion-to-support-ai-cybersecurity-and-digital-skills-httpsgaia-xeudigital-europe-programme-unveiled-e1-3-billion-to-support-ai-cybersecurity-and-digital-skills"><a href="https://gaia-x.eu/digital-europe-programme-unveiled-e1-3-billion-to-support-ai-cybersecurity-and-digital-skills/">Digital Europe Programme unveiled: €1.3 billion to support AI, cybersecurity, and digital skills </a> </h2>
+<p>「The European Commission has unveiled its Digital Europe Programme work plan for 2025-2027, allocating €1.3 billion to support the deployment of critical digital technologies. This initiative aims to support Europe’s technological capabilities, ensuring competitiveness in key sectors such as artificial intelligence, cybersecurity, and digital skills.」<br>
+「欧州委員会は、2025～2027年のデジタルヨーロッパプログラムの作業計画を発表し、重要なデジタル技術の導入を支援するために13億ユーロを割り当てました。この取り組みは、人工知能、サイバーセキュリティ、デジタルスキルなどの主要分野での競争力を確保しながら、ヨーロッパの技術力を支援することを目的としています。」</p>
+<h2 id="パナソニックと住友金属鉱山-リチウムイオン電池のクローズドループリサイクルで連携-httpscehubjpnewspanasonic-smm-lithium-ion-recycle"><a href="https://cehub.jp/news/panasonic-smm-lithium-ion-recycle/">パナソニックと住友金属鉱山、リチウムイオン電池のクローズドループリサイクルで連携 </a> </h2>
+<p>「パナソニック エナジー株式会社は3月31日、住友金属鉱山株式会社と連携し、リチウムイオン電池の正極材原料であるニッケルのクローズドループリサイクルを開始したことを発表した。これは、パナソニックの国内工場で発生する電池廃材からニッケルを回収し、住友金属鉱山の製錬技術を用いて再資源化し、再び同社のリチウムイオン電池の正極材として活用する取り組みである。」</p>
+<h2 id="pwc-2025年脱炭素化レポートを発表-httpsesgjournaljapancomworld-news44942"><a href="https://esgjournaljapan.com/world-news/44942">PwC、2025年脱炭素化レポートを発表 </a> </h2>
+<p>「3月、PwCは、企業のサステナビリティへの取り組みが静かに進行していることを示す「2025年脱炭素化レポート」を発表した。このレポートは、企業が経済的、政治的、規制の圧力に屈することなく、サステナビリティをビジネス価値の源泉として強く支持していることを明らかにしている。</p>
+<p>レポートによれば、気候公約を行う企業の数は増加しており、2024年には4,000社以上がCDPを通じて報告している。これは過去5年間で9倍の増加である。また、37%の企業が野心を高めている一方で、16%のみが目標を緩和していることが示されている。」</p>
+<h2 id="issb基準採用に向けたロードマップ策定ツールを発表各国の戦略的導入を支援-httpsesgjournaljapancomworld-news44993"><a href="https://esgjournaljapan.com/world-news/44993">ISSB基準採用に向けた「ロードマップ策定ツール」を発表―各国の戦略的導入を支援 </a> </h2>
+<p>「国際サステナビリティ基準審議会（ISSB）は、各国の規制当局がISSB基準を採用または活用するにあたっての詳細な計画策定を支援する「ロードマップ策定ツール（Roadmap Development Tool）」を公表した。このツールは、法的枠組みや市場の成熟度が異なる各国が、自国の状況に応じて戦略的に導入計画を設計・評価するための実践的な手引きとなる。</p>
+<p>本ツールでは、規制プロセス（How）、対象企業（Who）、開示要件（What）、導入時期（When）の4つの意思決定領域ごとに、各国が検討すべき主要な論点や意思決定ポイントが整理されており、あわせてチェックリストや成果のパターンも提供されている。これにより、各国の選択がどのような制度的アウトカムにつながるのかを可視化し、グローバルな比較可能性や投資家理解にも配慮した制度設計が可能となる。</p>
+<p>本ツールは、実質的に同等な情報提供を重視するISSBの原則に基づいており、特に金融市場にとって比較可能なサステナビリティ情報の提供を促進する。今後、各国がこのツールを活用しながら、段階的にISSB基準の導入や活用に向けた計画を策定していくことが期待される。」</p>
+<h2 id="ドイツ銀行傘下の資産運用会社dws-グリーンウォッシングで約40億4090万円の罰金-httpsesgjournaljapancomworld-news45071"><a href="https://esgjournaljapan.com/world-news/45071">ドイツ銀行傘下の資産運用会社DWS、グリーンウォッシングで約40億4,090万円の罰金 </a> </h2>
+<p>「4月2日、ドイツの検察当局が、ドイツ銀行傘下の資産運用会社DWSに対し、グリーンウォッシング、すなわち環境および社会投資の実績について誤解を招く発言をしたとして、2500万ユーロ（約40億4,090万円）の罰金を科した。」</p>
+<h2 id="オーストラリア証券投資委員会-企業の気候関連財務情報開示を支援-httpsesgjournaljapancomworld-news45023"><a href="https://esgjournaljapan.com/world-news/45023">オーストラリア証券投資委員会、企業の気候関連財務情報開示を支援 </a> </h2>
+<p>「3月31日、オーストラリア証券投資委員会（ASIC）は、サステナビリティ報告に関する規制ガイド「Regulatory Guide 280 Sustainability reporting（RG 280）」を発表した。本ガイドは、Corporations Act 2001の第2M章に基づき、気候関連財務情報を含むサステナビリティ報告の作成を義務付けられる企業、登録スキーム、登録可能な退職年金事業体、小売企業型集合投資ビークル（CCIV）向けの指針を示している。</p>
+<p>ASICは、2024年11月7日に当ガイドを「Consultation Paper 380 Sustainability reporting（CP 380）」とともに草案を公開し、業界団体、法律事務所、コンサルタントなどから60件の意見を受け取った。公募で得られた広範な支持を反映し、最終版のRG 280には以下の改善が加えられた。</p>
+<p>気候シナリオ分析およびScope 3温室効果ガス排出量の開示に関する指針の追加<br>
+報告義務の適用対象企業の取締役向けの具体的なガイダンスの追加<br>
+サステナビリティ報告基準の適用方法に関する追加指針<br>
+サステナビリティ報告内の情報ラベル表記に関する修正<br>
+サステナビリティ報告以外でのサステナビリティ関連財務情報の開示に関する指針の更新」</p>
+<h2 id="第1四半期の新規登録台数-bevとphevが急増米国-ドイツ--ビジネス短信-ジェトロの海外ニュース---ジェトロhttpswwwjetrogojpbiznews202504fff4a1b4d2df05bdhtml"><a href="https://www.jetro.go.jp/biznews/2025/04/fff4a1b4d2df05bd.html">第1四半期の新規登録台数、BEVとPHEVが急増(米国、ドイツ) | ビジネス短信 ―ジェトロの海外ニュース - ジェトロ</a> </h2>
+<p>「<br>
+ドイツ連邦自動車局（KBA）は4月3日、2025年第1四半期（1～3月）の国内乗用車新規登録台数は66万4,571台（前年同期比4.3％減）と発表外部サイトへ、新しいウィンドウで開きますした。</p>
+<p>第1四半期の国内乗用車新規登録台数を燃料別にみると、特にバッテリー式電気自動車（BEV）とプラグインハイブリッド車（PHEV）が好調だった。BEVは11万2,968台（前年同期比38.9％増）で、全体で17.0％のシェアを占めた。2024年第1四半期の11.7％から5.3ポイント拡大した。PHEVも急増し、6万3,799台（41.8％増）となった。シェアは9.6％で、前年同期比で3.1ポイント上がった。ハイブリッド車（HEV、PHEVを含まず）は19万2,265台（10.5％増）、シェアは28.9％と最大だった。他方、ガソリン車とディーゼル車は振るわず、大幅に減少した。ガソリン車は18万9,683台（26.6％減）と減少し、シェアは28.5％、ディーゼル車は10万2,962台（21.7％減）でシェアは15.5％だった。</p>
+<p>主要ブランド別にみると、フォルクスワーゲン（VW）が13万8,353台（前年同期比6.4％増）と最大で、シェアは20.8％となった。これにメルセデス・ベンツ6万576台（4.0％減、シェア9.1％）、BMW5万4,164台（1.1％増、シェア8.2％）、シュコダ5万114台（2.6％増、シェア7.5％）、アウディ4万8,144台（2.6％増、シェア7.2％）が続いた。日本メーカーでは、トヨタ自動車（レクサスを除く）1万8,448台（16.0％減、シェア2.8％）、マツダ1万620台（9.9％減、シェア1.6％）、日産自動車9,377台（1.8％増、シェア1.4％）、スズキ6,096台（10.5％減、シェア0.9％）、三菱自動車5,119台（50.3％減、シェア0.8％）などと続いた。<br>
+」</p>
+<h2 id="住友商事-アフリカで初めてカーボンクレジット事業に参入マダガスカル-モザンビーク--ビジネス短信-ジェトロの海外ニュース---ジェトロhttpswwwjetrogojpbiznews202504235b83e4802eeedahtml"><a href="https://www.jetro.go.jp/biznews/2025/04/235b83e4802eeeda.html">住友商事、アフリカで初めてカーボンクレジット事業に参入(マダガスカル、モザンビーク) | ビジネス短信 ―ジェトロの海外ニュース - ジェトロ</a> </h2>
+<p>「<br>
+住友商事は4月1日、アフリカで取り組む初めてのカーボンクレジット事業として、マダガスカルとモザンビークでマングローブ植物由来の事業に参入したことを発表した。同社はアフリカで最大級となる計3,400万トンのカーボンクレジット創出を目指すとしている。</p>
+<p>カーボンクレジット取引では、再生可能エネルギー導入や森林保護などによって実現した二酸化炭素（CO2）など温室効果ガスの排出削減量がクレジットとして売買される。2024年に世界では、年間2億9,000万トンのカーボンクレジットが創出された。そのうちアフリカでは20％にあたる5,900万トンが創出され、2030年には世界で年間24億トンのカーボンクレジット創出が見込まれるという。</p>
+<p>今回、住友商事はマダガスカルとモザンビークでそれぞれ総量約80万トンと約250万トンのカーボンクレジット創出を見込み、日系企業や各地域の需要家向けに販売するという。同社は、経済成長が期待され、マングローブ林を保有するアフリカ地域でマングローブ植林由来のカーボンクレジット事業に参入し、事業拡大を進めるとしている。なお、同社はこれまでにインドネシアで同様のプロジェクトを進めている。<br>
+」</p>
+<h2 id="中国bydがナイジェリアで電気自動車投入を発表中国-ナイジェリア--ビジネス短信-ジェトロの海外ニュース---ジェトロhttpswwwjetrogojpbiznews20250426d2e2b94bd65407html"><a href="https://www.jetro.go.jp/biznews/2025/04/26d2e2b94bd65407.html">中国BYDがナイジェリアで電気自動車投入を発表(中国、ナイジェリア) | ビジネス短信 ―ジェトロの海外ニュース - ジェトロ</a> </h2>
+<p>「<br>
+法人向け自動車リースを手掛けるLoxea Nigeriaは3月28日、中国の電気自動車製造大手BYDの電気自動車（EV）2車種のナイジェリアでの取り扱いを開始すると発表した。Loxeaは豊田通商傘下のCFAO Mobilityの子会社で、ナイジェリアを含め23カ国で自動車のリース、サービスを提供している。今後、ラゴス市内のビジネス地区であるビクトリア・アイランドでのショールームの開設や、充電ステーションの設置、顧客に対する車両修理・メンテナンスサービスおよび修理部品の提供を行う。BYDは既にルワンダ、ケニア、コートジボワール、セネガル、マダガスカルで車両投入を終えており、ナイジェリアはアフリカで6カ国目となる。CFAO Mobility最高経営責任者のマーク・ヒルシュフェルド氏は「アフリカの都市では、モビリティを中心に全く新しいエコシステムを構築しなくてはならない」としたうえで、今回のEVの投入の同社やナイジェリアにとっての重要性を強調した。<br>
+」</p>
+<h2 id="矢崎総業-ev電池のリユースに参入-2兆円市場に照準-httpswwwnikkeicomarticledgxzqouc215ez0r20c25a3000000"><a href="https://www.nikkei.com/article/DGXZQOUC215EZ0R20C25A3000000/">矢崎総業、EV電池のリユースに参入　2兆円市場に照準 </a> </h2>
+<p>「自動車部品メーカー大手の矢崎総業は電気自動車（EV）に搭載する電池のリユース事業に参入する。使用済みの車載電池を再利用した工場や住宅向けの蓄電システムの基幹部品を2030年にも発売する。車載電池の再利用市場は2050年に2兆円に成長するとの試算もある。」</p>
+<h2 id="協業で使用済みリチウムイオン電池のニッケルをリサイクルリサイクルニュース---monoisthttpsmonoistitmediacojpmnarticles250411news056html"><a href="https://monoist.itmedia.co.jp/mn/articles/2504/11/news056.html">協業で使用済みリチウムイオン電池のニッケルをリサイクル：リサイクルニュース - MONOist</a> </h2>
+<p>「<br>
+パナソニック エナジーは2025年3月31日、住友金属鉱山と共同で、リチウムイオン電池の正極材原料であるニッケルのリサイクルを開始すると発表した。</p>
+<p>住友金属鉱山は2017年から、使用済みリチウムイオン電池や電池廃材から回収した銅とニッケルを再資源化し、同社の正極材原料として利用してきた。</p>
+<p>今回の連携により、住友金属鉱山の東予工場（愛媛県西条市）とニッケル工場（同新居浜市）において、パナソニック エナジーの住之江工場（大阪府大阪市）の製造プロセスで生じた廃材から硫酸ニッケルを回収し、その硫酸ニッケルで製造した正極材をパナソニック エナジーのリチウムイオン電池材料に使用する。<br>
+」</p>
+<h2 id="eu排出量取引制度により排出量を50削減-httpsesgjournaljapancomworld-news45142"><a href="https://esgjournaljapan.com/world-news/45142">EU排出量取引制度により排出量を50%削減 </a> </h2>
+<p>「2024年のEU排出量取引制度（EU ETS）に基づく排出量がさらに削減されたことが発表された。中でも、電力生成が脱炭素化の進展において最も重要な役割を果たした。</p>
+<p>EU加盟国が2025年3月31日までに報告したデータによれば、2024年の排出量は2023年と比較して5%減少した。これにより、ETSの排出量は2005年の水準から約50%減少し、2030年の目標である62%削減に向けて順調に進んでいる。この傾向は、EUのキャップ・アンド・トレードシステムがヨーロッパ経済の脱炭素化において重要な政策手段としての効果と効率性を確認するものとなった」</p>
+<h2 id="isoとunece-デジタル製品パスポートに関する国際規格策定を開始-httpscehubjpnewsiso-pwi-25534-1"><a href="https://cehub.jp/news/iso-pwi-25534-1/">ISOとUNECE、デジタル製品パスポートに関する国際規格策定を開始 </a> </h2>
+<p>「国際標準化機構（ISO）と国連欧州経済委員会（UNECE）はこのほど、国際規格「ISO/PWI 25534-1：デジタル製品パスポート（DPP）–概要と基本原則」の策定プロジェクトを開始した。</p>
+<p>同規格は、UNECEが2019年以降進めてきたトレーサビリティと透明性に関する取り組みに沿う。特に、衣料品や履物分野で開発を進めている持続可能性データ交換の標準化ツールと整合している。」</p>
+<h2 id="kick-off-meeting-of-isopwi-25534-1-httpsuneceorgtradeeventskick-meeting-isopwi-25534-1"><a href="https://unece.org/trade/events/kick-meeting-isopwi-25534-1">Kick-off Meeting of ISO/PWI 25534-1 </a> </h2>
+<p>「On October 23, 2024, the international standard project "Digital Product Passport—Part 1: Overview and Fundamental Principles" (ISO/PWI 25534-1) was officially registered. This initiative is a joint development between UNECE and ISO. As the foundational part of the DPP standards series, this standard will provide a comprehensive overview and establish core principles for developing a global DPP standard system. It aims to foster a unified understanding of DPP architecture at the international level and support subsequent standardization efforts.」</p>
+<h2 id="terradot-マイクロソフトと12万トンのco2除去契約を締結強化風化法erwの科学的信頼性構築へ-httpsesgjournaljapancomworld-news45104"><a href="https://esgjournaljapan.com/world-news/45104">Terradot、マイクロソフトと1.2万トンのCO2除去契約を締結―強化風化法（ERW）の科学的信頼性構築へ </a> </h2>
+<p>「4月3日、炭素除去技術を手がけるTerradotは、Microsoftと2026年から2029年の間に12,000トンのCO2を除去する契約を締結した。本契約は、商業的な強化風化（Enhanced Rock Weathering, ERW）プロジェクトとしては過去最大規模の科学的モニタリングを実施する点で注目される。Microsoftの支援により、Terradotはブラジルでの商業展開と並行して高度なモニタリング体制を開始しており、2025年後半には初のカーボンクレジット発行を見込んでいる。</p>
+<p>本契約は、GoogleやFrontierとの累計30万トンの除去契約に続くもので、Microsoftが出資する「Climate Innovation Fund」を含む5,400万ドル（約80億円）のシリーズA資金調達を受けて成立した。Microsoft側は、「ERWが安全かつ費用対効果の高い炭素除去手法として拡大可能かを検証する目的」と説明しており、土壌改良による農業利益も期待している。</p>
+<p>Terradotは現在、ブラジルの農地2,000ヘクタールにわたり5万トンの岩石を散布しており、近隣の採石場から半径50km以内の石材を活用することで効率的な展開を実現している。加えて、熱帯気候による風化速度の加速と、農業との相乗効果により、地球規模でのギガトンスケールの拡大が視野に入る。スタンフォード大の専門家らと連携して進められる観測体制により、信頼性の高いMRV（測定・報告・検証）手法の確立も期待されている。」</p>
+<h2 id="totalenergies-欧州アフリカカナダでの再エネ買収を完了統合型電力事業を強化-httpsesgjournaljapancomworld-news45103"><a href="https://esgjournaljapan.com/world-news/45103">TotalEnergies、欧州・アフリカ・カナダでの再エネ買収を完了―統合型電力事業を強化 </a> </h2>
+<p>「4月2日、TotalEnergiesは2024年に締結した契約に基づき、ドイツを中心とした欧州の再エネ開発企業VSBグループおよびアフリカで水力発電を展開するSN Powerの買収を完了したと発表した。また、カナダ・アルバータ州において再エネ開発企業RESとの新たな合意を交わし、現地でのソーラー施設の取得も完了した。</p>
+<p>欧州では、VSBの15GW超に及ぶ建設中および計画中の再エネプロジェクトを保有したことで、TotalEnergiesの欧州内の再エネ計画容量は40GW超に拡大。既存の7GWの稼働・建設中の案件に加え、ドイツでは蓄電池開発企業Kyon Energyやエネルギー管理企業Quadra Energyの買収、洋上風力案件への投資と併せて、統合型電力ビジネスの基盤を一層強化している。」</p>
+<h2 id="schneider-electric-one-click-lcaと提携し5万点超の環境製品宣言を公開-httpsesgjournaljapancomworld-news45125"><a href="https://esgjournaljapan.com/world-news/45125">Schneider Electric、One Click LCAと提携し5万点超の環境製品宣言を公開 </a> </h2>
+<p>「4月1日、エネルギーおよび自動化のデジタルソリューションプロバイダーであるSchneider Electricは、AI搭載のサステナビリティプラットフォームを展開するOne Click LCA社と提携し、自社の電気製品5万点以上に関するタイプIII環境製品宣言（EPD）を同社のプラットフォーム上で公開した。</p>
+<p>建築、エンジニアリング、建設（AEC）業界では、機械・電気・配管（MEP）部材の環境データが不十分であったことが、建設プロジェクトの埋込炭素評価の障壁となっていた。今回の提携により、これまでアクセスが困難だった製品の環境影響情報が共有され、AEC専門家が持続可能な設計判断を行いやすくなると期待されている。</p>
+<p>Schneider Electricの製品EPDがOne Click LCAのプラットフォーム上で広く利用可能となったことで、建築家、設計者、エンジニア、サステナビリティ専門家は、電化製品のライフサイクル評価に環境影響を組み込み、MEP由来の炭素排出削減に取り組むことができる。」</p>
+<h2 id="ifrs財団とtnfd-自然関連財務情報開示で正式に協働へ-httpsesgjournaljapancomworld-news45159"><a href="https://esgjournaljapan.com/world-news/45159">IFRS財団とTNFD、自然関連財務情報開示で正式に協働へ </a> </h2>
+<p>「4 月9日、IFRS財団と自然関連財務情報開示タスクフォース（TNFD）は、自然資本に関する情報開示の国際的な整合を目指し、正式に協働することを発表した。両者は覚書（MoU）を締結し、国際サステナビリティ基準審議会（ISSB）の枠組み内で、TNFDの提言を活用した取り組みを進めていく。</p>
+<p>本協働は、自然関連のリスクや機会を適切に資本市場に伝えるためのものであり、企業による生物多様性・生態系への影響や依存を定量・定性の両面から把握・開示することを支援する。ISSBは今後、TNFDが2023年に公表した提言の有効性を検討し、ISSBの基準である「IFRS S1」および「S2」への反映を目指す。」</p>
+<h2 id="環境省と廃棄物3r研究財団-二酸化炭素排出抑制対策事業費等補助金の公募を開始-httpscehubjpnewsenv-gov-jwrf-decarbonization"><a href="https://cehub.jp/news/env-gov-jwrf-decarbonization/">環境省と廃棄物・3R研究財団、二酸化炭素排出抑制対策事業費等補助金の公募を開始 </a> </h2>
+<p>「環境省は、二酸化炭素排出抑制対策事業費等補助金（プラスチック資源・金属資源等のバリューチェーン脱炭素化のための高度化設備導入等促進事業）に関する2024年度補正予算の一次公募を開始している。当事業の補助事業者（執行団体）は、公益財団法人廃棄物・3R研究財団。公募期間は4月25日正午まで。</p>
+<p>本補助事業は、リサイクル設備の高度化や代替素材製造設備の導入などを支援するもので、脱炭素と資源循環の両立を目的とする。具体的には、①省CO2型プラスチック高度リサイクル設備、②再生可能資源由来素材の省CO2型製造設備、③太陽光パネルリサイクル設備、④リチウム蓄電池リサイクル設備、⑤金属破砕・選別設備の導入が対象となる。補助率は設備導入費用の2分の1を上限とする。」</p>
+<h2 id="commission-rolls-out-plan-to-boost-circular-and-efficient-products-in-the-eu-httpseceuropaeucommissionpresscornerdetailenip_25_1071"><a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_25_1071">Commission rolls out plan to boost circular and efficient products in the EU </a> </h2>
+<p>ESPRの対象製品の選定など<br>
+「Today, the European Commission adopted the 2025-2030 working plan for the Ecodesign for Sustainable Products Regulation (ESPR) and Energy Labelling Regulation.</p>
+<p>The plan provides a list of products that should be prioritised to introduce ecodesign requirements and energy labelling over the next five years. This will foster sustainable, repairable, circular and energy efficient products across Europe,  in line with the Clean Industrial Deal and the Competitiveness Compass.</p>
+<p>The priority products for ecodesign and energy labelling requirements are steel and aluminium, textiles (with a focus on apparel), furniture, tyres and mattresses. These were selected based on their potential to deliver on the circular economy.<br>
+」<br>
+「<br>
+本日、欧州委員会は、持続可能な製品のためのエコデザイン規則（ESPR）およびエネルギーラベリング規則の2025～2030年作業計画を採択しました。</p>
+<p>この計画は、今後5年間でエコデザイン要件とエネルギーラベリングの導入を優先すべき製品のリストを示しています。これにより、クリーン・インダストリアル・ディール（CDI）および競争力コンパスに沿って、欧州全域で持続可能で、修理可能、循環型、かつエネルギー効率の高い製品が促進されます。</p>
+<p>エコデザインおよびエネルギーラベリング要件の優先製品は、鉄鋼、アルミニウム、繊維（衣料品に重点を置く）、家具、タイヤ、マットレスです。これらは、循環型経済の実現可能性に基づいて選定されました。<br>
+」</p>
+<h2 id="サプライチェーン強化に向けたセキュリティ対策評価制度構築に向けた中間取りまとめを公表しました-httpswwwmetigojppress2025042025041400220250414002html"><a href="https://www.meti.go.jp/press/2025/04/20250414002/20250414002.html">「サプライチェーン強化に向けたセキュリティ対策評価制度構築に向けた中間取りまとめ」を公表しました </a> </h2>
+<p>「経済産業省は、サプライチェーンにおける重要性を踏まえた上で満たすべき各企業のセキュリティ対策を提示しつつ、その対策状況を可視化する仕組みの構築に向けた検討を進め、本日、現時点での検討の概要を「サプライチェーン強化に向けたセキュリティ対策評価制度構築に向けた中間取りまとめ」として公表しました。<br>
+今後、2026年度の制度開始を目指し、実証事業や制度運営基盤の整備、利用促進に向けた各種施策の実行等を進めていく予定です。」</p>
+<h2 id="esa---sea-surface-warming-faster-than-expectedhttpswwwesaintapplicationsobserving_the_earthspace_for_our_climatesea_surface_warming_faster_than_expected"><a href="https://www.esa.int/Applications/Observing_the_Earth/Space_for_our_climate/Sea_surface_warming_faster_than_expected">ESA - Sea surface warming faster than expected</a> </h2>
+<p>「<br>
+Satellite observations show that sea-surface temperatures over the past four decades have been getting warmer at an accelerated pace.</p>
+<p>Between 1985 and 1989, a warming of 0.06 C per decade was observed, while from 2019 to 2023, the sea-surface temperature rose by 0.27 C per decade. This suggests that sea surface temperatures are rising 4.5 times faster since 2019 than they were at the end of the 1980s.<br>
+」<br>
+「<br>
+衛星観測によると、過去40年間の海面水温は加速的に上昇している。1985年から1989年にかけては10年あたり0.06℃の上昇が観測されたが、2019年から2023年にかけては10年あたり0.27℃の上昇となった。これは、2019年以降、海面水温が1980年代末と比べて4.5倍の速さで上昇していることを示唆している。<br>
+」</p>
+<h2 id="jaxa--北極の冬季海氷域面積が衛星観測史上最小を記録httpswwwjaxajppress20250420250418-1_jhtml"><a href="https://www.jaxa.jp/press/2025/04/20250418-1_j.html">JAXA | 北極の冬季海氷域面積が衛星観測史上最小を記録</a> </h2>
+<p>「<br>
+ 北極の冬季海氷域面積（年間最大面積）が衛星観測史上最も小さくなりました。毎年北極の海氷域は晩冬となる3月頃まで拡大します。今年は3月20日に年間最大面積の1379万平方キロメートルを記録しましたが（図1）、この値は衛星観測開始以来の最も小さい値となります（図2）。<br>
+ 宇宙航空研究開発機構（JAXA）と国立極地研究所は、北極域研究加速プロジェクト（ArCS II）※1の一環で、水循環変動観測衛星「しずく」（GCOM-W）※2をはじめとしたマイクロ波放射計による観測データをもとに、40年以上に渡る長期的なデータセットを整備し、南極・北極の海氷域面積の時間的・空間的な変化を可視化や、北極域データアーカイブシステム（ADS）※3のウェブサイトで公開などを通して、極域環境変動監視に貢献しています。<br>
+」</p>
+<h2 id="euで人権デューディリジェンス義務化1日本企業の対応は--地域分析レポート---海外ビジネス情報---ジェトロhttpswwwjetrogojpbizareareports202549401891df8059e1html"><a href="https://www.jetro.go.jp/biz/areareports/2025/49401891df8059e1.html">EUで人権デューディリジェンス義務化（1）日本企業の対応は？ | 地域・分析レポート - 海外ビジネス情報 - ジェトロ</a> </h2>
+<p>「<br>
+EUで、企業活動による人権や環境への負の影響を予防・是正する義務を企業に課す「企業持続可能性デューディリジェンス指令（CSDDD）が2024年7月25日に施行された。現行指令では、指令施行の3年後の2027年7月26日から、EU加盟国に対して、企業の規模に応じて段階的に適用開始となる予定だった。しかし、2024年12月に再任された欧州委員会のウルズラ・フォン・デア・ライエン委員長は、欧州グリーン・ディールを維持しながらも、企業の規制対応負担の軽減を図る方針を発表した。企業持続可能性報告指令（CSRD）と、EUタクソノミー規則（環境面で持続可能な経済活動に関する財務数値の開示を求める規則）、CSDDDの3法が求める企業の報告義務には重複があることから、各法令を簡素化するオムニバス法案を欧州委員会が2025年2月26日に公表した（注1）。同法案では、CSDDDに関しては、デューディリジェンス実施義務の簡素化や、適用開始時期の1年延期などが示されている。</p>
+<p>法案がこのまま成立するかどうかは、今後の審議の行方を待たねばならないが、既に在欧州日系企業では、人権デューディリジェンスの実施やサステナブルファイナンスに関する情報開示が加速してきた。2024年10～11月にドイツとベルギーで実施した日系企業や法律事務所などへのインタビューを基に、日系企業の現在地や取り組み上の課題を概観する。<br>
+」</p>
+<h2 id="industrial-decarbonisation-accelerator-act---speeding-up-decarbonisationhttpseceuropaeuinfolawbetter-regulationhave-your-sayinitiatives14505-industrial-decarbonisation-accelerator-act-speeding-up-decarbonisation_en"><a href="https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14505-Industrial-Decarbonisation-Accelerator-Act-speeding-up-decarbonisation_en">Industrial Decarbonisation Accelerator Act - speeding up decarbonisation</a> </h2>
+<p>「<br>
+この文書は、欧州委員会が進める「産業脱炭素化促進法（Industrial Decarbonisation Accelerator Act）」に関する影響評価のための証拠募集（Call for Evidence）です。この法律は、欧州の新たな成長戦略である「クリーン産業ディール」の一環として、エネルギー多消費産業（EIIs）の脱炭素化を加速し、競争力を維持・向上させることを目的としています。</p>
+<p>現在、EIIsは、脱炭素化プロジェクトの許認可手続きの遅延、脱炭素化技術の高コストと普及の遅れ、低炭素製品への需要不足、高いエネルギーコスト、不公正な国際競争、複雑な規制といった課題に直面しています。これらの課題は、EUの気候中立目標達成や経済安全保障にとって大きな障害となっています。</p>
+<p>産業脱炭素化促進法は、これらの課題に対処するため、以下の3つの具体的な目標を掲げています。</p>
+<p>許認可手続きの迅速化: 産業の脱炭素化プロジェクトや、関連するエネルギー（電力、水素）およびCCUS（二酸化炭素回収・利用・貯留）インフラへのアクセスに関する許認可手続きを迅速化します。<br>
+優先プロジェクト・クラスターの特定と促進: 脱炭素化に貢献する重要なプロジェクトや産業クラスターを特定し、資金調達の円滑化などを通じて支援します。<br>
+欧州の低炭素製品の先行市場の創出と保護: 公的調達における持続可能性基準の導入、低炭素製品に対するEUラベルの創設、クリーンな原料利用の促進、単一市場の保護策などを通じて、欧州製の低炭素製品に対する需要を喚起し、市場を育成します。<br>
+この法律案の影響評価にあたり、欧州委員会は、経済（競争力、投資、コスト）、社会（雇用、地域開発）、環境（GHG排出削減）への影響を分析します。また、負担削減や中小企業への影響も考慮されます。</p>
+<p>この文書は、広く一般市民や利害関係者（各国行政機関、企業、業界団体、NGO、研究機関など）から、この法案に関する意見や情報、潜在的な影響に関するフィードバックを求めるものです。寄せられた意見は、今後の影響評価と法案作成に活用されます。<br>
+」</p>
+<h2 id="circularise-帝人のdpp導入製品展開を支援欧州規制対応へ-httpscehubjpnewscircularise-teijin-dpp"><a href="https://cehub.jp/news/circularise-teijin-dpp/">Circularise、帝人のDPP導入製品展開を支援。欧州規制対応へ </a> </h2>
+<p>「<br>
+製品トレーサビリティ企業Circularise Japanは4月14日、帝人株式会社が展開する一部のアラミド繊維および炭素繊維製品において、Circulariseの「デジタルプロダクトパスポート（DPP）」が導入されたと発表した。帝人は欧州の環境規制「持続可能な製品のためのエコデザイン規則（ESPR）」への対応を見据え、2024年11月にCirculariseに出資。両社はサプライチェーンの透明性確保と循環型社会の実現に向けた連携を強化している。</p>
+<p>」</p>
+<h2 id="中国財政部-6億元規模の人民元建てグリーンボンドをロンドン証券取引所に上場-httpsesgjournaljapancomworld-news45119"><a href="https://esgjournaljapan.com/world-news/45119">中国財政部、6億元規模の人民元建てグリーンボンドをロンドン証券取引所に上場 </a> </h2>
+<p>「4月3日、中国財政部（MOF）は、人民元建てグリーンボンド6億元分（満期3年および5年、約118億円）を発行し、ロンドン証券取引所の国際証券市場（ISC）に上場した。この発行は、人民元の国際化およびグリーン・サステナブル開発への中国の取り組みを示す重要な節目である。</p>
+<p>中国は2013年以降、「生態文明」を国家ガバナンスの中核に据え、経済・政治・文化・社会・生態の「五位一体」発展戦略に統合してきた。また、「革新・協調・グリーン・開放・共有」の新たな発展理念を掲げ、持続可能な成長を推進している。2020年9月には、2030年までのカーボンピークアウト（温室効果ガスの排出量がピークに達した後、減少に転じること）および2060年のカーボンニュートラルを目指すことを宣言した。」</p>
+<h2 id="elv規則案は循環性向上の大きな機会欧州リサイクル産業連盟と欧州廃棄物管理協会-httpscehubjpnewseuric-fead-elv-regulation"><a href="https://cehub.jp/news/euric-fead-elv-regulation/">ELV規則案は循環性向上の大きな機会。欧州リサイクル産業連盟と欧州廃棄物管理協会 </a> </h2>
+<p>「欧州リサイクル産業連盟（EuRIC）と欧州廃棄物管理協会（FEAD）は15日、自動車産業の循環移行には明確な規制枠組みが不可欠であるとする声明を発表した。</p>
+<p>特に、使用済み自動車規則案（ELV規則案） はリサイクルと循環性の向上、およびEUの競争力強化に向けた大きな機会であり、公正かつ透明な実務を促進しリサイクル材の利用拡大を支える方策を導入すべきだと主張する。EuRICとFEADは政策立案者に対し、以下を求める。</p>
+<p>メーカーと生産者責任管理組織（PRO）の活動を監視する独立した監督機関を設立する<br>
+拡大生産者責任（EPR）制度だけでは不十分であるため、すでにEPRが導入されている場合も、すべてのリサイクルバリューチェーンがガバナンスに参画する<br>
+メーカーは使用済み自動車の解体および処理に関わる費用を全額負担し、回収された部品と材料の所有権はリサイクル業者が保持する<br>
+自動車産業の真の循環移行には、高品質なリサイクルへの投資と循環性向上に向けたリサイクル材の普及が重要だとし、EuRICとFEADは下記を要求する。</p>
+<p>欧州委員会の提案通り、使用済み自動車由来のプラスチックリサイクル材25%使用義務を維持すること。同目標は現実的かつ検証済みであり、目標の有効性を大きく損なう可能性のあるプレコンシューマー材料と生物由来プラスチックは対象外とする<br>
+自動車用鋼材のリサイクル材含有率目標を義務付け、使用済み自動車由来の鋼の品質向上と投資を促進する<br>
+EuRICとFEADは、自動車メーカーとACEA（欧州自動車工業会）に対する欧州委員会の決定も循環移行に向けた変革の必要性を示しているとみている。欧州委員会は4月1日、使用済み自動車のリサイクルに関してカルテルに関与したとし、大手自動車メーカー15社とACEAに総額4.5億ユーロの罰金を科した。」</p>
+<h2 id="北極の海氷域面積-衛星観測史上最小を記録-httpssoraeinfoesnarctic-sea-ice-extenthtml"><a href="https://sorae.info/esn/arctic-sea-ice-extent.html">北極の海氷域面積　衛星観測史上最小を記録 </a> </h2>
+<p>「これまでの最小だった2017年3月5日の記録を、今シーズンは13万平方km下回り、人工衛星での観測開始以来最も小さい値だったということです。」</p>
+<h2 id="三井住友銀行など3社-ce意識調査を実施企業のce対応に二極化--circular-economy-hub---サーキュラーエコノミー循環経済メディアhttpscehubjpnewssmbc-ce-research"><a href="https://cehub.jp/news/smbc-ce-research/">三井住友銀行など3社、CE意識調査を実施。企業のCE対応に二極化 | Circular Economy Hub - サーキュラーエコノミー（循環経済）メディア</a> </h2>
+<p>「<br>
+株式会社三井住友銀行、三井住友ファイナンス＆リース株式会社（SMFL）、株式会社日本総合研究所は4月18日、サーキュラーエコノミー（CE）に関する事業者意識調査を共同で初実施したと発表した。</p>
+<p>2024年11月に製造業等を対象に実施した調査（※）では、42%の企業が「CEに対し強い危機感がある」と回答する一方、55%は「状況に応じて対応を検討」と答え、企業間の意識のギャップが明らかになった。また、47%が「情報収集など初期的な対応を計画中」と回答し、約半数がCE推進の取り組みを検討していることがうかがえた。<br>
+」</p>
+<p>アンケート調査における回答<br>
+CE の取組を進める上で最も大きな課題=情報収集などの初期的な対応がすすまない<br>
+業界の動きで気になっていること=CEにおいて、CO2排出量管理が合わせて考えられていること</p>
+<h2 id="国土交通省港湾局-気候変動を考慮した港湾施設の設計事例集を発表---esg-journalhttpsesgjournaljapancomdomestic-news45191"><a href="https://esgjournaljapan.com/domestic-news/45191">国土交通省港湾局、気候変動を考慮した港湾施設の設計事例集を発表 - ESG Journal</a> </h2>
+<p>「<br>
+4月、国土交通省港湾局は「港湾の施設の技術上の基準」を改正し、気候変動の影響を考慮した港湾施設の設計に関する実務的指針として「気候変動に対応した港湾の施設の設計事例集」を公表した。この事例集は、防波堤、岸壁、護岸といった港湾の基本的な施設を対象に、将来予測される平均海面水位の上昇や波高の増加といった外力を考慮した設計手法を具体的に示している。</p>
+<p>近年、高波や高潮などの気候変動に起因する自然災害が激甚化・頻発化しており、港湾施設の持続的かつ安全な機能維持が求められている。この事例集では、設計条件の設定方法、気候変動適応策の立案手法、作用の組み合わせの考え方、将来シナリオの設定方法などが丁寧に解説されている。例えば、設計対象となる潮位や波の将来変化量については、1995年を基準年とし、設計共用期間の終期として2090年を想定した手法が採用されている。</p>
+<p>具体的な設計事例としては、高波に対する既設防波堤の改良事例、上部工の嵩上げに適応的適応策を導入した岸壁の設計、既設護岸の嵩上げと差筋による上部工の一体化を行った補強事例が紹介されている。これらの事例は、実務者が具体的な設計に着手する際の参考資料として有用であり、設計実務の円滑化と適切な気候変動適応の推進が期待されている。<br>
+」</p>
+<h2 id="低コストな顔料でco2をcoへ高効率に変換できる電解技術研究開発の最前線---monoisthttpsmonoistitmediacojpmnarticles250417news163html"><a href="https://monoist.itmedia.co.jp/mn/articles/2504/17/news163.html">低コストな顔料でCO2をCOへ高効率に変換できる電解技術：研究開発の最前線 - MONOist</a> </h2>
+<p>「<br>
+東北大学は2025年4月8日、北海道大学、AZUL Energyと共同で、CO2（二酸化炭素）からCO（一酸化炭素）へ高効率に変換できる電解技術を開発したと発表した。低コストな顔料を電極上で直接結晶化させることで、プロセス時間の短縮と触媒性能の向上が可能になった。</p>
+<p>CO2を炭化水素化合物のCOへ変換する技術は、温室効果のあるCO2を有効活用（Carbon dioxide Capture and Utilization：CCU）する技術の1つだ。これまでにさまざまな変換手法が開発されているが、中でもCO2電解還元反応は、常温かつ常圧の温和な条件で進行するCO2の資源化技術として期待されている。</p>
+<p>研究では、CO2電解還元反応によるCO2からCOへの変換を効率化するため、顔料の1種で金属錯体のコバルトフタロシアニン（CoPc）に着目。CoPcや無金属フタロシアニン（H2Pc）、銅フタロシアニン（CuPc）、鉄フタロシアニン（FePc）などの溶液をガス拡散電極上にスプレー塗布し、フタロシアニン類を直接結晶化してCO2電解用の電極を作製した。<br>
+」</p>
+<h2 id="オムロンがドイツに新共創拠点-重要市場欧州のモノづくり革新を後押しfaニュース12-ページ---monoisthttpsmonoistitmediacojpmnarticles250417news096html"><a href="https://monoist.itmedia.co.jp/mn/articles/2504/17/news096.html">オムロンがドイツに新共創拠点、重要市場「欧州」のモノづくり革新を後押し：FAニュース（1/2 ページ） - MONOist</a> </h2>
+<p>「<br>
+オムロンは2025年4月9日、ドイツ・シュトゥットガルト近郊に製造現場の課題を顧客と共に解決する拠点「オートメーションセンタ Stuttgart（以下、ATC Stuttgart）」をグランドオープンした。<br>
+」<br>
+「<br>
+同社は、ATC Stuttgartについて「共創、PoC開発、実践的なコラボレーションに重点が置かれた施設だ」と強調。デモエリアでは、AI（人工知能）を活用したデジタルソリューションで生産ラインを制御するコントロールセンターや倉庫管理、事前仕分けや生産ライン用準備などのアグリゲーション、組み立てと検査および、そして、それらをつなぐ自動搬送ロボットと、生産ラインにかかわるあらゆるソリューションを網羅。また、製薬業界向け検査装置などさまざまな業界向けにカスタマイズされたソリューションも用意し、最新の生産ラインのバリューチェーン全体を通じ、それらがどのように機能するかを実際に確認できる。また、PoCラボエリアでは、固定の設備がなく顧客のニーズに合わせ柔軟に対応。ビジョンやロボティクスだけでなく、AIやデータサービスなどあらゆるPoC開発が可能だ。<br>
+」</p>
+<h2 id="高度物質効率化で導く2050年カーボンニュートラル--物質利用効率4倍-循環利用率2倍を目標に2025年度国立環境研究所httpswwwniesgojpwhatsnew20252025042120250421html"><a href="https://www.nies.go.jp/whatsnew/2025/20250421/20250421.html">「高度物質効率化」で導く2050年カーボンニュートラル ～物質利用効率4倍、循環利用率2倍を目標に〜｜2025年度｜国立環境研究所</a> </h2>
+<p>「<br>
+国立環境研究所の物質フロー革新研究プログラムの研究チームは、物質の利用削減と循環利用を設定したシナリオ分析により、日本において2050年にカーボンニュートラル（CN）社会を達成する物質削減シナリオを作成しました。その結果、2050年までに物質の利用効率注釈1を現状の4倍、循環利用率注釈1を2倍に向上させることができれば、素材産業におけるまだ実用化されていない「革新的脱炭素技術」の普及に依存しなくても、CN社会へ到達できることを示しました。<br>
+　ただし、上記の脱物質目標は簡易的に比較すると、第5次循環型社会形成推進基本計画において示された物質フローの目標値を大幅に上回る水準であり注釈2、目標達成には、物質消費の多い製品や資本の集約的利用や長寿命化等を通じた「急速な高度物質効率化」といった、現状の目標値を超える取り組みが不可欠です。しかし、これは素材生産の革新的脱炭素技術の普及と同様に、一朝一夕の実現は困難であり、社会を計画的に脱物質化に導くロードマップの策定、対策の積み上げと実施が早急に必要と考えます。<br>
+」</p>
+<h2 id="circular-economy-how-porsche-reconditions-defective-vehicle-components---porsche-newsroomhttpsnewsroomporschecomen2025sustainabilityporsche-remanufacturing-circular-economy-vehicle-components-39167html"><a href="https://newsroom.porsche.com/en/2025/sustainability/porsche-remanufacturing-circular-economy-vehicle-components-39167.html">Circular economy: How Porsche reconditions defective vehicle components - Porsche Newsroom</a> </h2>
+<p>「<br>
+Remanufacturing is to be integrated into Porsche's development processes for vehicle projects in order to take specific requirements for the reusability of selected components into account as early as the product development process. In this way, Porsche aims not only to promote closed-loop concepts along the value chain of its vehicles, but also to contribute to the resource-conserving use of spare parts.<br>
+」<br>
+「<br>
+Selected defective components from various vehicle model series are already being given a second life through targeted remanufacturing. Around 20 component groups are currently being remanufactured - including gearboxes, navigation computers, starters and alternators, for example. The following applies: the remanufactured component must meet the same quality and safety standards as a comparable new part.<br>
+」<br>
+「<br>
+ポルシェの車両プロジェクト開発プロセスには、製品開発プロセスの早い段階から、特定のコンポーネントの再利用性に関する具体的な要件を考慮に入れるため、再生製造が統合されます。これにより、ポルシェは車両のバリューチェーン全体にわたってクローズドループコンセプトを推進するだけでなく、スペアパーツの資源節約的な使用にも貢献することを目指しています。<br>
+」<br>
+「<br>
+様々な車種シリーズから選ばれた欠陥コンポーネントは、すでにターゲットを絞った再生製造を通じて新たな命を吹き込まれています。現在、ギアボックス、ナビゲーションコンピューター、スターター、オルタネーターなど、約20のコンポーネントグループが再生製造されています。再生されたコンポーネントは、同等の新品部品と同じ品質および安全基準を満たす必要があります。<br>
+」</p>
+<h2 id="洗濯機は長持ち度で選ぶフランス-家電の耐久性ラベルを導入httpscehubjpnewsthe-durability-index"><a href="https://cehub.jp/news/the-durability-index/">洗濯機は“長持ち度”で選ぶ？フランス、家電の「耐久性ラベル」を導入</a> </h2>
+<p>「一般的な大型家電の寿命は、10年前後といわれている（※1）。しかし、たとえば自宅の洗濯機が「あと何年使えるのか」を把握している人は、それほど多くはないのではないだろうか。</p>
+<p>2025年4月8日、フランスでは新たに「耐久性指標（Indice de durabilité）」が洗濯機に導入された。これから販売されるすべての洗濯機に対して、商品の価格近くに分かりやすく表示することが義務付けられた。この指標はオンラインでも同様に適用され、価格と同じページかつ同じフォントサイズで表示され、消費者が一目で製品の耐久性を確認できるようにすることが求められる。これは2025年1月からテレビに対してすでに導入されており、今回その範囲が洗濯機にまで拡大した形だ。</p>
+<p>たとえば耐久性指標において、洗濯機が10点満点のうち「9.5（緑）」の高評価を受けることで、消費者はその製品が長持ちし、メンテナンスが容易であることを理解できるようになる。」</p>
+<h2 id="imo-海運の温室効果ガス排出実質ゼロに向けた歴史的合意を採択-httpsesgjournaljapancomworld-news45203"><a href="https://esgjournaljapan.com/world-news/45203">IMO、海運の温室効果ガス排出実質ゼロに向けた歴史的合意を採択 </a> </h2>
+<p>「4月11日、国連の国際海事機関（IMO）は、世界の海運からの温室効果ガス排出削減に向けた画期的な合意に達した。長年の厳しい交渉を経て、燃料基準の義務化と業界全体を対象とした炭素価格メカニズムの導入が決定されたのだ。この枠組みは、2050年までに海運部門の排出量実質ゼロを目指すもので、10月に正式採択され、2027年に発効する予定だ。対象となるのは5,000総トン数を超える大型外航船で、海運船隊からの二酸化炭素排出量の85%を占めている。」<br>
+「この枠組みは、二重のアプローチを導入する。一つは、船舶用燃料の年間温室効果ガス排出原単位を段階的に引き下げる世界的な燃料基準だ。もう一つは、排出量の多い船舶に超過排出量に対する課金を求める温室効果ガス価格メカニズムである。</p>
+<p>新しい制度の下では、排出制限を超過した船舶は、超過排出量を相殺するために削減単位を取得する必要がある。一方、排出ゼロまたは排出ゼロに近い船舶は、金銭的な報酬を受け取ることができ、クリーンな海上輸送への市場主導型の推進力が生まれる。</p>
+<p>」</p>
+<h2 id="apple-unveils-environmental-progress-surpassing-60-percent-reduction-in-global-greenhouse-gas-emissions-httpswwwwbcsdorgnewsapple-unveils-environmental-progress-surpassing-60-percent-reduction-in-global-greenhouse-gas-emissions"><a href="https://www.wbcsd.org/news/apple-unveils-environmental-progress-surpassing-60-percent-reduction-in-global-greenhouse-gas-emissions/">Apple unveils environmental progress, surpassing 60 percent reduction in global greenhouse gas emissions </a> </h2>
+<p>「Apple today announced that the company has surpassed a 60 percent reduction in its global greenhouse gas emissions compared to 2015 levels, as part of its Apple 2030 goal to become carbon neutral across its entire footprint in the next five years. The company achieved several other major environmental milestones, including the use of 99 percent recycled rare earth elements in all magnets and 99 percent recycled cobalt in all Apple-designed batteries.1 Apple shared this and other progress in its annual Environmental Progress Report, published today.」<br>
+「Appleは本日、今後5年間で事業活動全体でカーボンニュートラルを目指す「Apple 2030」目標の一環として、2015年比で世界の温室効果ガス排出量を60%以上削減したことを発表しました。同社は、すべての磁石に99%再生レアアースを使用し、Appleが設計するすべてのバッテリーに99%再生コバルトを使用するなど、環境面での主要なマイルストーンを複数達成しました。Appleは、本日発表した年次環境進捗報告書において、この進捗状況やその他の進捗状況を公開しました。」</p>
+<h2 id="readiness-assessment-tool-preparing-for-the-ecodesign-for-sustainable-products-regulation-espr-httpswwwwbcsdorgresourcesreadiness-assessment-tool-preparing-for-the-ecodesign-for-sustainable-products-regulation-espr"><a href="https://www.wbcsd.org/resources/readiness-assessment-tool-preparing-for-the-ecodesign-for-sustainable-products-regulation-espr/">Readiness Assessment Tool: Preparing for the Ecodesign for Sustainable Products Regulation (ESPR) </a> </h2>
+<p>「To help companies prepare for the ESPR, we’ve developed a Readiness Assessment Tool in collaboration with ERM. This tool allows companies to evaluate the availability of key product information required under the ESPR for a product or product group of choice —helping identify gaps and areas for early action before the regulation is fully enforced. 」<br>
+「ESPRへの準備を支援するため、ERMと共同で準備状況評価ツールを開発しました。このツールにより、企業はESPRで要求される主要な製品情報（選択した製品または製品グループについて）の入手可能性を評価でき、規制が完全施行される前に、不足している点や早期対応が必要な領域を特定するのに役立ちます。」</p>
+<h2 id="european-digital-identity---documents-httpscommissioneuropaeupublicationseuropean-digital-identity-documents_en"><a href="https://commission.europa.eu/publications/european-digital-identity-documents_en">European Digital Identity - Documents </a> </h2>
+<p>「Implementing regulation: rules for the integrity and core functionalities of eID Wallets」</p>
+<p>関連のパブコメ募集中の資料<br>
+<a href="https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14654-Qualified-certificates-for-electronic-signatures-and-electronic-seals_en">Qualified certificates for electronic signatures and electronic seals</a><br>
+<a href="https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14653-Notification-of-qualified-electronic-signature-seal-creation-devices-that-have-been-certified-by-certification-bodies_en">Notification of qualified electronic signature &amp; seal creation devices that have been certified by certification bodies</a><br>
+<a href="https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14652-Notification-and-verification-of-the-initiation-of-a-qualified-trust-service_en">Notification and verification of the initiation of a qualified trust service</a></p>
+<h2 id="euで人権デューディリジェンス義務化2ドイツ企業の先進事例--地域分析レポート---海外ビジネス情報---ジェトロhttpswwwjetrogojpbizareareports20251ea8c27402313d1ahtml"><a href="https://www.jetro.go.jp/biz/areareports/2025/1ea8c27402313d1a.html">EUで人権デューディリジェンス義務化（2）ドイツ企業の先進事例 | 地域・分析レポート - 海外ビジネス情報 - ジェトロ</a> </h2>
+<p>「<br>
+オムニバス法案は今後、EU理事会（閣僚理事会）と欧州議会で審議され、ドイツでもCSDDDの国内法化への対応として、LkSGを改正する見込みになっている。</p>
+<p>LkSGの影響を受けるのは、ドイツに所在する日系企業や、LkSGの対象になるドイツ企業と直接取引のある日本企業だけではない。加えて、ドイツ企業と間接的に取引のある日本企業も、法律に沿った対応が必要になる（2025年4月11日付地域・分析レポート参照）。<br>
+」<br>
+「<br>
+業界共同イニシアチブでサプライヤーの監査負担を軽減<br>
+各業界のリーディングカンパニーは、業界共同イニシアチブに参画し、業界全体のCSR基準を積極的に引き上げている。また、基準を標準化して、サプライヤーの負担軽減にも取り組む（注4）。<br>
+」<br>
+「<br>
+サプライヤーのリスク評価を共同実施<br>
+バイエルは、自社のサプライヤーに対し、行動規範の順守やアンケート回答を一方的に要求するだけではない。特定したリスクを軽減・予防する措置までプロセスに組み込み、その結果をモニタリングできる体制を整備している。そうすることで、継続的に評価結果の改善を促している。<br>
+」</p>
+<h2 id="ベスタス-三菱電機富士電機と風車部品開発で合意-httpswwwnikkeicomarticledgxzqouc258ni0v20c25a4000000"><a href="https://www.nikkei.com/article/DGXZQOUC258NI0V20C25A4000000/">ベスタス、三菱電機・富士電機と風車部品開発で合意 </a> </h2>
+<p>「デンマークの風車大手ベスタスは25日、三菱電機や富士電機と風車部品の開発で合意したと発表した。2社は発電機向けの装置やパワー半導体を開発し、ベスタスが国内外に納入する風車への供給を目指す。</p>
+<p>三菱電機は洋上風力発電所の風車向けに、発電機に使う新型の開閉装置を開発する。新型の装置は国内発電最大手のJERAやJパワーなどが計画する秋田県の洋上風力事業など国内外で納入される風車に供給する。富士電機は陸上・洋上風力向けのパワー半導体を開発する。ベスタスはすでに両社から供給を受けた実績があるが、新製品をどの機種に導入するかは明らかにしていない。」</p>
+<h2 id="明治安田生命-竹中工務店-三協立山ら6社-解体建物のアルミ建材水平リサイクルの実証事業を開始--circular-economy-hub---サーキュラーエコノミー循環経済メディアhttpscehubjpnewsst-grp-alumi-recycle"><a href="https://cehub.jp/news/st-grp-alumi-recycle/">明治安田生命、竹中工務店、三協立山ら6社、解体建物のアルミ建材水平リサイクルの実証事業を開始 | Circular Economy Hub - サーキュラーエコノミー（循環経済）メディア</a> </h2>
+<p>「<br>
+明治安田生命保険、竹中工務店、三協立山、シンワ、HARITA、豊栄金属の6社は4月23日、解体建物から発生するアルミ建材の水平リサイクル実現に向けた実証事業を開始したことを発表した。本取り組みは、竹中工務店が提唱する「サーキュラーデザインビルド」のコンセプトに基づき、解体現場において発生する建材を再び建材として活用する資源循環の試みだ。</p>
+<p>「サーキュラーデザインビルド」は、スクラップ＆ビルドに依存しない循環型建築の指針であり、「つくる循環」「つかう循環」「つなぐ循環」の三本柱を軸に、建築資源のリユース・リサイクルの最大化を図る考え方だ。<br>
+」</p>
+<h2 id="nzba-実体経済の脱炭素化への資金提供機会の創出に重点を置いた新たなマンデートを更新---esg-journalhttpsesgjournaljapancomdomestic-news45242"><a href="https://esgjournaljapan.com/domestic-news/45242">NZBA、実体経済の脱炭素化への資金提供機会の創出に重点を置いた新たなマンデートを更新 - ESG Journal</a> </h2>
+<p>「<br>
+4月15日、世界の銀行による気候変動対策の先頭に立つネット・ゼロ・バンキング・アライアンス（NZBA）は、加盟銀行への支援体制を強化する新たなマンデートの導入を決定した。120以上のメンバーによる圧倒的多数の賛成により、1年にわたる戦略的レビューが完了し、NZBAの活動は新たな段階へと移行する。</p>
+<p>この変更により、NZBAは実体経済の脱炭素化に向けた資金調達の機会拡大に重点を置き、各銀行が自らの気候戦略を効果的に実行できるようサポートを強化する。また、顧客との協働を通じて市場を活性化し、グリーン成長を促進する政策を推進する「セクター別エンゲージメント」への注力も開始される。</p>
+<p>NZBAの最新フレームワークでは、次のような点が盛り込まれている。</p>
+<ul>
+<li>グローバルな参照ガイダンスの提供：規制の有無に関わらず、すべての銀行が気候関連報告の外部要請に対応できるよう支援する。</li>
+<li>柔軟なネット・ゼロ経路の承認：1.5℃シナリオに加え、より広範なパリ協定整合パスウェイを認め、多様な市場やセクターへの対応力を強化する。</li>
+<li>説明責任の明確化：株主、投資家、規制当局、そして社会への説明責任を強調する。<br>
+」</li>
+</ul>
+<h2 id="住友林業とレンゴーがバイオエタノール生産で協業-建設現場の木くずを活用脱炭素---monoisthttpsmonoistitmediacojpmnarticles250428news046html"><a href="https://monoist.itmedia.co.jp/mn/articles/2504/28/news046.html">住友林業とレンゴーがバイオエタノール生産で協業 建設現場の木くずを活用：脱炭素 - MONOist</a> </h2>
+<p>「<br>
+住友林業とレンゴーは2025年4月23日、木質由来のバイオエタノールの生産に関して基本合意書を締結したと発表した。住友林業の住宅建設現場で生じる木くずなどの建築廃材を使って持続可能な航空燃料（SAF）の原料になるバイオエタノールを生産する。石油代替原料として需要が高まる木質バイオエタノールの量産技術の早期確立を目指す。<br>
+」</p>
+<h2 id="マイナンバーカードを用いた公的個人認証サービスjpki導入事業者及び事例一覧デジタル庁httpswwwdigitalgojppoliciesmynumberprivate-businessjpki-introductionmynumbercard-user-list"><a href="https://www.digital.go.jp/policies/mynumber/private-business/jpki-introduction/mynumbercard-user-list">マイナンバーカードを用いた公的個人認証サービス（JPKI）導入事業者及び事例一覧｜デジタル庁</a> </h2>
+<p>ITソリューションなどによりマイナンバーカードによる認証の導入事例<br>
+「<br>
+本頁では、現在公的個人認証サービスを導入している民間事業者（679社：2025年3月31日時点）とその導入事例を紹介します。どういった業界やサービスにどのように導入しているのか、民間事業者や顧客にとってどのようなメリットがあるのか等の参考となる情報を掲載していますので、ぜひとも導入の検討にお役立てください。</p>
+<p>たとえば、銀行・証券業界においては、口座開設において公的個人認証サービスが多く利用されており、その導入効果が認められています。口座開設時に必要であった本人確認書類のコピーや申込書の記入・郵送などが不要となり、マイナンバーカードの電子証明書を利用することで、スマートフォンなどから簡単・正確に申込することができます。これにより、受付や審査などの事務コスト削減や、顧客利便性の向上につながります。<br>
+」</p>
+<h2 id="2023年度の我が国の温室効果ガス排出量及び吸収量について2025年度国立環境研究所httpswwwniesgojpwhatsnew20252025042520250425-3html"><a href="https://www.nies.go.jp/whatsnew/2025/20250425/20250425-3.html">2023年度の我が国の温室効果ガス排出量及び吸収量について｜2025年度｜国立環境研究所</a> </h2>
+<p>「<br>
+1．2023年度の我が国の温室効果ガス排出・吸収量は、約10億1,700万トン（二酸化炭素（CO2）換算、以下同じ。）となり、2022年度比で4.2％（約4,490万トン）の減少、2013年度比では27.1％（約３億7,810万トン）の減少となりました。 2．2022年度からの排出量減少の主な要因としては、電源の脱炭素化（電源構成に占める再生可能エネルギーと原子力の合計割合が３割超え）や製造業の国内生産活動の減少によるエネルギー消費量の減少等が考えられます。 3．代替フロン等４ガス（HFCs、PFCs、SF6及びNF3）については、2009年以降増加していた排出量が2022年に減少に転じたところ、2023年は前年よりさらに排出量が減少しました。2023年の排出量は約3,700万トンとなり、2022年比で3.9％（約150万トン)の減少となりました。本年は2019年に改正したフロン排出抑制法の施行後５年を迎えるため、改正法の施行状況を勘案し、必要な見直しを行うこととしています。 4．森林やブルーカーボン等の吸収源対策については、2023年度の吸収量は前年度とほぼ同量の約5,370万トン（2022年度は約5,380万トン）となり、2013年度排出量からの削減量（約３億7,810万トン）の14.2％に相当する吸収量を確保しました。今後は吸収源としての期待が大きい沖合のブルーカーボンの取組についても、関係省庁連携や官民連携による推進体制を構築し、検討を進めることとしています。 5．CO2吸収型コンクリート等のCCU技術については、対象技術を新たに追加し、2023年度の吸収量（CO2固定量）は約121トン（2022年度は約27トン）となりました。CO2吸収型コンクリートのJ-クレジット化については、本年度からさらに検討を加速していくこととしています。<br>
+」</p>
+<h2 id="総務省デジタル空間における情報流通の諸課題への対処に関する検討会デジタル空間における情報流通の諸課題への対処に関する検討会httpswwwsoumugojpmain_sosikikenkyudigital_shokadaiindexhtml"><a href="https://www.soumu.go.jp/main_sosiki/kenkyu/digital_shokadai/index.html">総務省｜デジタル空間における情報流通の諸課題への対処に関する検討会｜デジタル空間における情報流通の諸課題への対処に関する検討会</a> </h2>
+<p>「<br>
+デジタル空間における情報流通の諸課題への対処に関する検討会<br>
+デジタル広告ワーキンググループ<br>
+デジタル空間における情報流通に係る制度ワーキンググループ<br>
+」</p>
+<h2 id="競合や異業種と連携する共同物流の動向電子ブックレットモビリティ---monoisthttpsmonoistitmediacojpmnarticles250428news033html"><a href="https://monoist.itmedia.co.jp/mn/articles/2504/28/news033.html">競合や異業種と連携する共同物流の動向：電子ブックレット（モビリティ） - MONOist</a> </h2>
+<p>「<br>
+MONOistに掲載した主要な記事を、読みやすいPDF形式の電子ブックレットに再編集した「エンジニア電子ブックレット」。今回は、共同物流や共同輸配送のニュースをまとめた「競合や異業種と連携する共同物流の動向」をお送りします。<br>
+」<br>
+記載内容の要約<br>
+"</p>
+<ul>
+<li><strong>NEC</strong>
+<ul>
+<li>業界や業種を超えた共同輸配送プラットフォームを提供し、共同輸配送の普及を目指す</li>
+<li>複数の企業が参加するプラットフォーム上で、共同輸配送の相手探し、計画、実務をデジタル化</li>
+<li>異業種との共同輸配送を推進し、輸送効率の向上やコストダウン、CO2排出削減を目指す</li>
+</ul>
+</li>
+<li><strong>北越コーポレーション、ダイハツ工業、日本通運、JR貨物</strong>
+<ul>
+<li>20フィートコンテナを使った鉄道による紙と自動車の異業種ラウンドマッチング輸送を開始</li>
+<li>これにより、復路の空コンテナ輸送区間の有効活用と、持続可能な輸送モードの確保、物流の効率向上に貢献</li>
+</ul>
+</li>
+<li><strong>ヤマトホールディングス、Sustainable Shared Transport（SST）、富士通</strong>
+<ul>
+<li>共同輸配送システムを稼働させ、幹線輸送をベースに荷主企業と物流事業者をマッチングする「SST便」を提供</li>
+<li>標準パレット輸送と標準化された商流／物流情報の連携によるオープンプラットフォームを提供し、共同物流を促進</li>
+<li>荷主企業は最適な輸送方法を選択でき、物流事業者は復路の荷物を確保し、積載率向上を目指す</li>
+</ul>
+</li>
+<li><strong>サッポログループ物流、サントリーグループ</strong>
+<ul>
+<li>群馬県～岡山県間の輸送の一部において、スイッチ輸送を用いた長距離での往復輸送を開始</li>
+<li>これにより、運行トラックの削減とCO2排出量の削減、輸送効率の向上、ドライバーの労働負荷軽減を図る</li>
+</ul>
+</li>
+<li><strong>コクヨサプライロジスティクス、PWリソース</strong>
+<ul>
+<li>大阪府大阪市内での共同配送を開始し、異業種間での連携で配送効率化を目指す</li>
+<li>平日の配送効率化と配送車両の台数削減により、年間約2000台の削減を見込む</li>
+</ul>
+</li>
+<li><strong>三菱ケミカルグループ、三井化学、東ソー、東レ</strong>
+<ul>
+<li>関東／東海地区において共同物流の実証実験を行う</li>
+<li>輸送データを基に、デジタル技術を活用して共同物流のためのプラットフォーム構築を目指す</li>
+<li>共同輸送による輸送の最適化と、荷待ち・荷役時間の削減、モーダルシフトなども視野に入れる</li>
+</ul>
+</li>
+<li><strong>ゼンリン、ヤマト運輸、パナソニック コネクト</strong>
+<ul>
+<li>複数の物流事業者の荷物配送状況を一括管理する「共同配送システム」を構築し、埼玉県秩父市で実運用を開始</li>
+<li>地域の配送事業者が複数の物流事業者の荷物をまとめて配送する共同配送を支援</li>
+</ul>
+</li>
+<li><strong>ファミリーマート、ローソン</strong>
+<ul>
+<li>両社の冷凍商品を対象に、同じトラックで混載する共同配送を一部で開始し、製品輸送に関わる車両台数とCO2排出量の削減を目指す</li>
+<li>東北地方の一部で実施し、今後の他エリアへの拡大も検討</li>
+</ul>
+</li>
+<li><strong>サッポロホールディングス、サッポログループ物流、ハウス食品、F-LINE</strong>
+<ul>
+<li>北関東～大阪間でトラック共同輸送を開始し、重量・容積積載率を高めて輸送効率を向上</li>
+<li>JR貨物のブロックトレインでのラウンド輸送テスト運行も行い、輸送の大半を鉄道に切り替えて輸送効率を高める<br>
+"</li>
+</ul>
+</li>
+</ul>
+<hr style="margin-bottom:1ex;">
+<div style="text-align:right;font-size:small;">
+</div>
+
+      </div>
+      <div class="md-sidebar-toc">
+<div class="md-toc">
+<details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#202504" class="md-toc-link"><p>202504</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#sumpoのspc認証-国内8社がパイロット認証を取得-httpscehubjpnewssumpo-certification-pilot-project" class="md-toc-link">
+            </a><p><a href="#sumpoのspc認証-国内8社がパイロット認証を取得-httpscehubjpnewssumpo-certification-pilot-project" class="md-toc-link"></a><a href="https://cehub.jp/news/sumpo-certification-pilot-project/">SuMPOのSPC認証、国内8社がパイロット認証を取得 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#first-web3-global-battery-passport-implementation-for-current-and-future-regulatory-compliance-httpsdltmobigbps-release" class="md-toc-link">
+            </a><p><a href="#first-web3-global-battery-passport-implementation-for-current-and-future-regulatory-compliance-httpsdltmobigbps-release" class="md-toc-link"></a><a href="https://dlt.mobi/gbps-release/">First Web3 Global Battery Passport Implementation for Current and Future Regulatory Compliance </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#バッテリーパスポート-実装に向けた3年間のプロジェクト最終報告会開催eu-httpswwwjetrogojpbiznews202503504baad2c2bce94bhtml" class="md-toc-link">
+            </a><p><a href="#バッテリーパスポート-実装に向けた3年間のプロジェクト最終報告会開催eu-httpswwwjetrogojpbiznews202503504baad2c2bce94bhtml" class="md-toc-link"></a><a href="https://www.jetro.go.jp/biznews/2025/03/504baad2c2bce94b.html">バッテリーパスポート、実装に向けた3年間のプロジェクト最終報告会開催（EU） </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#2024年の総発電量に占める再エネ比率は469" class="md-toc-link">
+            <p>[2024年の総発電量に占める再エネ比率は46.9％</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#digital-europe-programme-unveiled-13-billion-to-support-ai-cybersecurity-and-digital-skills-httpsgaia-xeudigital-europe-programme-unveiled-e1-3-billion-to-support-ai-cybersecurity-and-digital-skills" class="md-toc-link">
+            </a><p><a href="#digital-europe-programme-unveiled-13-billion-to-support-ai-cybersecurity-and-digital-skills-httpsgaia-xeudigital-europe-programme-unveiled-e1-3-billion-to-support-ai-cybersecurity-and-digital-skills" class="md-toc-link"></a><a href="https://gaia-x.eu/digital-europe-programme-unveiled-e1-3-billion-to-support-ai-cybersecurity-and-digital-skills/">Digital Europe Programme unveiled: €1.3 billion to support AI, cybersecurity, and digital skills </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#パナソニックと住友金属鉱山-リチウムイオン電池のクローズドループリサイクルで連携-httpscehubjpnewspanasonic-smm-lithium-ion-recycle" class="md-toc-link">
+            </a><p><a href="#パナソニックと住友金属鉱山-リチウムイオン電池のクローズドループリサイクルで連携-httpscehubjpnewspanasonic-smm-lithium-ion-recycle" class="md-toc-link"></a><a href="https://cehub.jp/news/panasonic-smm-lithium-ion-recycle/">パナソニックと住友金属鉱山、リチウムイオン電池のクローズドループリサイクルで連携 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#pwc-2025年脱炭素化レポートを発表-httpsesgjournaljapancomworld-news44942" class="md-toc-link">
+            </a><p><a href="#pwc-2025年脱炭素化レポートを発表-httpsesgjournaljapancomworld-news44942" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/44942">PwC、2025年脱炭素化レポートを発表 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#issb基準採用に向けたロードマップ策定ツールを発表各国の戦略的導入を支援-httpsesgjournaljapancomworld-news44993" class="md-toc-link">
+            </a><p><a href="#issb基準採用に向けたロードマップ策定ツールを発表各国の戦略的導入を支援-httpsesgjournaljapancomworld-news44993" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/44993">ISSB基準採用に向けた「ロードマップ策定ツール」を発表―各国の戦略的導入を支援 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ドイツ銀行傘下の資産運用会社dws-グリーンウォッシングで約40億4090万円の罰金-httpsesgjournaljapancomworld-news45071" class="md-toc-link">
+            </a><p><a href="#ドイツ銀行傘下の資産運用会社dws-グリーンウォッシングで約40億4090万円の罰金-httpsesgjournaljapancomworld-news45071" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45071">ドイツ銀行傘下の資産運用会社DWS、グリーンウォッシングで約40億4,090万円の罰金 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#オーストラリア証券投資委員会-企業の気候関連財務情報開示を支援-httpsesgjournaljapancomworld-news45023" class="md-toc-link">
+            </a><p><a href="#オーストラリア証券投資委員会-企業の気候関連財務情報開示を支援-httpsesgjournaljapancomworld-news45023" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45023">オーストラリア証券投資委員会、企業の気候関連財務情報開示を支援 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#第1四半期の新規登録台数-bevとphevが急増米国-ドイツ--ビジネス短信-ジェトロの海外ニュース---ジェトロhttpswwwjetrogojpbiznews202504fff4a1b4d2df05bdhtml" class="md-toc-link">
+            </a><p><a href="#第1四半期の新規登録台数-bevとphevが急増米国-ドイツ--ビジネス短信-ジェトロの海外ニュース---ジェトロhttpswwwjetrogojpbiznews202504fff4a1b4d2df05bdhtml" class="md-toc-link"></a><a href="https://www.jetro.go.jp/biznews/2025/04/fff4a1b4d2df05bd.html">第1四半期の新規登録台数、BEVとPHEVが急増(米国、ドイツ) | ビジネス短信 ―ジェトロの海外ニュース - ジェトロ</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#住友商事-アフリカで初めてカーボンクレジット事業に参入マダガスカル-モザンビーク--ビジネス短信-ジェトロの海外ニュース---ジェトロhttpswwwjetrogojpbiznews202504235b83e4802eeedahtml" class="md-toc-link">
+            </a><p><a href="#住友商事-アフリカで初めてカーボンクレジット事業に参入マダガスカル-モザンビーク--ビジネス短信-ジェトロの海外ニュース---ジェトロhttpswwwjetrogojpbiznews202504235b83e4802eeedahtml" class="md-toc-link"></a><a href="https://www.jetro.go.jp/biznews/2025/04/235b83e4802eeeda.html">住友商事、アフリカで初めてカーボンクレジット事業に参入(マダガスカル、モザンビーク) | ビジネス短信 ―ジェトロの海外ニュース - ジェトロ</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#中国bydがナイジェリアで電気自動車投入を発表中国-ナイジェリア--ビジネス短信-ジェトロの海外ニュース---ジェトロhttpswwwjetrogojpbiznews20250426d2e2b94bd65407html" class="md-toc-link">
+            </a><p><a href="#中国bydがナイジェリアで電気自動車投入を発表中国-ナイジェリア--ビジネス短信-ジェトロの海外ニュース---ジェトロhttpswwwjetrogojpbiznews20250426d2e2b94bd65407html" class="md-toc-link"></a><a href="https://www.jetro.go.jp/biznews/2025/04/26d2e2b94bd65407.html">中国BYDがナイジェリアで電気自動車投入を発表(中国、ナイジェリア) | ビジネス短信 ―ジェトロの海外ニュース - ジェトロ</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#矢崎総業-ev電池のリユースに参入-2兆円市場に照準-httpswwwnikkeicomarticledgxzqouc215ez0r20c25a3000000" class="md-toc-link">
+            </a><p><a href="#矢崎総業-ev電池のリユースに参入-2兆円市場に照準-httpswwwnikkeicomarticledgxzqouc215ez0r20c25a3000000" class="md-toc-link"></a><a href="https://www.nikkei.com/article/DGXZQOUC215EZ0R20C25A3000000/">矢崎総業、EV電池のリユースに参入　2兆円市場に照準 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#協業で使用済みリチウムイオン電池のニッケルをリサイクルリサイクルニュース---monoisthttpsmonoistitmediacojpmnarticles250411news056html" class="md-toc-link">
+            </a><p><a href="#協業で使用済みリチウムイオン電池のニッケルをリサイクルリサイクルニュース---monoisthttpsmonoistitmediacojpmnarticles250411news056html" class="md-toc-link"></a><a href="https://monoist.itmedia.co.jp/mn/articles/2504/11/news056.html">協業で使用済みリチウムイオン電池のニッケルをリサイクル：リサイクルニュース - MONOist</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#eu排出量取引制度により排出量を50削減-httpsesgjournaljapancomworld-news45142" class="md-toc-link">
+            </a><p><a href="#eu排出量取引制度により排出量を50削減-httpsesgjournaljapancomworld-news45142" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45142">EU排出量取引制度により排出量を50%削減 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#isoとunece-デジタル製品パスポートに関する国際規格策定を開始-httpscehubjpnewsiso-pwi-25534-1" class="md-toc-link">
+            </a><p><a href="#isoとunece-デジタル製品パスポートに関する国際規格策定を開始-httpscehubjpnewsiso-pwi-25534-1" class="md-toc-link"></a><a href="https://cehub.jp/news/iso-pwi-25534-1/">ISOとUNECE、デジタル製品パスポートに関する国際規格策定を開始 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#kick-off-meeting-of-isopwi-25534-1-httpsuneceorgtradeeventskick-meeting-isopwi-25534-1" class="md-toc-link">
+            </a><p><a href="#kick-off-meeting-of-isopwi-25534-1-httpsuneceorgtradeeventskick-meeting-isopwi-25534-1" class="md-toc-link"></a><a href="https://unece.org/trade/events/kick-meeting-isopwi-25534-1">Kick-off Meeting of ISO/PWI 25534-1 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#terradot-マイクロソフトと12万トンのco2除去契約を締結強化風化法erwの科学的信頼性構築へ-httpsesgjournaljapancomworld-news45104" class="md-toc-link">
+            </a><p><a href="#terradot-マイクロソフトと12万トンのco2除去契約を締結強化風化法erwの科学的信頼性構築へ-httpsesgjournaljapancomworld-news45104" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45104">Terradot、マイクロソフトと1.2万トンのCO2除去契約を締結―強化風化法（ERW）の科学的信頼性構築へ </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#totalenergies-欧州アフリカカナダでの再エネ買収を完了統合型電力事業を強化-httpsesgjournaljapancomworld-news45103" class="md-toc-link">
+            </a><p><a href="#totalenergies-欧州アフリカカナダでの再エネ買収を完了統合型電力事業を強化-httpsesgjournaljapancomworld-news45103" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45103">TotalEnergies、欧州・アフリカ・カナダでの再エネ買収を完了―統合型電力事業を強化 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#schneider-electric-one-click-lcaと提携し5万点超の環境製品宣言を公開-httpsesgjournaljapancomworld-news45125" class="md-toc-link">
+            </a><p><a href="#schneider-electric-one-click-lcaと提携し5万点超の環境製品宣言を公開-httpsesgjournaljapancomworld-news45125" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45125">Schneider Electric、One Click LCAと提携し5万点超の環境製品宣言を公開 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ifrs財団とtnfd-自然関連財務情報開示で正式に協働へ-httpsesgjournaljapancomworld-news45159" class="md-toc-link">
+            </a><p><a href="#ifrs財団とtnfd-自然関連財務情報開示で正式に協働へ-httpsesgjournaljapancomworld-news45159" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45159">IFRS財団とTNFD、自然関連財務情報開示で正式に協働へ </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#環境省と廃棄物3r研究財団-二酸化炭素排出抑制対策事業費等補助金の公募を開始-httpscehubjpnewsenv-gov-jwrf-decarbonization" class="md-toc-link">
+            </a><p><a href="#環境省と廃棄物3r研究財団-二酸化炭素排出抑制対策事業費等補助金の公募を開始-httpscehubjpnewsenv-gov-jwrf-decarbonization" class="md-toc-link"></a><a href="https://cehub.jp/news/env-gov-jwrf-decarbonization/">環境省と廃棄物・3R研究財団、二酸化炭素排出抑制対策事業費等補助金の公募を開始 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#commission-rolls-out-plan-to-boost-circular-and-efficient-products-in-the-eu-httpseceuropaeucommissionpresscornerdetailenip_25_1071" class="md-toc-link">
+            </a><p><a href="#commission-rolls-out-plan-to-boost-circular-and-efficient-products-in-the-eu-httpseceuropaeucommissionpresscornerdetailenip_25_1071" class="md-toc-link"></a><a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_25_1071">Commission rolls out plan to boost circular and efficient products in the EU </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#サプライチェーン強化に向けたセキュリティ対策評価制度構築に向けた中間取りまとめを公表しました-httpswwwmetigojppress2025042025041400220250414002html" class="md-toc-link">
+            </a><p><a href="#サプライチェーン強化に向けたセキュリティ対策評価制度構築に向けた中間取りまとめを公表しました-httpswwwmetigojppress2025042025041400220250414002html" class="md-toc-link"></a><a href="https://www.meti.go.jp/press/2025/04/20250414002/20250414002.html">「サプライチェーン強化に向けたセキュリティ対策評価制度構築に向けた中間取りまとめ」を公表しました </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#esa---sea-surface-warming-faster-than-expectedhttpswwwesaintapplicationsobserving_the_earthspace_for_our_climatesea_surface_warming_faster_than_expected" class="md-toc-link">
+            </a><p><a href="#esa---sea-surface-warming-faster-than-expectedhttpswwwesaintapplicationsobserving_the_earthspace_for_our_climatesea_surface_warming_faster_than_expected" class="md-toc-link"></a><a href="https://www.esa.int/Applications/Observing_the_Earth/Space_for_our_climate/Sea_surface_warming_faster_than_expected">ESA - Sea surface warming faster than expected</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#jaxa--北極の冬季海氷域面積が衛星観測史上最小を記録httpswwwjaxajppress20250420250418-1_jhtml" class="md-toc-link">
+            </a><p><a href="#jaxa--北極の冬季海氷域面積が衛星観測史上最小を記録httpswwwjaxajppress20250420250418-1_jhtml" class="md-toc-link"></a><a href="https://www.jaxa.jp/press/2025/04/20250418-1_j.html">JAXA | 北極の冬季海氷域面積が衛星観測史上最小を記録</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#euで人権デューディリジェンス義務化1日本企業の対応は--地域分析レポート---海外ビジネス情報---ジェトロhttpswwwjetrogojpbizareareports202549401891df8059e1html" class="md-toc-link">
+            </a><p><a href="#euで人権デューディリジェンス義務化1日本企業の対応は--地域分析レポート---海外ビジネス情報---ジェトロhttpswwwjetrogojpbizareareports202549401891df8059e1html" class="md-toc-link"></a><a href="https://www.jetro.go.jp/biz/areareports/2025/49401891df8059e1.html">EUで人権デューディリジェンス義務化（1）日本企業の対応は？ | 地域・分析レポート - 海外ビジネス情報 - ジェトロ</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#industrial-decarbonisation-accelerator-act---speeding-up-decarbonisationhttpseceuropaeuinfolawbetter-regulationhave-your-sayinitiatives14505-industrial-decarbonisation-accelerator-act-speeding-up-decarbonisation_en" class="md-toc-link">
+            </a><p><a href="#industrial-decarbonisation-accelerator-act---speeding-up-decarbonisationhttpseceuropaeuinfolawbetter-regulationhave-your-sayinitiatives14505-industrial-decarbonisation-accelerator-act-speeding-up-decarbonisation_en" class="md-toc-link"></a><a href="https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14505-Industrial-Decarbonisation-Accelerator-Act-speeding-up-decarbonisation_en">Industrial Decarbonisation Accelerator Act - speeding up decarbonisation</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#circularise-帝人のdpp導入製品展開を支援欧州規制対応へ-httpscehubjpnewscircularise-teijin-dpp" class="md-toc-link">
+            </a><p><a href="#circularise-帝人のdpp導入製品展開を支援欧州規制対応へ-httpscehubjpnewscircularise-teijin-dpp" class="md-toc-link"></a><a href="https://cehub.jp/news/circularise-teijin-dpp/">Circularise、帝人のDPP導入製品展開を支援。欧州規制対応へ </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#中国財政部-6億元規模の人民元建てグリーンボンドをロンドン証券取引所に上場-httpsesgjournaljapancomworld-news45119" class="md-toc-link">
+            </a><p><a href="#中国財政部-6億元規模の人民元建てグリーンボンドをロンドン証券取引所に上場-httpsesgjournaljapancomworld-news45119" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45119">中国財政部、6億元規模の人民元建てグリーンボンドをロンドン証券取引所に上場 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#elv規則案は循環性向上の大きな機会欧州リサイクル産業連盟と欧州廃棄物管理協会-httpscehubjpnewseuric-fead-elv-regulation" class="md-toc-link">
+            </a><p><a href="#elv規則案は循環性向上の大きな機会欧州リサイクル産業連盟と欧州廃棄物管理協会-httpscehubjpnewseuric-fead-elv-regulation" class="md-toc-link"></a><a href="https://cehub.jp/news/euric-fead-elv-regulation/">ELV規則案は循環性向上の大きな機会。欧州リサイクル産業連盟と欧州廃棄物管理協会 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#北極の海氷域面積-衛星観測史上最小を記録-httpssoraeinfoesnarctic-sea-ice-extenthtml" class="md-toc-link">
+            </a><p><a href="#北極の海氷域面積-衛星観測史上最小を記録-httpssoraeinfoesnarctic-sea-ice-extenthtml" class="md-toc-link"></a><a href="https://sorae.info/esn/arctic-sea-ice-extent.html">北極の海氷域面積　衛星観測史上最小を記録 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#三井住友銀行など3社-ce意識調査を実施企業のce対応に二極化--circular-economy-hub---サーキュラーエコノミー循環経済メディアhttpscehubjpnewssmbc-ce-research" class="md-toc-link">
+            </a><p><a href="#三井住友銀行など3社-ce意識調査を実施企業のce対応に二極化--circular-economy-hub---サーキュラーエコノミー循環経済メディアhttpscehubjpnewssmbc-ce-research" class="md-toc-link"></a><a href="https://cehub.jp/news/smbc-ce-research/">三井住友銀行など3社、CE意識調査を実施。企業のCE対応に二極化 | Circular Economy Hub - サーキュラーエコノミー（循環経済）メディア</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#国土交通省港湾局-気候変動を考慮した港湾施設の設計事例集を発表---esg-journalhttpsesgjournaljapancomdomestic-news45191" class="md-toc-link">
+            </a><p><a href="#国土交通省港湾局-気候変動を考慮した港湾施設の設計事例集を発表---esg-journalhttpsesgjournaljapancomdomestic-news45191" class="md-toc-link"></a><a href="https://esgjournaljapan.com/domestic-news/45191">国土交通省港湾局、気候変動を考慮した港湾施設の設計事例集を発表 - ESG Journal</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#低コストな顔料でco2をcoへ高効率に変換できる電解技術研究開発の最前線---monoisthttpsmonoistitmediacojpmnarticles250417news163html" class="md-toc-link">
+            </a><p><a href="#低コストな顔料でco2をcoへ高効率に変換できる電解技術研究開発の最前線---monoisthttpsmonoistitmediacojpmnarticles250417news163html" class="md-toc-link"></a><a href="https://monoist.itmedia.co.jp/mn/articles/2504/17/news163.html">低コストな顔料でCO2をCOへ高効率に変換できる電解技術：研究開発の最前線 - MONOist</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#オムロンがドイツに新共創拠点-重要市場欧州のモノづくり革新を後押しfaニュース12-ページ---monoisthttpsmonoistitmediacojpmnarticles250417news096html" class="md-toc-link">
+            </a><p><a href="#オムロンがドイツに新共創拠点-重要市場欧州のモノづくり革新を後押しfaニュース12-ページ---monoisthttpsmonoistitmediacojpmnarticles250417news096html" class="md-toc-link"></a><a href="https://monoist.itmedia.co.jp/mn/articles/2504/17/news096.html">オムロンがドイツに新共創拠点、重要市場「欧州」のモノづくり革新を後押し：FAニュース（1/2 ページ） - MONOist</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#高度物質効率化で導く2050年カーボンニュートラル--物質利用効率4倍-循環利用率2倍を目標に2025年度国立環境研究所httpswwwniesgojpwhatsnew20252025042120250421html" class="md-toc-link">
+            </a><p><a href="#高度物質効率化で導く2050年カーボンニュートラル--物質利用効率4倍-循環利用率2倍を目標に2025年度国立環境研究所httpswwwniesgojpwhatsnew20252025042120250421html" class="md-toc-link"></a><a href="https://www.nies.go.jp/whatsnew/2025/20250421/20250421.html">「高度物質効率化」で導く2050年カーボンニュートラル ～物質利用効率4倍、循環利用率2倍を目標に〜｜2025年度｜国立環境研究所</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#circular-economy-how-porsche-reconditions-defective-vehicle-components---porsche-newsroomhttpsnewsroomporschecomen2025sustainabilityporsche-remanufacturing-circular-economy-vehicle-components-39167html" class="md-toc-link">
+            </a><p><a href="#circular-economy-how-porsche-reconditions-defective-vehicle-components---porsche-newsroomhttpsnewsroomporschecomen2025sustainabilityporsche-remanufacturing-circular-economy-vehicle-components-39167html" class="md-toc-link"></a><a href="https://newsroom.porsche.com/en/2025/sustainability/porsche-remanufacturing-circular-economy-vehicle-components-39167.html">Circular economy: How Porsche reconditions defective vehicle components - Porsche Newsroom</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#洗濯機は長持ち度で選ぶフランス-家電の耐久性ラベルを導入httpscehubjpnewsthe-durability-index" class="md-toc-link">
+            </a><p><a href="#洗濯機は長持ち度で選ぶフランス-家電の耐久性ラベルを導入httpscehubjpnewsthe-durability-index" class="md-toc-link"></a><a href="https://cehub.jp/news/the-durability-index/">洗濯機は“長持ち度”で選ぶ？フランス、家電の「耐久性ラベル」を導入</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#imo-海運の温室効果ガス排出実質ゼロに向けた歴史的合意を採択-httpsesgjournaljapancomworld-news45203" class="md-toc-link">
+            </a><p><a href="#imo-海運の温室効果ガス排出実質ゼロに向けた歴史的合意を採択-httpsesgjournaljapancomworld-news45203" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45203">IMO、海運の温室効果ガス排出実質ゼロに向けた歴史的合意を採択 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#apple-unveils-environmental-progress-surpassing-60-percent-reduction-in-global-greenhouse-gas-emissions-httpswwwwbcsdorgnewsapple-unveils-environmental-progress-surpassing-60-percent-reduction-in-global-greenhouse-gas-emissions" class="md-toc-link">
+            </a><p><a href="#apple-unveils-environmental-progress-surpassing-60-percent-reduction-in-global-greenhouse-gas-emissions-httpswwwwbcsdorgnewsapple-unveils-environmental-progress-surpassing-60-percent-reduction-in-global-greenhouse-gas-emissions" class="md-toc-link"></a><a href="https://www.wbcsd.org/news/apple-unveils-environmental-progress-surpassing-60-percent-reduction-in-global-greenhouse-gas-emissions/">Apple unveils environmental progress, surpassing 60 percent reduction in global greenhouse gas emissions </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#readiness-assessment-tool-preparing-for-the-ecodesign-for-sustainable-products-regulation-espr-httpswwwwbcsdorgresourcesreadiness-assessment-tool-preparing-for-the-ecodesign-for-sustainable-products-regulation-espr" class="md-toc-link">
+            </a><p><a href="#readiness-assessment-tool-preparing-for-the-ecodesign-for-sustainable-products-regulation-espr-httpswwwwbcsdorgresourcesreadiness-assessment-tool-preparing-for-the-ecodesign-for-sustainable-products-regulation-espr" class="md-toc-link"></a><a href="https://www.wbcsd.org/resources/readiness-assessment-tool-preparing-for-the-ecodesign-for-sustainable-products-regulation-espr/">Readiness Assessment Tool: Preparing for the Ecodesign for Sustainable Products Regulation (ESPR) </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#european-digital-identity---documents-httpscommissioneuropaeupublicationseuropean-digital-identity-documents_en" class="md-toc-link">
+            </a><p><a href="#european-digital-identity---documents-httpscommissioneuropaeupublicationseuropean-digital-identity-documents_en" class="md-toc-link"></a><a href="https://commission.europa.eu/publications/european-digital-identity-documents_en">European Digital Identity - Documents </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#euで人権デューディリジェンス義務化2ドイツ企業の先進事例--地域分析レポート---海外ビジネス情報---ジェトロhttpswwwjetrogojpbizareareports20251ea8c27402313d1ahtml" class="md-toc-link">
+            </a><p><a href="#euで人権デューディリジェンス義務化2ドイツ企業の先進事例--地域分析レポート---海外ビジネス情報---ジェトロhttpswwwjetrogojpbizareareports20251ea8c27402313d1ahtml" class="md-toc-link"></a><a href="https://www.jetro.go.jp/biz/areareports/2025/1ea8c27402313d1a.html">EUで人権デューディリジェンス義務化（2）ドイツ企業の先進事例 | 地域・分析レポート - 海外ビジネス情報 - ジェトロ</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ベスタス-三菱電機富士電機と風車部品開発で合意-httpswwwnikkeicomarticledgxzqouc258ni0v20c25a4000000" class="md-toc-link">
+            </a><p><a href="#ベスタス-三菱電機富士電機と風車部品開発で合意-httpswwwnikkeicomarticledgxzqouc258ni0v20c25a4000000" class="md-toc-link"></a><a href="https://www.nikkei.com/article/DGXZQOUC258NI0V20C25A4000000/">ベスタス、三菱電機・富士電機と風車部品開発で合意 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#明治安田生命-竹中工務店-三協立山ら6社-解体建物のアルミ建材水平リサイクルの実証事業を開始--circular-economy-hub---サーキュラーエコノミー循環経済メディアhttpscehubjpnewsst-grp-alumi-recycle" class="md-toc-link">
+            </a><p><a href="#明治安田生命-竹中工務店-三協立山ら6社-解体建物のアルミ建材水平リサイクルの実証事業を開始--circular-economy-hub---サーキュラーエコノミー循環経済メディアhttpscehubjpnewsst-grp-alumi-recycle" class="md-toc-link"></a><a href="https://cehub.jp/news/st-grp-alumi-recycle/">明治安田生命、竹中工務店、三協立山ら6社、解体建物のアルミ建材水平リサイクルの実証事業を開始 | Circular Economy Hub - サーキュラーエコノミー（循環経済）メディア</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#nzba-実体経済の脱炭素化への資金提供機会の創出に重点を置いた新たなマンデートを更新---esg-journalhttpsesgjournaljapancomdomestic-news45242" class="md-toc-link">
+            </a><p><a href="#nzba-実体経済の脱炭素化への資金提供機会の創出に重点を置いた新たなマンデートを更新---esg-journalhttpsesgjournaljapancomdomestic-news45242" class="md-toc-link"></a><a href="https://esgjournaljapan.com/domestic-news/45242">NZBA、実体経済の脱炭素化への資金提供機会の創出に重点を置いた新たなマンデートを更新 - ESG Journal</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#住友林業とレンゴーがバイオエタノール生産で協業-建設現場の木くずを活用脱炭素---monoisthttpsmonoistitmediacojpmnarticles250428news046html" class="md-toc-link">
+            </a><p><a href="#住友林業とレンゴーがバイオエタノール生産で協業-建設現場の木くずを活用脱炭素---monoisthttpsmonoistitmediacojpmnarticles250428news046html" class="md-toc-link"></a><a href="https://monoist.itmedia.co.jp/mn/articles/2504/28/news046.html">住友林業とレンゴーがバイオエタノール生産で協業 建設現場の木くずを活用：脱炭素 - MONOist</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#マイナンバーカードを用いた公的個人認証サービスjpki導入事業者及び事例一覧デジタル庁httpswwwdigitalgojppoliciesmynumberprivate-businessjpki-introductionmynumbercard-user-list" class="md-toc-link">
+            </a><p><a href="#マイナンバーカードを用いた公的個人認証サービスjpki導入事業者及び事例一覧デジタル庁httpswwwdigitalgojppoliciesmynumberprivate-businessjpki-introductionmynumbercard-user-list" class="md-toc-link"></a><a href="https://www.digital.go.jp/policies/mynumber/private-business/jpki-introduction/mynumbercard-user-list">マイナンバーカードを用いた公的個人認証サービス（JPKI）導入事業者及び事例一覧｜デジタル庁</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#2023年度の我が国の温室効果ガス排出量及び吸収量について2025年度国立環境研究所httpswwwniesgojpwhatsnew20252025042520250425-3html" class="md-toc-link">
+            </a><p><a href="#2023年度の我が国の温室効果ガス排出量及び吸収量について2025年度国立環境研究所httpswwwniesgojpwhatsnew20252025042520250425-3html" class="md-toc-link"></a><a href="https://www.nies.go.jp/whatsnew/2025/20250425/20250425-3.html">2023年度の我が国の温室効果ガス排出量及び吸収量について｜2025年度｜国立環境研究所</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#総務省デジタル空間における情報流通の諸課題への対処に関する検討会デジタル空間における情報流通の諸課題への対処に関する検討会httpswwwsoumugojpmain_sosikikenkyudigital_shokadaiindexhtml" class="md-toc-link">
+            </a><p><a href="#総務省デジタル空間における情報流通の諸課題への対処に関する検討会デジタル空間における情報流通の諸課題への対処に関する検討会httpswwwsoumugojpmain_sosikikenkyudigital_shokadaiindexhtml" class="md-toc-link"></a><a href="https://www.soumu.go.jp/main_sosiki/kenkyu/digital_shokadai/index.html">総務省｜デジタル空間における情報流通の諸課題への対処に関する検討会｜デジタル空間における情報流通の諸課題への対処に関する検討会</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#競合や異業種と連携する共同物流の動向電子ブックレットモビリティ---monoisthttpsmonoistitmediacojpmnarticles250428news033html" class="md-toc-link">
+            </a><p><a href="#競合や異業種と連携する共同物流の動向電子ブックレットモビリティ---monoisthttpsmonoistitmediacojpmnarticles250428news033html" class="md-toc-link"></a><a href="https://monoist.itmedia.co.jp/mn/articles/2504/28/news033.html">競合や異業種と連携する共同物流の動向：電子ブックレット（モビリティ） - MONOist</a></p>
+
+          </div>
+        </div>
+      </details>
+    
+</div>
+</div>
+      <a id="sidebar-toc-btn">≡</a>
+    
+    
+    
+    
+    
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  
+    </body></html>

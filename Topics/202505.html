@@ -1,0 +1,2311 @@
+<!DOCTYPE html><html><head>
+      <title>202505</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\masah\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.18\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+.markdown-preview.markdown-preview {
+  /* ---- Abstract ---- */
+  /* ---- Note ---- */
+  /* ---- Hint ---- */
+  /* ---- Example ---- */
+  /* ---- Thinking ---- */
+  /* ---- Information ---- */
+  /* ---- Reference ---- */
+  /* ---- Important ---- */
+  /* ---- Warning ---- */
+  /* CSSだけでブルブル震わせる | q-Az https://q-az.net/buruburu-hurueru-css/ */
+  /* ---- Error ---- */
+  /* ---- Fatal ---- */
+  /* ---- Question ---- */
+  /* ---- Answer ---- */
+  /* ---- Topic ---- */
+  /* ---- Quote ---- */
+  /* ---- Secret ---- */
+  /* PRE */
+  /* text-color-animation https://codepen.io/alvarotrigo/pen/PoKMyNO */
+  /* Pure CSS text basic animations https://codepen.io/alvarotrigo/pen/NWvQObB */
+  /* flip around X */
+  /* flip around Y */
+}
+.markdown-preview.markdown-preview h1,
+.markdown-preview.markdown-preview h2,
+.markdown-preview.markdown-preview h3,
+.markdown-preview.markdown-preview h4 {
+  border-style: none none none solid;
+  border-color: #336699;
+  font-weight: bold;
+}
+.markdown-preview.markdown-preview h1 {
+  border-style: none none none solid;
+  background-color: lightblue;
+  border-left-width: 20px;
+  padding: 0.6ex 0.6ex 0.6ex 0.6ex;
+}
+.markdown-preview.markdown-preview h2 {
+  border-style: none none solid solid;
+  background-color: lightblue;
+  border-left-width: 15px;
+  border-bottom-width: 5px;
+  padding: 0.4ex 0.4ex 0ex 0.6ex;
+}
+.markdown-preview.markdown-preview h3 {
+  border-style: none none solid solid;
+  background-color: white;
+  border-left-width: 10px;
+  padding: 0.2ex 0.2ex 0.2ex 0.6ex;
+}
+.markdown-preview.markdown-preview h4 {
+  border-style: none;
+  background-color: white;
+  border-left-width: 10px;
+  text-decoration: underline solid green;
+  padding: 0.2ex 0.2ex 0.2ex 5px;
+}
+.markdown-preview.markdown-preview h5 {
+  border-style: none;
+  background-color: white;
+  border-left-width: 10px;
+  text-decoration: underline solid green;
+  padding: 0.2ex 0.2ex 0.2ex 7px;
+}
+.markdown-preview.markdown-preview h5:before {
+  content: "◆";
+  margin-left: 0px;
+  font-style: normal;
+}
+.markdown-preview.markdown-preview h6 {
+  border-style: none;
+  background-color: white;
+  border-left-width: 10px;
+  text-decoration: underline solid green;
+  padding: 0.2ex 0.2ex 0.2ex 10px;
+}
+.markdown-preview.markdown-preview h6:before {
+  content: ">";
+  margin-left: 0px;
+  font-style: normal;
+}
+.markdown-preview.markdown-preview a:link:hover,
+.markdown-preview.markdown-preview a:visited:hover {
+  color: darkred;
+  background-color: yellow;
+}
+.markdown-preview.markdown-preview body {
+  background-color: white;
+  color: black;
+}
+.markdown-preview.markdown-preview code,
+.markdown-preview.markdown-preview tt {
+  font-family: monospace;
+  font-weight: bold;
+  font-style: normal;
+}
+.markdown-preview.markdown-preview table th {
+  background-color: #88efcc;
+}
+.markdown-preview.markdown-preview fieldset.abstract {
+  margin: auto 5% auto 5%;
+  border: ridge #8fbc8f;
+  font-size: small;
+  padding: 0.5em;
+  border-radius: 1em;
+}
+.markdown-preview.markdown-preview fieldset.abstract legend {
+  margin: 0pt;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #006400;
+}
+.markdown-preview.markdown-preview fieldset.compact_note {
+  margin: auto 1em auto 1em;
+  border: solid #00bfff 1pt;
+  font-size: 75%;
+  padding: 0.5em 1em 0.5em 1em;
+  border-radius: 5pt;
+  color: #808080;
+}
+.markdown-preview.markdown-preview fieldset.compact_note legend {
+  margin: 0pt;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #191970;
+}
+.markdown-preview.markdown-preview h2.toc {
+  margin: 1em;
+  border-left: none;
+  border-bottom: dashed #786201 2pt;
+  padding-left: 0.5em;
+}
+.markdown-preview.markdown-preview dt {
+  background-color: #36A9AE;
+  background-image: linear-gradient(#37ADB2, #329CA0);
+  border: 1px solid #2A8387;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+  color: #FFFFFF;
+  display: inline-block;
+  line-height: 120%;
+}
+.markdown-preview.markdown-preview dt:before {
+  content: " ";
+  margin-left: 5pt;
+  font-style: normal;
+}
+.markdown-preview.markdown-preview dt:after {
+  content: " ";
+  margin-right: 5pt;
+  font-style: normal;
+}
+.markdown-preview.markdown-preview dd {
+  border-left: 6px solid #36A9AE;
+  margin: 0;
+  font-size: 0.75rem;
+}
+.markdown-preview.markdown-preview table.minutes_table {
+  table-layout: auto;
+  width: 100vw;
+  border-style: none;
+  border-collapse: collapse;
+  font-size: 80%;
+}
+.markdown-preview.markdown-preview table.minutes_table tr > td:nth-child(1) {
+  border-style: none;
+  padding: 0pt;
+  vertical-align: top;
+  text-align: right;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview table.minutes_table tr > td:nth-child(2) {
+  min-width: 60em;
+  border-style: none none solid none;
+  padding: 0 1em 0 0.5em;
+  vertical-align: top;
+  text-align: left;
+}
+.markdown-preview.markdown-preview table.minutes_table td > p {
+  margin: 0;
+  padding: 0;
+}
+.markdown-preview.markdown-preview strong:hover {
+  background-color: #b5f5a8;
+}
+.markdown-preview.markdown-preview h3.change_header {
+  display: block;
+  width: fit-content;
+  border: 2pt outset;
+  border-radius: 5pt;
+  background-color: #e6f8f4;
+  margin-top: 1ex;
+  margin-bottom: 0;
+  padding: 0;
+  font-size: 110%;
+  font-weight: bolder;
+  color: blue;
+  text-align: center;
+}
+.markdown-preview.markdown-preview h3.change_header + ul {
+  margin-left: 1ex;
+  border-left: 4pt solid lightgrey;
+}
+@counter-style qa_list_style {
+  system: numeric;
+  symbols: "𝟬" "𝟭" "𝟮" "𝟯" "𝟰" "𝟱" "𝟲" "𝟳" "𝟴" "𝟵";
+  suffix: "";
+  pad: 2 "𝟬";
+}
+.markdown-preview.markdown-preview ul.qa_section {
+  counter-reset: q_item;
+}
+.markdown-preview.markdown-preview li.question {
+  margin-left: 5.5ex;
+  margin-top: 1em;
+  margin-bottom: 0.25em;
+  list-style-type: none;
+  line-height: 140%;
+  text-indent: -7ex;
+}
+.markdown-preview.markdown-preview li.question:before {
+  counter-increment: q_item;
+  content: "𝗤" counter(q_item, qa_list_style) ": ";
+  background-color: whitesmoke;
+  border-radius: 2pt;
+  padding-left: 0.5ex;
+  font-size: 140%;
+  color: blue;
+}
+.markdown-preview.markdown-preview li.answer {
+  margin-left: 6ex;
+  list-style-type: none;
+  line-height: 140%;
+  text-indent: -4ex;
+  color: rebeccapurple;
+}
+.markdown-preview.markdown-preview li.answer:before {
+  content: "𝗔: ";
+  background-color: whitesmoke;
+  border-radius: 2pt;
+  padding-left: 0.5ex;
+  font-size: 140%;
+  color: red;
+}
+.markdown-preview.markdown-preview li.information {
+  margin-left: 7ex;
+  list-style-type: none;
+  line-height: 140%;
+  text-indent: -5ex;
+  color: #79b585;
+  font-size: 90%;
+}
+.markdown-preview.markdown-preview li.information:before {
+  content: "ⓘ: ";
+  background-color: whitesmoke;
+  border-radius: 2pt;
+  padding-left: 0.5ex;
+  font-size: 120%;
+  font-weight: bolder;
+  color: darkgreen;
+}
+.markdown-preview.markdown-preview li.comment {
+  margin-left: 5.5ex;
+  list-style-type: none;
+  line-height: 140%;
+  text-indent: -4ex;
+  color: #b5af79;
+  font-size: 80%;
+}
+.markdown-preview.markdown-preview li.comment:before {
+  border-style: solid;
+  border-width: 1pt;
+  border-radius: 6pt;
+  content: "Comment";
+  background-color: whitesmoke;
+  border-radius: 2pt;
+  padding-left: 0.5ex;
+  padding-right: 0.5ex;
+  font-size: 100%;
+  font-weight: bolder;
+  color: #746702;
+}
+.markdown-preview.markdown-preview p.todo {
+  margin-left: 5em;
+  font-size: 75%;
+  text-indent: -3.6em;
+  background-color: rgba(144, 238, 144, 0.16);
+}
+.markdown-preview.markdown-preview span.todo {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border-radius: 4px;
+}
+.markdown-preview.markdown-preview span.todo_charge {
+  font-weight: bold;
+  text-decoration: underline 3px;
+  padding-left: 0.2em;
+}
+.markdown-preview.markdown-preview span.todo_charge:after {
+  content: ":";
+}
+.markdown-preview.markdown-preview span.todo_period {
+  font-weight: bold;
+  text-decoration: underline 3px;
+}
+.markdown-preview.markdown-preview span.todo_period:after {
+  content: ":";
+}
+.markdown-preview.markdown-preview .admonitions {
+  margin: 1em 10% 1em 10%;
+  padding: 0;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  border-left-width: 1em;
+  border-style: solid;
+}
+.markdown-preview.markdown-preview .admonitions > .title {
+  padding: 0.5em 1em 0.5em 0.5em;
+  border-radius: 0px;
+  text-align: left;
+  font-family: apple color emoji,segoe ui emoji,noto color emoji,android emoji,emojisymbols,emojione mozilla,twemoji mozilla,segoe ui symbol;
+}
+.markdown-preview.markdown-preview .admonitions > div {
+  padding: 0.5em 1em 0.5em 1em;
+}
+.markdown-preview.markdown-preview .abstract {
+  border-color: #929393;
+  border-left-color: #505151;
+}
+.markdown-preview.markdown-preview .abstract > .title {
+  background-color: #fcfcfc;
+  border-bottom: solid #c1bfbf;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .abstract > .title::before {
+  content: "📜";
+  font-size: 150% ;
+  display: inline-block;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .abstract > .icon2::before {
+  content: "📃";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .abstract > .icon3::before {
+  content: "🧾";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .note {
+  border-color: lightblue;
+  border-left-color: #2aa7fa;
+}
+.markdown-preview.markdown-preview .note > .title {
+  background-color: #b0eff7;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .note > .title::before {
+  content: "📝";
+  font-size: 150% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .note > .icon2::before {
+  content: "📌";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .note > .icon3::before {
+  content: "☕";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .note > .icon4::before {
+  content: "🍵";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .note > .icon5::before {
+  content: "📧";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .hint {
+  border-color: lightgreen;
+  border-left-color: #2afa92;
+}
+.markdown-preview.markdown-preview .hint > .title {
+  background-color: #d0fdde;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .hint > .title::before {
+  content: "🔎";
+  font-size: 150% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .hint > .icon2::before {
+  content: "🔰";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .hint > .icon3::before {
+  content: "💡";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .hint > .icon4::before {
+  content: "👩‍🏫";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .hint > .icon5::before {
+  content: "🔮";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .hint > .icon6::before {
+  content: "💭";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .hint > .icon7::before {
+  content: "🗯";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .example {
+  border-color: #00fef1;
+  border-left-color: #a5eded;
+}
+.markdown-preview.markdown-preview .example > .title {
+  background-color: #a5eded;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .example pre {
+  background-color: #ebfcfc;
+  font-family: monospace;
+  font-size: 90%;
+  color: darkblue;
+  text-align: left;
+  white-space: pre;
+  word-break: keep-all;
+  border-left: solid 4pt #8f8ff4;
+  border-right: solid 1pt black;
+  margin: 0.5em 1em 0.5em 1em;
+  padding: 0.5em 0 0.5em 0.5em;
+  display: block;
+  overflow-y: auto;
+}
+.markdown-preview.markdown-preview .example > .title::before {
+  margin-right: 0.25em;
+  content: "👣";
+  font-size: 150% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .example > .icon2::before {
+  content: "🐾";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .example > .icon3::before {
+  content: "🍽";
+  font-size: 150% ;
+}
+@keyframes animation_thinking_rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(-10deg);
+  }
+  66% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.markdown-preview.markdown-preview .thinking {
+  border-color: #90c377;
+  border-left-color: #019249;
+}
+.markdown-preview.markdown-preview .thinking > .title {
+  background-color: #99d4ac;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .thinking > .title::before {
+  content: "⏳";
+  font-size: 150% ;
+  vertical-align: middle;
+  animation: animation_thinking_rotation 3s infinite linear;
+  display: inline-block;
+}
+.markdown-preview.markdown-preview .thinking > .icon2::before {
+  content: "⏲";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .thinking > .icon3::before {
+  content: "💬";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .thinking > .icon4::before {
+  content: "🤔";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .thinking > .icon5::before {
+  content: "✏";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .thinking > .icon6::before {
+  content: "🌲";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .thinking > .icon7::before {
+  content: "🕛";
+  font-size: 150% ;
+  animation: clock_animation 12s infinite linear;
+}
+.markdown-preview.markdown-preview .thinking > .icon8::before {
+  width: 1.5em;
+  content: "🥚";
+  font-size: 150% ;
+  text-align: center;
+  animation: thinking_bird_growth_animation 3s steps(1, jump-end) infinite;
+}
+@keyframes thinking_bird_growth_animation {
+  0% {
+    content: "🥚";
+  }
+  15% {
+    content: "🐣";
+  }
+  30% {
+    content: "🐥";
+  }
+  45% {
+    content: "🐤";
+  }
+  60% {
+    content: "🐓";
+  }
+  100% {
+    content: "🥚";
+  }
+}
+@keyframes clock_animation {
+  0% {
+    content: "🕛";
+  }
+  8.33% {
+    content: "🕐";
+  }
+  16.67% {
+    content: "🕑";
+  }
+  25% {
+    content: "🕒";
+  }
+  33.33% {
+    content: "🕓";
+  }
+  41.67% {
+    content: "🕔";
+  }
+  50% {
+    content: "🕕";
+  }
+  58.33% {
+    content: "🕖";
+  }
+  66.67% {
+    content: "🕗";
+  }
+  75% {
+    content: "🕘";
+  }
+  83.33% {
+    content: "🕙";
+  }
+  91.67% {
+    content: "🕚";
+  }
+  100% {
+    content: "🕛";
+  }
+}
+.markdown-preview.markdown-preview .information {
+  border-color: lightblue;
+  border-left-color: #2aa7fa;
+}
+.markdown-preview.markdown-preview .information > .title {
+  background-color: #b9f6fd;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .information > .title::before {
+  margin-right: 0.25em;
+  content: "ⓘ";
+  font-size: 175% ;
+  font-weight: bolder;
+  color: #022bf3;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .information > .icon2::before {
+  content: "🎁";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .information > .icon2::before {
+  content: "🔖";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .information > .icon3::before {
+  content: "👍";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .information > .icon4::before {
+  content: "🧐";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .reference {
+  border-color: lightgrey;
+  border-left-color: #c9c9c9;
+}
+.markdown-preview.markdown-preview .reference > .title {
+  background-color: #f4f4f4;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .reference > .title::before {
+  margin-right: 0.25em;
+  content: "📘";
+  font-size: 150% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .reference > .icon2::before {
+  content: "📖";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .reference > .icon3::before {
+  content: "📚";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .reference > .icon4::before {
+  content: "🌏";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .reference > .icon5::before {
+  content: "🗺";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .important {
+  border-color: #cee9ff;
+  border-left-color: #0155d2;
+}
+.markdown-preview.markdown-preview .important > .title {
+  background-color: #cee9ff;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .important > .title::before {
+  margin-right: 0.25em;
+  content: "🧿";
+  font-size: 150% ;
+  font-weight: bolder;
+  vertical-align: middle;
+  display: inline-block;
+  animation: important_press_animation 2s infinite linear;
+}
+.markdown-preview.markdown-preview .important > .icon2::before {
+  content: "👊";
+  font-size: 150% ;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .important > .icon3::before {
+  content: "👀";
+  font-size: 150% ;
+  font-weight: bolder;
+  display: inline-block;
+  animation: 2s anim-flipX steps(2, jump-none) infinite;
+}
+.markdown-preview.markdown-preview .important > .icon4::before {
+  content: "✍";
+  font-size: 150% ;
+  font-weight: bolder;
+  color: red;
+  display: inline-block;
+  animation: animation_thinking_rotation 1.5s infinite linear;
+}
+.markdown-preview.markdown-preview .important > .icon5::before {
+  content: "🗣";
+  font-size: 150% ;
+  font-weight: bolder;
+  color: red;
+}
+.markdown-preview.markdown-preview span.important_phrase {
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  display: inline-block;
+  font-weight: bolder;
+  color: red;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview span.important_phrase::before {
+  width: 1em;
+  margin-right: 0.25em;
+  display: inline-block;
+  content: "▏";
+  font-weight: bolder;
+  color: red;
+  animation: 1s important_phrase_animation linear infinite;
+}
+.markdown-preview.markdown-preview span.important_phrase::after {
+  width: 1em;
+  margin-left: 0.25em;
+  display: inline-block;
+  content: "▏";
+  font-weight: bolder;
+  color: red;
+  animation: 1s important_phrase_animation linear infinite;
+  transform: scale(-1, 1);
+}
+.markdown-preview.markdown-preview span.important_phrase2 {
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  display: inline-block;
+  font-weight: bolder;
+  color: blue;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview span.important_phrase2::before {
+  width: 1em;
+  margin-right: 0.25em;
+  display: inline-block;
+  content: "▏";
+  font-weight: bolder;
+  color: blue;
+  animation: 1s important_phrase_animation linear infinite;
+  transform: scale(-1, 1);
+}
+.markdown-preview.markdown-preview span.important_phrase2::after {
+  width: 1em;
+  margin-left: 0.25em;
+  display: inline-block;
+  content: "▏";
+  font-weight: bolder;
+  color: blue;
+  animation: 1s important_phrase_animation linear infinite;
+}
+@keyframes important_phrase_animation {
+  0% {
+    content: "▏";
+  }
+  12.5% {
+    content: "▎";
+  }
+  25% {
+    content: "▍";
+  }
+  37.5% {
+    content: "▌";
+  }
+  50% {
+    content: "▋";
+  }
+  62.5% {
+    content: "▊";
+  }
+  75% {
+    content: "▉";
+  }
+  100% {
+    content: "█";
+  }
+}
+.markdown-preview.markdown-preview span.important_phrase3 {
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  display: inline-block;
+  font-weight: bolder;
+  color: red;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview span.important_phrase3::before {
+  width: 1.5em;
+  content: "🔈";
+  text-align: left;
+  display: inline-block;
+  animation: important_siren_animation 0.6s infinite;
+}
+@keyframes important_siren_animation {
+  0% {
+    content: "🔈";
+  }
+  33% {
+    content: "🔉";
+  }
+  66% {
+    content: "🔊";
+  }
+  100% {
+    content: "🔈";
+  }
+}
+.markdown-preview.markdown-preview .warning {
+  border-color: lightgoldenrodyellow;
+  border-left-color: #ede502;
+}
+.markdown-preview.markdown-preview .warning > .title {
+  background-color: #fdffce;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .warning > .title::before {
+  margin-right: 0.25em;
+  content: "⚠";
+  font-size: 150% ;
+  font-weight: bolder;
+  font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-emoji: emoji;
+  color: red;
+  vertical-align: middle;
+  display: inline-block;
+  animation: vibration_horizontal_animation 0.5s infinite;
+}
+.markdown-preview.markdown-preview .warning > .icon2::before {
+  content: "💣";
+  font-size: 150% ;
+  animation: vibration_animation 0.5s infinite;
+}
+.markdown-preview.markdown-preview .warning > .icon3::before {
+  content: "🌋";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .warning > .icon4::before {
+  content: "😨";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .warning > .icon5::before {
+  content: "🚧";
+  font-size: 150% ;
+}
+@keyframes vibration_animation {
+  0% {
+    transform: translate(0px, 0px) rotateZ(0deg);
+  }
+  25% {
+    transform: translate(2px, 2px) rotateZ(1deg);
+  }
+  50% {
+    transform: translate(0px, 2px) rotateZ(0deg);
+  }
+  75% {
+    transform: translate(2px, 0px) rotateZ(-1deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotateZ(0deg);
+  }
+}
+@keyframes vibration_horizontal_animation {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(2px, 0px);
+  }
+  50% {
+    transform: translate(0px, 0px);
+  }
+  75% {
+    transform: translate(2px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes vibration_vertical_animation {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(0px, 2px);
+  }
+  50% {
+    transform: translate(0px, 0px);
+  }
+  75% {
+    transform: translate(0px, 2px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes animation_error_color {
+  0% {
+    border-color: #faa07c;
+  }
+  50% {
+    border-color: #f15c21;
+  }
+  100% {
+    border-color: #faa07c;
+  }
+}
+.markdown-preview.markdown-preview .error {
+  border-color: lightsalmon;
+  border-left-color: #f8a065;
+  animation: animation_error_color 3s infinite linear;
+}
+.markdown-preview.markdown-preview .error > .title {
+  background-color: #fbc4af;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .error > .title::before {
+  margin-right: 0.25em;
+  content: "🔥";
+  font-size: 175% ;
+  vertical-align: middle;
+  display: inline-block;
+  animation-name: spin, depth;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+}
+.markdown-preview.markdown-preview .error > .icon2::before {
+  content: "🚨";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .error > .icon3::before {
+  content: "😡";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .error > .icon4::before {
+  content: "💢";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .error > .icon5::before {
+  content: "😵";
+  font-size: 175% ;
+  animation: rotate_360_animation 2s linear infinite;
+}
+@keyframes animation_fatal_color {
+  0% {
+    border-color: #f94949;
+  }
+  50% {
+    border-color: #f8a8a8;
+  }
+  100% {
+    border-color: #f94949;
+  }
+}
+.markdown-preview.markdown-preview .fatal {
+  border-color: lightcoral;
+  border-left-color: #f86565;
+  animation: animation_fatal_color 2s infinite linear;
+}
+.markdown-preview.markdown-preview .fatal > .title {
+  background-color: #fbafaf;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .fatal > .title::before {
+  margin-right: 0.25em;
+  content: "💀";
+  font-size: 175% ;
+  vertical-align: middle;
+  display: inline-block;
+  animation: 4s anim-rotateX ease infinite;
+}
+.markdown-preview.markdown-preview .fatal > .icon2::before {
+  content: "⛔";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .fatal > .icon3::before {
+  content: "🆖";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .fatal > .icon4::before {
+  content: "🥵";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .question {
+  border-color: lightblue;
+  border-left-color: #6571f8;
+}
+.markdown-preview.markdown-preview .question > .title {
+  background-color: lightskyblue;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .question > .title::before {
+  margin-right: 0.25em;
+  content: "❓";
+  font-size: 175% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .question > .icon2::before {
+  content: "Q";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .question > .icon3::before {
+  content: "🤨";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .answer {
+  border-color: lightblue;
+  border-left-color: #6571f8;
+}
+.markdown-preview.markdown-preview .answer > .title {
+  background-color: lightskyblue;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .answer > .title::before {
+  margin-right: 0.25em;
+  content: "✔";
+  font-size: 175% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .answer > .icon2::before {
+  content: "A";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .answer > .icon3::before {
+  content: "😉";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .topic {
+  border-color: #89acab;
+  border-left-color: #6dcd98;
+}
+.markdown-preview.markdown-preview .topic > .title {
+  background-color: #a2d4ae;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .topic > .title::before {
+  margin-right: 0.25em;
+  content: "🛎";
+  font-size: 175% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .topic > .icon2::before {
+  content: "🔊";
+  font-size: 175% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .topic > .icon3::before {
+  content: "🐬";
+  font-size: 175% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .topic > .icon4::before {
+  content: "🏮";
+  font-size: 175% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .topic > .icon5::before {
+  content: "🚦";
+  font-size: 175% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .quote {
+  border-color: lightslategray;
+  border-left-color: #4b4a4a;
+}
+.markdown-preview.markdown-preview .quote > .title {
+  background-color: #b0afaf;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .quote > .title::before {
+  margin-right: 0.25em;
+  content: "📦";
+  font-size: 175% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .quote > .title::after {
+  content: "";
+}
+.markdown-preview.markdown-preview .quote > .icon2::before {
+  content: "🗨";
+  font-size: 200% ;
+  color: white;
+}
+.markdown-preview.markdown-preview .quote blockquote {
+  margin-top: 0em;
+  margin-left: 0em;
+  padding-left: 2em;
+  text-indent: -1.25em;
+}
+.markdown-preview.markdown-preview .quote blockquote::before {
+  content: "❝";
+  font-size: 200% ;
+  color: #9f9f9f;
+}
+.markdown-preview.markdown-preview .quote blockquote::after {
+  content: "\A\A❞";
+  font-size: 200% ;
+  white-space: pre;
+  line-height: 0.5em;
+  color: #9f9f9f;
+}
+.markdown-preview.markdown-preview .quote2 blockquote::before {
+  content: "『\A";
+  white-space: pre;
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .quote2 blockquote::after {
+  content: "\A\A』";
+  font-size: 150% ;
+  white-space: pre;
+  line-height: 0.5em;
+}
+.markdown-preview.markdown-preview .secret {
+  border-color: #fd0101;
+  border-left-color: #ff0101;
+}
+.markdown-preview.markdown-preview .secret > .title {
+  background-color: #fccbcb;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .secret > .title::before {
+  margin-right: 0.25em;
+  content: "㊙";
+  font-size: 200% ;
+  font-weight: bolder;
+  font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-emoji: emoji;
+  color: red;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .secret > .icon2::before {
+  content: "🔐";
+  font-size: 150% ;
+  font-weight: bolder;
+  font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-emoji: emoji;
+  color: red;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .secret > .icon3::before {
+  content: "🛂";
+  font-size: 150% ;
+  font-weight: bolder;
+  font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-emoji: emoji;
+  color: red;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .secret > .icon4::before {
+  content: "🤐";
+  font-size: 150% ;
+  font-weight: bolder;
+  font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-emoji: emoji;
+  color: red;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .secret > .icon5::before {
+  content: "🤫";
+  font-size: 150% ;
+  font-weight: bolder;
+  font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-emoji: emoji;
+  color: red;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .secret > .icon6::before {
+  content: "🈲";
+  font-size: 200%;
+  font-weight: bolder;
+  font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-emoji: emoji;
+  color: red;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .secret > .icon7::before {
+  content: "🔇";
+  font-size: 150% ;
+  font-weight: bolder;
+  font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-emoji: emoji;
+  color: red;
+  vertical-align: middle;
+}
+@keyframes secret_monkey_animation {
+  0% {
+    content: "🙈";
+  }
+  33% {
+    content: "🙉";
+  }
+  66% {
+    content: "🙊";
+  }
+  100% {
+    content: "🙈";
+  }
+}
+.markdown-preview.markdown-preview .secret > .icon8::before {
+  content: "🙈";
+  margin-right: 0.25em;
+  font-size: 150% ;
+  font-weight: bolder;
+  font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-emoji: emoji;
+  color: red;
+  vertical-align: middle;
+  display: inline-block;
+  animation: secret_monkey_animation 3s steps(3, jump-end) infinite;
+}
+.markdown-preview.markdown-preview pre.code_example {
+  background-color: #ebfcfc;
+  font-family: monospace;
+  font-size: 90%;
+  color: darkblue;
+  text-align: left;
+  white-space: pre;
+  word-break: keep-all;
+  border-left: solid 4pt #8f8ff4;
+  border-right: dotted 1pt black;
+  margin: 0.5em 5% 0.5em 5%;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  display: block;
+  overflow-y: auto;
+}
+.markdown-preview.markdown-preview .rotate_360 {
+  animation: rotate_360_animation 2s linear infinite;
+}
+@keyframes rotate_360_animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.markdown-preview.markdown-preview .colorful-animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.markdown-preview.markdown-preview .flipX {
+  display: inline-block;
+  animation: 2s anim-flipX steps(2, jump-none) infinite;
+}
+@keyframes anim-flipX {
+  0% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(-1, 1);
+  }
+  100% {
+    /* animate nothing to pause animation at the end */
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+.markdown-preview.markdown-preview .important_press {
+  display: inline-block;
+  animation: important_press_animation 2s infinite linear;
+}
+@keyframes important_press_animation {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.markdown-preview.markdown-preview .rotateX {
+  display: block;
+  animation: 4s anim-rotateX ease infinite;
+}
+@keyframes anim-rotateX {
+  0% {
+    opacity: 0;
+    transform: rotateX(90deg);
+  }
+  50% {
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+  100% {
+    /* animate nothing to pause animation at the end */
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+}
+.markdown-preview.markdown-preview .rotateY {
+  animation-name: spin, depth;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+}
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(-360deg);
+  }
+}
+@keyframes depth {
+  0% {
+    text-shadow: 0 0 black;
+  }
+  25% {
+    text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black;
+  }
+  50% {
+    text-shadow: 0 0 black;
+  }
+  75% {
+    text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black;
+  }
+  100% {
+    text-shadow: 0 0 black;
+  }
+}
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<div style="text-align:right;font-size:small;margin:0pt;padding:0pt">
+Last-modified: 2025/06/29 07:46:39
+</div>
+<p><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script></p>
+<p><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"></p>
+<h1 id="2025年5月のニュース">2025年5月のニュース </h1>
+
+<div class="md-toc">
+<details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#2025年5月のニュース" class="md-toc-link"><p>2025年5月のニュース</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ロベコ-生物多様性への取り組み状況を評価するツールを開発-httpsesgjournaljapancomworld-news45307" class="md-toc-link">
+            </a><p><a href="#ロベコ-生物多様性への取り組み状況を評価するツールを開発-httpsesgjournaljapancomworld-news45307" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45307">ロベコ、生物多様性への取り組み状況を評価するツールを開発 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ifrs財団とtnfd-自然関連財務情報開示で正式に協働へ-httpsesgjournaljapancomworld-news45159" class="md-toc-link">
+            </a><p><a href="#ifrs財団とtnfd-自然関連財務情報開示で正式に協働へ-httpsesgjournaljapancomworld-news45159" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45159">IFRS財団とTNFD、自然関連財務情報開示で正式に協働へ </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#産業データスペースの構築に向けた第2次提言-httpswwwkeidanrenorjppolicy2025026html" class="md-toc-link">
+            </a><p><a href="#産業データスペースの構築に向けた第2次提言-httpswwwkeidanrenorjppolicy2025026html" class="md-toc-link"></a><a href="https://www.keidanren.or.jp/policy/2025/026.html">産業データスペースの構築に向けた第2次提言 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#rriメルマガより" class="md-toc-link">
+            <p>RRIメルマガより</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#スイス連邦データ保護法の改正内容とeu一般データ保護規則との比較2025年5月--調査レポート---国地域別に見る---ジェトロhttpswwwjetrogojpworldreports202501c86476543323e882html" class="md-toc-link">
+            </a><p><a href="#スイス連邦データ保護法の改正内容とeu一般データ保護規則との比較2025年5月--調査レポート---国地域別に見る---ジェトロhttpswwwjetrogojpworldreports202501c86476543323e882html" class="md-toc-link"></a><a href="https://www.jetro.go.jp/world/reports/2025/01/c86476543323e882.html">スイス連邦データ保護法の改正内容とEU「一般データ保護規則」との比較（2025年5月） | 調査レポート - 国・地域別に見る - ジェトロ</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#日本企業による環境デューディリジェンス対応促進に向けた懇談会議論のまとめの公表について--報道発表資料--環境省httpswwwenvgojppresspress_04856html" class="md-toc-link">
+            </a><p><a href="#日本企業による環境デューディリジェンス対応促進に向けた懇談会議論のまとめの公表について--報道発表資料--環境省httpswwwenvgojppresspress_04856html" class="md-toc-link"></a><a href="https://www.env.go.jp/press/press_04856.html">日本企業による環境デュー・ディリジェンス対応促進に向けた懇談会議論のまとめの公表について | 報道発表資料 | 環境省</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#sensor-based-waste-sorting-reduces-number-of-battery-fires-in-recycling-plants-httpswwwfraunhoferdeenpressresearch-news2025may-2025sensor-based-waste-sorting-reduces-number-of-battery-fires-in-recycling-plantshtml" class="md-toc-link">
+            </a><p><a href="#sensor-based-waste-sorting-reduces-number-of-battery-fires-in-recycling-plants-httpswwwfraunhoferdeenpressresearch-news2025may-2025sensor-based-waste-sorting-reduces-number-of-battery-fires-in-recycling-plantshtml" class="md-toc-link"></a><a href="https://www.fraunhofer.de/en/press/research-news/2025/may-2025/sensor-based-waste-sorting-reduces-number-of-battery-fires-in-recycling-plants.html">Sensor-Based Waste Sorting Reduces Number of Battery Fires in Recycling Plants </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#環境問題への対応になぜscmシステムが重要になるのかサプライチェーンを変える2つのポイント後編12-ページ---monoisthttpsmonoistitmediacojpmnarticles250502news080html" class="md-toc-link">
+            </a><p><a href="#環境問題への対応になぜscmシステムが重要になるのかサプライチェーンを変える2つのポイント後編12-ページ---monoisthttpsmonoistitmediacojpmnarticles250502news080html" class="md-toc-link"></a><a href="https://monoist.itmedia.co.jp/mn/articles/2505/02/news080.html">環境問題への対応になぜSCMシステムが重要になるのか：サプライチェーンを変える2つのポイント（後編）（1/2 ページ） - MONOist</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ブリヂストンアメリカ-70リサイクル再生可能材料使用のデモタイヤを発表-httpscehubjpnewsbridgestone-70percent-recycled-tyre" class="md-toc-link">
+            </a><p><a href="#ブリヂストンアメリカ-70リサイクル再生可能材料使用のデモタイヤを発表-httpscehubjpnewsbridgestone-70percent-recycled-tyre" class="md-toc-link"></a><a href="https://cehub.jp/news/bridgestone-70percent-recycled-tyre/">ブリヂストン・アメリカ、70%リサイクル・再生可能材料使用のデモタイヤを発表 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#循環こそ-未来のエネルギーフィンランドが実践するイノベーション最前線-httpscehubjpreportfinland-innovation" class="md-toc-link">
+            </a><p><a href="#循環こそ-未来のエネルギーフィンランドが実践するイノベーション最前線-httpscehubjpreportfinland-innovation" class="md-toc-link"></a><a href="https://cehub.jp/report/finland-innovation/">循環こそ、未来のエネルギー。フィンランドが実践するイノベーション最前線 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#アメックスgbt-出張のco2削減をサポートするデータ主導型の新機能を発表-httpsesgjournaljapancomworld-news45317" class="md-toc-link">
+            </a><p><a href="#アメックスgbt-出張のco2削減をサポートするデータ主導型の新機能を発表-httpsesgjournaljapancomworld-news45317" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45317">アメックスGBT、出張のCO2削減をサポートするデータ主導型の新機能を発表 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#green-impact-exchange取引所とはインパクト投資の行方と上場の可能性-httpsesgjournaljapancomcolumn45348" class="md-toc-link">
+            </a><p><a href="#green-impact-exchange取引所とはインパクト投資の行方と上場の可能性-httpsesgjournaljapancomcolumn45348" class="md-toc-link"></a><a href="https://esgjournaljapan.com/column/45348">Green Impact Exchange（取引所）とは？インパクト投資の行方と上場の可能性 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ゼベロ-aiと専門家による新しいesg情報開示ソリューションを発表-httpsesgjournaljapancomworld-news45319" class="md-toc-link">
+            </a><p><a href="#ゼベロ-aiと専門家による新しいesg情報開示ソリューションを発表-httpsesgjournaljapancomworld-news45319" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45319">ゼベロ、AIと専門家による新しいESG情報開示ソリューションを発表 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#マイクロプラスチック世界各地の海中のあらゆる深さに分布-httpswww3nhkorjpnewshtml20250512k10014802671000html" class="md-toc-link">
+            </a><p><a href="#マイクロプラスチック世界各地の海中のあらゆる深さに分布-httpswww3nhkorjpnewshtml20250512k10014802671000html" class="md-toc-link"></a><a href="https://www3.nhk.or.jp/news/html/20250512/k10014802671000.html">「マイクロプラスチック」世界各地の海中のあらゆる深さに分布 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#環境省-tcfdネイチャー開示ガイド改訂公表-httpsesgjournaljapancomdomestic-news45336" class="md-toc-link">
+            </a><p><a href="#環境省-tcfdネイチャー開示ガイド改訂公表-httpsesgjournaljapancomdomestic-news45336" class="md-toc-link"></a><a href="https://esgjournaljapan.com/domestic-news/45336">環境省、「TCFD・ネイチャー開示ガイド」改訂公表 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#サーキュラーエコノミー事業が成長エンジンに米liquidity-services-売上27増を達成-httpscehubjpnewsliquidity-services-2025-2q-financial-results" class="md-toc-link">
+            </a><p><a href="#サーキュラーエコノミー事業が成長エンジンに米liquidity-services-売上27増を達成-httpscehubjpnewsliquidity-services-2025-2q-financial-results" class="md-toc-link"></a><a href="https://cehub.jp/news/liquidity-services-2025-2q-financial-results/">サーキュラーエコノミー事業が成長エンジンに。米Liquidity Services、売上27%増を達成 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#eu-and-japan-reinforce-tech-and-digital-partnership-httpseceuropaeucommissionpresscornerdetailenip_25_1185" class="md-toc-link">
+            </a><p><a href="#eu-and-japan-reinforce-tech-and-digital-partnership-httpseceuropaeucommissionpresscornerdetailenip_25_1185" class="md-toc-link"></a><a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_25_1185">EU and Japan reinforce tech and digital partnership </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#アイシンがトルコで太陽光発電-欧州の全工場を100再エネ化-httpsxtechnikkeicomatclnxtnews2402484" class="md-toc-link">
+            </a><p><a href="#アイシンがトルコで太陽光発電-欧州の全工場を100再エネ化-httpsxtechnikkeicomatclnxtnews2402484" class="md-toc-link"></a><a href="https://xtech.nikkei.com/atcl/nxt/news/24/02484/">アイシンがトルコで太陽光発電、欧州の全工場を100％再エネ化 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#plattform-industrie-40---globally-connectable-and-interoperable-un-dpp-and-the-digital-product-passport-for-the-implementation-of-the-european-green-dealhttpswwwplattform-i40deipredaktionendownloadspublikation202411-dpp-commentshtml" class="md-toc-link">
+            </a><p><a href="#plattform-industrie-40---globally-connectable-and-interoperable-un-dpp-and-the-digital-product-passport-for-the-implementation-of-the-european-green-dealhttpswwwplattform-i40deipredaktionendownloadspublikation202411-dpp-commentshtml" class="md-toc-link"></a><a href="https://www.plattform-i40.de/IP/Redaktion/EN/Downloads/Publikation/202411-DPP-comments.html">Plattform Industrie 4.0 - Globally connectable and interoperable: UN DPP and the Digital product passport for the implementation of the European Green Deal</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#developing-trustworthy-ai-applications-with-foundation-modelshttpspublica-restfraunhoferdeserverapicorebitstreams6e777623-01b0-41e5-9d67-33168150a300content" class="md-toc-link">
+            </a><p><a href="#developing-trustworthy-ai-applications-with-foundation-modelshttpspublica-restfraunhoferdeserverapicorebitstreams6e777623-01b0-41e5-9d67-33168150a300content" class="md-toc-link"></a><a href="https://publica-rest.fraunhofer.de/server/api/core/bitstreams/6e777623-01b0-41e5-9d67-33168150a300/content">Developing trustworthy AI applications with foundation models</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#msciがエネルギー転換の新潮流を発表---esg-journalhttpsesgjournaljapancomworld-news45501" class="md-toc-link">
+            </a><p><a href="#msciがエネルギー転換の新潮流を発表---esg-journalhttpsesgjournaljapancomworld-news45501" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45501">MSCIがエネルギー転換の新潮流を発表 - ESG Journal</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#isoiec-20151-reaches-draft-international-standard-stage---international-data-spaceshttpsinternationaldataspacesorgiso-iec-20151-reaches_dis" class="md-toc-link">
+            </a><p><a href="#isoiec-20151-reaches-draft-international-standard-stage---international-data-spaceshttpsinternationaldataspacesorgiso-iec-20151-reaches_dis" class="md-toc-link"></a><a href="https://internationaldataspaces.org/iso-iec-20151-reaches_dis/">ISO/IEC 20151 reaches Draft International Standard stage - International Data Spaces</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#同時市場における変動性再エネ電源の取り扱い入札制度の方向性と今後の課題第15回同時市場の在り方等に関する検討会14-ページ---スマートジャパンhttpswwwitmediacojpsmartjapanarticles250514news078html" class="md-toc-link">
+            </a><p><a href="#同時市場における変動性再エネ電源の取り扱い入札制度の方向性と今後の課題第15回同時市場の在り方等に関する検討会14-ページ---スマートジャパンhttpswwwitmediacojpsmartjapanarticles250514news078html" class="md-toc-link"></a><a href="https://www.itmedia.co.jp/smartjapan/articles/2505/14/news078.html">「同時市場」における変動性再エネ電源の取り扱い――入札制度の方向性と今後の課題：第15回「同時市場の在り方等に関する検討会」（1/4 ページ） - スマートジャパン</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ngfs気候変動リスク等に係る金融当局ネットワークによる短期気候シナリオの公表について金融庁httpswwwfsagojpinteretc2025051320250513html" class="md-toc-link">
+            </a><p><a href="#ngfs気候変動リスク等に係る金融当局ネットワークによる短期気候シナリオの公表について金融庁httpswwwfsagojpinteretc2025051320250513html" class="md-toc-link"></a><a href="https://www.fsa.go.jp/inter/etc/20250513/20250513.html">NGFS（気候変動リスク等に係る金融当局ネットワーク）による短期気候シナリオの公表について：金融庁</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#guideline-connects-bim-and-asset-administration-shell-for-efficient-building-management-httpsindustrialdigitaltwinorgennews-datesguideline-connects-bim-and-asset-administration-shell-for-efficient-building-management-6946" class="md-toc-link">
+            </a><p><a href="#guideline-connects-bim-and-asset-administration-shell-for-efficient-building-management-httpsindustrialdigitaltwinorgennews-datesguideline-connects-bim-and-asset-administration-shell-for-efficient-building-management-6946" class="md-toc-link"></a><a href="https://industrialdigitaltwin.org/en/news-dates/guideline-connects-bim-and-asset-administration-shell-for-efficient-building-management-6946">Guideline connects BIM and Asset Administration Shell for efficient building management </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#フランス政府-高品質カーボンクレジット活用の憲章を発表-国際市場の透明性強化へ-httpsesgjournaljapancomworld-news45430" class="md-toc-link">
+            </a><p><a href="#フランス政府-高品質カーボンクレジット活用の憲章を発表-国際市場の透明性強化へ-httpsesgjournaljapancomworld-news45430" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45430">フランス政府、高品質カーボンクレジット活用の憲章を発表、国際市場の透明性強化へ </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#apple-unveils-environmental-progress-surpassing-60-percent-reduction-in-global-greenhouse-gas-emissions-httpswwwwbcsdorgnewsapple-unveils-environmental-progress-surpassing-60-percent-reduction-in-global-greenhouse-gas-emissions" class="md-toc-link">
+            </a><p><a href="#apple-unveils-environmental-progress-surpassing-60-percent-reduction-in-global-greenhouse-gas-emissions-httpswwwwbcsdorgnewsapple-unveils-environmental-progress-surpassing-60-percent-reduction-in-global-greenhouse-gas-emissions" class="md-toc-link"></a><a href="https://www.wbcsd.org/news/apple-unveils-environmental-progress-surpassing-60-percent-reduction-in-global-greenhouse-gas-emissions/">Apple unveils environmental progress, surpassing 60 percent reduction in global greenhouse gas emissions </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#circularity-gap-report-2025-a-global-call-to-action-httpswwwcircularity-gapworld2025" class="md-toc-link">
+            </a><p><a href="#circularity-gap-report-2025-a-global-call-to-action-httpswwwcircularity-gapworld2025" class="md-toc-link"></a><a href="https://www.circularity-gap.world/2025">Circularity Gap Report 2025: A global call to action </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#eba-eu域内銀行の気候リスク指数を初公開-httpsesgjournaljapancomworld-news45428" class="md-toc-link">
+            </a><p><a href="#eba-eu域内銀行の気候リスク指数を初公開-httpsesgjournaljapancomworld-news45428" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45428">EBA、EU域内銀行の気候リスク指数を初公開 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#米国グリーンビルディング協会-持続可能な建築基準leed-v5を発表-httpsesgjournaljapancomworld-news45419" class="md-toc-link">
+            </a><p><a href="#米国グリーンビルディング協会-持続可能な建築基準leed-v5を発表-httpsesgjournaljapancomworld-news45419" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45419">米国グリーンビルディング協会、持続可能な建築基準「LEED v5」を発表 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#カナダ証券管理局-気候関連多様性関連開示プロジェクトを一時停止-httpsesgjournaljapancomworld-news45396" class="md-toc-link">
+            </a><p><a href="#カナダ証券管理局-気候関連多様性関連開示プロジェクトを一時停止-httpsesgjournaljapancomworld-news45396" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45396">カナダ証券管理局、気候関連・多様性関連開示プロジェクトを一時停止 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#market-x--tech-x-in-valencia-gaia-x-new-milestones-for-trust-interoperability-and-data-sovereignty-httpsgaia-xeumarket-x-tech-x-in-valencia-gaia-x-new-milestones-for-trust-interoperability-and-data-sovereignty" class="md-toc-link">
+            </a><p><a href="#market-x--tech-x-in-valencia-gaia-x-new-milestones-for-trust-interoperability-and-data-sovereignty-httpsgaia-xeumarket-x-tech-x-in-valencia-gaia-x-new-milestones-for-trust-interoperability-and-data-sovereignty" class="md-toc-link"></a><a href="https://gaia-x.eu/market-x-tech-x-in-valencia-gaia-x-new-milestones-for-trust-interoperability-and-data-sovereignty/">Market-X &amp; Tech-X in Valencia: Gaia-X New Milestones for Trust, Interoperability, and Data Sovereignty </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#清水建設-建設廃プラを現場分別再資源化材として有価売却-httpscehubjpnewsshimz-plastic-recycle" class="md-toc-link">
+            </a><p><a href="#清水建設-建設廃プラを現場分別再資源化材として有価売却-httpscehubjpnewsshimz-plastic-recycle" class="md-toc-link"></a><a href="https://cehub.jp/news/shimz-plastic-recycle/">清水建設、建設廃プラを現場分別。再資源化材として有価売却 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#interoperable-europe-acthttpscommissioneuropaeupublicationsinteroperable-europe-act_en" class="md-toc-link">
+            </a><p><a href="#interoperable-europe-acthttpscommissioneuropaeupublicationsinteroperable-europe-act_en" class="md-toc-link"></a><a href="https://commission.europa.eu/publications/interoperable-europe-act_en">Interoperable Europe Act</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#cybersecurity-regulationhttpscommissioneuropaeupublicationscybersecurity-regulation_en" class="md-toc-link">
+            </a><p><a href="#cybersecurity-regulationhttpscommissioneuropaeupublicationscybersecurity-regulation_en" class="md-toc-link"></a><a href="https://commission.europa.eu/publications/cybersecurity-regulation_en">Cybersecurity Regulation</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#european-business-wallet-digital-identity-secure-data-exchange-and-legal-notifications-for-simple-digital-businesshttpseceuropaeuinfolawbetter-regulationhave-your-sayinitiatives14663-european-business-wallet-digital-identity-secure-data-exchange-and-legal-notifications-for-simple-digital-business_en" class="md-toc-link">
+            </a><p><a href="#european-business-wallet-digital-identity-secure-data-exchange-and-legal-notifications-for-simple-digital-businesshttpseceuropaeuinfolawbetter-regulationhave-your-sayinitiatives14663-european-business-wallet-digital-identity-secure-data-exchange-and-legal-notifications-for-simple-digital-business_en" class="md-toc-link"></a><a href="https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14663-European-Business-Wallet-digital-identity-secure-data-exchange-and-legal-notifications-for-simple-digital-business_en">European Business Wallet: digital identity, secure data exchange and legal notifications for simple, digital business</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#産業用データ連携基盤デジタル庁httpswwwdigitalgojppoliciesindustrial-data-integration" class="md-toc-link">
+            </a><p><a href="#産業用データ連携基盤デジタル庁httpswwwdigitalgojppoliciesindustrial-data-integration" class="md-toc-link"></a><a href="https://www.digital.go.jp/policies/industrial-data-integration">産業用データ連携基盤｜デジタル庁</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#イングランド銀行-気候リスク対応を強化へ金融機関に新たな管理基準を提示-httpsesgjournaljapancomworld-news45545" class="md-toc-link">
+            </a><p><a href="#イングランド銀行-気候リスク対応を強化へ金融機関に新たな管理基準を提示-httpsesgjournaljapancomworld-news45545" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45545">イングランド銀行、気候リスク対応を強化へ―金融機関に新たな管理基準を提示 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#金融庁-tcfdに基づく金融機関の移行計画調査を公表セクター間の差異を可視化-httpsesgjournaljapancomdomestic-news45600" class="md-toc-link">
+            </a><p><a href="#金融庁-tcfdに基づく金融機関の移行計画調査を公表セクター間の差異を可視化-httpsesgjournaljapancomdomestic-news45600" class="md-toc-link"></a><a href="https://esgjournaljapan.com/domestic-news/45600">金融庁、TCFDに基づく金融機関の移行計画調査を公表──セクター間の差異を可視化 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#英国金融行動監視機構-ポートフォリオマネジメントへの持続可能性開示要件適用延期-httpsesgjournaljapancomworld-news45499" class="md-toc-link">
+            </a><p><a href="#英国金融行動監視機構-ポートフォリオマネジメントへの持続可能性開示要件適用延期-httpsesgjournaljapancomworld-news45499" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45499">英国金融行動監視機構、ポートフォリオマネジメントへの持続可能性開示要件適用延期 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#cooperants-and-dynamo-become-gaia-x-lighthouse-data-spaces-httpsgaia-xeucooperants-and-dynamo-become-gaia-x-lighthouse-data-spaces" class="md-toc-link">
+            </a><p><a href="#cooperants-and-dynamo-become-gaia-x-lighthouse-data-spaces-httpsgaia-xeucooperants-and-dynamo-become-gaia-x-lighthouse-data-spaces" class="md-toc-link"></a><a href="https://gaia-x.eu/cooperants-and-dynamo-become-gaia-x-lighthouse-data-spaces/">COOPERANTS and Dynamo become Gaia-X Lighthouse Data Spaces </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#agrospai-and-dataspace4health-are-the-latest-projects-to-become-gaia-x-lighthouse-projects-httpsgaia-xeuagrospai-and-dataspace4health-are-the-latest-projects-to-become-gaia-x-lighthouse-projects" class="md-toc-link">
+            </a><p><a href="#agrospai-and-dataspace4health-are-the-latest-projects-to-become-gaia-x-lighthouse-projects-httpsgaia-xeuagrospai-and-dataspace4health-are-the-latest-projects-to-become-gaia-x-lighthouse-projects" class="md-toc-link">{AgrospAI and DataSpace4Health are the latest projects to become Gaia-X Lighthouse Projects }(</a><a href="https://gaia-x.eu/agrospai-and-dataspace4health-are-the-latest-projects-to-become-gaia-x-lighthouse-projects/">https://gaia-x.eu/agrospai-and-dataspace4health-are-the-latest-projects-to-become-gaia-x-lighthouse-projects/</a>)</p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#極端気象アトリビューションセンターwac-httpsweatherattributioncenterjp" class="md-toc-link">
+            </a><p><a href="#極端気象アトリビューションセンターwac-httpsweatherattributioncenterjp" class="md-toc-link"></a><a href="https://weatherattributioncenter.jp/">極端気象アトリビューションセンター（WAC） </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#日立製作所-修理をエンタメ化する配信プラットフォームなおストを発表修理をより身近な存在に-httpscehubjpnewshitachi-circular-design-streaming" class="md-toc-link">
+            </a><p><a href="#日立製作所-修理をエンタメ化する配信プラットフォームなおストを発表修理をより身近な存在に-httpscehubjpnewshitachi-circular-design-streaming" class="md-toc-link"></a><a href="https://cehub.jp/news/hitachi-circular-design-streaming/">日立製作所、修理をエンタメ化する配信プラットフォーム「なおスト」を発表。修理をより身近な存在に </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#アサヒグループ-画像認識技術によるリサイクル支援や再生農業支援など手がけるスタートアップ9社と協業-httpscehubjpnewsasahi-sustainability-innovation-program" class="md-toc-link">
+            </a><p><a href="#アサヒグループ-画像認識技術によるリサイクル支援や再生農業支援など手がけるスタートアップ9社と協業-httpscehubjpnewsasahi-sustainability-innovation-program" class="md-toc-link"></a><a href="https://cehub.jp/news/asahi-sustainability-innovation-program/">アサヒグループ、画像認識技術によるリサイクル支援や再生農業支援など手がけるスタートアップ9社と協業 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#米国mobicesmiiと中国可信数据空間-米中両国のデータ共有圏の現状は-httpsmonoistitmediacojpmnarticles250522news008html" class="md-toc-link">
+            </a><p><a href="#米国mobicesmiiと中国可信数据空間-米中両国のデータ共有圏の現状は-httpsmonoistitmediacojpmnarticles250522news008html" class="md-toc-link"></a><a href="https://monoist.itmedia.co.jp/mn/articles/2505/22/news008.html">米国「MOBI／CESMII」と中国「可信数据空間」、米中両国のデータ共有圏の現状は </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#脱炭素化の実現に求められるグリーン製品需要の拡大策-環境省が検討会を新設-httpswwwitmediacojpsmartjapanarticles250521news093html" class="md-toc-link">
+            </a><p><a href="#脱炭素化の実現に求められるグリーン製品需要の拡大策-環境省が検討会を新設-httpswwwitmediacojpsmartjapanarticles250521news093html" class="md-toc-link"></a><a href="https://www.itmedia.co.jp/smartjapan/articles/2505/21/news093.html">脱炭素化の実現に求められるグリーン製品需要の拡大策　環境省が検討会を新設 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#世界の氷床-急激に融解進む-100年で1メートル海面上昇の恐れ-httpswwwcnncojpfringe35233229html" class="md-toc-link">
+            </a><p><a href="#世界の氷床-急激に融解進む-100年で1メートル海面上昇の恐れ-httpswwwcnncojpfringe35233229html" class="md-toc-link"></a><a href="https://www.cnn.co.jp/fringe/35233229.html">世界の氷床、急激に融解進む　１００年で１メートル海面上昇の恐れ </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ice-気候リスク評価を強化-世界2万以上の企業政府を対象に地理空間プラットフォーム拡張-httpsesgjournaljapancomworld-news45598" class="md-toc-link">
+            </a><p><a href="#ice-気候リスク評価を強化-世界2万以上の企業政府を対象に地理空間プラットフォーム拡張-httpsesgjournaljapancomworld-news45598" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45598">ICE、気候リスク評価を強化　世界2万以上の企業・政府を対象に地理空間プラットフォーム拡張 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#esma-esg評価機関規制に関する技術基準案を公表透明性と利益相反への対応を強化-httpsesgjournaljapancomworld-news45547" class="md-toc-link">
+            </a><p><a href="#esma-esg評価機関規制に関する技術基準案を公表透明性と利益相反への対応を強化-httpsesgjournaljapancomworld-news45547" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45547">ESMA、ESG評価機関規制に関する技術基準案を公表―透明性と利益相反への対応を強化 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#個人投資家-サステナビリティ投資への関心依然高く---esg-journal-httpsesgjournaljapancomworld-news45576" class="md-toc-link">
+            </a><p><a href="#個人投資家-サステナビリティ投資への関心依然高く---esg-journal-httpsesgjournaljapancomworld-news45576" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45576">個人投資家、サステナビリティ投資への関心依然高く - ESG Journal </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#再生プラスチック市場-2033年に1024億ドル規模へ拡大予測各国の規制強化などが拡大を後押し--circular-economy-hub---サーキュラーエコノミー循環経済メディア-httpscehubjpnewsrecycled-plastic-market-research" class="md-toc-link">
+            </a><p><a href="#再生プラスチック市場-2033年に1024億ドル規模へ拡大予測各国の規制強化などが拡大を後押し--circular-economy-hub---サーキュラーエコノミー循環経済メディア-httpscehubjpnewsrecycled-plastic-market-research" class="md-toc-link"></a><a href="https://cehub.jp/news/recycled-plastic-market-research/">再生プラスチック市場、2033年に1024億ドル規模へ拡大予測。各国の規制強化などが拡大を後押し | Circular Economy Hub - サーキュラーエコノミー（循環経済）メディア </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#豊田合成-廃車由来プラスチックの水平リサイクル技術を実用化内装部品に適用--circular-economy-hub---サーキュラーエコノミー循環経済メディアhttpscehubjpnewstoyoda-gosei-plastic-recycle" class="md-toc-link">
+            </a><p><a href="#豊田合成-廃車由来プラスチックの水平リサイクル技術を実用化内装部品に適用--circular-economy-hub---サーキュラーエコノミー循環経済メディアhttpscehubjpnewstoyoda-gosei-plastic-recycle" class="md-toc-link"></a><a href="https://cehub.jp/news/toyoda-gosei-plastic-recycle/">豊田合成、廃車由来プラスチックの水平リサイクル技術を実用化。内装部品に適用 | Circular Economy Hub - サーキュラーエコノミー（循環経済）メディア</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#proposal-amending-the-batteries-regulation-eu-20231542-as-regards-battery-due-diligence-obligations-httpseceuropaeuinfolawbetter-regulation" class="md-toc-link">
+            </a><p><a href="#proposal-amending-the-batteries-regulation-eu-20231542-as-regards-battery-due-diligence-obligations-httpseceuropaeuinfolawbetter-regulation" class="md-toc-link"></a><a href="https://ec.europa.eu/info/law/better-regulation/">Proposal amending the Batteries Regulation (EU) 2023/1542 as regards battery due diligence obligations </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ニューヨーク州-史上最大の環境投資へ10億ドルの持続可能な未来プログラム始動---esg-journal-httpsesgjournaljapancomworld-news45626" class="md-toc-link">
+            </a><p><a href="#ニューヨーク州-史上最大の環境投資へ10億ドルの持続可能な未来プログラム始動---esg-journal-httpsesgjournaljapancomworld-news45626" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45626">ニューヨーク州、史上最大の環境投資へ—10億ドルの「持続可能な未来プログラム」始動 - ESG Journal </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#circular-transition-indicators-cti-social-impact-guide--wbcsd-httpswwwwbcsdorgresourcescircular-transition-indicators-cti-social-impact" class="md-toc-link">
+            </a><p><a href="#circular-transition-indicators-cti-social-impact-guide--wbcsd-httpswwwwbcsdorgresourcescircular-transition-indicators-cti-social-impact" class="md-toc-link"></a><a href="https://www.wbcsd.org/resources/circular-transition-indicators-cti-social-impact/">Circular Transition Indicators (CTI) Social Impact guide | WBCSD </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#カリフォルニア州-600億ドル規模の温暖化対策-財政赤字下でも気候教育投資維持---esg-journal-httpsesgjournaljapancomworld-news45689" class="md-toc-link">
+            </a><p><a href="#カリフォルニア州-600億ドル規模の温暖化対策-財政赤字下でも気候教育投資維持---esg-journal-httpsesgjournaljapancomworld-news45689" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45689">カリフォルニア州、600億ドル規模の温暖化対策 財政赤字下でも気候・教育投資維持 - ESG Journal </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#マイクロソフト-1800万トンの炭素除去購入へルビコンカーボンと大規模契約締結---esg-journal-httpsesgjournaljapancomworld-news45673" class="md-toc-link">
+            </a><p><a href="#マイクロソフト-1800万トンの炭素除去購入へルビコンカーボンと大規模契約締結---esg-journal-httpsesgjournaljapancomworld-news45673" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45673">マイクロソフト、1800万トンの炭素除去購入へ──ルビコン・カーボンと大規模契約締結 - ESG Journal </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#トラストレース-新データハブを発表ai活用でサプライチェーン管理を刷新---esg-journal-httpsesgjournaljapancomworld-news45681" class="md-toc-link">
+            </a><p><a href="#トラストレース-新データハブを発表ai活用でサプライチェーン管理を刷新---esg-journal-httpsesgjournaljapancomworld-news45681" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45681">トラストレース、新データハブを発表。AI活用でサプライチェーン管理を刷新 - ESG Journal </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#国際金融公社-循環経済金融ガイドラインを公表6つのセクターを対象に--circular-economy-hub---サーキュラーエコノミー循環経済メディア-httpscehubjpnewsifc-circular-economy-finance-guidelines" class="md-toc-link">
+            </a><p><a href="#国際金融公社-循環経済金融ガイドラインを公表6つのセクターを対象に--circular-economy-hub---サーキュラーエコノミー循環経済メディア-httpscehubjpnewsifc-circular-economy-finance-guidelines" class="md-toc-link"></a><a href="https://cehub.jp/news/ifc-circular-economy-finance-guidelines/">国際金融公社、循環経済金融ガイドラインを公表。6つのセクターを対象に | Circular Economy Hub - サーキュラーエコノミー（循環経済）メディア </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#tcfdtnfd統合開示ガイドいま企業が備えるべき実務対応とは---esg-journal-httpsesgjournaljapancomcolumn45791" class="md-toc-link">
+            </a><p><a href="#tcfdtnfd統合開示ガイドいま企業が備えるべき実務対応とは---esg-journal-httpsesgjournaljapancomcolumn45791" class="md-toc-link"></a><a href="https://esgjournaljapan.com/column/45791">TCFD×TNFD統合開示ガイド：いま企業が備えるべき実務対応とは？ - ESG Journal </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#european-data-spaces-take-shape-idsa-advances-data-spaces-standards-at-cencenelec-meeting---international-data-spaces-httpsinternationaldataspacesorgeuropean-data-spaces-take-shape-idsa-advances-data-spaces-standards-at-cen-cenelec-meeting" class="md-toc-link">
+            </a><p><a href="#european-data-spaces-take-shape-idsa-advances-data-spaces-standards-at-cencenelec-meeting---international-data-spaces-httpsinternationaldataspacesorgeuropean-data-spaces-take-shape-idsa-advances-data-spaces-standards-at-cen-cenelec-meeting" class="md-toc-link"></a><a href="https://internationaldataspaces.org/european-data-spaces-take-shape-idsa-advances-data-spaces-standards-at-cen-cenelec-meeting/">European data spaces take shape: IDSA advances data spaces standards at CEN/CENELEC meeting - International Data Spaces </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#トップクラスの気象機関-向こう5年間で悲観的な予測-異常気象と命脅かす熱波---cnncojp-httpswwwcnncojpfringe35233589html" class="md-toc-link">
+            </a><p><a href="#トップクラスの気象機関-向こう5年間で悲観的な予測-異常気象と命脅かす熱波---cnncojp-httpswwwcnncojpfringe35233589html" class="md-toc-link"></a><a href="https://www.cnn.co.jp/fringe/35233589.html">トップクラスの気象機関、向こう５年間で悲観的な予測　異常気象と命脅かす熱波 - CNN.co.jp </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#eu人権環境デューディリジェンス法制化の最新概要2025年5月--調査レポート---国地域別に見る---ジェトロ-httpswwwjetrogojpworldreports2025014195f825d288ce65html" class="md-toc-link">
+            </a><p><a href="#eu人権環境デューディリジェンス法制化の最新概要2025年5月--調査レポート---国地域別に見る---ジェトロ-httpswwwjetrogojpworldreports2025014195f825d288ce65html" class="md-toc-link"></a><a href="https://www.jetro.go.jp/world/reports/2025/01/4195f825d288ce65.html">EU人権・環境デューディリジェンス法制化の最新概要（2025年5月） | 調査レポート - 国・地域別に見る - ジェトロ </a></p>
+
+          </div>
+        </div>
+      </details>
+    
+</div>
+<h2 id="ロベコ-生物多様性への取り組み状況を評価するツールを開発-httpsesgjournaljapancomworld-news45307"><a href="https://esgjournaljapan.com/world-news/45307">ロベコ、生物多様性への取り組み状況を評価するツールを開発 </a> </h2>
+<p>「4月15日、国際的資産運用会社ロベコは、企業の生物多様性への取り組み状況を評価する新たなツールBiodiversity Traffic Light（生物多様性信号機）を発表した。本ツールは、企業が自然に与える影響や、自然損失の軽減・回復に向けた努力を可視化し、投資家が自然関連リスクと機会を投資判断に取り込むことを可能にする革新的な仕組みである。</p>
+<p>ロベコが公開したホワイトペーパーによれば、本ツールの開発は、投資家との対話の中で明らかとなった「自然の損失がポートフォリオ全体に及ぼすシステミック・リスクを理解しながらも、それをどのように測定・管理し、農業や林業以外の市場にどう反映すべきか」という課題に応える形で進められた。</p>
+<p>この新ツールの構築には、2024年に自然関連財務情報開示タスクフォース（TNFD）が発表した産業別ガイドラインが活用された。各産業ごとに定義された自然への影響と評価指標に加え、自然保護団体と連携して作成された高精度なデータセットが統合されている。」</p>
+<h2 id="ifrs財団とtnfd-自然関連財務情報開示で正式に協働へ-httpsesgjournaljapancomworld-news45159"><a href="https://esgjournaljapan.com/world-news/45159">IFRS財団とTNFD、自然関連財務情報開示で正式に協働へ </a> </h2>
+<p>「4月9日、IFRS財団と自然関連財務情報開示タスクフォース（TNFD）は、自然資本に関する情報開示の国際的な整合を目指し、正式に協働することを発表した。両者は覚書（MoU）を締結し、国際サステナビリティ基準審議会（ISSB）の枠組み内で、TNFDの提言を活用した取り組みを進めていく。</p>
+<p>本協働は、自然関連のリスクや機会を適切に資本市場に伝えるためのものであり、企業による生物多様性・生態系への影響や依存を定量・定性の両面から把握・開示することを支援する。ISSBは今後、TNFDが2023年に公表した提言の有効性を検討し、ISSBの基準である「IFRS S1」および「S2」への反映を目指す。」</p>
+<p><a href="https://tnfd.global/ifrs-foundation-and-tnfd-collaboration-to-provide-capital-markets-with-high-quality-nature-related-information/">IFRS Foundation and TNFD formalise collaboration to provide capital markets with high-quality nature-related information </a><br>
+「IFRS財団と自然関連財務情報開示タスクフォース（TNFD）は、国際サステナビリティ基準審議会（ISSB）の継続的な活動においてTNFDの提言を基盤として、資本市場における自然関連財務情報開示の活用を促進するという双方のコミットメントを示す覚書（MoU）を締結したことを発表しました。ISSBは、世界の資本市場のニーズを満たす上でのTNFDの提言の妥当性を検討します。</p>
+<p>ISSBは、2021年後半のTNFD発足以来、TNFDナレッジパートナーであり、そのSASBセクター分類、従来のCDSB生物多様性ガイダンス、およびIFRS S1は、2023年9月に公表されたTNFDの推奨事項の根拠となっています。最近では、TNFDは2024年に開始されたISSBの生物多様性、生態系および生態系サービス（BEES）研究プロジェクトを支援しており、2025年2月にはISSBメンバーにこれまでの取り組みの概要を示し、共通理解の基盤の上にさらなる協力関係を構築できるようにしました。</p>
+<p>今週初めにフランクフルトで調印されたMOUにより、ISSBは自然関連のリスクと機会に関する情報に対する世界の資本市場のニーズを調査する中でTNFDの勧告を検討するため、両組織間の協力が深まることになる。」</p>
+<h2 id="産業データスペースの構築に向けた第2次提言-httpswwwkeidanrenorjppolicy2025026html"><a href="https://www.keidanren.or.jp/policy/2025/026.html">産業データスペースの構築に向けた第2次提言 </a> </h2>
+<p>「経団連は2024年10月、提言「産業データスペース※の構築に向けて」を取りまとめ、官民が取るべきアクションを整理<br>
+※ 異なる国・業種・組織の間で、信頼性のある大量かつ多種多様なデータを連携する<br>
+標準化された仕組み<br>
+➢ 現在、省庁や民間団体においてデータ連携・利活用の取組みは見られるものの、横断的連携は取れておらず、国際連携に関する考え方や必要な機能要件等に関する統一見解は未確立<br>
+➢ こうした中、内閣官房のデジタル行財政改革会議は、今夏にデータ利活用制度のあり方に関する基本方針を策定すべく、集中的に議論<br>
+➢ かかる現状を踏まえ、国際的に相互運用可能な産業データスペース群の構築を通じて、「デジタルエコシステム」※を実現すべく、第2次提言を取りまとめ<br>
+」<br>
+「「デジタルエコシステム官民協議会」（仮称）の設置について</p>
+<p>構成員<br>
+・ 関係省庁：デジタル庁、内閣府、総務省、経済産業省、等<br>
+・ 関係団体：経団連、IPA、DSA（データ社会推進協議会）、JDTF（デジタルトラスト協議会）、DPFJ（デジタル政策フォーラム）、RRI（ロボット革命・産業 IoT イニシアティブ協議会）ほか関係業界団体<br>
+・ 企業<br>
+・ 学識者 等</p>
+<p>」</p>
+<h2 id="rriメルマガより">RRIメルマガより </h2>
+<p>Next Level Mittelstand (NLM) イニシアティブ<br>
+<a href="https://www.plattform-i40.de/IP/Redaktion/DE/Newsletter/2024/Ausgabe_47/00newsletter-ausgabe47.html">https://www.plattform-i40.de/IP/Redaktion/DE/Newsletter/2024/Ausgabe_47/00newsletter-ausgabe47.html</a><br>
+<a href="https://nextlevelmittelstand.com/">https://nextlevelmittelstand.com/</a></p>
+<p>「昨年より始まったSME（中堅・中小企業）対応の活動です（中堅・中小企業と言っても日本とは企業規模のとらえ方が異なるのでそれを踏まえて理解する必要があります）。特徴的なのは、SAPやSiemensではなく、中小企業自らが組織化しているもののようです。Schunkがリーダーシップを取っています。（Schunkが中小か、というのはあるかもしれませんが）　PI4.0が以前から持っているLNI4.0（Labs Network Industrie 4.0）との棲み分けですが、先物の社会実装の流れを作るのがLNI4.0で、それを中小企業に伝授し、全体の底上げを図るのがNLMのように見えます（この先物と全体の底上げを分けているところも肝かと思います）。以下、紹介文抜粋です。　　・・・　「中小企業から、中小企業のために」 - この信条のもと、インダストリー 4.0 プラットフォームから派生したもうひとつのスピンオフである Next Level Mittelstand (NLM) イニシアティブが始動します。ヘンリック・シュンクのリーダーシップのもと、現在株式を公開中です。目標は、2030年までにドイツの中小企業をデジタルチャンピオンに育てることです。詳細については、新しいウェブサイトをご覧ください。・・・」</p>
+<h2 id="スイス連邦データ保護法の改正内容とeu一般データ保護規則との比較2025年5月--調査レポート---国地域別に見る---ジェトロhttpswwwjetrogojpworldreports202501c86476543323e882html"><a href="https://www.jetro.go.jp/world/reports/2025/01/c86476543323e882.html">スイス連邦データ保護法の改正内容とEU「一般データ保護規則」との比較（2025年5月） | 調査レポート - 国・地域別に見る - ジェトロ</a> </h2>
+<p>「<br>
+欧州経済領域（European Economic Area（EEA）、EU 加盟国 27 カ国、ノルウェー、アイスランド、リヒテンシュタイン）においては、欧州連合（European Union：EU）の「一般データ保護規則（General Data Protection Regulation：GDPR）」が適用されているが、スイスは同規則の適用地域ではない。スイスにおいては 2023 年 9 月 25 日から、連邦データ保護法（Federal Act on Data Protection：FADP）の改正法である改正連邦データ保護法（New Federal Act on Data Protection：nFADP）が施行されている。<br>
+本レポートは、同規則に詳しい西村あさひ法律事務所・外国法共同事業フランクフルト／デュッセルドルフ事務所に作成を委託し、GDPR の内容とスイス連邦の nFADP の内容とを比較し、まとめた。欧州ビジネスにおいて、スイスにおける個人データを取り扱う企業の対応検討に役立てば幸いである。<br>
+」</p>
+<h2 id="日本企業による環境デューディリジェンス対応促進に向けた懇談会議論のまとめの公表について--報道発表資料--環境省httpswwwenvgojppresspress_04856html"><a href="https://www.env.go.jp/press/press_04856.html">日本企業による環境デュー・ディリジェンス対応促進に向けた懇談会議論のまとめの公表について | 報道発表資料 | 環境省</a> </h2>
+<p>経営層の善管注意義務に言及している点が目新しい<br>
+「<br>
+環境省では、日本企業による環境デュー・ディリジェンス（以下「環境DD」という）の今後の取組のあり方について、計３回の懇談会において有識者の皆さまに議論いただいた結果を取りまとめましたので、お知らせします。<br>
+」<br>
+「<br>
+概要と目的<br>
+　有識者の皆さまによる懇談会の議論の結果を「議論のまとめ」としているほか、企業が環境DDの取組を進めていく上で特に重要と考える点を、「ポイント」として要約しております。足元の海外企業等の環境DDに係る取組状況を「事例集」として紹介しております。いずれも、国際的な潮流も踏まえて環境DDに意欲的に取り組もうとする日本企業の担当役員や実務担当者の方による利用を想定しております。<br>
+　今回の懇談会の成果が、日本企業が、経営層のイニシアティブのもとで組織横断的に環境DDに取り組み、多様なステークホルダーとの連携により、企業の持続的な成長を図っていくことの一助となれば幸いです。<br>
+」</p>
+<h2 id="sensor-based-waste-sorting-reduces-number-of-battery-fires-in-recycling-plants-httpswwwfraunhoferdeenpressresearch-news2025may-2025sensor-based-waste-sorting-reduces-number-of-battery-fires-in-recycling-plantshtml"><a href="https://www.fraunhofer.de/en/press/research-news/2025/may-2025/sensor-based-waste-sorting-reduces-number-of-battery-fires-in-recycling-plants.html">Sensor-Based Waste Sorting Reduces Number of Battery Fires in Recycling Plants </a> </h2>
+<p>「An increasing number of electronic waste are not being properly disposed of but are often discarded together with plastic waste, for example. If the batteries in these products are damaged, they can cause fires at sorting plants. In the DangerSort project, researchers at the Fraunhofer Institute for Integrated Circuits IIS are using a sensor-based sorting system to remove hazardous items and make recycling plants safer.」<br>
+「電子機器廃棄物は適切に処分されず、例えばプラスチック廃棄物と一緒に廃棄されるケースが増えています。これらの製品のバッテリーが損傷すると、選別施設で火災を引き起こす可能性があります。DangerSortプロジェクトでは、フラウンホーファー集積回路研究所（IIS）の研究者がセンサーベースの選別システムを用いて有害物質を除去し、リサイクル施設の安全性向上に取り組んでいます。」</p>
+<h2 id="環境問題への対応になぜscmシステムが重要になるのかサプライチェーンを変える2つのポイント後編12-ページ---monoisthttpsmonoistitmediacojpmnarticles250502news080html"><a href="https://monoist.itmedia.co.jp/mn/articles/2505/02/news080.html">環境問題への対応になぜSCMシステムが重要になるのか：サプライチェーンを変える2つのポイント（後編）（1/2 ページ） - MONOist</a> </h2>
+<p>「<br>
+サプライチェーンの問題に多くの製造業が振り回される中、SCMシステムでもさらなる進化が求められている。そのカギを握るポイントの1つである環境問題への対策について、Blue Yonder 最高サステナビリティ責任者のサスキア・ファン・ヘント氏に話を聞いた。<br>
+」</p>
+<h2 id="ブリヂストンアメリカ-70リサイクル再生可能材料使用のデモタイヤを発表-httpscehubjpnewsbridgestone-70percent-recycled-tyre"><a href="https://cehub.jp/news/bridgestone-70percent-recycled-tyre/">ブリヂストン・アメリカ、70%リサイクル・再生可能材料使用のデモタイヤを発表 </a> </h2>
+<p>「ブリヂストン・アメリカスはこのほど、ラスベガスで5月に開催される廃棄物処理とリサイクルに特化した見本市Waste Expoにおいて、商用車向けデモタイヤを公開すると発表した。</p>
+<p>同タイヤは、リサイクル・再生可能材料使用率70%を達成した業界初（ブリヂストン調べ）の市販タイヤとなる。展示会では、商用車向け新型ドライブオーバーシステムも公開する。発表の概要は以下のとおり。」</p>
+<h2 id="循環こそ-未来のエネルギーフィンランドが実践するイノベーション最前線-httpscehubjpreportfinland-innovation"><a href="https://cehub.jp/report/finland-innovation/">循環こそ、未来のエネルギー。フィンランドが実践するイノベーション最前線 </a> </h2>
+<p>「フィンランドは、サーキュラーエコノミーを脱炭素の主要戦略とし、2035年のカーボンニュートラル達成を掲げる。森林資源を活用したバイオエコノミー、金属資源のバッテリー循環、そして産業間での資源共有を進める共生型エコシステムなど、フィンランドの独自モデルが形成され、進化を遂げているのだ。」</p>
+<h2 id="アメックスgbt-出張のco2削減をサポートするデータ主導型の新機能を発表-httpsesgjournaljapancomworld-news45317"><a href="https://esgjournaljapan.com/world-news/45317">アメックスGBT、出張のCO2削減をサポートするデータ主導型の新機能を発表 </a> </h2>
+<p>「4月22日、アメリカン・エキスプレス・グローバル・ビジネス・トラベル（アメックスGBT）は、会社の出張における二酸化炭素排出量削減を支援する「サステナビリティ・レコメンデーション機能」を発表した。これは、同社のオンライン出張管理プラットフォーム「エジェンシア（Egencia）」に統合された、市場初の機能である。</p>
+<p>新機能により、出張管理者は出張に伴う二酸化炭素排出量やコストへの影響を可視化しながら、データに基づくカスタマイズされた改善提案を受け取ることが可能になる。ユーザーフィードバックを反映して設計されたこの機能は、より持続可能な出張戦略の実現を後押しする。」</p>
+<h2 id="green-impact-exchange取引所とはインパクト投資の行方と上場の可能性-httpsesgjournaljapancomcolumn45348"><a href="https://esgjournaljapan.com/column/45348">Green Impact Exchange（取引所）とは？インパクト投資の行方と上場の可能性 </a> </h2>
+<p>「インパクト投資への関心の高まりを受け、2026年米国では、新たなインパクト投資の取引所である「Green Impact Exchange（GIX）」が設置される予定だ。本稿では、GIX設立の背景と上場要件を読み解きながら、サステナビリティを軸とする企業と投資家の新たな潮流について考察する。</p>
+<p>サステナビリティ経済と新たな取引所の誕生</p>
+<p>2025年4月、米国証券取引委員会（SEC）はGIXのForm 1申請を承認した。GIXは、サステナビリティに特化した初の国家公認証券取引所として、2026年初頭の開設を目指している。」</p>
+<h2 id="ゼベロ-aiと専門家による新しいesg情報開示ソリューションを発表-httpsesgjournaljapancomworld-news45319"><a href="https://esgjournaljapan.com/world-news/45319">ゼベロ、AIと専門家による新しいESG情報開示ソリューションを発表 </a> </h2>
+<p>「4月22日、カーボン管理プラットフォームを手掛けるゼベロ(Zevero)は、ESG情報開示を簡素化するために設計された新しいツールを発表した。本ツールは、Bコープ、CDP、CSRDなど主要なサステイナビリティ報告基準に対応しており、複雑かつ労力のかかる報告業務を効率化することを目的としている。</p>
+<p>近年、企業に対するESG開示の要請の高まりに伴い、手作業によるレポート作成が大きな負担となっている。ゼベロの新ツールは、AIによるデータ抽出と社内専門家によるレビューを組み合わせ、企業が迅速かつ高精度なレポーティングを行えるよう支援する。」</p>
+<h2 id="マイクロプラスチック世界各地の海中のあらゆる深さに分布-httpswww3nhkorjpnewshtml20250512k10014802671000html"><a href="https://www3.nhk.or.jp/news/html/20250512/k10014802671000.html">「マイクロプラスチック」世界各地の海中のあらゆる深さに分布 </a> </h2>
+<p>「海の生態系への影響が懸念されている「マイクロプラスチック」の分布状況について、過去10年間に世界各地で収集されたデータをまとめて分析した結果、海の中のあらゆる深さに分布していることが分かったと、JAMSTEC＝海洋研究開発機構などが発表しました。」</p>
+<h2 id="環境省-tcfdネイチャー開示ガイド改訂公表-httpsesgjournaljapancomdomestic-news45336"><a href="https://esgjournaljapan.com/domestic-news/45336">環境省、「TCFD・ネイチャー開示ガイド」改訂公表 </a> </h2>
+<p>「4月21日、環境省は、企業のサステナビリティ経営を支援する実践ガイド「サステナビリティ（気候・自然関連）情報開示を活用した経営戦略立案のススメ～TCFDシナリオ分析と自然関連のリスク・機会を経営に織り込むための分析実践ガイド～」を改訂・公表した。本ガイドは、気候変動および自然資本に関するリスクと機会の統合的な分析・活用を促すもので、企業における戦略的な意思決定を後押しする内容となっている。」</p>
+<h2 id="サーキュラーエコノミー事業が成長エンジンに米liquidity-services-売上27増を達成-httpscehubjpnewsliquidity-services-2025-2q-financial-results"><a href="https://cehub.jp/news/liquidity-services-2025-2q-financial-results/">サーキュラーエコノミー事業が成長エンジンに。米Liquidity Services、売上27%増を達成 </a> </h2>
+<p>「米Liquidity Services社は5月8日、2025年度第2四半期の決算を発表した。同社はサーキュラーエコノミーを推進するグローバルコマース企業だ。今回の決算では、まさにそのサーキュラーエコノミー関連事業が主要な成長ドライバーとなり、全体の売上高を前年同期比27%増へと押し上げる顕著な成果を達成した。</p>
+<p>Liquidity Servicesは、企業や政府機関が保有する余剰資産や返品商品を、自社が運営する世界最大級のB2B電子商取引プラットフォームを通じて再販することで、資産の寿命を最大限に延ばし、不必要な廃棄物や二酸化炭素排出量の削減に貢献するとしている。これまでに100億ドルを超える取引を完了させ、世界中の500万人以上の認定バイヤーと1万5,000以上の企業および政府機関の販売者を結びつけている。」</p>
+<h2 id="eu-and-japan-reinforce-tech-and-digital-partnership-httpseceuropaeucommissionpresscornerdetailenip_25_1185"><a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_25_1185">EU and Japan reinforce tech and digital partnership </a> </h2>
+<p>「Today's Council concluded with the following key outcomes:</p>
+<p>Semiconductors: The EU and Japan confirmed their commitment to collaborative research on semiconductor. They also committed to enhance their efforts to ensure semiconductor supply chain resilience through information exchange and early warning mechanisms.<br>
+Research: The partners agreed to expand their cooperation on beyond 5G/6G research, with a focus on the joint project 6G MIRAI-HARMONY which aims to develop AI powered networks for user-focused communications.<br>
+Quantum computing and AI: The EU and Japan launched a joint research call for collaborative projects on quantum computing, with applications in fields such as biomedicine, materials sciences, and climate modelling. They have also reiterated their commitment to promoting innovative, safe, secure and trustworthy AI, including the Hiroshima AI process.<br>
+Digital identities and trust services: The EU and Japan are working towards achieving interoperability and mutual recognition of academic credentials through digital identity and trust services, building on the Memorandum of Cooperation.<br>
+Data governance: The partners have started work on establishing a possible joint working group to facilitate improved data sharing and interoperability of data spaces.<br>
+Online platforms and digital markets: Recognising the need for a safe online environment, protecting users' fundamental rights, the EU and Japan have engaged in regulatory exchanges to promote effective online platform governance and fair digital markets.<br>
+Cybersecurity: Through their sixth EU-Japan Cyber Dialogue, both partners have exchanged information on regulatory developments, particularly regarding critical infrastructure protection and product security.<br>
+Submarine cables and connectivity: The EU and Japan have reinforced their cooperation on submarine cables, recognising the importance of secure, resilient and sustainable global connectivity. They have also recognised the importance of the development of the pioneering Arctic connectivity route to ensure trusted data flows between Europe and Japan.」<br>
+「本日の理事会は、以下の主要な成果をもって終了しました。</p>
+<p>半導体：EUと日本は、半導体に関する共同研究へのコミットメントを確認しました。また、情報交換と早期警戒メカニズムを通じて、半導体サプライチェーンのレジリエンス確保に向けた取り組みを強化することを約束しました。<br>
+研究：両パートナーは、ユーザー中心の通信のためのAIを活用したネットワークの開発を目指す共同プロジェクト「6G MIRAI-HARMONY」に重点を置き、5G/6Gを超えた研究における協力を拡大することで合意しました。<br>
+量子コンピューティングとAI：EUと日本は、バイオメディカル、材料科学、気候モデリングなどの分野への応用を含む、量子コンピューティングに関する共同プロジェクトの共同研究募集を開始しました。また、広島AIプロセスを含む、革新的で安全、安心、かつ信頼できるAIの推進へのコミットメントを改めて表明しました。<br>
+デジタルIDおよびトラストサービス：EUと日本は、協力覚書に基づき、デジタルIDおよびトラストサービスを通じて、学術資格の相互運用性と相互承認の実現に向けて取り組んでいます。<br>
+データガバナンス：EUと日本は、データ共有とデータ空間の相互運用性の向上を促進するための共同作業部会の設置に向けた作業を開始しました。<br>
+オンラインプラットフォームとデジタル市場：安全なオンライン環境とユーザーの基本的権利の保護の必要性を認識し、EUと日本は、効果的なオンラインプラットフォームガバナンスと公正なデジタル市場の促進に向けた規制交流に取り組んできました。<br>
+サイバーセキュリティ：第6回日EUサイバー対話において、両パートナーは、特に重要インフラの保護と製品セキュリティに関する規制の動向について情報交換を行いました。<br>
+海底ケーブルと接続性：EUと日本は、安全で強靭かつ持続可能なグローバル接続の重要性を認識し、海底ケーブルに関する協力を強化しました。また、欧州と日本間の信頼できるデータフローを確保するために、先駆的な北極接続ルートの開発の重要性も認識しました。」</p>
+<p><a href="https://www.digital.go.jp/news/9b948ac0-10fb-47d0-aff8-7534d9bb042b">日EUデジタルパートナーシップ閣僚級会合（第3回会合）を開催しました｜デジタル庁</a><br>
+<a href="https://www.meti.go.jp/press/2025/05/20250513003/20250513003.html">日EUデジタルパートナーシップ第3回閣僚級会合を開催しました （METI/経済産業省）</a></p>
+<h2 id="アイシンがトルコで太陽光発電-欧州の全工場を100再エネ化-httpsxtechnikkeicomatclnxtnews2402484"><a href="https://xtech.nikkei.com/atcl/nxt/news/24/02484/">アイシンがトルコで太陽光発電、欧州の全工場を100％再エネ化 </a> </h2>
+<p>「アイシンは、欧州の生産子会社であるAISIN OTOMOTIV PARCALARI SANAYI VE TICARETがトルコのマラティヤ県に太陽光発電施設を建設し、2025年5月22日に正式に開所すると発表した。発電を開始すると、欧州にある同社の全生産拠点で再生可能エネルギーの導入率が100％になる。」</p>
+<h2 id="plattform-industrie-40---globally-connectable-and-interoperable-un-dpp-and-the-digital-product-passport-for-the-implementation-of-the-european-green-dealhttpswwwplattform-i40deipredaktionendownloadspublikation202411-dpp-commentshtml"><a href="https://www.plattform-i40.de/IP/Redaktion/EN/Downloads/Publikation/202411-DPP-comments.html">Plattform Industrie 4.0 - Globally connectable and interoperable: UN DPP and the Digital product passport for the implementation of the European Green Deal</a> </h2>
+<p>「<br>
+Many experts are currently dedicating themselves to approaching the DPP from an international angle, thus making a contribution to a modern and digital international quality infrastructure system. Exemplary projects such as Recommendation 49 by UNECE/CEFACT and the accompanying EU project by DG INTPA Enhancing Transparency and Traceability for Sustainable Value Chains in Strategic Sectors for the Green and Digital Transitions in the UNECE region and beyond (phase III), which will be covered in the publication, have the potential to deliver essential components for the global application of digital product passports.</p>
+<p>However, in their present form, these projects are also an example of projects that are clearly incompatible with the work ongoing at the European Commission (COM) that is intended to implement the European Green Deal and with the standardisation work being undertaken by the Technical Committees at CEN and CENELEC on behalf of COM with the aim of its implementation. The publication proposes, from a technical perspective, as to how the potential of these projects could be harnessed in line with the work being undertaken at European level and with the overarching principles of technology neutrality, the control of data, and interoperability.<br>
+」<br>
+「<br>
+現在、多くの専門家が国際的な視点からDPPへのアプローチに尽力しており、現代的でデジタル化された国際品質インフラシステムの実現に貢献しています。UNECE/CEFACTの勧告49や、本出版物で取り上げるDG INTPAによるEUプロジェクト「UNECE地域内外におけるグリーン・デジタル移行のための戦略的セクターにおける持続可能なバリューチェーンの透明性とトレーサビリティの向上（フェーズIII）」といった模範的なプロジェクトは、デジタル製品パスポートの世界的な適用に不可欠な要素を提供する可能性を秘めています。</p>
+<p>しかしながら、現状のこれらのプロジェクトは、欧州グリーンディールの実施を目指して欧州委員会（COM）で進行中の作業、そしてその実施を目指してCOMに代わってCENとCENELECの技術委員会が行っている標準化作業とは明らかに相容れないプロジェクトの一例でもあります。本出版物は、技術的な観点から、これらのプロジェクトの潜在能力を、欧州レベルで行われている作業、そして技術中立性、データ管理、相互運用性といった包括的原則に沿ってどのように活用できるかについて提案しています。<br>
+」</p>
+<h2 id="developing-trustworthy-ai-applications-with-foundation-modelshttpspublica-restfraunhoferdeserverapicorebitstreams6e777623-01b0-41e5-9d67-33168150a300content"><a href="https://publica-rest.fraunhofer.de/server/api/core/bitstreams/6e777623-01b0-41e5-9d67-33168150a300/content">Developing trustworthy AI applications with foundation models</a> </h2>
+<p>RRI メルマガより<br>
+「<br>
+2024年4月発行（英語版）のFraunhofer IAISによるレポートです。当時成立目前だった欧州AI規制を意識した文書で、基盤モデルを用いて開発されたAIアプリケーションの信頼性をどのように評価し、確保できるかという視点で書かれています。特にドメイン特化型のAIアプリケーションにおいてどのような点に留意すべきか我々にとっても参考になるでしょう。</p>
+<ol>
+<li>信頼性の観点から、基盤モデルとそれに基づくAIアプリケーションの基本的な関係について</li>
+<li>基盤モデルの技術的構成の概要</li>
+<li>それらに基づいたAIアプリケーションを開発する方法</li>
+<li>信頼性に関する結果として生じるリスクの概要</li>
+<li>欧州連合のAI規制の草案に基づいて、AIアプリケーションと基盤モデルにどのような要件が期待されるか</li>
+<li>信頼性要件を満たすためのシステムと手順<br>
+」<br>
+「<br>
+基盤モデルを使用した信頼できるAIアプリケーションの開発に関するホワイトペーパーです。基盤モデルで開発されたAIアプリケーションの信頼性を評価および確保する方法について説明し、アプリケーション固有のリスクベースのアプローチを、基盤モデルのコンテキストにおけるテストおよび信頼性の確保に適用します。基盤モデルの特定のリスクと、AIアプリケーションへの影響を考慮しています。</li>
+</ol>
+<p>ドキュメントの内容の概要を以下に示します。</p>
+<ul>
+<li><strong>概要:</strong> ホワイトペーパーの目的と主な調査結果の概要を示します。</li>
+<li><strong>はじめに:</strong> 信頼性の観点から、基盤モデルとAIアプリケーションの関係について説明します。また、基盤モデルに基づくAIアプリケーションの評価における課題を強調しています。</li>
+<li><strong>基盤モデルの基本:</strong> 基盤モデルの技術的構造を紹介します。</li>
+<li><strong>基盤モデルからAIアプリケーションへ:</strong> AIアプリケーションが基盤モデルに基づいてどのように開発できるかを示します。</li>
+<li><strong>AIアプリケーションと基盤モデルのリスク:</strong> 信頼性に対するリスクの概要を示します。</li>
+<li><strong>欧州AI規制と基盤モデル:</strong> 欧州連合のAI規制案に基づく、AIアプリケーションと基盤モデルに求められる要件を示します。</li>
+<li><strong>信頼できるAIアプリケーションを開発するためのステップ:</strong> 信頼性の要件を満たすためのシステムと手順について詳しく説明します。これには、ターゲット関数とアプリケーションドメインの定義、リスク分析の実施、適切な基盤モデルとデータの選択、AIアプリケーションの開発とテスト、および運用中の品質監視が含まれます。</li>
+<li><strong>まとめと展望:</strong> 主なポイントをまとめ、将来の展望を示します。</li>
+<li><strong>参考文献:</strong> ドキュメントで引用されているソースをリストします。<br>
+」</li>
+</ul>
+<h2 id="msciがエネルギー転換の新潮流を発表---esg-journalhttpsesgjournaljapancomworld-news45501"><a href="https://esgjournaljapan.com/world-news/45501">MSCIがエネルギー転換の新潮流を発表 - ESG Journal</a> </h2>
+<p>「<br>
+この報告書は、温室効果ガス排出量、企業目標、情報開示、金融フロー、エネルギー転換、物理的リスクと自然環境の6つのテーマに沿って、詳細なデータを提供している。たとえば、中国が化石燃料消費で先頭を走る一方、クリーンテクノロジー革新でも世界をリードしていることが、MSCIの分析から明らかになっている。</p>
+<p>特に注目すべきは、上場企業のわずか12%のみが、気温上昇を産業革命前から1.5度以内に抑える目標に適合している点だ。他の多くの企業は2度以上の温暖化を予測しており、この問題への対策が急務となっている。なお、25年3月31日時点で、上場企業の14%がSBTi（Science Based Targets initiative）によって検証された気候目標を持っており、前年の9.3%から増加している。<br>
+」</p>
+<h2 id="isoiec-20151-reaches-draft-international-standard-stage---international-data-spaceshttpsinternationaldataspacesorgiso-iec-20151-reaches_dis"><a href="https://internationaldataspaces.org/iso-iec-20151-reaches_dis/">ISO/IEC 20151 reaches Draft International Standard stage - International Data Spaces</a> </h2>
+<p>「<br>
+ISO/IEC 20151 provides a clear and shared definition of what a data space is. It helps organizations distinguish genuine data spaces from concepts like data lakes, avoiding confusion in design and implementation. By setting out key characteristics and requirements, the standard supports clarity in procurement processes, ensuring that businesses understand what kind of solution or infrastructure they are engaging with. Most importantly, it establishes a baseline for interoperability, both within individual data spaces and across different data space implementations. This makes collaboration and data exchange more reliable and consistent.<br>
+」<br>
+「<br>
+ISO/IEC 20151は、データスペースとは何かについて明確かつ共通の定義を提供します。これにより、組織は真のデータスペースとデータレイクなどの概念を区別し、設計と実装における混乱を回避できます。主要な特性と要件を規定することで、調達プロセスの明確化が促進され、企業はどのようなソリューションやインフラストラクチャを扱っているのかを理解できるようになります。最も重要なのは、個々のデータスペース内だけでなく、異なるデータスペース実装間でも相互運用性のベースラインを確立していることです。これにより、コラボレーションとデータ交換の信頼性と一貫性が向上します。<br>
+」</p>
+<p><a href="https://industrialdigitaltwin.org/en/news-dates/aas-user-network-6940">AAS-User-Network </a><br>
+2025/10/28にイベント<br>
+「This user meeting is a joint event organised by ARENA2026, SmartFactoryKL and IDTA. The focus is on the application of Digital Twins in the automotive industry and its suppliers.」</p>
+<h2 id="同時市場における変動性再エネ電源の取り扱い入札制度の方向性と今後の課題第15回同時市場の在り方等に関する検討会14-ページ---スマートジャパンhttpswwwitmediacojpsmartjapanarticles250514news078html"><a href="https://www.itmedia.co.jp/smartjapan/articles/2505/14/news078.html">「同時市場」における変動性再エネ電源の取り扱い――入札制度の方向性と今後の課題：第15回「同時市場の在り方等に関する検討会」（1/4 ページ） - スマートジャパン</a> </h2>
+<p>「<br>
+現在、国（資源エネルギー庁・電力広域的運営推進機関）は、電力の安定供給と経済性の両立を求め、kWhとΔkWを同時約定し最適化する「同時市場」の導入に向けた検討を進めている。同時市場では、起動費や最低出力費用、限界費用といったThree-Part情報に基づき、系統制約を考慮した上で、電源の起動停止（SCUC）や出力量（SCED）の決定が行われる。</p>
+<p>変動性再エネ電源（VRE）は、実需給が近づくにつれて出力予測精度が高まるという特徴があるため、本来であれば、それぞれのVREが随時、発電計画を更新することが全体最適につながると考えられる。ただし現在、VREの大半は「FITインバランス特例制度」を利用しているため、これを同時市場でどのように取り扱うかは重要な論点である。</p>
+<p>「同時市場の在り方等に関する検討会」の第15回会合では、同時市場においてVREを取り扱う仕組みやVREの入札・精算の方法や課題について整理を行った。<br>
+」</p>
+<h2 id="ngfs気候変動リスク等に係る金融当局ネットワークによる短期気候シナリオの公表について金融庁httpswwwfsagojpinteretc2025051320250513html"><a href="https://www.fsa.go.jp/inter/etc/20250513/20250513.html">NGFS（気候変動リスク等に係る金融当局ネットワーク）による短期気候シナリオの公表について：金融庁</a> </h2>
+<p>「<br>
+NGFS（気候変動リスク等に係る金融当局ネットワーク）は、５月７日に、以下の文書を公表しました。</p>
+<p>詳細につきましては、以下をご覧ください。</p>
+<pre class="language-text">プレス・リリース（原文新しいウィンドウで開きます＜NGFSウェブサイトにリンク＞）
+「中央銀行および監督当局向けNGFS短期シナリオ」（原題：NGFS Short-Term Scenarios for central banks and supervisors）（PDF原文新しいウィンドウで開きます＜NGFSウェブサイトにリンク＞）
+「NGFS短期シナリオ：主な内容」（原題：The NGFS Short-Term Scenarios: Main Takeaways）（PDF原文新しいウィンドウで開きます＜NGFSウェブサイトにリンク＞）
+「技術的文書」（原題：NGFS Short-Term Climate Scenarios Technical Documentation）（PDF原文新しいウィンドウで開きます＜NGFSウェブサイトにリンク＞
+</pre>
+<p>関連サイト：NGFS事務局ウェブサイト（<a href="https://www.ngfs.net/en%E6%96%B0%E3%81%97%E3%81%84%E3%82%A6%E3%82%A3%E3%83%B3%E3%83%89%E3%82%A6%E3%81%A7%E9%96%8B%E3%81%8D%E3%81%BE%E3%81%99%EF%BC%89">https://www.ngfs.net/en新しいウィンドウで開きます）</a><br>
+」</p>
+<h2 id="guideline-connects-bim-and-asset-administration-shell-for-efficient-building-management-httpsindustrialdigitaltwinorgennews-datesguideline-connects-bim-and-asset-administration-shell-for-efficient-building-management-6946"><a href="https://industrialdigitaltwin.org/en/news-dates/guideline-connects-bim-and-asset-administration-shell-for-efficient-building-management-6946">Guideline connects BIM and Asset Administration Shell for efficient building management </a> </h2>
+<p>「New guideline from buildingSMART Germany and the Industrial Digital Twin Association (IDTA) lays foundation for holistic digital twins of buildings</p>
+<p>buildingSMART Germany and Industrial Digital Twin Association (IDTA) have jointly published the guideline “BIM building model for the integration of machines, building services and external devices using the Asset Administration Shell”. This practice-oriented guide describes in detail for the first time how Building Information Modelling (BIM) and the Asset Administration Shell (AAS) can be successfully integrated. The aim is to create a comprehensive Digital Twin that maps and optimises the entire life cycle of a building – from planning and construction to operation and deconstruction. The guide is now available as a free download from the buildingSMART Germany publisher’s shop and the IDTA content hub.」<br>
+「buildingSMART GermanyとIndustrial Digital Twin Association（IDTA）による新たなガイドラインは、建物の包括的なデジタルツインの基盤を構築します。</p>
+<p>buildingSMART GermanyとIndustrial Digital Twin Association（IDTA）は共同で、「アセット管理シェルを用いた機械、ビル設備、外部機器の統合のためのBIM建物モデル」というガイドラインを公開しました。この実践重視のガイドでは、ビルディング・インフォメーション・モデリング（BIM）とアセット管理シェル（AAS）を効果的に統合する方法を初めて詳細に解説しています。その目的は、計画から建設、運用、解体に至るまで、建物のライフサイクル全体をマッピングし、最適化する包括的なデジタルツインを構築することです。このガイドは、buildingSMART Germanyの出版社ショップとIDTAコンテンツハブから無料でダウンロードできます。」</p>
+<h2 id="フランス政府-高品質カーボンクレジット活用の憲章を発表-国際市場の透明性強化へ-httpsesgjournaljapancomworld-news45430"><a href="https://esgjournaljapan.com/world-news/45430">フランス政府、高品質カーボンクレジット活用の憲章を発表、国際市場の透明性強化へ </a> </h2>
+<p>「4月24日、フランス政府は欧州最大級の気候イノベーションイベント「ChangeNOW」にて、国際的なカーボンクレジット市場の透明性と健全性向上を目的とした「高品質カーボンクレジット活用のためのチャーター（憲章）」を発表した。エコロジー移行・生物多様性・海洋・森林大臣であるアニエス・パニエ＝ルナシェ氏が壇上で紹介し、シュナイダーエレクトリックを含む17の主要グローバル企業が同日、公式署名した。</p>
+<p>このチャーターは、カーボンクレジットが確実かつ環境的実効性を伴って活用されることを狙いとするもので、昨年アゼルバイジャンで開催されたCOP29会議の流れを受けて策定。カーボンクレジットを通じた途上国での排出削減・CO₂吸収の取り組みを後押しし、国際協力を強化する枠組みだ。」</p>
+<h2 id="apple-unveils-environmental-progress-surpassing-60-percent-reduction-in-global-greenhouse-gas-emissions-httpswwwwbcsdorgnewsapple-unveils-environmental-progress-surpassing-60-percent-reduction-in-global-greenhouse-gas-emissions"><a href="https://www.wbcsd.org/news/apple-unveils-environmental-progress-surpassing-60-percent-reduction-in-global-greenhouse-gas-emissions/">Apple unveils environmental progress, surpassing 60 percent reduction in global greenhouse gas emissions </a> </h2>
+<p>「Apple today announced that the company has surpassed a 60 percent reduction in its global greenhouse gas emissions compared to 2015 levels, as part of its Apple 2030 goal to become carbon neutral across its entire footprint in the next five years. The company achieved several other major environmental milestones, including the use of 99 percent recycled rare earth elements in all magnets and 99 percent recycled cobalt in all Apple-designed batteries.11 Apple shared this and other progress in its annual Environmental Progress Report, published today.」<br>
+「Appleは本日、今後5年間で事業活動全体でカーボンニュートラルを目指す「Apple 2030」目標の一環として、2015年比で世界の温室効果ガス排出量を60%以上削減したことを発表しました。同社は、すべての磁石に99%再生レアアースを使用し、Appleが設計するすべてのバッテリーに99%再生コバルトを使用するなど、環境面での主要なマイルストーンを複数達成しました。11 Appleは、本日発表した年次環境進捗報告書において、この進捗状況やその他の進捗状況を公開しました。」</p>
+<h2 id="circularity-gap-report-2025-a-global-call-to-action-httpswwwcircularity-gapworld2025"><a href="https://www.circularity-gap.world/2025">Circularity Gap Report 2025: A global call to action </a> </h2>
+<p>「Our report presents a comprehensive 'report card' for the circularity of the global economy, revealing that we are still far from achieving a passing grade.</p>
+<p>Although we’ve made small steps forward, global circularity is still moving in reverse, highlighting the urgent need for science-based targets to drive change.」<br>
+「私たちの報告書は、世界経済の循環性に関する包括的な「成績表」を提示し、合格点の達成にはまだまだ遠いことを示しています。</p>
+<p>私たちは小さな前進を遂げてきましたが、世界の循環性は依然として後退傾向にあり、変化を促すための科学的根拠に基づいた目標設定が緊急に必要であることを浮き彫りにしています。」</p>
+<h2 id="eba-eu域内銀行の気候リスク指数を初公開-httpsesgjournaljapancomworld-news45428"><a href="https://esgjournaljapan.com/world-news/45428">EBA、EU域内銀行の気候リスク指数を初公開 </a> </h2>
+<p>「4月25日、欧州銀行監督機構（EBA）は25日、EUおよびEEA（欧州経済領域）域内の銀行セクターにおける気候リスクの最新指標を集約したESGダッシュボードを初めて公開した。新たなダッシュボードは、ESG（環境・社会・ガバナンス）リスクの体系的なモニタリング体制を構築し、各銀行の気候リスク指標への集中・一元的アクセスを可能にするものだ。」<br>
+「データによると、EU・EEA各国の銀行は、クライメートチェンジへの寄与度が高い産業セクターの法人顧客へのエクスポージャーが大半を占めており、その割合は多くの国で70％超に及ぶ。これにより、銀行セクター全体が移行リスク、すなわち今後の環境政策や技術革新、消費者嗜好の変化等によって影響を受ける可能性が大きいことが示された。ただし、このリスクは企業ごとに異なり、個別の移行対策が統計に反映されていないことに注意が必要だとしている。</p>
+<p>一方、物理的リスク（気候変動による洪水や災害など）の点からは、エクスポージャーの平均は30％以下にとどまった。ただし、銀行ごとにデータの開示精度や評価手法が異なることから、この指標はあくまで金融機関自身の評価に基づくものであり、慎重な解釈が求められる。</p>
+<p>」</p>
+<h2 id="米国グリーンビルディング協会-持続可能な建築基準leed-v5を発表-httpsesgjournaljapancomworld-news45419"><a href="https://esgjournaljapan.com/world-news/45419">米国グリーンビルディング協会、持続可能な建築基準「LEED v5」を発表 </a> </h2>
+<p>「4月28日、米国グリーンビルディング協会（USGBC）はLEED（Leadership in Energy and Environmental Design）プログラムの最新バージョンであるLEED v5を発表した。LEED v5は、これまで25年にわたり世界中の都市やコミュニティに多大な影響を与えてきたLEEDの蓄積を踏まえ、現代の課題への対応力を強化したものである。新バージョンでは、建築オーナーや設計チームがより効率的かつ直感的に認証を取得できるよう、技術面でのアップデートも図られている。</p>
+<p>LEED v5の特徴は、脱炭素化、人間と生態系の健康、レジリエンスという三つの主要テーマに重点を置いている点に現れている。現在の気候変動問題に対応するため、認証取得に必要な得点の半分を脱炭素化に関わる項目が占めている。運用時だけでなく、建設資材の製造段階（エンボディドカーボン）、冷媒、交通など、建物全体のライフサイクルを通した温室効果ガス排出量の削減が求められている。すべてのプロジェクトは、将来的な運用カーボン排出量の予測や長期的な脱炭素戦略の策定を義務付けられており、持続可能な変革への道筋が示されている。」</p>
+<h2 id="カナダ証券管理局-気候関連多様性関連開示プロジェクトを一時停止-httpsesgjournaljapancomworld-news45396"><a href="https://esgjournaljapan.com/world-news/45396">カナダ証券管理局、気候関連・多様性関連開示プロジェクトを一時停止 </a> </h2>
+<p>「4月23日、カナダ証券管理局（CSA）は、気候関連開示の新ルール策定と多様性関連開示要件改正作業を一時停止すると発表した。米国および国際的な動向を受け、カナダ市場と発行体の適応を支援する措置である。</p>
+<p>CSA議長のスタン・マギドソン氏は「経済・地政学環境の急変により、カナダ発行体の競争力への懸念が高まっている」と述べ、市場の競争力・効率性・強靭性向上を優先課題とする方針を示した。</p>
+<p>」</p>
+<h2 id="market-x--tech-x-in-valencia-gaia-x-new-milestones-for-trust-interoperability-and-data-sovereignty-httpsgaia-xeumarket-x-tech-x-in-valencia-gaia-x-new-milestones-for-trust-interoperability-and-data-sovereignty"><a href="https://gaia-x.eu/market-x-tech-x-in-valencia-gaia-x-new-milestones-for-trust-interoperability-and-data-sovereignty/">Market-X &amp; Tech-X in Valencia: Gaia-X New Milestones for Trust, Interoperability, and Data Sovereignty </a> </h2>
+<p>Compliance Document 25.03 とArchitecture Document 25.05 、Data Transfer Agentのリンクがある<br>
+「15 May 2025, Valencia, Spain – Gaia-X has successfully concluded Market-X &amp; Expo and Tech-X &amp; Hackathon #8, held on 13–14 May 2025 in Valencia, Spain, in partnership with Gaia-X Hub Spain. The two-day event brought together business leaders, technology experts, and community partners to explore the latest advances in open-source implementation of a universal Trust Framework for digital ecosystems and data spaces, reinforcing Gaia-X’s commitment to building trust between ecosystem participants, their services or data sharing interactions, and with other ecosystems.」<br>
+「Gaia-X presented the next evolution of its Compliance Document 25.03 and Policy Rules Committee (PRC) White Paper, introducing mechanisms for Geographical and Domain-Specific Extensions. Additionally, Gaia-X announced the operationalisation of Label Levels 2 and 3, providing concrete pathways for higher trust levels, including European data residency, sovereign control, and resilience against non-European jurisdictional risks.<br>
+」<br>
+「Gaia-X has officially presented the new release of the Architecture Document 25.05. This fully refactored version offers a more transparent and more actionable structure. The updated document includes:</p>
+<ul>
+<li><strong>Understanding the Gaia-X Digital Ecosystem</strong>: Provides an overview of ecosystems, data spaces, Gaia-X positioning, and alignment with external standards and associations.</li>
+<li><strong>Trust Framework Architecture</strong>: Explains how to operationalise trust in data ecosystems, covering interoperability, conceptual models, and trustworthy data space architectures.</li>
+<li><strong>Implementation of Trusted Data Transactions</strong>: Details the Data Product conceptual model, data licensing, and Data Usage Agreements.</li>
+<li><strong>Technical Compatibility Specifications</strong>: Defines the requirements for Gaia-X compatibility, ensuring consistency and trust across implementations.</li>
+</ul>
+<p>」<br>
+「During the event, Gaia-X announced the release of the Data Transfer Agent, a collaborative effort to deliver an efficient, secure, resilient, and scalable agent for decentralised data transfers compliant with Gaia-X principles. A joint proposal from Dawex – Data Exchange Technology, IMT Transfert/TeraLab and Gaia-X CTO Office.」</p>
+<h2 id="清水建設-建設廃プラを現場分別再資源化材として有価売却-httpscehubjpnewsshimz-plastic-recycle"><a href="https://cehub.jp/news/shimz-plastic-recycle/">清水建設、建設廃プラを現場分別。再資源化材として有価売却 </a> </h2>
+<p>「清水建設株式会社は5月8日、建設現場で発生する多種多様な廃プラスチックを、材質ごとに現場で高度分別し、再資源化材として有価売却する新たなマテリアルリサイクルスキームを構築したと発表した。この取り組みは、資源循環社会の実現に貢献することを目的としている」<br>
+「清水建設が構築した新スキームでは、現場の作業員がハンディ型のプラスチックセンサーを使用し、ポリエチレンやポリプロピレンといった廃プラスチックの材質を識別する。この分別作業は、現場の廃棄物保管場所に設けられた「資源回収ヤード」で、廃棄物管理の専任作業員「グリーンマスター」が中心となって行う。選別の際には、付着物の状態や汚れの程度も考慮し、有価売却が可能な再資源化材を選び出す。特に軟質の非塩化ビニル系廃プラスチックについては、圧縮機で減容化することで、運搬時の二酸化炭素排出量削減も図る。」</p>
+<h2 id="interoperable-europe-acthttpscommissioneuropaeupublicationsinteroperable-europe-act_en"><a href="https://commission.europa.eu/publications/interoperable-europe-act_en">Interoperable Europe Act</a> </h2>
+<p>「The Interoperable Europe Act entered into force on 11 April 2024. The Act aims to strengthen cross-border interoperability and cooperation in the public sector across the EU.</p>
+<p>The Act introduces a structured and co-owned EU cooperation framework for public administrations with the following pillars:</p>
+<p>An Interoperable Europe Board - that is co-owned by the Member States and the EU and supported by public and private actors – for the development of a common strategic agenda for cross-border interoperability, the support in operational implementing interoperability solutions, and progress monitoring</p>
+<p>Mandatory interoperability assessments to evaluate the impact of changes in IT systems related to cross-border interoperability in the EU<br>
+ <br>
+An ‘Interoperable Europe Portal’ as a community platform and one-stop-shop for shared and reusable interoperability solutions<br>
+Innovation and support measures, including regulatory sandboxes and GovTech cooperation, to promote policy experimentation, developing skills and the scaling up of interoperability solutions for reuse.  」<br>
+「相互運用性欧州法は2024年4月11日に発効しました。この法律は、EU全体の公共部門における国境を越えた相互運用性と協力を強化することを目的としています。</p>
+<p>この法律は、以下の柱を掲げ、行政機関向けに構造化され共同所有されるEU協力枠組みを導入します。</p>
+<p>加盟国とEUが共同所有し、官民の主体が支援する相互運用性欧州委員会（Interoperable Europe Board）は、国境を越えた相互運用性に関する共通戦略アジェンダの策定、相互運用性ソリューションの運用上の導入支援、進捗状況のモニタリングを行います。</p>
+<p>EUにおける国境を越えた相互運用性に関連するITシステムの変更の影響を評価するための、相互運用性評価の義務化</p>
+<p>共有・再利用可能な相互運用性ソリューションのためのコミュニティプラットフォーム兼ワンストップショップとしての「相互運用性欧州ポータル」<br>
+規制サンドボックスやGovTech協力を含むイノベーションと支援策により、政策実験、スキル開発、相互運用性ソリューションの再利用に向けたスケールアップを促進します。」</p>
+<h2 id="cybersecurity-regulationhttpscommissioneuropaeupublicationscybersecurity-regulation_en"><a href="https://commission.europa.eu/publications/cybersecurity-regulation_en">Cybersecurity Regulation</a> </h2>
+<p>「The Cybersecurity Regulation laying down measures for a high common level of cybersecurity at the institutions, bodies, offices and agencies of the Union entered into force on 7 January 2024. The key elements of the proposal for Cybersecurity Regulation:</p>
+<p>Strengthen the mandate of CERT-EU and provide the resources it needs to fulfil it;<br>
+Require from all EU institutions, bodies, offices and agencies to:<br>
+Have a framework for governance, risk management and control in the area of cybersecurity;<br>
+Implement a baseline of cybersecurity measures addressing the identified risks;<br>
+Conduct regular maturity assessments;<br>
+Put in place a plan for improving their cybersecurity, approved by the entity's leadership;<br>
+Share incident-related information with CERT-EU without undue delay.<br>
+Set up a new inter-institutional Cybersecurity Board to drive and monitor the implementation of the regulation and to steer CERT-EU;<br>
+Rename CERT-EU from ‘Computer Emergency Response Team' to ‘Cybersecurity Centre', in line with developments in the Member States and globally, but keep the short name ‘CERT-EU' for name recognition.」<br>
+「EUの機関、団体、事務局、および政府機関における高い共通レベルのサイバーセキュリティを実現するための措置を定めるサイバーセキュリティ規則が、2024年1月7日に発効しました。サイバーセキュリティ規則案の主な要素は以下のとおりです。</p>
+<p>CERT-EUの権限を強化し、その遂行に必要なリソースを提供すること。</p>
+<p>すべてのEU機関、団体、事務局、および政府機関に対し、以下の事項を義務付けます。</p>
+<p>サイバーセキュリティ分野におけるガバナンス、リスク管理、および統制のための枠組みを構築すること。</p>
+<p>特定されたリスクに対処するためのサイバーセキュリティ対策のベースラインを実施すること。</p>
+<p>定期的な成熟度評価を実施すること。</p>
+<p>組織のリーダーシップによって承認されたサイバーセキュリティ改善計画を策定すること。</p>
+<p>インシデント関連情報をCERT-EUと遅滞なく共有すること。</p>
+<p>規則の実施を推進・監視し、CERT-EUを指導するために、新たな機関間サイバーセキュリティ委員会を設置すること。<br>
+加盟国および世界情勢に合わせて、CERT-EU の名前を「コンピュータ緊急対応チーム」から「サイバーセキュリティ センター」に変更しますが、名称の認識のために短縮名の「CERT-EU」はそのままにします。」</p>
+<h2 id="european-business-wallet-digital-identity-secure-data-exchange-and-legal-notifications-for-simple-digital-businesshttpseceuropaeuinfolawbetter-regulationhave-your-sayinitiatives14663-european-business-wallet-digital-identity-secure-data-exchange-and-legal-notifications-for-simple-digital-business_en"><a href="https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14663-European-Business-Wallet-digital-identity-secure-data-exchange-and-legal-notifications-for-simple-digital-business_en">European Business Wallet: digital identity, secure data exchange and legal notifications for simple, digital business</a> </h2>
+<p>「<br>
+Building on the European digital identity framework, the EU Business Wallet will enable secure digital identification, data sharing and legally valid notifications across the EU.</p>
+<p>It will help economic operators manage regulatory requirements, cutting administrative burdens and compliance costs.</p>
+<p>By ensuring interoperability with national systems, it will support cross-border business, boost SME competitiveness, foster trust in digital interactions and advance the EU’s digital single market.<br>
+」<br>
+「<br>
+EUビジネスウォレットは、欧州デジタルIDフレームワークを基盤として、EU全域で安全なデジタルID、データ共有、そして法的に有効な通知を可能にします。</p>
+<p>これにより、事業者は規制要件を管理し、行政上の負担とコンプライアンスコストを削減することができます。</p>
+<p>各国のシステムとの相互運用性を確保することで、国境を越えたビジネスを支援し、中小企業の競争力を高め、デジタルインタラクションにおける信頼を醸成し、EUのデジタル単一市場を推進します。<br>
+」</p>
+<h2 id="産業用データ連携基盤デジタル庁httpswwwdigitalgojppoliciesindustrial-data-integration"><a href="https://www.digital.go.jp/policies/industrial-data-integration">産業用データ連携基盤｜デジタル庁</a> </h2>
+<p>「<br>
+世界中でサービスやものづくりの革新が加速している中、我が国の企業がリードしていくためには、事業活動による様々なデータをデジタル化しサプライチェーンや業界を越えて連携・活用することが不可欠です。そのために、特定の企業間でデータ連携・活用するだけではなく、オープンに様々な企業が参加でき自由にデータ連携・活用できるデータ連携基盤が必要になります。デジタル庁では企業や業界を跨ぎデータを安心して活用・連携できるツール・仕組みの整備を進めています。<br>
+このような取組により、例えば製品におけるCO2排出量の見える化や、生産量や流通量の把握によるものの流れの最適化など、データの連携により技術革新しやすい土壌や実物経済を動かす仕組みを創出していきます。<br>
+」</p>
+<h2 id="イングランド銀行-気候リスク対応を強化へ金融機関に新たな管理基準を提示-httpsesgjournaljapancomworld-news45545"><a href="https://esgjournaljapan.com/world-news/45545">イングランド銀行、気候リスク対応を強化へ―金融機関に新たな管理基準を提示 </a> </h2>
+<p>「4月30日、イングランド銀行のプルーデンシャル規制機構（PRA）は、銀行および保険会社に対する気候関連リスク管理の実効性を高めるための新たな提案を盛り込んだコンサルテーションペーパー（CP10/25）を公表した。これは、2019年に発表された監督声明SS3/19の更新版にあたり、物理的リスクや移行リスクを含む気候変動による財務リスクへの組織的対応を促すものとなっている。</p>
+<p>提案は、気候関連リスクの特定・評価、リスク指標の設定とモニタリング、内部報告体制の強化、財務報告や資本評価への反映など、幅広い領域に及ぶ。企業に対しては、気候リスクを独立したカテゴリーとして明確に認識し、既存のリスク管理フレームワークと統合することが求められるほか、定量的指標による監視体制の構築と、経営層への定期的な報告も義務付けられる見込みだ。」</p>
+<h2 id="金融庁-tcfdに基づく金融機関の移行計画調査を公表セクター間の差異を可視化-httpsesgjournaljapancomdomestic-news45600"><a href="https://esgjournaljapan.com/domestic-news/45600">金融庁、TCFDに基づく金融機関の移行計画調査を公表──セクター間の差異を可視化 </a> </h2>
+<p>「4月28日、金融庁は「TCFD提言に沿った金融機関のシナリオ分析、およびその結果を踏まえた移行計画等の現状に関する調査」報告書を公表した。本調査は、EY新日本有限責任監査法人に委託され、日本の主要銀行、損害保険会社、生命保険会社がTCFD提言に基づいて実施しているシナリオ分析と移行計画の実態を比較・分析したものである。</p>
+<p>報告書では、金融機関ごとのシナリオ分析の手法や開示の範囲、対象とするリスク・機会の違い、定量・定性データの活用状況などが明らかにされた。また、移行計画の策定状況に関しても、セクター別にアプローチの違いが見られた。これにより、各金融セクターにおける気候関連リスクへの対応の成熟度や取り組みの進捗状況を比較できる内容となっている。」</p>
+<h2 id="英国金融行動監視機構-ポートフォリオマネジメントへの持続可能性開示要件適用延期-httpsesgjournaljapancomworld-news45499"><a href="https://esgjournaljapan.com/world-news/45499">英国金融行動監視機構、ポートフォリオマネジメントへの持続可能性開示要件適用延期 </a> </h2>
+<p>「4月29日、金融行動監視機構（FCA）は、持続可能性開示要件（SDR）をポートフォリオマネジメントに適用する計画を一時的に延期し、モデルポートフォリオサービス（MPS）のレビューに今後注力する方針を明らかにした。この決定は、消費者が持続可能な投資市場をより効果的に理解できるよう支援するためのものであり、従来から業界や消費者の間で注目を集めていた。</p>
+<p>FCAには、多くの支持的な意見が寄せられた一方で、実施における具体的な課題についても多くの声が上がった。たとえば、ポートフォリオマネージャーの異なる役割や責任を考慮したラベリング基準や、消費者やプロダクトレベルでの報告の方法について、さらなる明確化が求められている。</p>
+<p>こうしたフィードバックを踏まえ、FCAはポートフォリオマネジメント向けのSDR制度を今すぐに導入することは適切でないと判断した。現在はまず、MPSの適用状況の広範なレビューを通じて、投資家が良好な成果を得られるよう支援する企業の取り組みを優先的に確認する予定である。</p>
+<p>」</p>
+<h2 id="cooperants-and-dynamo-become-gaia-x-lighthouse-data-spaces-httpsgaia-xeucooperants-and-dynamo-become-gaia-x-lighthouse-data-spaces"><a href="https://gaia-x.eu/cooperants-and-dynamo-become-gaia-x-lighthouse-data-spaces/">COOPERANTS and Dynamo become Gaia-X Lighthouse Data Spaces </a> </h2>
+<p>「COOPERANTS (Collaborative Processes and Services for Aeronautics and Space) is a leading collaborative alliance of industry, SMEs and research institutes in the Aeronautics and Space sector that solves pressing digital collaboration problems by creating a common data space, powered by Gaia-X. The aim of the consortium is to develop more efficient, decentralised solutions for future working methods and processes across the entire lifecycle of space or air vehicles. COOPERANTS develops and operates a digital service infrastructure, powered by Gaia-X, for the low-barrier exchange of heterogeneous data from individual system landscapes as well as for the operation of innovative smart services that enhance decision-making and improve operational efficiency.</p>
+<p>Dynamo is a trusted European B2B cloud exchange platform committed to giving Europe back a chance to win over non-EU providers while creating a virtual single large technical and commercial federation across all European operators. This one-stop place provides you with the best European cloud and data services of any type (IaaS, PaaS, SaaS, APIs). Committed to delivering impact on the market with strong alignment to the European principles and regulations, and the freedom of execution of a commercial platform, Dynamo strives to improve the competitive advantage of its partners, augmenting their portfolio to the sum of all participant’s, safeguarding and reinforcing their existing and future customers, and building the much awaited critical mass and competitiveness for European providers, not starting from scratch, but through a cohesive and cooperative business model」<br>
+「COOPERANTS（航空宇宙分野における協働プロセスとサービス）は、航空宇宙分野における産業界、中小企業、研究機関による、Gaia-Xを活用した共通データスペースの構築を通じて、デジタルコラボレーションにおける喫緊の課題を解決する、リーディングカンパニーです。このコンソーシアムの目標は、宇宙船や航空機のライフサイクル全体にわたる、より効率的で分散化された将来の業務手法とプロセスのためのソリューションを開発することです。COOPERANTSは、Gaia-Xを活用したデジタルサービスインフラストラクチャを開発・運用し、個々のシステムランドスケープからの異種データの容易な交換を実現するとともに、意思決定の強化と運用効率の向上を実現する革新的なスマートサービスの運用を実現しています。</p>
+<p>Dynamoは、信頼性の高い欧州のB2Bクラウド交換プラットフォームであり、欧州がEU域外のプロバイダーに勝つチャンスを取り戻すとともに、欧州のすべての事業者を網羅する仮想的な単一の大規模技術・商業連合を構築することに尽力しています。このワンストッププラットフォームは、あらゆる種類の最高の欧州クラウドおよびデータサービス（IaaS、PaaS、SaaS、API）を提供します。欧州の原則と規制に強く準拠し、商用プラットフォームの自由な実行によって市場に影響を与えることに尽力するDynamoは、パートナーの競争優位性を向上させ、ポートフォリオをすべての参加者の合計にまで拡大し、既存および将来の顧客を保護および強化し、ゼロからではなく、まとまりのある協力的なビジネスモデルを通じて、欧州のプロバイダーにとって待望のクリティカルマスと競争力を構築することを目指しています。」</p>
+<h2 id="agrospai-and-dataspace4health-are-the-latest-projects-to-become-gaia-x-lighthouse-projects-httpsgaia-xeuagrospai-and-dataspace4health-are-the-latest-projects-to-become-gaia-x-lighthouse-projects">{AgrospAI and DataSpace4Health are the latest projects to become Gaia-X Lighthouse Projects }(<a href="https://gaia-x.eu/agrospai-and-dataspace4health-are-the-latest-projects-to-become-gaia-x-lighthouse-projects/">https://gaia-x.eu/agrospai-and-dataspace4health-are-the-latest-projects-to-become-gaia-x-lighthouse-projects/</a>) </h2>
+<p>「AgrospAI is a data space demonstrator supporting agri-food sector stakeholders in alignment with the future Common European Agricultural Data Space (CEADS), promoting transparency, equity, and sustainability through structured governance and secure data sharing. Participants include farmers, service providers, and ecosystem operators, with roles spanning data production, analytics, and computing services. Key features include compute-to-data technology for data sovereignty and a cloud-based “data room” for AI-driven processing while maintaining control. Or a monetisation mechanism using a digital Euro and distributed ledger technology that enables traceable transactions. AgrospAI adheres to FAIR principles, leveraging semantic technologies and ontologies for metadata tagging and interoperability. The Spanish Ministry of Digital Transformation funds AgrospAI under the Sectorial Data Spaces call, TSI-100120-2024-28.</p>
+<p>Dataspace4Health a key Gaia-X Lighthouse Project, is focused on building a trustworthy and federated ecosystem for sharing health data across Luxembourg and Europe, in full compliance with Gaia-X principles. The initiative seeks to unlock the potential of health data for improved patient care within Luxembourg and for wider European healthcare innovation. By connecting various health data domains and enabling secure data exchange between institutions and locations, Dataspace4Health aims to establish a dedicated federated data platform for Luxembourg. This platform will empower new data-driven economic models grounded in data sovereignty and the integration of previously siloed information, ultimately aiming to enhance healthcare delivery and foster advancements in the field」<br>
+「AgrospAIは、将来の欧州共通農業データ空間（CEADS）に沿って農業食品セクターのステークホルダーを支援するデータ空間デモンストレーターであり、構造化されたガバナンスと安全なデータ共有を通じて透明性、公平性、持続可能性を促進します。参加者には、農家、サービスプロバイダー、エコシステムオペレーターが含まれ、データ生成、分析、コンピューティングサービスなど、幅広い役割を担っています。主な特徴としては、データ主権を実現するコンピューティング・データ技術と、制御を維持しながらAI主導の処理を可能にするクラウドベースの「データルーム」が挙げられます。また、追跡可能な取引を可能にするデジタルユーロと分散型台帳技術を用いた収益化メカニズムも備えています。AgrospAIはFAIR原則に準拠し、メタデータのタグ付けと相互運用性のためにセマンティック技術とオントロジーを活用しています。スペインデジタル変革省は、セクター別データ空間公募（TSI-100120-2024-28）に基づき、AgrospAIに資金を提供しています。</p>
+<p>Dataspace4Healthは、Gaia-Xの主要ライトハウスプロジェクトであり、Gaia-Xの原則に完全に準拠し、ルクセンブルクおよびヨーロッパ全体で医療データを共有するための信頼性の高い連合型エコシステムの構築に重点を置いています。この取り組みは、ルクセンブルクにおける患者ケアの改善と、より広範なヨーロッパの医療イノベーションのために、医療データの潜在能力を解き放つことを目指しています。Dataspace4Healthは、さまざまな医療データドメインを接続し、機関や地域間での安全なデータ交換を可能にすることで、ルクセンブルク専用の連合型データプラットフォームの構築を目指しています。このプラットフォームは、データ主権と、これまでサイロ化されていた情報の統合に基づいた、新しいデータ駆動型経済モデルを強化し、最終的には医療サービスの向上と医療分野の進歩を促進することを目指しています。」</p>
+<h2 id="極端気象アトリビューションセンターwac-httpsweatherattributioncenterjp"><a href="https://weatherattributioncenter.jp/">極端気象アトリビューションセンター（WAC） </a> </h2>
+<p>「日本における極端気象の<br>
+イベント・アトリビューション<br>
+極端気象アトリビューションセンター（WAC）は、日本各地で発生した極端気象について、人間活動による地球温暖化やその他の気候変動がどの程度影響しているかを「イベント・アトリビューション」という科学的手法で分析し、その結果を公表しています。」</p>
+<h2 id="日立製作所-修理をエンタメ化する配信プラットフォームなおストを発表修理をより身近な存在に-httpscehubjpnewshitachi-circular-design-streaming"><a href="https://cehub.jp/news/hitachi-circular-design-streaming/">日立製作所、修理をエンタメ化する配信プラットフォーム「なおスト」を発表。修理をより身近な存在に </a> </h2>
+<p>「株式会社日立製作所のHitachi circular designチームは5月16日、修理・保守作業をストリーミング配信する新しいプラットフォーム「なおスト」を発表した。このサービスは、これまで専門家の領域とされ、一般の目に触れる機会の少なかった修理作業をエンターテイメントとして提供し、修理をより身近な存在にすることを通じて、循環型社会の実現に貢献することを目指す」<br>
+「「なおスト」は、修理・保守作業の様子をストリーミング配信するプラットフォームだ。単に作業を中継するだけでなく、視聴者が楽しめるよう工夫されている。映像解析技術を活用し、作業工程や使用されている部品名などをテロップとして映像内に自動で追加表示する。また、手元を映すカメラ、作業者全体を映すカメラ、作業者の一人称視点を映すカメラの3点を設置し、作業内容やシーンに応じて切り替えることで、臨場感あふれる映像を提供する。視聴者は、従来のコメント機能の代わりに絵文字ボタンを通じてリアクションを送ることができ、作業の妨げにならない範囲でゆるやかな双方向性を実現した。」</p>
+<h2 id="アサヒグループ-画像認識技術によるリサイクル支援や再生農業支援など手がけるスタートアップ9社と協業-httpscehubjpnewsasahi-sustainability-innovation-program"><a href="https://cehub.jp/news/asahi-sustainability-innovation-program/">アサヒグループ、画像認識技術によるリサイクル支援や再生農業支援など手がけるスタートアップ9社と協業 </a> </h2>
+<p>「アサヒグループホールディングス株式会社は5月15日、サステナビリティ推進に注力するスタートアップとの協業機会を世界規模で探索する「Sustainability Innovation Program」において、9社のパートナー企業を選定したと発表した。この協業を通じて、同グループは2040年までのネットゼロ目標達成に向けた取り組みを加速し、持続可能な未来の実現を目指す。</p>
+<p>同プログラムには世界48カ国から263社のスタートアップが応募し、その中から厳選された9社がパートナーとして選ばれた。協業する分野は、持続可能な農業と原材料、再生可能エネルギーとエネルギー効率化、持続可能な容器包装と循環型経済の3つにわたる。」</p>
+<h2 id="米国mobicesmiiと中国可信数据空間-米中両国のデータ共有圏の現状は-httpsmonoistitmediacojpmnarticles250522news008html"><a href="https://monoist.itmedia.co.jp/mn/articles/2505/22/news008.html">米国「MOBI／CESMII」と中国「可信数据空間」、米中両国のデータ共有圏の現状は </a> </h2>
+<p>「本連載では、「加速するデータ共有圏／データスペースの最新動向と日本の産業へのインパクト」をテーマとして、データ共有圏／データスペースの動向やインパクト、IDSA（International Data Space Association）、GAIA-X、Catena-X、Manufacturing-Xなどの鍵となる取り組みを解説していく。連載第7回となる今回は、米国と中国の取り組みを紹介する。」</p>
+<h2 id="脱炭素化の実現に求められるグリーン製品需要の拡大策-環境省が検討会を新設-httpswwwitmediacojpsmartjapanarticles250521news093html"><a href="https://www.itmedia.co.jp/smartjapan/articles/2505/21/news093.html">脱炭素化の実現に求められるグリーン製品需要の拡大策　環境省が検討会を新設 </a> </h2>
+<p>「一般消費者などの需要サイドや、企業活動におけるバリューチェーン全体の脱炭素化に向けては、グリーン製品のさらなる需要喚起が課題となっている。そこで環境省では、グリーン製品・サービスに対する需要創出や、バリューチェーンのグリーン化に向けた施策を検討する検討会を新設した。」</p>
+<h2 id="世界の氷床-急激に融解進む-100年で1メートル海面上昇の恐れ-httpswwwcnncojpfringe35233229html"><a href="https://www.cnn.co.jp/fringe/35233229.html">世界の氷床、急激に融解進む　１００年で１メートル海面上昇の恐れ </a> </h2>
+<p>「ＣＮＮ） 新たな研究によると、世界の氷床が急激に融解し始めている。世界が奇跡的に気温上昇を１．５度以内に抑えこんだとしても、１００年で海面は約１メートル上昇し、沿岸部からの「大規模な」移住を余儀なくされる恐れがある。<br>
+国際的な科学者グループは、デンマーク自治領グリーンランドと南極の氷床が「安全に」存続するための温暖化の限界値を設定しようと試みた。科学者らは衛星データ、気候モデルのほか、過去の証拠（氷床コア、深海たい積物、タコのＤＮＡなど）を用いた研究を綿密に検討したという。」</p>
+<h2 id="ice-気候リスク評価を強化-世界2万以上の企業政府を対象に地理空間プラットフォーム拡張-httpsesgjournaljapancomworld-news45598"><a href="https://esgjournaljapan.com/world-news/45598">ICE、気候リスク評価を強化　世界2万以上の企業・政府を対象に地理空間プラットフォーム拡張 </a> </h2>
+<p>「5月7日、インターコンチネンタル取引所（ICE）は、「ICE Global Climate Risk Solution」の提供対象を世界2万以上の企業・政府に拡大したと発表した。本ソリューションは、世界16億棟以上の建物フットプリントデータを活用し、物理的リスクと移行リスクの将来予測に基づくスコアを提供する。</p>
+<p>洪水や山火事、ハリケーンなど8種の自然災害に対する暴露度と、排出量・気候目標の情報を統合することで、多様な資産クラスにおける気候リスクを評価可能とする。現在は300万件超の企業資産をカバーし、将来的には900万件への拡大を予定。Hazard Watch機能により、新たなリスクもリアルタイムで監視できる。</p>
+<p>建物単位の詳細データとシナリオ連動型指標を提供することで、投資家が気候リスクを財務的影響に結びつけて評価し、規制対応や投資判断に活用することが可能となる。ICEは、今回の拡張により気候関連情報の透明性と信頼性を高め、気候変動が金融市場へ及ぼす影響の可視化を目指す。」</p>
+<h2 id="esma-esg評価機関規制に関する技術基準案を公表透明性と利益相反への対応を強化-httpsesgjournaljapancomworld-news45547"><a href="https://esgjournaljapan.com/world-news/45547">ESMA、ESG評価機関規制に関する技術基準案を公表―透明性と利益相反への対応を強化 </a> </h2>
+<p>「5月2日、欧州証券市場監督局（ESMA）は、ESG評価機関に関する新たな規制技術基準（RTS）案を発表し、同案についての意見募集を開始した。これは、2024年末に発効したESG評価機関規則（EU Regulation 2023/2631）に基づく初の技術的詳細の提示であり、ESG評価の信頼性・比較可能性を高めることを目的としている。」</p>
+<h2 id="個人投資家-サステナビリティ投資への関心依然高く---esg-journal-httpsesgjournaljapancomworld-news45576"><a href="https://esgjournaljapan.com/world-news/45576">個人投資家、サステナビリティ投資への関心依然高く - ESG Journal </a> </h2>
+<p>「4月30日、モルガン・スタンレー・サステナビリティ投資研究所が発表した調査報告によると、世界の個人投資家の88％がサステナビリティ投資に関心を持っていることが明らかになった。Z世代（99％）およびミレニアル世代（97％）では特に高い関心を示した。</p>
+<p>報告によれば、投資家の59％が今後1年間でサステナビリティ投資の割合を増やす意向を示しており、その主な理由は市場並みのリターンへの自信である。また、80％以上が環境・社会的成果と財務的利益の両立が可能と考えている。</p>
+<p>一方で、パフォーマンスへの懸念（64％）、グリーンウォッシングへの不信（約70％）も依然として課題となっている。投資対象としては、再生可能エネルギーとエネルギー効率が重視されている。</p>
+<p>60％の投資家は、脱炭素計画のある伝統的エネルギー企業にのみ投資を行うと回答し、同割合が炭素オフセット購入にも前向きな姿勢を示した。」</p>
+<h2 id="再生プラスチック市場-2033年に1024億ドル規模へ拡大予測各国の規制強化などが拡大を後押し--circular-economy-hub---サーキュラーエコノミー循環経済メディア-httpscehubjpnewsrecycled-plastic-market-research"><a href="https://cehub.jp/news/recycled-plastic-market-research/">再生プラスチック市場、2033年に1024億ドル規模へ拡大予測。各国の規制強化などが拡大を後押し | Circular Economy Hub - サーキュラーエコノミー（循環経済）メディア </a> </h2>
+<p>「市場調査・コンサルティング企業のAstute Analyticaが最近発表した調査によると、世界の再生プラスチック市場は2024年の508億米ドルから年平均8.1%で成長し、2033年には1024億米ドルに達する見込みだ。深刻化するプラスチック廃棄物問題への対応が、市場拡大を力強く後押ししている。</p>
+<p>」</p>
+<h2 id="豊田合成-廃車由来プラスチックの水平リサイクル技術を実用化内装部品に適用--circular-economy-hub---サーキュラーエコノミー循環経済メディアhttpscehubjpnewstoyoda-gosei-plastic-recycle"><a href="https://cehub.jp/news/toyoda-gosei-plastic-recycle/">豊田合成、廃車由来プラスチックの水平リサイクル技術を実用化。内装部品に適用 | Circular Economy Hub - サーキュラーエコノミー（循環経済）メディア</a> </h2>
+<p>「豊田合成株式会社は5月20日、廃車から回収したプラスチックを高品質な自動車部品に再生する水平リサイクル技術を実用化したと発表した。この新技術は、いその株式会社との協業により開発され、トヨタ自動車株式会社の「カムリ」向け内装部品で2024年から既に量産を開始している。欧州での環境規制強化を背景とした再生プラスチック需要の高まりに応えるものであり、脱炭素と資源循環社会の実現に貢献する。</p>
+<p>従来、自動車の廃プラスチックは、不純物の混入などにより新材と同等の性能を得ることが難しかった。そのため、多くが焼却して熱を回収するサーマルリサイクルや、必要な性能の低い用途に再利用するダウンサイクルに留まっていた。今回開発された技術は、いその株式会社との連携による良質なリサイクル原料の確保と、豊田合成が持つ独自の材料改質技術を組み合わせることで、この課題を克服した。具体的には、廃車から回収したポリプロピレンを50％含有しても、新材と同等の性能を持つ再生プラスチックを開発し、自動車部品の品質基準での実用化を達成した。」</p>
+<h2 id="proposal-amending-the-batteries-regulation-eu-20231542-as-regards-battery-due-diligence-obligations-httpseceuropaeuinfolawbetter-regulation"><a href="https://ec.europa.eu/info/law/better-regulation/">Proposal amending the Batteries Regulation (EU) 2023/1542 as regards battery due diligence obligations </a> </h2>
+<p>「提出された文書は、<strong>バッテリーに関する規制 (EU) 2023/1542 を改正する欧州委員会の提案</strong>です。主な目的は、<strong>経済主体に課されるバッテリーのデューデリジェンス義務の適用開始日を2年間延期</strong>することにあります。この遅延は、<strong>サプライチェーンにおける原材料調達の課題</strong>や、義務の<strong>第三者検証に必要な公認機関の認定が遅れていること</strong>に対応するためです。また、この提案は、<strong>企業サステナビリティ・デューデリジェンスに関する指令 (EU) 2024/1760 との整合性</strong>を高めることも意図しています。提案されている変更は<strong>デューデリジェンス義務の開始日のみであり、規制の他の実体的な規則は変更されません</strong>。」</p>
+<h2 id="ニューヨーク州-史上最大の環境投資へ10億ドルの持続可能な未来プログラム始動---esg-journal-httpsesgjournaljapancomworld-news45626"><a href="https://esgjournaljapan.com/world-news/45626">ニューヨーク州、史上最大の環境投資へ—10億ドルの「持続可能な未来プログラム」始動 - ESG Journal </a> </h2>
+<p>「5月9日、ニューヨーク州のキャシー・ホークル知事は、FY2026州予算の一環として、同州史上最大規模となる10億ドルの環境・気候関連投資を発表した。「Sustainable Future Program」と名付けられた本包括的プログラムは、州全体の温室効果ガス排出削減、住宅のエネルギー効率向上、グリーン雇用創出を同時に進めるものである。知事は、再生可能エネルギー導入やクリーン輸送、建築物の脱炭素化など多岐にわたる取り組みを通じて、持続可能かつ公平な成長を実現する決意を表明した。</p>
+<p>10億ドルのうち4億5000万ドルは、住宅改修やヒートポンプ導入、学校など公共施設の省エネ化に充てられる。また、SUNY・CUNYキャンパスを含む州施設に熱エネルギー・ネットワークを整備するため、2億ドル超が投じられる予定である。さらに2億5000万ドル以上が、電動スクールバスや高速充電インフラへの支援、そしてNYSERDAの「Charge Ready NY」プログラムに振り向けられ、再生可能エネルギー事業や送電網の近代化にも2億ドルが確保される。」</p>
+<h2 id="circular-transition-indicators-cti-social-impact-guide--wbcsd-httpswwwwbcsdorgresourcescircular-transition-indicators-cti-social-impact"><a href="https://www.wbcsd.org/resources/circular-transition-indicators-cti-social-impact/">Circular Transition Indicators (CTI) Social Impact guide | WBCSD </a> </h2>
+<p>「Transitioning to a circular economy has the potential to accelerate the shaping of a net-zero, nature-positive and more equitable future. When intentionally inclusive and designed to mitigate social risks, it can improve livelihoods by enhancing working conditions, fostering inclusion in new business models and increasing transparency. However, the connection between circular economy strategies and social justice is still unclear. Companies often overlook or oversimplify the societal aspects in their circular economy efforts.」<br>
+「循環型経済への移行は、ネットゼロ、自然共生、そしてより公平な未来の形成を加速させる可能性を秘めています。意図的に包摂性を重視し、社会的リスクを軽減するように設計されていれば、労働条件の改善、新たなビジネスモデルへの包摂性の促進、そして透明性の向上を通じて、人々の生活を向上させることができます。しかしながら、循環型経済戦略と社会正義との関連性は依然として明確ではありません。企業は、循環型経済への取り組みにおいて、社会的な側面を見落としたり、過度に単純化したりしがちです。」</p>
+<h2 id="カリフォルニア州-600億ドル規模の温暖化対策-財政赤字下でも気候教育投資維持---esg-journal-httpsesgjournaljapancomworld-news45689"><a href="https://esgjournaljapan.com/world-news/45689">カリフォルニア州、600億ドル規模の温暖化対策 財政赤字下でも気候・教育投資維持 - ESG Journal </a> </h2>
+<p>「5月14日、米カリフォルニア州のギャビン・ニューサム知事は17日、2025～26年度の州予算の修正案（メイ・リバイズ）を発表した。財政赤字が約119億ドル（約1.9兆円）に拡大する見通しの中、温暖化対策や住宅建設、教育支援などへの積極的な投資を維持する方針を示した。主な柱は、2045年までに最大600億ドルを再配分する気候ファンド「キャップ・アンド・インベスト」制度の強化だ。</p>
+<p>修正案は、関税や市場の不安定化、観光減少といった連邦レベルの要因による経済停滞、いわゆる「トランプ・スランプ」によって、州歳入が最大160億ドル押し下げられると分析。財政の持続可能性を確保しつつ、成長分野への投資は継続する構えだ。</p>
+<p>」</p>
+<h2 id="マイクロソフト-1800万トンの炭素除去購入へルビコンカーボンと大規模契約締結---esg-journal-httpsesgjournaljapancomworld-news45673"><a href="https://esgjournaljapan.com/world-news/45673">マイクロソフト、1800万トンの炭素除去購入へ──ルビコン・カーボンと大規模契約締結 - ESG Journal </a> </h2>
+<p>「5月15日、カリフォルニア州マリナ・デル・レイにて、炭素クレジット管理企業ルビコン・カーボンがマイクロソフトと1800万トン相当の炭素除去クレジット購入に関する枠組み契約を締結した。これは、企業単独による自主的炭素市場での最大級の契約の一つとされる。</p>
+<p>本契約では、植林・再植林・緑化（ARR）プロジェクトを対象に、15～20年間の長期的オフテイク契約を結び、グローバル規模での炭素除去を支援する。</p>
+<p>ルビコンのCEOトム・モンタッグは「気候変動対策には大規模な資本投入が不可欠だ」と述べ、本契約が民間投資を呼び込むモデルケースになると強調した。</p>
+<p>」</p>
+<h2 id="トラストレース-新データハブを発表ai活用でサプライチェーン管理を刷新---esg-journal-httpsesgjournaljapancomworld-news45681"><a href="https://esgjournaljapan.com/world-news/45681">トラストレース、新データハブを発表。AI活用でサプライチェーン管理を刷新 - ESG Journal </a> </h2>
+<p>「5月13日、ストックホルムに本社を置くトラストレースがAIを駆使した新しいデータハブを発表した。インド、フランス、ドイツ、アメリカにオフィスを持ち、サプライチェーンのトレーサビリティとコンプライアンスデータ管理を行う同社は、企業がサプライチェーンデータを効率的に収集、統合、分析することを支援し、リスク管理やコンプライアンス、サステナビリティへの取り組みを強化するプラットフォームを提供している。</p>
+<p>このプラットフォームにより、供給元、企業、第三者のデータを高度なAI技術で統合し、データの信頼性と洞察力の大幅な向上が期待される。企業はより正確で包括的な情報に基づいて意思決定を行うことが可能になるのだ。特にグローバルな供給網を有する企業にとっては、サプライチェーン全体にわたるリスクを自動で特定し、その影響を評価・管理する機能が役立つ。また、これは企業が予防的な戦略を構築するための重要なツールとなる」</p>
+<h2 id="国際金融公社-循環経済金融ガイドラインを公表6つのセクターを対象に--circular-economy-hub---サーキュラーエコノミー循環経済メディア-httpscehubjpnewsifc-circular-economy-finance-guidelines"><a href="https://cehub.jp/news/ifc-circular-economy-finance-guidelines/">国際金融公社、循環経済金融ガイドラインを公表。6つのセクターを対象に | Circular Economy Hub - サーキュラーエコノミー（循環経済）メディア </a> </h2>
+<p>「世界銀行グループで新興市場の民間部門を対象とする開発機関、国際金融公社（IFC）はこのほど、ブラジルで開催された世界循環経済フォーラムで循環経済金融ガイドラインを発表した。ガイドラインは、6つのセクターを対象に投資家、金融機関、民間企業が循環経済を支援する資金提供を行う機会を特定し、事業評価するのに役立つ。ガイドラインは、適格な事業と取引に関するガイダンスを提供することにより、複数の市場における規制や取引条件が一致することで、取引や協力が可能になることを目指す。</p>
+<p>ガイドラインは、IFC、Circle Economy、The Circulate Initiative、Ellen MacArthur Foundation、Intesa Sanpaoloを含むワーキンググループによって作成され、UNEP-FI、MDB（国際開発金融機関）循環経済作業部会、民間金融機関、IFCの専門家らも貢献した。」</p>
+<h2 id="tcfdtnfd統合開示ガイドいま企業が備えるべき実務対応とは---esg-journal-httpsesgjournaljapancomcolumn45791"><a href="https://esgjournaljapan.com/column/45791">TCFD×TNFD統合開示ガイド：いま企業が備えるべき実務対応とは？ - ESG Journal </a> </h2>
+<p>「企業のサステナビリティ関連の開示では、TCFD（Taskforce on Climate-related Financial Disclosures：気候関連財務情報開示タスクフォース）に続き、TNFD（Taskforce on Nature-related Financial Disclosures ：自然関連財務情報開示タスクフォース）の最終提言が2023年に公表され、「気候」から「自然」へと広がりを見せている。日本国内では108の機関がTNFDへの賛同を表明しており、すでに積極的に開示に取り組む企業が現れ始めている（2025年5月現在）。さらに、欧州ではCSRD（企業持続可能性報告指令）が発効し、日本でもSSBJサステナビリティ開示基準が公開された。企業は今後、複数の国際基準に沿ったサステナビリティ情報の開示が求められることになる。</p>
+<p>一方で、開示が複雑化することで、投資家やステークホルダーにとっての実効性を欠くという懸念も顕在化しているのも事実である。企業にとっては、単に「開示する」から「伝わる情報開示」への転換が求められている。</p>
+<p>こうした背景を受けて、日本の多くの企業ではTCFDとTNFDを統合して開示する動きが進みつつある。そこで、本稿では今後ますます進むであろう統合開示に向けて「実施ガイド」を紹介している。ぜひダウンロードして、統合開示に向けた準備に役立ててほしい。会員登録後、すぐにチェックリストをダウンロードできる。」</p>
+<h2 id="european-data-spaces-take-shape-idsa-advances-data-spaces-standards-at-cencenelec-meeting---international-data-spaces-httpsinternationaldataspacesorgeuropean-data-spaces-take-shape-idsa-advances-data-spaces-standards-at-cen-cenelec-meeting"><a href="https://internationaldataspaces.org/european-data-spaces-take-shape-idsa-advances-data-spaces-standards-at-cen-cenelec-meeting/">European data spaces take shape: IDSA advances data spaces standards at CEN/CENELEC meeting - International Data Spaces </a> </h2>
+<p>「<br>
+Progress on standardizing the European data economy<br>
+Together with my colleague Sebastian Steinbuss, CEN/CENELEC JTC 25 chair, I joined experts from across Europe for three days of intensive discussions. The goal was clear: to turn the regulatory ambitions set out in Article 33 of the EU Data Act into technical standards that can be implemented by industry. The scope of data spaces or technical  standards spans data spaces concepts and characteristics, trustworthiness, interoperability, and data spaces maturity model and in collaboration with ETSI data catalogs and semantic assets.</p>
+<p>On behalf of IDSA, I presented a contribution paper highlighting how our assets contribute to JTC 25’s goals – especially on the standardization request regarding the Trusted Data Framework. The document outlines concrete pathways for aligning technical architectures with upcoming regulatory requirements.<br>
+」<br>
+「<br>
+欧州データ経済の標準化の進捗状況<br>
+同僚であるCEN/CENELEC JTC 25議長のセバスチャン・スタインバス氏と共に、欧州各地の専門家と3日間にわたる集中的な議論を行いました。目標は明確でした。EUデータ法第33条に定められた規制目標を、産業界が導入可能な技術標準へと転換することです。データ空間、すなわち技術標準の範囲は、データ空間の概念と特性、信頼性、相互運用性、そしてデータ空間成熟度モデルに及び、ETSIデータカタログおよびセマンティックアセットとの連携も含みます。</p>
+<p>IDSAを代表して、私は寄稿論文を発表し、私たちの資産がJTC 25の目標、特にTrusted Data Frameworkに関する標準化要請にどのように貢献しているかを強調しました。この論文では、技術アーキテクチャを今後の規制要件に適合させるための具体的な道筋を概説しています。<br>
+」<br>
+「<br>
+Deliverables enter execution phase<br>
+One of the most significant developments from the plenary was the formal advancement of the Trusted Data Transaction Part 1 deliverable. This document reflects a uniquely European interpretation of how data spaces manage data rights and responsibilities. It has now reached the “enquiry” stage, signaling that the proposal is mature enough for broader consultation and refinement.</p>
+<p>Other deliverables have also reached critical early milestones. Several documents have finalized their scope and are transitioning into drafting and editing stages. Together, these outputs lay the technical groundwork for how data can be shared securely and fairly in line with the Data Act’s objectives.</p>
+<p>Sebastian Steinbuss emphasized that the process is now fully underway: “The ball is in the game and rolling. The next months are about execution, turning consensus into standards that can be implemented.”<br>
+」<br>
+「<br>
+成果物が実行段階へ<br>
+総会における最も重要な進展の一つは、信頼できるデータ取引（Trusted Data Transaction）パート1の成果物の正式な進展でした。この文書は、データ空間におけるデータの権利と責任の管理方法に関する欧州独自の解釈を反映しています。現在、「調査」段階に達しており、提案がより広範な協議と精緻化に十分な成熟度に達したことを示しています。</p>
+<p>その他の成果物も重要な初期マイルストーンを達成しました。いくつかの文書は適用範囲を確定し、草稿作成と編集段階に移行しています。これらの成果物は、データ法の目的に沿って、データを安全かつ公平に共有するための技術的な基盤を築くものです。</p>
+<p>セバスチャン・スタインバス氏は、このプロセスが本格的に始動したことを強調し、「ボールは転がり始めています。今後数ヶ月は、合意を実装可能な標準へと具体化するための実行段階となります。」と述べました。<br>
+」</p>
+<h2 id="トップクラスの気象機関-向こう5年間で悲観的な予測-異常気象と命脅かす熱波---cnncojp-httpswwwcnncojpfringe35233589html"><a href="https://www.cnn.co.jp/fringe/35233589.html">トップクラスの気象機関、向こう５年間で悲観的な予測　異常気象と命脅かす熱波 - CNN.co.jp </a> </h2>
+<p>「ＣＮＮ） 世界トップクラスの二つの気象機関が公表した年次報告書によると、今後５年間、世界の気温は記録的、あるいはそれに近いレベルに達し、より致命的な異常気象をもたらすことが予測されている。<br>
+２８日に発表された世界気象機関（ＷＭＯ）と英国気象庁の報告書によれば、今後５年間で地球の気温が１．５度以上上昇する可能性は７０％に上る。<br>
+地球の気温が１．５度以上上昇すると、気候システムの転換点を引き起こすなど、より深刻な影響が生じるリスクが高まる。海氷と氷河の融解は間もなく不可逆的な水準に到達し、海面上昇に劇的な影響を及ぼす恐れがあると、科学者たちは警告している。」</p>
+<h2 id="eu人権環境デューディリジェンス法制化の最新概要2025年5月--調査レポート---国地域別に見る---ジェトロ-httpswwwjetrogojpworldreports2025014195f825d288ce65html"><a href="https://www.jetro.go.jp/world/reports/2025/01/4195f825d288ce65.html">EU人権・環境デューディリジェンス法制化の最新概要（2025年5月） | 調査レポート - 国・地域別に見る - ジェトロ </a> </h2>
+<p>「EUでは近年、人権・環境デューディリジェンスを法制化する動きが進んでいる。企業持続可能性に関連する法令のうち、日本企業にとって影響が大きいとみられる持続可能性デューディリジェンス指令（CSDDD）および強制労働製品禁止規則を取り上げ、今後の規制対応に備え概要を解説する。適用対象企業になる場合に想定される実務上の注意点・対策や、適用対象とならない場合でも、直接・間接的に取引関係にある場合の留意点をまとめた。なお、2025年2月に発表されたオムニバス指令案の審議の結果次第で、CSDDDの義務要件が大幅に簡素化される可能性があるため、本報告書公表時点における要件緩和に関するオムニバス指令案についても触れる。さらに、人権・環境に関するデューディリジェンスに関する法制化が先行するドイツやフランスの今後の動きについても取り上げる。世界共通の課題である人権や環境への関心が高まる中、本報告書がCSDDDおよび強制労働製品禁止規則の現状を把握するための一助となれば幸甚である。なお、レポート概要については、スライド資料も参照されたい。」</p>
+<hr style="margin-bottom:1ex;">
+<div style="text-align:right;font-size:small;">
+</div>
+
+      </div>
+      <div class="md-sidebar-toc">
+<div class="md-toc">
+<details style="padding:0;;padding-left:0px;" open="">
+        <summary class="md-toc-link-wrapper">
+          <a href="#2025年5月のニュース" class="md-toc-link"><p>2025年5月のニュース</p>
+</a>
+          </summary>
+        <div>
+          <div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ロベコ-生物多様性への取り組み状況を評価するツールを開発-httpsesgjournaljapancomworld-news45307" class="md-toc-link">
+            </a><p><a href="#ロベコ-生物多様性への取り組み状況を評価するツールを開発-httpsesgjournaljapancomworld-news45307" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45307">ロベコ、生物多様性への取り組み状況を評価するツールを開発 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ifrs財団とtnfd-自然関連財務情報開示で正式に協働へ-httpsesgjournaljapancomworld-news45159" class="md-toc-link">
+            </a><p><a href="#ifrs財団とtnfd-自然関連財務情報開示で正式に協働へ-httpsesgjournaljapancomworld-news45159" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45159">IFRS財団とTNFD、自然関連財務情報開示で正式に協働へ </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#産業データスペースの構築に向けた第2次提言-httpswwwkeidanrenorjppolicy2025026html" class="md-toc-link">
+            </a><p><a href="#産業データスペースの構築に向けた第2次提言-httpswwwkeidanrenorjppolicy2025026html" class="md-toc-link"></a><a href="https://www.keidanren.or.jp/policy/2025/026.html">産業データスペースの構築に向けた第2次提言 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#rriメルマガより" class="md-toc-link">
+            <p>RRIメルマガより</p>
+
+          </a></div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#スイス連邦データ保護法の改正内容とeu一般データ保護規則との比較2025年5月--調査レポート---国地域別に見る---ジェトロhttpswwwjetrogojpworldreports202501c86476543323e882html" class="md-toc-link">
+            </a><p><a href="#スイス連邦データ保護法の改正内容とeu一般データ保護規則との比較2025年5月--調査レポート---国地域別に見る---ジェトロhttpswwwjetrogojpworldreports202501c86476543323e882html" class="md-toc-link"></a><a href="https://www.jetro.go.jp/world/reports/2025/01/c86476543323e882.html">スイス連邦データ保護法の改正内容とEU「一般データ保護規則」との比較（2025年5月） | 調査レポート - 国・地域別に見る - ジェトロ</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#日本企業による環境デューディリジェンス対応促進に向けた懇談会議論のまとめの公表について--報道発表資料--環境省httpswwwenvgojppresspress_04856html" class="md-toc-link">
+            </a><p><a href="#日本企業による環境デューディリジェンス対応促進に向けた懇談会議論のまとめの公表について--報道発表資料--環境省httpswwwenvgojppresspress_04856html" class="md-toc-link"></a><a href="https://www.env.go.jp/press/press_04856.html">日本企業による環境デュー・ディリジェンス対応促進に向けた懇談会議論のまとめの公表について | 報道発表資料 | 環境省</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#sensor-based-waste-sorting-reduces-number-of-battery-fires-in-recycling-plants-httpswwwfraunhoferdeenpressresearch-news2025may-2025sensor-based-waste-sorting-reduces-number-of-battery-fires-in-recycling-plantshtml" class="md-toc-link">
+            </a><p><a href="#sensor-based-waste-sorting-reduces-number-of-battery-fires-in-recycling-plants-httpswwwfraunhoferdeenpressresearch-news2025may-2025sensor-based-waste-sorting-reduces-number-of-battery-fires-in-recycling-plantshtml" class="md-toc-link"></a><a href="https://www.fraunhofer.de/en/press/research-news/2025/may-2025/sensor-based-waste-sorting-reduces-number-of-battery-fires-in-recycling-plants.html">Sensor-Based Waste Sorting Reduces Number of Battery Fires in Recycling Plants </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#環境問題への対応になぜscmシステムが重要になるのかサプライチェーンを変える2つのポイント後編12-ページ---monoisthttpsmonoistitmediacojpmnarticles250502news080html" class="md-toc-link">
+            </a><p><a href="#環境問題への対応になぜscmシステムが重要になるのかサプライチェーンを変える2つのポイント後編12-ページ---monoisthttpsmonoistitmediacojpmnarticles250502news080html" class="md-toc-link"></a><a href="https://monoist.itmedia.co.jp/mn/articles/2505/02/news080.html">環境問題への対応になぜSCMシステムが重要になるのか：サプライチェーンを変える2つのポイント（後編）（1/2 ページ） - MONOist</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ブリヂストンアメリカ-70リサイクル再生可能材料使用のデモタイヤを発表-httpscehubjpnewsbridgestone-70percent-recycled-tyre" class="md-toc-link">
+            </a><p><a href="#ブリヂストンアメリカ-70リサイクル再生可能材料使用のデモタイヤを発表-httpscehubjpnewsbridgestone-70percent-recycled-tyre" class="md-toc-link"></a><a href="https://cehub.jp/news/bridgestone-70percent-recycled-tyre/">ブリヂストン・アメリカ、70%リサイクル・再生可能材料使用のデモタイヤを発表 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#循環こそ-未来のエネルギーフィンランドが実践するイノベーション最前線-httpscehubjpreportfinland-innovation" class="md-toc-link">
+            </a><p><a href="#循環こそ-未来のエネルギーフィンランドが実践するイノベーション最前線-httpscehubjpreportfinland-innovation" class="md-toc-link"></a><a href="https://cehub.jp/report/finland-innovation/">循環こそ、未来のエネルギー。フィンランドが実践するイノベーション最前線 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#アメックスgbt-出張のco2削減をサポートするデータ主導型の新機能を発表-httpsesgjournaljapancomworld-news45317" class="md-toc-link">
+            </a><p><a href="#アメックスgbt-出張のco2削減をサポートするデータ主導型の新機能を発表-httpsesgjournaljapancomworld-news45317" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45317">アメックスGBT、出張のCO2削減をサポートするデータ主導型の新機能を発表 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#green-impact-exchange取引所とはインパクト投資の行方と上場の可能性-httpsesgjournaljapancomcolumn45348" class="md-toc-link">
+            </a><p><a href="#green-impact-exchange取引所とはインパクト投資の行方と上場の可能性-httpsesgjournaljapancomcolumn45348" class="md-toc-link"></a><a href="https://esgjournaljapan.com/column/45348">Green Impact Exchange（取引所）とは？インパクト投資の行方と上場の可能性 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ゼベロ-aiと専門家による新しいesg情報開示ソリューションを発表-httpsesgjournaljapancomworld-news45319" class="md-toc-link">
+            </a><p><a href="#ゼベロ-aiと専門家による新しいesg情報開示ソリューションを発表-httpsesgjournaljapancomworld-news45319" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45319">ゼベロ、AIと専門家による新しいESG情報開示ソリューションを発表 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#マイクロプラスチック世界各地の海中のあらゆる深さに分布-httpswww3nhkorjpnewshtml20250512k10014802671000html" class="md-toc-link">
+            </a><p><a href="#マイクロプラスチック世界各地の海中のあらゆる深さに分布-httpswww3nhkorjpnewshtml20250512k10014802671000html" class="md-toc-link"></a><a href="https://www3.nhk.or.jp/news/html/20250512/k10014802671000.html">「マイクロプラスチック」世界各地の海中のあらゆる深さに分布 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#環境省-tcfdネイチャー開示ガイド改訂公表-httpsesgjournaljapancomdomestic-news45336" class="md-toc-link">
+            </a><p><a href="#環境省-tcfdネイチャー開示ガイド改訂公表-httpsesgjournaljapancomdomestic-news45336" class="md-toc-link"></a><a href="https://esgjournaljapan.com/domestic-news/45336">環境省、「TCFD・ネイチャー開示ガイド」改訂公表 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#サーキュラーエコノミー事業が成長エンジンに米liquidity-services-売上27増を達成-httpscehubjpnewsliquidity-services-2025-2q-financial-results" class="md-toc-link">
+            </a><p><a href="#サーキュラーエコノミー事業が成長エンジンに米liquidity-services-売上27増を達成-httpscehubjpnewsliquidity-services-2025-2q-financial-results" class="md-toc-link"></a><a href="https://cehub.jp/news/liquidity-services-2025-2q-financial-results/">サーキュラーエコノミー事業が成長エンジンに。米Liquidity Services、売上27%増を達成 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#eu-and-japan-reinforce-tech-and-digital-partnership-httpseceuropaeucommissionpresscornerdetailenip_25_1185" class="md-toc-link">
+            </a><p><a href="#eu-and-japan-reinforce-tech-and-digital-partnership-httpseceuropaeucommissionpresscornerdetailenip_25_1185" class="md-toc-link"></a><a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_25_1185">EU and Japan reinforce tech and digital partnership </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#アイシンがトルコで太陽光発電-欧州の全工場を100再エネ化-httpsxtechnikkeicomatclnxtnews2402484" class="md-toc-link">
+            </a><p><a href="#アイシンがトルコで太陽光発電-欧州の全工場を100再エネ化-httpsxtechnikkeicomatclnxtnews2402484" class="md-toc-link"></a><a href="https://xtech.nikkei.com/atcl/nxt/news/24/02484/">アイシンがトルコで太陽光発電、欧州の全工場を100％再エネ化 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#plattform-industrie-40---globally-connectable-and-interoperable-un-dpp-and-the-digital-product-passport-for-the-implementation-of-the-european-green-dealhttpswwwplattform-i40deipredaktionendownloadspublikation202411-dpp-commentshtml" class="md-toc-link">
+            </a><p><a href="#plattform-industrie-40---globally-connectable-and-interoperable-un-dpp-and-the-digital-product-passport-for-the-implementation-of-the-european-green-dealhttpswwwplattform-i40deipredaktionendownloadspublikation202411-dpp-commentshtml" class="md-toc-link"></a><a href="https://www.plattform-i40.de/IP/Redaktion/EN/Downloads/Publikation/202411-DPP-comments.html">Plattform Industrie 4.0 - Globally connectable and interoperable: UN DPP and the Digital product passport for the implementation of the European Green Deal</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#developing-trustworthy-ai-applications-with-foundation-modelshttpspublica-restfraunhoferdeserverapicorebitstreams6e777623-01b0-41e5-9d67-33168150a300content" class="md-toc-link">
+            </a><p><a href="#developing-trustworthy-ai-applications-with-foundation-modelshttpspublica-restfraunhoferdeserverapicorebitstreams6e777623-01b0-41e5-9d67-33168150a300content" class="md-toc-link"></a><a href="https://publica-rest.fraunhofer.de/server/api/core/bitstreams/6e777623-01b0-41e5-9d67-33168150a300/content">Developing trustworthy AI applications with foundation models</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#msciがエネルギー転換の新潮流を発表---esg-journalhttpsesgjournaljapancomworld-news45501" class="md-toc-link">
+            </a><p><a href="#msciがエネルギー転換の新潮流を発表---esg-journalhttpsesgjournaljapancomworld-news45501" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45501">MSCIがエネルギー転換の新潮流を発表 - ESG Journal</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#isoiec-20151-reaches-draft-international-standard-stage---international-data-spaceshttpsinternationaldataspacesorgiso-iec-20151-reaches_dis" class="md-toc-link">
+            </a><p><a href="#isoiec-20151-reaches-draft-international-standard-stage---international-data-spaceshttpsinternationaldataspacesorgiso-iec-20151-reaches_dis" class="md-toc-link"></a><a href="https://internationaldataspaces.org/iso-iec-20151-reaches_dis/">ISO/IEC 20151 reaches Draft International Standard stage - International Data Spaces</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#同時市場における変動性再エネ電源の取り扱い入札制度の方向性と今後の課題第15回同時市場の在り方等に関する検討会14-ページ---スマートジャパンhttpswwwitmediacojpsmartjapanarticles250514news078html" class="md-toc-link">
+            </a><p><a href="#同時市場における変動性再エネ電源の取り扱い入札制度の方向性と今後の課題第15回同時市場の在り方等に関する検討会14-ページ---スマートジャパンhttpswwwitmediacojpsmartjapanarticles250514news078html" class="md-toc-link"></a><a href="https://www.itmedia.co.jp/smartjapan/articles/2505/14/news078.html">「同時市場」における変動性再エネ電源の取り扱い――入札制度の方向性と今後の課題：第15回「同時市場の在り方等に関する検討会」（1/4 ページ） - スマートジャパン</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ngfs気候変動リスク等に係る金融当局ネットワークによる短期気候シナリオの公表について金融庁httpswwwfsagojpinteretc2025051320250513html" class="md-toc-link">
+            </a><p><a href="#ngfs気候変動リスク等に係る金融当局ネットワークによる短期気候シナリオの公表について金融庁httpswwwfsagojpinteretc2025051320250513html" class="md-toc-link"></a><a href="https://www.fsa.go.jp/inter/etc/20250513/20250513.html">NGFS（気候変動リスク等に係る金融当局ネットワーク）による短期気候シナリオの公表について：金融庁</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#guideline-connects-bim-and-asset-administration-shell-for-efficient-building-management-httpsindustrialdigitaltwinorgennews-datesguideline-connects-bim-and-asset-administration-shell-for-efficient-building-management-6946" class="md-toc-link">
+            </a><p><a href="#guideline-connects-bim-and-asset-administration-shell-for-efficient-building-management-httpsindustrialdigitaltwinorgennews-datesguideline-connects-bim-and-asset-administration-shell-for-efficient-building-management-6946" class="md-toc-link"></a><a href="https://industrialdigitaltwin.org/en/news-dates/guideline-connects-bim-and-asset-administration-shell-for-efficient-building-management-6946">Guideline connects BIM and Asset Administration Shell for efficient building management </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#フランス政府-高品質カーボンクレジット活用の憲章を発表-国際市場の透明性強化へ-httpsesgjournaljapancomworld-news45430" class="md-toc-link">
+            </a><p><a href="#フランス政府-高品質カーボンクレジット活用の憲章を発表-国際市場の透明性強化へ-httpsesgjournaljapancomworld-news45430" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45430">フランス政府、高品質カーボンクレジット活用の憲章を発表、国際市場の透明性強化へ </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#apple-unveils-environmental-progress-surpassing-60-percent-reduction-in-global-greenhouse-gas-emissions-httpswwwwbcsdorgnewsapple-unveils-environmental-progress-surpassing-60-percent-reduction-in-global-greenhouse-gas-emissions" class="md-toc-link">
+            </a><p><a href="#apple-unveils-environmental-progress-surpassing-60-percent-reduction-in-global-greenhouse-gas-emissions-httpswwwwbcsdorgnewsapple-unveils-environmental-progress-surpassing-60-percent-reduction-in-global-greenhouse-gas-emissions" class="md-toc-link"></a><a href="https://www.wbcsd.org/news/apple-unveils-environmental-progress-surpassing-60-percent-reduction-in-global-greenhouse-gas-emissions/">Apple unveils environmental progress, surpassing 60 percent reduction in global greenhouse gas emissions </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#circularity-gap-report-2025-a-global-call-to-action-httpswwwcircularity-gapworld2025" class="md-toc-link">
+            </a><p><a href="#circularity-gap-report-2025-a-global-call-to-action-httpswwwcircularity-gapworld2025" class="md-toc-link"></a><a href="https://www.circularity-gap.world/2025">Circularity Gap Report 2025: A global call to action </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#eba-eu域内銀行の気候リスク指数を初公開-httpsesgjournaljapancomworld-news45428" class="md-toc-link">
+            </a><p><a href="#eba-eu域内銀行の気候リスク指数を初公開-httpsesgjournaljapancomworld-news45428" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45428">EBA、EU域内銀行の気候リスク指数を初公開 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#米国グリーンビルディング協会-持続可能な建築基準leed-v5を発表-httpsesgjournaljapancomworld-news45419" class="md-toc-link">
+            </a><p><a href="#米国グリーンビルディング協会-持続可能な建築基準leed-v5を発表-httpsesgjournaljapancomworld-news45419" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45419">米国グリーンビルディング協会、持続可能な建築基準「LEED v5」を発表 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#カナダ証券管理局-気候関連多様性関連開示プロジェクトを一時停止-httpsesgjournaljapancomworld-news45396" class="md-toc-link">
+            </a><p><a href="#カナダ証券管理局-気候関連多様性関連開示プロジェクトを一時停止-httpsesgjournaljapancomworld-news45396" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45396">カナダ証券管理局、気候関連・多様性関連開示プロジェクトを一時停止 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#market-x--tech-x-in-valencia-gaia-x-new-milestones-for-trust-interoperability-and-data-sovereignty-httpsgaia-xeumarket-x-tech-x-in-valencia-gaia-x-new-milestones-for-trust-interoperability-and-data-sovereignty" class="md-toc-link">
+            </a><p><a href="#market-x--tech-x-in-valencia-gaia-x-new-milestones-for-trust-interoperability-and-data-sovereignty-httpsgaia-xeumarket-x-tech-x-in-valencia-gaia-x-new-milestones-for-trust-interoperability-and-data-sovereignty" class="md-toc-link"></a><a href="https://gaia-x.eu/market-x-tech-x-in-valencia-gaia-x-new-milestones-for-trust-interoperability-and-data-sovereignty/">Market-X &amp; Tech-X in Valencia: Gaia-X New Milestones for Trust, Interoperability, and Data Sovereignty </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#清水建設-建設廃プラを現場分別再資源化材として有価売却-httpscehubjpnewsshimz-plastic-recycle" class="md-toc-link">
+            </a><p><a href="#清水建設-建設廃プラを現場分別再資源化材として有価売却-httpscehubjpnewsshimz-plastic-recycle" class="md-toc-link"></a><a href="https://cehub.jp/news/shimz-plastic-recycle/">清水建設、建設廃プラを現場分別。再資源化材として有価売却 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#interoperable-europe-acthttpscommissioneuropaeupublicationsinteroperable-europe-act_en" class="md-toc-link">
+            </a><p><a href="#interoperable-europe-acthttpscommissioneuropaeupublicationsinteroperable-europe-act_en" class="md-toc-link"></a><a href="https://commission.europa.eu/publications/interoperable-europe-act_en">Interoperable Europe Act</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#cybersecurity-regulationhttpscommissioneuropaeupublicationscybersecurity-regulation_en" class="md-toc-link">
+            </a><p><a href="#cybersecurity-regulationhttpscommissioneuropaeupublicationscybersecurity-regulation_en" class="md-toc-link"></a><a href="https://commission.europa.eu/publications/cybersecurity-regulation_en">Cybersecurity Regulation</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#european-business-wallet-digital-identity-secure-data-exchange-and-legal-notifications-for-simple-digital-businesshttpseceuropaeuinfolawbetter-regulationhave-your-sayinitiatives14663-european-business-wallet-digital-identity-secure-data-exchange-and-legal-notifications-for-simple-digital-business_en" class="md-toc-link">
+            </a><p><a href="#european-business-wallet-digital-identity-secure-data-exchange-and-legal-notifications-for-simple-digital-businesshttpseceuropaeuinfolawbetter-regulationhave-your-sayinitiatives14663-european-business-wallet-digital-identity-secure-data-exchange-and-legal-notifications-for-simple-digital-business_en" class="md-toc-link"></a><a href="https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/14663-European-Business-Wallet-digital-identity-secure-data-exchange-and-legal-notifications-for-simple-digital-business_en">European Business Wallet: digital identity, secure data exchange and legal notifications for simple, digital business</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#産業用データ連携基盤デジタル庁httpswwwdigitalgojppoliciesindustrial-data-integration" class="md-toc-link">
+            </a><p><a href="#産業用データ連携基盤デジタル庁httpswwwdigitalgojppoliciesindustrial-data-integration" class="md-toc-link"></a><a href="https://www.digital.go.jp/policies/industrial-data-integration">産業用データ連携基盤｜デジタル庁</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#イングランド銀行-気候リスク対応を強化へ金融機関に新たな管理基準を提示-httpsesgjournaljapancomworld-news45545" class="md-toc-link">
+            </a><p><a href="#イングランド銀行-気候リスク対応を強化へ金融機関に新たな管理基準を提示-httpsesgjournaljapancomworld-news45545" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45545">イングランド銀行、気候リスク対応を強化へ―金融機関に新たな管理基準を提示 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#金融庁-tcfdに基づく金融機関の移行計画調査を公表セクター間の差異を可視化-httpsesgjournaljapancomdomestic-news45600" class="md-toc-link">
+            </a><p><a href="#金融庁-tcfdに基づく金融機関の移行計画調査を公表セクター間の差異を可視化-httpsesgjournaljapancomdomestic-news45600" class="md-toc-link"></a><a href="https://esgjournaljapan.com/domestic-news/45600">金融庁、TCFDに基づく金融機関の移行計画調査を公表──セクター間の差異を可視化 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#英国金融行動監視機構-ポートフォリオマネジメントへの持続可能性開示要件適用延期-httpsesgjournaljapancomworld-news45499" class="md-toc-link">
+            </a><p><a href="#英国金融行動監視機構-ポートフォリオマネジメントへの持続可能性開示要件適用延期-httpsesgjournaljapancomworld-news45499" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45499">英国金融行動監視機構、ポートフォリオマネジメントへの持続可能性開示要件適用延期 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#cooperants-and-dynamo-become-gaia-x-lighthouse-data-spaces-httpsgaia-xeucooperants-and-dynamo-become-gaia-x-lighthouse-data-spaces" class="md-toc-link">
+            </a><p><a href="#cooperants-and-dynamo-become-gaia-x-lighthouse-data-spaces-httpsgaia-xeucooperants-and-dynamo-become-gaia-x-lighthouse-data-spaces" class="md-toc-link"></a><a href="https://gaia-x.eu/cooperants-and-dynamo-become-gaia-x-lighthouse-data-spaces/">COOPERANTS and Dynamo become Gaia-X Lighthouse Data Spaces </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#agrospai-and-dataspace4health-are-the-latest-projects-to-become-gaia-x-lighthouse-projects-httpsgaia-xeuagrospai-and-dataspace4health-are-the-latest-projects-to-become-gaia-x-lighthouse-projects" class="md-toc-link">
+            </a><p><a href="#agrospai-and-dataspace4health-are-the-latest-projects-to-become-gaia-x-lighthouse-projects-httpsgaia-xeuagrospai-and-dataspace4health-are-the-latest-projects-to-become-gaia-x-lighthouse-projects" class="md-toc-link">{AgrospAI and DataSpace4Health are the latest projects to become Gaia-X Lighthouse Projects }(</a><a href="https://gaia-x.eu/agrospai-and-dataspace4health-are-the-latest-projects-to-become-gaia-x-lighthouse-projects/">https://gaia-x.eu/agrospai-and-dataspace4health-are-the-latest-projects-to-become-gaia-x-lighthouse-projects/</a>)</p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#極端気象アトリビューションセンターwac-httpsweatherattributioncenterjp" class="md-toc-link">
+            </a><p><a href="#極端気象アトリビューションセンターwac-httpsweatherattributioncenterjp" class="md-toc-link"></a><a href="https://weatherattributioncenter.jp/">極端気象アトリビューションセンター（WAC） </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#日立製作所-修理をエンタメ化する配信プラットフォームなおストを発表修理をより身近な存在に-httpscehubjpnewshitachi-circular-design-streaming" class="md-toc-link">
+            </a><p><a href="#日立製作所-修理をエンタメ化する配信プラットフォームなおストを発表修理をより身近な存在に-httpscehubjpnewshitachi-circular-design-streaming" class="md-toc-link"></a><a href="https://cehub.jp/news/hitachi-circular-design-streaming/">日立製作所、修理をエンタメ化する配信プラットフォーム「なおスト」を発表。修理をより身近な存在に </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#アサヒグループ-画像認識技術によるリサイクル支援や再生農業支援など手がけるスタートアップ9社と協業-httpscehubjpnewsasahi-sustainability-innovation-program" class="md-toc-link">
+            </a><p><a href="#アサヒグループ-画像認識技術によるリサイクル支援や再生農業支援など手がけるスタートアップ9社と協業-httpscehubjpnewsasahi-sustainability-innovation-program" class="md-toc-link"></a><a href="https://cehub.jp/news/asahi-sustainability-innovation-program/">アサヒグループ、画像認識技術によるリサイクル支援や再生農業支援など手がけるスタートアップ9社と協業 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#米国mobicesmiiと中国可信数据空間-米中両国のデータ共有圏の現状は-httpsmonoistitmediacojpmnarticles250522news008html" class="md-toc-link">
+            </a><p><a href="#米国mobicesmiiと中国可信数据空間-米中両国のデータ共有圏の現状は-httpsmonoistitmediacojpmnarticles250522news008html" class="md-toc-link"></a><a href="https://monoist.itmedia.co.jp/mn/articles/2505/22/news008.html">米国「MOBI／CESMII」と中国「可信数据空間」、米中両国のデータ共有圏の現状は </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#脱炭素化の実現に求められるグリーン製品需要の拡大策-環境省が検討会を新設-httpswwwitmediacojpsmartjapanarticles250521news093html" class="md-toc-link">
+            </a><p><a href="#脱炭素化の実現に求められるグリーン製品需要の拡大策-環境省が検討会を新設-httpswwwitmediacojpsmartjapanarticles250521news093html" class="md-toc-link"></a><a href="https://www.itmedia.co.jp/smartjapan/articles/2505/21/news093.html">脱炭素化の実現に求められるグリーン製品需要の拡大策　環境省が検討会を新設 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#世界の氷床-急激に融解進む-100年で1メートル海面上昇の恐れ-httpswwwcnncojpfringe35233229html" class="md-toc-link">
+            </a><p><a href="#世界の氷床-急激に融解進む-100年で1メートル海面上昇の恐れ-httpswwwcnncojpfringe35233229html" class="md-toc-link"></a><a href="https://www.cnn.co.jp/fringe/35233229.html">世界の氷床、急激に融解進む　１００年で１メートル海面上昇の恐れ </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ice-気候リスク評価を強化-世界2万以上の企業政府を対象に地理空間プラットフォーム拡張-httpsesgjournaljapancomworld-news45598" class="md-toc-link">
+            </a><p><a href="#ice-気候リスク評価を強化-世界2万以上の企業政府を対象に地理空間プラットフォーム拡張-httpsesgjournaljapancomworld-news45598" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45598">ICE、気候リスク評価を強化　世界2万以上の企業・政府を対象に地理空間プラットフォーム拡張 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#esma-esg評価機関規制に関する技術基準案を公表透明性と利益相反への対応を強化-httpsesgjournaljapancomworld-news45547" class="md-toc-link">
+            </a><p><a href="#esma-esg評価機関規制に関する技術基準案を公表透明性と利益相反への対応を強化-httpsesgjournaljapancomworld-news45547" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45547">ESMA、ESG評価機関規制に関する技術基準案を公表―透明性と利益相反への対応を強化 </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#個人投資家-サステナビリティ投資への関心依然高く---esg-journal-httpsesgjournaljapancomworld-news45576" class="md-toc-link">
+            </a><p><a href="#個人投資家-サステナビリティ投資への関心依然高く---esg-journal-httpsesgjournaljapancomworld-news45576" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45576">個人投資家、サステナビリティ投資への関心依然高く - ESG Journal </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#再生プラスチック市場-2033年に1024億ドル規模へ拡大予測各国の規制強化などが拡大を後押し--circular-economy-hub---サーキュラーエコノミー循環経済メディア-httpscehubjpnewsrecycled-plastic-market-research" class="md-toc-link">
+            </a><p><a href="#再生プラスチック市場-2033年に1024億ドル規模へ拡大予測各国の規制強化などが拡大を後押し--circular-economy-hub---サーキュラーエコノミー循環経済メディア-httpscehubjpnewsrecycled-plastic-market-research" class="md-toc-link"></a><a href="https://cehub.jp/news/recycled-plastic-market-research/">再生プラスチック市場、2033年に1024億ドル規模へ拡大予測。各国の規制強化などが拡大を後押し | Circular Economy Hub - サーキュラーエコノミー（循環経済）メディア </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#豊田合成-廃車由来プラスチックの水平リサイクル技術を実用化内装部品に適用--circular-economy-hub---サーキュラーエコノミー循環経済メディアhttpscehubjpnewstoyoda-gosei-plastic-recycle" class="md-toc-link">
+            </a><p><a href="#豊田合成-廃車由来プラスチックの水平リサイクル技術を実用化内装部品に適用--circular-economy-hub---サーキュラーエコノミー循環経済メディアhttpscehubjpnewstoyoda-gosei-plastic-recycle" class="md-toc-link"></a><a href="https://cehub.jp/news/toyoda-gosei-plastic-recycle/">豊田合成、廃車由来プラスチックの水平リサイクル技術を実用化。内装部品に適用 | Circular Economy Hub - サーキュラーエコノミー（循環経済）メディア</a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#proposal-amending-the-batteries-regulation-eu-20231542-as-regards-battery-due-diligence-obligations-httpseceuropaeuinfolawbetter-regulation" class="md-toc-link">
+            </a><p><a href="#proposal-amending-the-batteries-regulation-eu-20231542-as-regards-battery-due-diligence-obligations-httpseceuropaeuinfolawbetter-regulation" class="md-toc-link"></a><a href="https://ec.europa.eu/info/law/better-regulation/">Proposal amending the Batteries Regulation (EU) 2023/1542 as regards battery due diligence obligations </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#ニューヨーク州-史上最大の環境投資へ10億ドルの持続可能な未来プログラム始動---esg-journal-httpsesgjournaljapancomworld-news45626" class="md-toc-link">
+            </a><p><a href="#ニューヨーク州-史上最大の環境投資へ10億ドルの持続可能な未来プログラム始動---esg-journal-httpsesgjournaljapancomworld-news45626" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45626">ニューヨーク州、史上最大の環境投資へ—10億ドルの「持続可能な未来プログラム」始動 - ESG Journal </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#circular-transition-indicators-cti-social-impact-guide--wbcsd-httpswwwwbcsdorgresourcescircular-transition-indicators-cti-social-impact" class="md-toc-link">
+            </a><p><a href="#circular-transition-indicators-cti-social-impact-guide--wbcsd-httpswwwwbcsdorgresourcescircular-transition-indicators-cti-social-impact" class="md-toc-link"></a><a href="https://www.wbcsd.org/resources/circular-transition-indicators-cti-social-impact/">Circular Transition Indicators (CTI) Social Impact guide | WBCSD </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#カリフォルニア州-600億ドル規模の温暖化対策-財政赤字下でも気候教育投資維持---esg-journal-httpsesgjournaljapancomworld-news45689" class="md-toc-link">
+            </a><p><a href="#カリフォルニア州-600億ドル規模の温暖化対策-財政赤字下でも気候教育投資維持---esg-journal-httpsesgjournaljapancomworld-news45689" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45689">カリフォルニア州、600億ドル規模の温暖化対策 財政赤字下でも気候・教育投資維持 - ESG Journal </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#マイクロソフト-1800万トンの炭素除去購入へルビコンカーボンと大規模契約締結---esg-journal-httpsesgjournaljapancomworld-news45673" class="md-toc-link">
+            </a><p><a href="#マイクロソフト-1800万トンの炭素除去購入へルビコンカーボンと大規模契約締結---esg-journal-httpsesgjournaljapancomworld-news45673" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45673">マイクロソフト、1800万トンの炭素除去購入へ──ルビコン・カーボンと大規模契約締結 - ESG Journal </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#トラストレース-新データハブを発表ai活用でサプライチェーン管理を刷新---esg-journal-httpsesgjournaljapancomworld-news45681" class="md-toc-link">
+            </a><p><a href="#トラストレース-新データハブを発表ai活用でサプライチェーン管理を刷新---esg-journal-httpsesgjournaljapancomworld-news45681" class="md-toc-link"></a><a href="https://esgjournaljapan.com/world-news/45681">トラストレース、新データハブを発表。AI活用でサプライチェーン管理を刷新 - ESG Journal </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#国際金融公社-循環経済金融ガイドラインを公表6つのセクターを対象に--circular-economy-hub---サーキュラーエコノミー循環経済メディア-httpscehubjpnewsifc-circular-economy-finance-guidelines" class="md-toc-link">
+            </a><p><a href="#国際金融公社-循環経済金融ガイドラインを公表6つのセクターを対象に--circular-economy-hub---サーキュラーエコノミー循環経済メディア-httpscehubjpnewsifc-circular-economy-finance-guidelines" class="md-toc-link"></a><a href="https://cehub.jp/news/ifc-circular-economy-finance-guidelines/">国際金融公社、循環経済金融ガイドラインを公表。6つのセクターを対象に | Circular Economy Hub - サーキュラーエコノミー（循環経済）メディア </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#tcfdtnfd統合開示ガイドいま企業が備えるべき実務対応とは---esg-journal-httpsesgjournaljapancomcolumn45791" class="md-toc-link">
+            </a><p><a href="#tcfdtnfd統合開示ガイドいま企業が備えるべき実務対応とは---esg-journal-httpsesgjournaljapancomcolumn45791" class="md-toc-link"></a><a href="https://esgjournaljapan.com/column/45791">TCFD×TNFD統合開示ガイド：いま企業が備えるべき実務対応とは？ - ESG Journal </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#european-data-spaces-take-shape-idsa-advances-data-spaces-standards-at-cencenelec-meeting---international-data-spaces-httpsinternationaldataspacesorgeuropean-data-spaces-take-shape-idsa-advances-data-spaces-standards-at-cen-cenelec-meeting" class="md-toc-link">
+            </a><p><a href="#european-data-spaces-take-shape-idsa-advances-data-spaces-standards-at-cencenelec-meeting---international-data-spaces-httpsinternationaldataspacesorgeuropean-data-spaces-take-shape-idsa-advances-data-spaces-standards-at-cen-cenelec-meeting" class="md-toc-link"></a><a href="https://internationaldataspaces.org/european-data-spaces-take-shape-idsa-advances-data-spaces-standards-at-cen-cenelec-meeting/">European data spaces take shape: IDSA advances data spaces standards at CEN/CENELEC meeting - International Data Spaces </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#トップクラスの気象機関-向こう5年間で悲観的な予測-異常気象と命脅かす熱波---cnncojp-httpswwwcnncojpfringe35233589html" class="md-toc-link">
+            </a><p><a href="#トップクラスの気象機関-向こう5年間で悲観的な予測-異常気象と命脅かす熱波---cnncojp-httpswwwcnncojpfringe35233589html" class="md-toc-link"></a><a href="https://www.cnn.co.jp/fringe/35233589.html">トップクラスの気象機関、向こう５年間で悲観的な予測　異常気象と命脅かす熱波 - CNN.co.jp </a></p>
+
+          </div><div class="md-toc-link-wrapper" style="padding:0;;display:list-item;list-style:square;margin-left:42px">
+          <a href="#eu人権環境デューディリジェンス法制化の最新概要2025年5月--調査レポート---国地域別に見る---ジェトロ-httpswwwjetrogojpworldreports2025014195f825d288ce65html" class="md-toc-link">
+            </a><p><a href="#eu人権環境デューディリジェンス法制化の最新概要2025年5月--調査レポート---国地域別に見る---ジェトロ-httpswwwjetrogojpworldreports2025014195f825d288ce65html" class="md-toc-link"></a><a href="https://www.jetro.go.jp/world/reports/2025/01/4195f825d288ce65.html">EU人権・環境デューディリジェンス法制化の最新概要（2025年5月） | 調査レポート - 国・地域別に見る - ジェトロ </a></p>
+
+          </div>
+        </div>
+      </details>
+    
+</div>
+</div>
+      <a id="sidebar-toc-btn">≡</a>
+    
+    
+    
+    
+    
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  
+    </body></html>
