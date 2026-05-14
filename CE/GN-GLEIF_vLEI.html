@@ -1,0 +1,2030 @@
+<!DOCTYPE html><html><head>
+      <title>GN-GLEIF_vLEI</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.45/dist/katex.min.css">
+      
+      
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-details{margin:0;padding:0;border:none}.markdown-preview .md-toc summary.md-toc-link-wrapper{cursor:pointer;list-style-position:outside}.markdown-preview .md-toc summary.md-toc-link-wrapper::marker{font-size:.85em}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='0']{margin-left:12px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='1']{margin-left:28px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='2']{margin-left:44px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='3']{margin-left:60px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='4']{margin-left:76px}.markdown-preview .md-toc .md-toc-link-wrapper[data-level='5']{margin-left:80px}.markdown-preview a.tag,.markdown-preview a.tag:active,.markdown-preview a.tag:link,.markdown-preview a.tag:visited,.markdown-preview span.tag{display:inline-block;background-color:var(--vscode-badge-background,rgba(127,127,127,.18));color:var(--vscode-badge-foreground,currentColor);border-radius:2em;font-size:.85em;font-weight:500;padding:.05em .55em;line-height:1.5;white-space:nowrap;text-decoration:none;text-shadow:none;box-shadow:none;transition:background-color .12s ease,opacity .12s ease}.markdown-preview a.tag{cursor:pointer}.markdown-preview a.tag:focus,.markdown-preview a.tag:hover{background-color:var(--vscode-badge-background,rgba(127,127,127,.32));color:var(--vscode-badge-foreground,currentColor);opacity:.85;text-decoration:none;outline:0}.markdown-preview .wikilink-embed-content{border-left:3px solid var(--vscode-textBlockQuote-border,rgba(128,128,128,.3));background:var(--vscode-textBlockQuote-background,rgba(128,128,128,.05));margin:.5em 0;padding:.5em .75em;border-radius:0 3px 3px 0}.markdown-preview .wikilink-embed-content.wikilink-embed-error{border-left-color:var(--vscode-errorForeground,#cf222e);color:var(--vscode-errorForeground,#cf222e);font-style:italic;opacity:.8}.markdown-preview .wikilink-embed-content h1:first-child,.markdown-preview .wikilink-embed-content h2:first-child,.markdown-preview .wikilink-embed-content h3:first-child,.markdown-preview .wikilink-embed-content h4:first-child,.markdown-preview .wikilink-embed-content h5:first-child,.markdown-preview .wikilink-embed-content h6:first-child{margin-top:.25em}.markdown-preview .wikilink-embed-content .wikilink-embed-content{margin:.25em 0;padding:.25em .5em}.markdown-preview .block-id{display:none}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-details{margin:0;padding:0;border:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='0']{padding-left:0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='1']{padding-left:16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='2']{padding-left:32px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='3']{padding-left:48px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='4']{padding-left:64px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper[data-level='5']{padding-left:80px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}@font-face{font-family:"Material Icons";font-style:normal;font-weight:400;src:local("Material Icons"),local("MaterialIcons-Regular"),url("data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAAfIAAsAAAAADDAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAADMAAABCsP6z7U9TLzIAAAE8AAAARAAAAFZW7kosY21hcAAAAYAAAADTAAACjtP6ytBnbHlmAAACVAAAAxgAAAQ4zRtvlGhlYWQAAAVsAAAALwAAADYRwZsnaGhlYQAABZwAAAAcAAAAJAeKAzxobXR4AAAFuAAAABIAAAA8OGQAAGxvY2EAAAXMAAAAIAAAACAG5AfwbWF4cAAABewAAAAfAAAAIAEfAERuYW1lAAAGDAAAAVcAAAKFkAhoC3Bvc3QAAAdkAAAAYgAAAK2vz7wkeJxjYGRgYOBikGPQYWB0cfMJYeBgYGGAAJAMY05meiJQDMoDyrGAaQ4gZoOIAgCKIwNPAHicY2BkPsQ4gYGVgYOpk+kMAwNDP4RmfM1gxMjBwMDEwMrMgBUEpLmmMDgwVLy4xKzzX4chhrmK4QpQmBEkBwAZygyweJzFkr0NwjAQhZ+TEP6CRUfHBEwRUWaQTICyQbpMwRCskA5RUIONxG0RnnNpKAIV4qzPku/8c353ACYAYrIjCWCuMAh2ptf0/hiL3p/gyPUWa3osqlt0L1zu9r71z8dGrJRykFoauXQd932Lj5vhG+MjxGeYI8MKETObMpslf5EyP8tg+vHun5r539PvlvXzaVhRFVQDTPEWKVQR90KhnnC5Ek67vUKN4VuFasM/ldARj43CCkCsEjpJSoVVgRyU0GVSK6wUpFFCx8lFgX0BiXpRPQB4nE2TTWjcRhTH3xttpDhxN7uxPlp3u/FK7moRPixafRijNosxSw/LUsIwNcaEHPZggo/FmEKMCKWU4kNOOftQSlhE8alnH0Ix9BqWnHooPRrTQ0+mnu2bXTu2pPdGM9LM/6c3fwECTM4gBBMYQNqxzLrZAjqYSlqu2TAHZQA0/DQJH6FtzqGDnvbt4Ggwvzw/nL8EfH8kW0fsuRqhgWXZnY7M1picaUL7Du5BHeDzMIl83dAt016wH1qmvtSMo5R6YRJHTR//FXsff/nj/tc/5K9P5d+nP22+fFK5u7v3K39SW3y+OtDKO3L85vD09PD9z5X17a2N1g4tqk01RlqX7gyoEmnsWQtVr4rtZMmukEaFBZxzefkCn11cyKMLZgshRwgTYNoLNXCBz2ja7HvZG7hDpPSNfoo5vs0knK/9hb+rNpu+8kHPgk/Ao4kK3tWtTpSEtvkA9c+wE6UaUdwieNkaHg55tBEtRiEPw1s0+FtrtTcc9two2lhMknV7PZF/cs6+uUFTmpTGbEx7sQCPSLOttHS3GRltqp7SNzVSKzl6aWnZT/CX5k6/v9N3Hh8fHBwffJVjhrC6OgH5dkIt/tPsq+d/PD5Qz7G7efzq1THFjdZVPe/N6ulQ3JnDWSE5junsFsVIiFwL/htf1S5gJ3BfOcUxfHKLnzqpFpyfZ9cX+/5WB6a+Y0pHpzkNrYNVDwMsikK+y7WuLCRg/oFHkA8VT3rDg5ZnU6ktzzINymV0m74Xd5pfIGXyFeVEQSShkzqG7TBBa2OxVRKitLXv7h3uuftXnXq7lz2tZ/WnWa9dx9dCjDhHzmuVQATlmljr9dZErUydSo2Hbi/b1vXtrOeGCk2/8s3ZlO8+ueJT8BVlw5pGw2oYccdSiHHqx0RlabHqdNR9jAETl6PreJcPBnnfpTLnOQ8C3OV8AmQGzouV1iZdeb5SSIoVc8W8/kcDtksUH5FrU6/aqBqNWcMEzxG4DAQ14qRQhi9mWU0rzepKezbjfgCwQKxVYq5ajRgpRqy45CqwkJydcEkbTkvRz8P5/2ZpDTN4nGNgZGBgAOKb6v+/xvPbfGXgZmEAgeuB2kkI+v8bFgbmKiCXg4EJJAoAPyAKhQB4nGNgZGBg1vmvwxDDwgACQJKRARXwAwAzZQHQeJxjYQCCFAYGFgbSMQAcWACdAAAAAAAAAAwALgBgAIQAmADSAQgBIgE8AVABoAHeAfwCHHicY2BkYGDgZ7BgYGMAASYg5gJCBob/YD4DAA/hAWQAeJxlkbtuwkAURMc88gApQomUJoq0TdIQzEOpUDokKCNR0BuzBiO/tF6QSJcPyHflE9Klyyekz2CuG8cr7547M3d9JQO4xjccnJ57vid2cMHqxDWc40G4Tv1JuEF+Fm6ijRfhM+oz4Ra6eBVu4wZvvMFpXLIa40PYQQefwjVc4Uu4Tv1HuEH+FW7i1mkKn6Hj3Am3sHC6wm08Ou8tpSZGe1av1PKggjSxPd8zJtSGTuinyVGa6/Uu8kxZludCmzxMEzV0B6U004k25W35fj2yNlCBSWM1paujKFWZSbfat+7G2mzc7weiu34aczzFNYGBhgfLfcV6iQP3ACkSaj349AxXSN9IT0j16JepOb01doiKbNWt1ovippz6sVYYwsXgX2rGVFIkq7Pl2PNrI6qW6eOshj0xaSq9mpNEZIWs8LZUfOouNkVXxp/d5woqebeYIf4D2J1ywQB4nG3LOw6AIBAE0B384B+PAkgEa+QwNnYmHt+EpXSal5lkSBBnoP8oCFSo0aCFRIceA0ZMmLFAYSW88rmvtMUjG3RiQ9HvpfusM6zWNmtc5H/iPewha50tOt5PS/QBx2IeSwAA") format("woff")}.admonition{box-shadow:0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.2);position:relative;margin:1.5625em 0;padding:0 1.2rem;border-left:.4rem solid rgba(68,138,255,.8);border-radius:.2rem;background-color:rgba(255,255,255,.05);overflow:auto}.admonition>p{margin-top:.8rem}.admonition>.admonition-title{margin:0 -1.2rem;padding:.8rem 1.2rem .8rem 3.6rem;border-bottom:1px solid rgba(68,138,255,.2);background-color:rgba(68,138,255,.1);font-weight:700}.admonition>.admonition-title:before{position:absolute;left:1.2rem;font-size:1.5rem;color:rgba(68,138,255,.8);content:"\E3C9"}.admonition>.admonition-title:before{font-family:Material Icons;font-style:normal;font-variant:normal;font-weight:400;line-height:2rem;text-transform:none;white-space:nowrap;speak:none;word-wrap:normal;direction:ltr}.admonition.abstract,.admonition.summary,.admonition.tldr{border-left-color:rgba(0,176,255,.8)}.admonition.abstract>.admonition-title,.admonition.summary>.admonition-title,.admonition.tldr>.admonition-title{background-color:rgba(0,176,255,.1);border-bottom-color:rgba(0,176,255,.2)}.admonition.abstract>.admonition-title:before,.admonition.summary>.admonition-title:before,.admonition.tldr>.admonition-title:before{color:#00b0ff;content:"\E8D2"}.admonition.hint,.admonition.tip{border-left-color:rgba(0,191,165,.8)}.admonition.hint>.admonition-title,.admonition.tip>.admonition-title{background-color:rgba(0,191,165,.1);border-bottom-color:rgba(0,191,165,.2)}.admonition.hint>.admonition-title:before,.admonition.tip>.admonition-title:before{color:#00bfa5;content:"\E80E"}.admonition.info,.admonition.todo{border-left-color:rgba(0,184,212,.8)}.admonition.info>.admonition-title,.admonition.todo>.admonition-title{background-color:rgba(0,184,212,.1);border-bottom-color:rgba(0,184,212,.2)}.admonition.info>.admonition-title:before,.admonition.todo>.admonition-title:before{color:#00b8d4;content:"\E88E"}.admonition.check,.admonition.done,.admonition.success{border-left-color:rgba(0,200,83,.8)}.admonition.check>.admonition-title,.admonition.done>.admonition-title,.admonition.success>.admonition-title{background-color:rgba(0,200,83,.1);border-bottom-color:rgba(0,200,83,.2)}.admonition.check>.admonition-title:before,.admonition.done>.admonition-title:before,.admonition.success>.admonition-title:before{color:#00c853;content:"\E876"}.admonition.faq,.admonition.help,.admonition.question{border-left-color:rgba(100,221,23,.8)}.admonition.faq>.admonition-title,.admonition.help>.admonition-title,.admonition.question>.admonition-title{background-color:rgba(100,221,23,.1);border-bottom-color:rgba(100,221,23,.2)}.admonition.faq>.admonition-title:before,.admonition.help>.admonition-title:before,.admonition.question>.admonition-title:before{color:#64dd17;content:"\E887"}.admonition.attention,.admonition.caution,.admonition.warning{border-left-color:rgba(255,145,0,.8)}.admonition.attention>.admonition-title,.admonition.caution>.admonition-title,.admonition.warning>.admonition-title{background-color:rgba(255,145,0,.1);border-bottom-color:rgba(255,145,0,.2)}.admonition.attention>.admonition-title:before{color:#ff9100;content:"\E417"}.admonition.caution>.admonition-title:before,.admonition.warning>.admonition-title:before{color:#ff9100;content:"\E002"}.admonition.fail,.admonition.failure,.admonition.missing{border-left-color:rgba(255,82,82,.8)}.admonition.fail>.admonition-title,.admonition.failure>.admonition-title,.admonition.missing>.admonition-title{background-color:rgba(255,82,82,.1);border-bottom-color:rgba(255,82,82,.2)}.admonition.fail>.admonition-title:before,.admonition.failure>.admonition-title:before,.admonition.missing>.admonition-title:before{color:#ff5252;content:"\E14C"}.admonition.bug,.admonition.danger,.admonition.error{border-left-color:rgba(255,23,68,.8)}.admonition.bug>.admonition-title,.admonition.danger>.admonition-title,.admonition.error>.admonition-title{background-color:rgba(255,23,68,.1);border-bottom-color:rgba(255,23,68,.2)}.admonition.danger>.admonition-title:before{color:#ff1744;content:"\E3E7"}.admonition.error>.admonition-title:before{color:#ff1744;content:"\E14C"}.admonition.bug>.admonition-title:before{color:#ff1744;content:"\E868"}.admonition.example,.admonition.snippet{border-left-color:rgba(0,184,212,.8)}.admonition.example>.admonition-title,.admonition.snippet>.admonition-title{background-color:rgba(0,184,212,.1);border-bottom-color:rgba(0,184,212,.2)}.admonition.example>.admonition-title:before,.admonition.snippet>.admonition-title:before{color:#00b8d4;content:"\E242"}.admonition.cite,.admonition.quote{border-left-color:rgba(158,158,158,.8)}.admonition.cite>.admonition-title,.admonition.quote>.admonition-title{background-color:rgba(158,158,158,.1);border-bottom-color:rgba(158,158,158,.2)}.admonition.cite>.admonition-title:before,.admonition.quote>.admonition-title:before{color:#9e9e9e;content:"\E244"}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview {
+  padding-right: 10%;
+  padding-left: 10%;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAaElEQVR4AVzMgQnAMAwDwZIdsm/3zRLlBCrBAWHprXg9451z3oESl8Ut9M48lot775eASqbmFAU/uzBlvEoRtCw0ZZynFBmQpm9efgomTd+ciwq9ZkEyzlOKDGjJmzJf/UXgXioTTh8AAAD//9bADL8AAAAGSURBVAMAmytcWnWLDngAAAAASUVORK5CYII=) repeat;
+}
+.markdown-preview.markdown-preview {
+  /* ---- Abstract ---- */
+  /* ---- Note ---- */
+  /* ---- Hint ---- */
+  /* ---- Example ---- */
+  /* ---- Thinking ---- */
+  /* ---- Information ---- */
+  /* ---- Reference ---- */
+  /* ---- Important ---- */
+  /* ---- Warning ---- */
+  /* CSSだけでブルブル震わせる | q-Az https://q-az.net/buruburu-hurueru-css/ */
+  /* ---- Error ---- */
+  /* ---- Fatal ---- */
+  /* ---- Question ---- */
+  /* ---- Answer ---- */
+  /* ---- Topic ---- */
+  /* ---- Quote ---- */
+  /* ---- Secret ---- */
+  /* PRE */
+  /* text-color-animation https://codepen.io/alvarotrigo/pen/PoKMyNO */
+  /* Pure CSS text basic animations https://codepen.io/alvarotrigo/pen/NWvQObB */
+  /* flip around X */
+  /* flip around Y */
+}
+.markdown-preview.markdown-preview h1,
+.markdown-preview.markdown-preview h2,
+.markdown-preview.markdown-preview h3,
+.markdown-preview.markdown-preview h4 {
+  border-style: none none none solid;
+  border-color: #336699;
+  font-weight: bold;
+}
+.markdown-preview.markdown-preview h1 {
+  border-style: none none none solid;
+  background-color: lightblue;
+  border-left-width: 20px;
+  padding: 0.6ex 0.6ex 0.6ex 0.6ex;
+}
+.markdown-preview.markdown-preview h2 {
+  border-style: none none solid solid;
+  background-color: lightblue;
+  border-left-width: 15px;
+  border-bottom-width: 5px;
+  padding: 0.4ex 0.4ex 0ex 0.6ex;
+}
+.markdown-preview.markdown-preview h3 {
+  border-style: none none solid solid;
+  background-color: white;
+  border-left-width: 10px;
+  padding: 0.2ex 0.2ex 0.2ex 0.6ex;
+}
+.markdown-preview.markdown-preview h4 {
+  border-style: none;
+  background-color: white;
+  border-left-width: 10px;
+  text-decoration: underline solid green;
+  padding: 0.2ex 0.2ex 0.2ex 5px;
+}
+.markdown-preview.markdown-preview h5 {
+  border-style: none;
+  background-color: white;
+  border-left-width: 10px;
+  text-decoration: underline solid green;
+  padding: 0.2ex 0.2ex 0.2ex 7px;
+}
+.markdown-preview.markdown-preview h5:before {
+  content: "◆";
+  margin-left: 0px;
+  font-style: normal;
+}
+.markdown-preview.markdown-preview h6 {
+  border-style: none;
+  background-color: white;
+  border-left-width: 10px;
+  text-decoration: underline solid green;
+  padding: 0.2ex 0.2ex 0.2ex 10px;
+}
+.markdown-preview.markdown-preview h6:before {
+  content: ">";
+  margin-left: 0px;
+  font-style: normal;
+}
+.markdown-preview.markdown-preview a:link:hover,
+.markdown-preview.markdown-preview a:visited:hover {
+  color: darkred;
+  background-color: yellow;
+}
+.markdown-preview.markdown-preview body {
+  background-color: white;
+  color: black;
+}
+.markdown-preview.markdown-preview code,
+.markdown-preview.markdown-preview tt {
+  font-family: monospace;
+  font-weight: bold;
+  font-style: normal;
+}
+.markdown-preview.markdown-preview table th {
+  background-color: #88efcc;
+}
+.markdown-preview.markdown-preview fieldset.abstract {
+  margin: auto 5% auto 5%;
+  border: ridge #8fbc8f;
+  font-size: small;
+  padding: 0.5em;
+  border-radius: 1em;
+}
+.markdown-preview.markdown-preview fieldset.abstract legend {
+  margin: 0pt;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #006400;
+}
+.markdown-preview.markdown-preview fieldset.compact_note {
+  margin: auto 1em auto 1em;
+  border: solid #00bfff 1pt;
+  font-size: 75%;
+  padding: 0.5em 1em 0.5em 1em;
+  border-radius: 5pt;
+  color: #808080;
+}
+.markdown-preview.markdown-preview fieldset.compact_note legend {
+  margin: 0pt;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #191970;
+}
+.markdown-preview.markdown-preview h2.toc {
+  margin: 1em;
+  border-left: none;
+  border-bottom: dashed #786201 2pt;
+  padding-left: 0.5em;
+}
+.markdown-preview.markdown-preview dt {
+  background-color: #36A9AE;
+  background-image: linear-gradient(#37ADB2, #329CA0);
+  border: 1px solid #2A8387;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+  color: #FFFFFF;
+  display: inline-block;
+  line-height: 120%;
+}
+.markdown-preview.markdown-preview dt:before {
+  content: " ";
+  margin-left: 5pt;
+  font-style: normal;
+}
+.markdown-preview.markdown-preview dt:after {
+  content: " ";
+  margin-right: 5pt;
+  font-style: normal;
+}
+.markdown-preview.markdown-preview dd {
+  border-left: 6px solid #36A9AE;
+  margin: 0;
+  font-size: 0.75rem;
+}
+.markdown-preview.markdown-preview table.minutes_table {
+  table-layout: auto;
+  width: 100vw;
+  border-style: none;
+  border-collapse: collapse;
+  font-size: 80%;
+}
+.markdown-preview.markdown-preview table.minutes_table tr > td:nth-child(1) {
+  border-style: none;
+  padding: 0pt;
+  vertical-align: top;
+  text-align: right;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview table.minutes_table tr > td:nth-child(2) {
+  min-width: 60em;
+  border-style: none none solid none;
+  padding: 0 1em 0 0.5em;
+  vertical-align: top;
+  text-align: left;
+}
+.markdown-preview.markdown-preview table.minutes_table td > p {
+  margin: 0;
+  padding: 0;
+}
+.markdown-preview.markdown-preview strong:hover {
+  background-color: #b5f5a8;
+}
+.markdown-preview.markdown-preview h3.change_header {
+  display: block;
+  width: fit-content;
+  border: 2pt outset;
+  border-radius: 5pt;
+  background-color: #e6f8f4;
+  margin-top: 1ex;
+  margin-bottom: 0;
+  padding: 0;
+  font-size: 110%;
+  font-weight: bolder;
+  color: blue;
+  text-align: center;
+}
+.markdown-preview.markdown-preview h3.change_header + ul {
+  margin-left: 1ex;
+  border-left: 4pt solid lightgrey;
+}
+@counter-style qa_list_style {
+  system: numeric;
+  symbols: "𝟬" "𝟭" "𝟮" "𝟯" "𝟰" "𝟱" "𝟲" "𝟳" "𝟴" "𝟵";
+  suffix: "";
+  pad: 2 "𝟬";
+}
+.markdown-preview.markdown-preview ul.qa_section {
+  counter-reset: q_item;
+}
+.markdown-preview.markdown-preview li.question {
+  margin-left: 5.5ex;
+  margin-top: 1em;
+  margin-bottom: 0.25em;
+  list-style-type: none;
+  line-height: 140%;
+  text-indent: -7ex;
+}
+.markdown-preview.markdown-preview li.question:before {
+  counter-increment: q_item;
+  content: "𝗤" counter(q_item, qa_list_style) ": ";
+  background-color: whitesmoke;
+  border-radius: 2pt;
+  padding-left: 0.5ex;
+  font-size: 140%;
+  color: blue;
+}
+.markdown-preview.markdown-preview li.answer {
+  margin-left: 6ex;
+  list-style-type: none;
+  line-height: 140%;
+  text-indent: -4ex;
+  color: rebeccapurple;
+}
+.markdown-preview.markdown-preview li.answer:before {
+  content: "𝗔: ";
+  background-color: whitesmoke;
+  border-radius: 2pt;
+  padding-left: 0.5ex;
+  font-size: 140%;
+  color: red;
+}
+.markdown-preview.markdown-preview li.information {
+  margin-left: 7ex;
+  list-style-type: none;
+  line-height: 140%;
+  text-indent: -5ex;
+  color: #79b585;
+  font-size: 90%;
+}
+.markdown-preview.markdown-preview li.information:before {
+  content: "ⓘ: ";
+  background-color: whitesmoke;
+  border-radius: 2pt;
+  padding-left: 0.5ex;
+  font-size: 120%;
+  font-weight: bolder;
+  color: darkgreen;
+}
+.markdown-preview.markdown-preview li.comment {
+  margin-left: 5.5ex;
+  list-style-type: none;
+  line-height: 140%;
+  text-indent: -4ex;
+  color: #b5af79;
+  font-size: 80%;
+}
+.markdown-preview.markdown-preview li.comment:before {
+  border-style: solid;
+  border-width: 1pt;
+  border-radius: 6pt;
+  content: "Comment";
+  background-color: whitesmoke;
+  border-radius: 2pt;
+  padding-left: 0.5ex;
+  padding-right: 0.5ex;
+  font-size: 100%;
+  font-weight: bolder;
+  color: #746702;
+}
+.markdown-preview.markdown-preview p.todo {
+  margin-left: 5em;
+  font-size: 75%;
+  text-indent: -3.6em;
+  background-color: rgba(144, 238, 144, 0.16);
+}
+.markdown-preview.markdown-preview span.todo {
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  font-weight: bold;
+  color: white;
+  background-color: black;
+  border-radius: 4px;
+}
+.markdown-preview.markdown-preview span.todo_charge {
+  font-weight: bold;
+  text-decoration: underline 3px;
+  padding-left: 0.2em;
+}
+.markdown-preview.markdown-preview span.todo_charge:after {
+  content: ":";
+}
+.markdown-preview.markdown-preview span.todo_period {
+  font-weight: bold;
+  text-decoration: underline 3px;
+}
+.markdown-preview.markdown-preview span.todo_period:after {
+  content: ":";
+}
+.markdown-preview.markdown-preview .admonitions {
+  margin: 1em 0em 1em 0em;
+  padding: 0;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  border-left-width: 1em;
+  border-style: solid;
+}
+.markdown-preview.markdown-preview .admonitions > .title {
+  padding: 0.5em 1em 0.5em 0.5em;
+  border-radius: 0px;
+  text-align: left;
+  font-family: apple color emoji,segoe ui emoji,noto color emoji,android emoji,emojisymbols,emojione mozilla,twemoji mozilla,segoe ui symbol;
+}
+.markdown-preview.markdown-preview .admonitions > div {
+  padding: 0.5em 1em 0.5em 1em;
+}
+.markdown-preview.markdown-preview .abstract {
+  border-color: #929393;
+  border-left-color: #505151;
+}
+.markdown-preview.markdown-preview .abstract > .title {
+  background-color: #fcfcfc;
+  border-bottom: solid #c1bfbf;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .abstract > .title::before {
+  content: "📜";
+  font-size: 150% ;
+  display: inline-block;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .abstract > .icon2::before {
+  content: "📃";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .abstract > .icon3::before {
+  content: "🧾";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .note {
+  border-color: lightblue;
+  border-left-color: #2aa7fa;
+}
+.markdown-preview.markdown-preview .note > .title {
+  background-color: #b0eff7;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .note > .title::before {
+  content: "📝";
+  font-size: 150% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .note > .icon2::before {
+  content: "📌";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .note > .icon3::before {
+  content: "☕";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .note > .icon4::before {
+  content: "🍵";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .note > .icon5::before {
+  content: "📧";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .hint {
+  border-color: lightgreen;
+  border-left-color: #2afa92;
+}
+.markdown-preview.markdown-preview .hint > .title {
+  background-color: #d0fdde;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .hint > .title::before {
+  content: "🔎";
+  font-size: 150% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .hint > .icon2::before {
+  content: "🔰";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .hint > .icon3::before {
+  content: "💡";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .hint > .icon4::before {
+  content: "👩‍🏫";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .hint > .icon5::before {
+  content: "🔮";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .hint > .icon6::before {
+  content: "💭";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .hint > .icon7::before {
+  content: "🗯";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .example {
+  border-color: #00fef1;
+  border-left-color: #a5eded;
+}
+.markdown-preview.markdown-preview .example > .title {
+  background-color: #a5eded;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .example pre {
+  background-color: #ebfcfc;
+  font-family: monospace;
+  font-size: 90%;
+  color: darkblue;
+  text-align: left;
+  white-space: pre;
+  word-break: keep-all;
+  border-left: solid 4pt #8f8ff4;
+  border-right: solid 1pt black;
+  margin: 0.5em 1em 0.5em 1em;
+  padding: 0.5em 0 0.5em 0.5em;
+  display: block;
+  overflow-y: auto;
+}
+.markdown-preview.markdown-preview .example > .title::before {
+  margin-right: 0.25em;
+  content: "👣";
+  font-size: 150% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .example > .icon2::before {
+  content: "🐾";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .example > .icon3::before {
+  content: "🍽";
+  font-size: 150% ;
+}
+@keyframes animation_thinking_rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(-10deg);
+  }
+  66% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.markdown-preview.markdown-preview .thinking {
+  border-color: #90c377;
+  border-left-color: #019249;
+}
+.markdown-preview.markdown-preview .thinking > .title {
+  background-color: #99d4ac;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .thinking > .title::before {
+  content: "⏳";
+  font-size: 150% ;
+  vertical-align: middle;
+  animation: animation_thinking_rotation 3s infinite linear;
+  display: inline-block;
+}
+.markdown-preview.markdown-preview .thinking > .icon2::before {
+  content: "⏲";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .thinking > .icon3::before {
+  content: "💬";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .thinking > .icon4::before {
+  content: "🤔";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .thinking > .icon5::before {
+  content: "✏";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .thinking > .icon6::before {
+  content: "🌲";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .thinking > .icon7::before {
+  content: "🕛";
+  font-size: 150% ;
+  animation: clock_animation 12s infinite linear;
+}
+.markdown-preview.markdown-preview .thinking > .icon8::before {
+  width: 1.5em;
+  content: "🥚";
+  font-size: 150% ;
+  text-align: center;
+  animation: thinking_bird_growth_animation 3s steps(1, jump-end) infinite;
+}
+@keyframes thinking_bird_growth_animation {
+  0% {
+    content: "🥚";
+  }
+  15% {
+    content: "🐣";
+  }
+  30% {
+    content: "🐥";
+  }
+  45% {
+    content: "🐤";
+  }
+  60% {
+    content: "🐓";
+  }
+  100% {
+    content: "🥚";
+  }
+}
+@keyframes clock_animation {
+  0% {
+    content: "🕛";
+  }
+  8.33% {
+    content: "🕐";
+  }
+  16.67% {
+    content: "🕑";
+  }
+  25% {
+    content: "🕒";
+  }
+  33.33% {
+    content: "🕓";
+  }
+  41.67% {
+    content: "🕔";
+  }
+  50% {
+    content: "🕕";
+  }
+  58.33% {
+    content: "🕖";
+  }
+  66.67% {
+    content: "🕗";
+  }
+  75% {
+    content: "🕘";
+  }
+  83.33% {
+    content: "🕙";
+  }
+  91.67% {
+    content: "🕚";
+  }
+  100% {
+    content: "🕛";
+  }
+}
+.markdown-preview.markdown-preview .information {
+  border-color: lightblue;
+  border-left-color: #2aa7fa;
+}
+.markdown-preview.markdown-preview .information > .title {
+  background-color: #b9f6fd;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .information > .title::before {
+  margin-right: 0.25em;
+  content: "ⓘ";
+  font-size: 175% ;
+  font-weight: bolder;
+  color: #022bf3;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .information > .icon2::before {
+  content: "🎁";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .information > .icon2::before {
+  content: "🔖";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .information > .icon3::before {
+  content: "👍";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .information > .icon4::before {
+  content: "🧐";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .reference {
+  border-color: lightgrey;
+  border-left-color: #c9c9c9;
+}
+.markdown-preview.markdown-preview .reference > .title {
+  background-color: #f4f4f4;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .reference > .title::before {
+  margin-right: 0.25em;
+  content: "📘";
+  font-size: 150% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .reference > .icon2::before {
+  content: "📖";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .reference > .icon3::before {
+  content: "📚";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .reference > .icon4::before {
+  content: "🌏";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .reference > .icon5::before {
+  content: "🗺";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .important {
+  border-color: #cee9ff;
+  border-left-color: #0155d2;
+}
+.markdown-preview.markdown-preview .important > .title {
+  background-color: #cee9ff;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .important > .title::before {
+  margin-right: 0.25em;
+  content: "🧿";
+  font-size: 150% ;
+  font-weight: bolder;
+  vertical-align: middle;
+  display: inline-block;
+  animation: important_press_animation 2s infinite linear;
+}
+.markdown-preview.markdown-preview .important > .icon2::before {
+  content: "👊";
+  font-size: 150% ;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .important > .icon3::before {
+  content: "👀";
+  font-size: 150% ;
+  font-weight: bolder;
+  display: inline-block;
+  animation: 2s anim-flipX steps(2, jump-none) infinite;
+}
+.markdown-preview.markdown-preview .important > .icon4::before {
+  content: "✍";
+  font-size: 150% ;
+  font-weight: bolder;
+  color: red;
+  display: inline-block;
+  animation: animation_thinking_rotation 1.5s infinite linear;
+}
+.markdown-preview.markdown-preview .important > .icon5::before {
+  content: "🗣";
+  font-size: 150% ;
+  font-weight: bolder;
+  color: red;
+}
+.markdown-preview.markdown-preview span.important_phrase {
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  display: inline-block;
+  font-weight: bolder;
+  color: red;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview span.important_phrase::before {
+  width: 1em;
+  margin-right: 0.25em;
+  display: inline-block;
+  content: "▏";
+  font-weight: bolder;
+  color: red;
+  animation: 1s important_phrase_animation linear infinite;
+}
+.markdown-preview.markdown-preview span.important_phrase::after {
+  width: 1em;
+  margin-left: 0.25em;
+  display: inline-block;
+  content: "▏";
+  font-weight: bolder;
+  color: red;
+  animation: 1s important_phrase_animation linear infinite;
+  transform: scale(-1, 1);
+}
+.markdown-preview.markdown-preview span.important_phrase2 {
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  display: inline-block;
+  font-weight: bolder;
+  color: blue;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview span.important_phrase2::before {
+  width: 1em;
+  margin-right: 0.25em;
+  display: inline-block;
+  content: "▏";
+  font-weight: bolder;
+  color: blue;
+  animation: 1s important_phrase_animation linear infinite;
+  transform: scale(-1, 1);
+}
+.markdown-preview.markdown-preview span.important_phrase2::after {
+  width: 1em;
+  margin-left: 0.25em;
+  display: inline-block;
+  content: "▏";
+  font-weight: bolder;
+  color: blue;
+  animation: 1s important_phrase_animation linear infinite;
+}
+@keyframes important_phrase_animation {
+  0% {
+    content: "▏";
+  }
+  12.5% {
+    content: "▎";
+  }
+  25% {
+    content: "▍";
+  }
+  37.5% {
+    content: "▌";
+  }
+  50% {
+    content: "▋";
+  }
+  62.5% {
+    content: "▊";
+  }
+  75% {
+    content: "▉";
+  }
+  100% {
+    content: "█";
+  }
+}
+.markdown-preview.markdown-preview span.important_phrase3 {
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  display: inline-block;
+  font-weight: bolder;
+  color: red;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview span.important_phrase3::before {
+  width: 1.5em;
+  content: "🔈";
+  text-align: left;
+  display: inline-block;
+  animation: important_siren_animation 0.6s infinite;
+}
+@keyframes important_siren_animation {
+  0% {
+    content: "🔈";
+  }
+  33% {
+    content: "🔉";
+  }
+  66% {
+    content: "🔊";
+  }
+  100% {
+    content: "🔈";
+  }
+}
+.markdown-preview.markdown-preview .warning {
+  border-color: lightgoldenrodyellow;
+  border-left-color: #ede502;
+}
+.markdown-preview.markdown-preview .warning > .title {
+  background-color: #fdffce;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .warning > .title::before {
+  margin-right: 0.25em;
+  content: "⚠";
+  font-size: 150% ;
+  font-weight: bolder;
+  font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-emoji: emoji;
+  color: red;
+  vertical-align: middle;
+  display: inline-block;
+  animation: vibration_horizontal_animation 0.5s infinite;
+}
+.markdown-preview.markdown-preview .warning > .icon2::before {
+  content: "💣";
+  font-size: 150% ;
+  animation: vibration_animation 0.5s infinite;
+}
+.markdown-preview.markdown-preview .warning > .icon3::before {
+  content: "🌋";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .warning > .icon4::before {
+  content: "😨";
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .warning > .icon5::before {
+  content: "🚧";
+  font-size: 150% ;
+}
+@keyframes vibration_animation {
+  0% {
+    transform: translate(0px, 0px) rotateZ(0deg);
+  }
+  25% {
+    transform: translate(2px, 2px) rotateZ(1deg);
+  }
+  50% {
+    transform: translate(0px, 2px) rotateZ(0deg);
+  }
+  75% {
+    transform: translate(2px, 0px) rotateZ(-1deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotateZ(0deg);
+  }
+}
+@keyframes vibration_horizontal_animation {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(2px, 0px);
+  }
+  50% {
+    transform: translate(0px, 0px);
+  }
+  75% {
+    transform: translate(2px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes vibration_vertical_animation {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(0px, 2px);
+  }
+  50% {
+    transform: translate(0px, 0px);
+  }
+  75% {
+    transform: translate(0px, 2px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes animation_error_color {
+  0% {
+    border-color: #faa07c;
+  }
+  50% {
+    border-color: #f15c21;
+  }
+  100% {
+    border-color: #faa07c;
+  }
+}
+.markdown-preview.markdown-preview .error {
+  border-color: lightsalmon;
+  border-left-color: #f8a065;
+  animation: animation_error_color 3s infinite linear;
+}
+.markdown-preview.markdown-preview .error > .title {
+  background-color: #fbc4af;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .error > .title::before {
+  margin-right: 0.25em;
+  content: "🔥";
+  font-size: 175% ;
+  vertical-align: middle;
+  display: inline-block;
+  animation-name: spin, depth;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+}
+.markdown-preview.markdown-preview .error > .icon2::before {
+  content: "🚨";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .error > .icon3::before {
+  content: "😡";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .error > .icon4::before {
+  content: "💢";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .error > .icon5::before {
+  content: "😵";
+  font-size: 175% ;
+  animation: rotate_360_animation 2s linear infinite;
+}
+@keyframes animation_fatal_color {
+  0% {
+    border-color: #f94949;
+  }
+  50% {
+    border-color: #f8a8a8;
+  }
+  100% {
+    border-color: #f94949;
+  }
+}
+.markdown-preview.markdown-preview .fatal {
+  border-color: lightcoral;
+  border-left-color: #f86565;
+  animation: animation_fatal_color 2s infinite linear;
+}
+.markdown-preview.markdown-preview .fatal > .title {
+  background-color: #fbafaf;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .fatal > .title::before {
+  margin-right: 0.25em;
+  content: "💀";
+  font-size: 175% ;
+  vertical-align: middle;
+  display: inline-block;
+  animation: 4s anim-rotateX ease infinite;
+}
+.markdown-preview.markdown-preview .fatal > .icon2::before {
+  content: "⛔";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .fatal > .icon3::before {
+  content: "🆖";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .fatal > .icon4::before {
+  content: "🥵";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .question {
+  border-color: lightblue;
+  border-left-color: #6571f8;
+}
+.markdown-preview.markdown-preview .question > .title {
+  background-color: lightskyblue;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .question > .title::before {
+  margin-right: 0.25em;
+  content: "❓";
+  font-size: 175% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .question > .icon2::before {
+  content: "Q";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .question > .icon3::before {
+  content: "🤨";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .answer {
+  border-color: lightblue;
+  border-left-color: #6571f8;
+}
+.markdown-preview.markdown-preview .answer > .title {
+  background-color: lightskyblue;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .answer > .title::before {
+  margin-right: 0.25em;
+  content: "✔";
+  font-size: 175% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .answer > .icon2::before {
+  content: "A";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .answer > .icon3::before {
+  content: "😉";
+  font-size: 175% ;
+}
+.markdown-preview.markdown-preview .topic {
+  border-color: #89acab;
+  border-left-color: #6dcd98;
+}
+.markdown-preview.markdown-preview .topic > .title {
+  background-color: #a2d4ae;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .topic > .title::before {
+  margin-right: 0.25em;
+  content: "🛎";
+  font-size: 175% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .topic > .icon2::before {
+  content: "🔊";
+  font-size: 175% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .topic > .icon3::before {
+  content: "🐬";
+  font-size: 175% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .topic > .icon4::before {
+  content: "🏮";
+  font-size: 175% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .topic > .icon5::before {
+  content: "🚦";
+  font-size: 175% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .quote {
+  border-color: lightslategray;
+  border-left-color: #4b4a4a;
+}
+.markdown-preview.markdown-preview .quote > .title {
+  background-color: #b0afaf;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .quote > .title::before {
+  margin-right: 0.25em;
+  content: "📦";
+  font-size: 175% ;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .quote > .title::after {
+  content: "";
+}
+.markdown-preview.markdown-preview .quote > .icon2::before {
+  content: "🗨";
+  font-size: 200% ;
+  color: white;
+}
+.markdown-preview.markdown-preview .quote blockquote {
+  margin-top: 0em;
+  margin-left: 0em;
+  padding-left: 2em;
+  text-indent: -1.25em;
+}
+.markdown-preview.markdown-preview .quote blockquote::before {
+  content: "❝";
+  font-size: 200% ;
+  color: #9f9f9f;
+}
+.markdown-preview.markdown-preview .quote blockquote::after {
+  content: "\A\A❞";
+  font-size: 200% ;
+  white-space: pre;
+  line-height: 0.5em;
+  color: #9f9f9f;
+}
+.markdown-preview.markdown-preview .quote2 blockquote::before {
+  content: "『\A";
+  white-space: pre;
+  font-size: 150% ;
+}
+.markdown-preview.markdown-preview .quote2 blockquote::after {
+  content: "\A\A』";
+  font-size: 150% ;
+  white-space: pre;
+  line-height: 0.5em;
+}
+.markdown-preview.markdown-preview .secret {
+  border-color: #fd0101;
+  border-left-color: #ff0101;
+}
+.markdown-preview.markdown-preview .secret > .title {
+  background-color: #fccbcb;
+  font-size: large;
+  font-weight: bolder;
+}
+.markdown-preview.markdown-preview .secret > .title::before {
+  margin-right: 0.25em;
+  content: "㊙";
+  font-size: 200% ;
+  font-weight: bolder;
+  font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-emoji: emoji;
+  color: red;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .secret > .icon2::before {
+  content: "🔐";
+  font-size: 150% ;
+  font-weight: bolder;
+  font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-emoji: emoji;
+  color: red;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .secret > .icon3::before {
+  content: "🛂";
+  font-size: 150% ;
+  font-weight: bolder;
+  font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-emoji: emoji;
+  color: red;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .secret > .icon4::before {
+  content: "🤐";
+  font-size: 150% ;
+  font-weight: bolder;
+  font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-emoji: emoji;
+  color: red;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .secret > .icon5::before {
+  content: "🤫";
+  font-size: 150% ;
+  font-weight: bolder;
+  font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-emoji: emoji;
+  color: red;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .secret > .icon6::before {
+  content: "🈲";
+  font-size: 200%;
+  font-weight: bolder;
+  font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-emoji: emoji;
+  color: red;
+  vertical-align: middle;
+}
+.markdown-preview.markdown-preview .secret > .icon7::before {
+  content: "🔇";
+  font-size: 150% ;
+  font-weight: bolder;
+  font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-emoji: emoji;
+  color: red;
+  vertical-align: middle;
+}
+@keyframes secret_monkey_animation {
+  0% {
+    content: "🙈";
+  }
+  33% {
+    content: "🙉";
+  }
+  66% {
+    content: "🙊";
+  }
+  100% {
+    content: "🙈";
+  }
+}
+.markdown-preview.markdown-preview .secret > .icon8::before {
+  content: "🙈";
+  margin-right: 0.25em;
+  font-size: 150% ;
+  font-weight: bolder;
+  font-family: arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-variant-emoji: emoji;
+  color: red;
+  vertical-align: middle;
+  display: inline-block;
+  animation: secret_monkey_animation 3s steps(3, jump-end) infinite;
+}
+.markdown-preview.markdown-preview pre.code_example {
+  background-color: #ebfcfc;
+  font-family: monospace;
+  font-size: 90%;
+  color: darkblue;
+  text-align: left;
+  white-space: pre;
+  word-break: keep-all;
+  border-left: solid 4pt #8f8ff4;
+  border-right: dotted 1pt black;
+  margin: 0.5em 5% 0.5em 5%;
+  padding: 0.5em 0.5em 0.5em 0.5em;
+  display: block;
+  overflow-y: auto;
+}
+.markdown-preview.markdown-preview .rotate_360 {
+  animation: rotate_360_animation 2s linear infinite;
+}
+@keyframes rotate_360_animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.markdown-preview.markdown-preview .colorful-animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.markdown-preview.markdown-preview .flipX {
+  display: inline-block;
+  animation: 2s anim-flipX steps(2, jump-none) infinite;
+}
+@keyframes anim-flipX {
+  0% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(-1, 1);
+  }
+  100% {
+    /* animate nothing to pause animation at the end */
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+.markdown-preview.markdown-preview .important_press {
+  display: inline-block;
+  animation: important_press_animation 2s infinite linear;
+}
+@keyframes important_press_animation {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(0.8, 0.8);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+.markdown-preview.markdown-preview .rotateX {
+  display: block;
+  animation: 4s anim-rotateX ease infinite;
+}
+@keyframes anim-rotateX {
+  0% {
+    opacity: 0;
+    transform: rotateX(90deg);
+  }
+  50% {
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+  100% {
+    /* animate nothing to pause animation at the end */
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+}
+.markdown-preview.markdown-preview .rotateY {
+  animation-name: spin, depth;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+}
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(-360deg);
+  }
+}
+@keyframes depth {
+  0% {
+    text-shadow: 0 0 black;
+  }
+  25% {
+    text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black;
+  }
+  50% {
+    text-shadow: 0 0 black;
+  }
+  75% {
+    text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black;
+  }
+  100% {
+    text-shadow: 0 0 black;
+  }
+}
+.markdown-preview.markdown-preview span.ai_100::before {
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  padding-right: 0.5em;
+  content: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmVyc2lvbj0iMS4yIgogICB3aWR0aD0iMTEuMDFtbSIKICAgaGVpZ2h0PSIxMC41ODExMW1tIgogICB2aWV3Qm94PSIzNzAwIDEwNDExIDExMDEgMTA1OC4xMTEiCiAgIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIgogICBmaWxsLXJ1bGU9ImV2ZW5vZGQiCiAgIHN0cm9rZS13aWR0aD0iMjguMjIyIgogICBzdHJva2UtbGluZWpvaW49InJvdW5kIgogICB4bWw6c3BhY2U9InByZXNlcnZlIgogICBpZD0ic3ZnMjAiCiAgIHNvZGlwb2RpOmRvY25hbWU9IkFJXzEwMC5zdmciCiAgIGlua3NjYXBlOnZlcnNpb249IjEuNC4zICgwZDE1Zjc1LCAyMDI1LTEyLTI1KSIKICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiCiAgIHhtbG5zOnNvZGlwb2RpPSJodHRwOi8vc29kaXBvZGkuc291cmNlZm9yZ2UubmV0L0RURC9zb2RpcG9kaS0wLmR0ZCIKICAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIgogICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48c29kaXBvZGk6bmFtZWR2aWV3CiAgIGlkPSJuYW1lZHZpZXcyMCIKICAgcGFnZWNvbG9yPSIjZmZmZmZmIgogICBib3JkZXJjb2xvcj0iIzY2NjY2NiIKICAgYm9yZGVyb3BhY2l0eT0iMS4wIgogICBpbmtzY2FwZTpzaG93cGFnZXNoYWRvdz0iMiIKICAgaW5rc2NhcGU6cGFnZW9wYWNpdHk9IjAuMCIKICAgaW5rc2NhcGU6cGFnZWNoZWNrZXJib2FyZD0iMCIKICAgaW5rc2NhcGU6ZGVza2NvbG9yPSIjZDFkMWQxIgogICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0ibW0iCiAgIGlua3NjYXBlOnpvb209IjIwLjQzMjQxNyIKICAgaW5rc2NhcGU6Y3g9IjI0LjU2ODgwMiIKICAgaW5rc2NhcGU6Y3k9IjIwLjIzNzQ1IgogICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjE5MjAiCiAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjEwMDkiCiAgIGlua3NjYXBlOndpbmRvdy14PSIxOTEyIgogICBpbmtzY2FwZTp3aW5kb3cteT0iLTgiCiAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiCiAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9InN2ZzIwIiAvPgogPGRlZnMKICAgaWQ9ImRlZnMyIj4KICA8Zm9udAogICBpZD0iRW1iZWRkZWRGb250XzEiCiAgIGhvcml6LWFkdi14PSIyMDQ4IgogICBob3Jpei1vcmlnaW4teD0iMCIKICAgaG9yaXotb3JpZ2luLXk9IjAiCiAgIHZlcnQtb3JpZ2luLXg9IjUxMiIKICAgdmVydC1vcmlnaW4teT0iNzY4IgogICB2ZXJ0LWFkdi15PSIxMDI0Ij4KICAgPGZvbnQtZmFjZQogICBmb250LWZhbWlseT0iQXJpYWwgQmxhY2sgZW1iZWRkZWQiCiAgIHVuaXRzLXBlci1lbT0iMjA0OCIKICAgZm9udC13ZWlnaHQ9Im5vcm1hbCIKICAgZm9udC1zdHlsZT0ibm9ybWFsIgogICBhc2NlbnQ9IjIyNDkiCiAgIGRlc2NlbnQ9IjYzNSIKICAgaWQ9ImZvbnQtZmFjZTEiIC8+CiAgIDxtaXNzaW5nLWdseXBoCiAgIGhvcml6LWFkdi14PSIyMDQ4IgogICBkPSJNIDAsMCBMIDIwNDcsMCAyMDQ3LDIwNDcgMCwyMDQ3IDAsMCBaICIKICAgaWQ9Im1pc3NpbmctZ2x5cGgxIiAvPgogICA8Z2x5cGgKICAgdW5pY29kZT0iSSIKICAgaG9yaXotYWR2LXg9IjQ1MyIKICAgZD0iTSAxNjgsMTQ2NiBMIDYyMiwxNDY2IDYyMiwwIDE2OCwwIDE2OCwxNDY2IFogIgogICBpZD0iZ2x5cGgxIiAvPgogICA8Z2x5cGgKICAgdW5pY29kZT0iQSIKICAgaG9yaXotYWR2LXg9IjE1OTAiCiAgIGQ9Ik0gMTA1MSwyNDIgTCA1MzcsMjQyIDQ2NiwwIDMsMCA1NTQsMTQ2NiAxMDQ4LDE0NjYgMTU5OSwwIDExMjUsMCAxMDUxLDI0MiBaIE0gOTU3LDU1OSBMIDc5NiwxMDg2IDYzNSw1NTkgOTU3LDU1OSBaICIKICAgaWQ9ImdseXBoMiIgLz4KICA8L2ZvbnQ+CiA8L2RlZnM+CiA8ZGVmcwogICBjbGFzcz0iRW1iZWRkZWRCdWxsZXRDaGFycyIKICAgaWQ9ImRlZnMxMSI+CiAgPGcKICAgaWQ9ImJ1bGxldC1jaGFyLXRlbXBsYXRlLTU3MzU2IgogICB0cmFuc2Zvcm09Im1hdHJpeCg0Ljg4MjgxMjVlLTQsMCwwLC00Ljg4MjgxMjVlLTQsMCwwKSI+CiAgIDxwYXRoCiAgIGQ9Ik0gNTgwLDExNDEgMTE2Myw1NzEgNTgwLDAgLTQsNTcxIFoiCiAgIGlkPSJwYXRoMiIgLz4KICA8L2c+CiAgPGcKICAgaWQ9ImJ1bGxldC1jaGFyLXRlbXBsYXRlLTU3MzU0IgogICB0cmFuc2Zvcm09Im1hdHJpeCg0Ljg4MjgxMjVlLTQsMCwwLC00Ljg4MjgxMjVlLTQsMCwwKSI+CiAgIDxwYXRoCiAgIGQ9Ik0gOCwxMTI4IEggMTEzNyBWIDAgSCA4IFoiCiAgIGlkPSJwYXRoMyIgLz4KICA8L2c+CiAgPGcKICAgaWQ9ImJ1bGxldC1jaGFyLXRlbXBsYXRlLTEwMTQ2IgogICB0cmFuc2Zvcm09Im1hdHJpeCg0Ljg4MjgxMjVlLTQsMCwwLC00Ljg4MjgxMjVlLTQsMCwwKSI+CiAgIDxwYXRoCiAgIGQ9Ik0gMTc0LDAgNjAyLDczOSAxNzQsMTQ4MSAxNDU2LDczOSBaIE0gMTM1OCw3MzkgMzA5LDEzNDYgNjU5LDczOSBaIgogICBpZD0icGF0aDQiIC8+CiAgPC9nPgogIDxnCiAgIGlkPSJidWxsZXQtY2hhci10ZW1wbGF0ZS0xMDEzMiIKICAgdHJhbnNmb3JtPSJtYXRyaXgoNC44ODI4MTI1ZS00LDAsMCwtNC44ODI4MTI1ZS00LDAsMCkiPgogICA8cGF0aAogICBkPSJNIDIwMTUsNzM5IDEyNzYsMCBIIDcxNyBsIDU0Myw1NDMgSCAxNzQgdiAzOTMgaCAxMDg2IGwgLTU0Myw1NDUgaCA1NTcgeiIKICAgaWQ9InBhdGg1IiAvPgogIDwvZz4KICA8ZwogICBpZD0iYnVsbGV0LWNoYXItdGVtcGxhdGUtMTAwMDciCiAgIHRyYW5zZm9ybT0ibWF0cml4KDQuODgyODEyNWUtNCwwLDAsLTQuODgyODEyNWUtNCwwLDApIj4KICAgPHBhdGgKICAgZD0ibSAwLC0yIGMgLTcsMTYgLTE2LDI5IC0yNSwzOSBsIDM4MSw1MzAgYyAtOTQsMjU2IC0xNDEsMzg1IC0xNDEsMzg3IDAsMjUgMTMsMzggNDAsMzggOSwwIDIxLC0yIDM0LC01IDIxLDQgNDIsMTIgNjUsMjUgbCAyNywtMTMgMTExLC0yNTEgMjgwLDMwMSA2NCwtMjUgMjQsMjUgYyAyMSwtMTAgNDEsLTI0IDYyLC00MyBDIDg4Niw5MzcgODM1LDg2MyA3NzAsNzg0IDc2OSw3ODMgNzEwLDcxNiA1OTQsNTg0IEwgNzc0LDIyMyBjIDAsLTI3IC0yMSwtNTUgLTYzLC04NCBsIDE2LC0yMCBDIDcxNyw5MCA2OTksNzYgNjcyLDc2IDY0MSw3NiA1NzAsMTc4IDQ1NywzODEgTCAxNjQsLTc2IGMgLTIyLC0zNCAtNTMsLTUxIC05MiwtNTEgLTQyLDAgLTYzLDE3IC02NCw1MSAtNyw5IC0xMCwyNCAtMTAsNDQgMCw5IDEsMTkgMiwzMCB6IgogICBpZD0icGF0aDYiIC8+CiAgPC9nPgogIDxnCiAgIGlkPSJidWxsZXQtY2hhci10ZW1wbGF0ZS0xMDAwNCIKICAgdHJhbnNmb3JtPSJtYXRyaXgoNC44ODI4MTI1ZS00LDAsMCwtNC44ODI4MTI1ZS00LDAsMCkiPgogICA8cGF0aAogICBkPSJNIDI4NSwtMzMgQyAxODIsLTMzIDExMSwzMCA3NCwxNTYgNTIsMjI4IDQxLDMzMyA0MSw0NzEgYyAwLDc4IDE0LDE0NSA0MSwyMDEgMzQsNzEgODcsMTA2IDE1OCwxMDYgNTMsMCA4OCwtMzEgMTA2LC05NCBsIDIzLC0xNzYgYyA4LC02NCAyOCwtOTcgNTksLTk4IGwgNzM1LDcwNiBjIDExLDExIDMzLDE3IDY2LDE3IDQyLDAgNjMsLTE1IDYzLC00NiBWIDk2NSBjIDAsLTM2IC0xMCwtNjQgLTMwLC04NCBMIDQ0Miw0NyBDIDM5MCwtNiAzMzgsLTMzIDI4NSwtMzMgWiIKICAgaWQ9InBhdGg3IiAvPgogIDwvZz4KICA8ZwogICBpZD0iYnVsbGV0LWNoYXItdGVtcGxhdGUtOTY3OSIKICAgdHJhbnNmb3JtPSJtYXRyaXgoNC44ODI4MTI1ZS00LDAsMCwtNC44ODI4MTI1ZS00LDAsMCkiPgogICA8cGF0aAogICBkPSJNIDgxMywwIEMgNjMyLDAgNDg5LDU0IDM4MywxNjEgMjc2LDI2OCAyMjMsNDExIDIyMyw1OTIgYyAwLDE4MSA1MywzMjQgMTYwLDQzMSAxMDYsMTA3IDI0OSwxNjEgNDMwLDE2MSAxNzksMCAzMjMsLTU0IDQzMiwtMTYxIDEwOCwtMTA3IDE2MiwtMjUxIDE2MiwtNDMxIDAsLTE4MCAtNTQsLTMyNCAtMTYyLC00MzEgQyAxMTM2LDU0IDk5MiwwIDgxMywwIFoiCiAgIGlkPSJwYXRoOCIgLz4KICA8L2c+CiAgPGcKICAgaWQ9ImJ1bGxldC1jaGFyLXRlbXBsYXRlLTgyMjYiCiAgIHRyYW5zZm9ybT0ibWF0cml4KDQuODgyODEyNWUtNCwwLDAsLTQuODgyODEyNWUtNCwwLDApIj4KICAgPHBhdGgKICAgZD0ibSAzNDYsNDU3IGMgLTczLDAgLTEzNywyNiAtMTkxLDc4IC01NCw1MSAtODEsMTE0IC04MSwxODggMCw3MyAyNywxMzYgODEsMTg4IDU0LDUyIDExOCw3OCAxOTEsNzggNzMsMCAxMzQsLTI2IDE4NSwtNzkgNTEsLTUxIDc3LC0xMTQgNzcsLTE4NyAwLC03NSAtMjUsLTEzNyAtNzYsLTE4OCAtNTAsLTUyIC0xMTIsLTc4IC0xODYsLTc4IHoiCiAgIGlkPSJwYXRoOSIgLz4KICA8L2c+CiAgPGcKICAgaWQ9ImJ1bGxldC1jaGFyLXRlbXBsYXRlLTgyMTEiCiAgIHRyYW5zZm9ybT0ibWF0cml4KDQuODgyODEyNWUtNCwwLDAsLTQuODgyODEyNWUtNCwwLDApIj4KICAgPHBhdGgKICAgZD0iTSAtNCw0NTkgSCAxMTM1IFYgNjA2IEggLTQgWiIKICAgaWQ9InBhdGgxMCIgLz4KICA8L2c+CiAgPGcKICAgaWQ9ImJ1bGxldC1jaGFyLXRlbXBsYXRlLTYxNTQ4IgogICB0cmFuc2Zvcm09Im1hdHJpeCg0Ljg4MjgxMjVlLTQsMCwwLC00Ljg4MjgxMjVlLTQsMCwwKSI+CiAgIDxwYXRoCiAgIGQ9Im0gMTczLDc0MCBjIDAsMTYzIDU4LDMwMyAxNzMsNDE5IDExNiwxMTUgMjU1LDE3MyA0MTksMTczIDE2MywwIDMwMiwtNTggNDE4LC0xNzMgMTE2LC0xMTYgMTc0LC0yNTYgMTc0LC00MTkgMCwtMTYzIC01OCwtMzAzIC0xNzQsLTQxOCBDIDEwNjcsMjA2IDkyOCwxNDggNzY1LDE0OCA2MDEsMTQ4IDQ2MiwyMDYgMzQ2LDMyMiAyMzEsNDM3IDE3Myw1NzcgMTczLDc0MCBaIgogICBpZD0icGF0aDExIiAvPgogIDwvZz4KIDwvZGVmcz4KIDxnCiAgIGNsYXNzPSJQYWdlIgogICBpZD0iZzIwIgogICB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLDEzLjExMSkiPgogIDxnCiAgIGNsYXNzPSJHcm91cCIKICAgaWQ9ImcxOSI+CiAgIDxnCiAgIGNsYXNzPSJHcm91cCIKICAgaWQ9ImcxNiI+CiAgICA8ZwogICBjbGFzcz0iY29tLnN1bi5zdGFyLmRyYXdpbmcuQ3VzdG9tU2hhcGUiCiAgIGlkPSJnMTMiPgogICAgIDxnCiAgIGlkPSJpZDMiPgogICAgICA8cmVjdAogICBjbGFzcz0iQm91bmRpbmdCb3giCiAgIHN0cm9rZT0ibm9uZSIKICAgZmlsbD0ibm9uZSIKICAgeD0iMzc0OSIKICAgeT0iMTA0MTEiCiAgIHdpZHRoPSIxMDA0IgogICBoZWlnaHQ9IjEwMDQiCiAgIGlkPSJyZWN0MTEiIC8+CiAgICAgIDxwYXRoCiAgIGZpbGw9IiNmZjAwMDAiCiAgIHN0cm9rZT0ibm9uZSIKICAgZD0ibSA0NzUxLDEwOTEzIGMgMCw4NyAtMjMsMTc0IC02NywyNTAgLTQ0LDc2IC0xMDcsMTM5IC0xODMsMTgzIC03Niw0NCAtMTYzLDY3IC0yNTAsNjcgLTg4LDAgLTE3NSwtMjMgLTI1MSwtNjcgLTc2LC00NCAtMTM5LC0xMDcgLTE4MywtMTgzIC00NCwtNzYgLTY3LC0xNjMgLTY3LC0yNTAgMCwtODggMjMsLTE3NSA2NywtMjUxIDQ0LC03NiAxMDcsLTEzOSAxODMsLTE4MyA3NiwtNDQgMTYzLC02NyAyNTEsLTY3IDg3LDAgMTc0LDIzIDI1MCw2NyA3Niw0NCAxMzksMTA3IDE4MywxODMgNDQsNzYgNjcsMTYzIDY3LDI1MSB6IgogICBpZD0icGF0aDEyIiAvPgogICAgICA8cGF0aAogICBmaWxsPSJub25lIgogICBzdHJva2U9IiMzNDY1YTQiCiAgIGQ9Im0gNDc1MSwxMDkxMyBjIDAsODcgLTIzLDE3NCAtNjcsMjUwIC00NCw3NiAtMTA3LDEzOSAtMTgzLDE4MyAtNzYsNDQgLTE2Myw2NyAtMjUwLDY3IC04OCwwIC0xNzUsLTIzIC0yNTEsLTY3IC03NiwtNDQgLTEzOSwtMTA3IC0xODMsLTE4MyAtNDQsLTc2IC02NywtMTYzIC02NywtMjUwIDAsLTg4IDIzLC0xNzUgNjcsLTI1MSA0NCwtNzYgMTA3LC0xMzkgMTgzLC0xODMgNzYsLTQ0IDE2MywtNjcgMjUxLC02NyA4NywwIDE3NCwyMyAyNTAsNjcgNzYsNDQgMTM5LDEwNyAxODMsMTgzIDQ0LDc2IDY3LDE2MyA2NywyNTEgeiIKICAgaWQ9InBhdGgxMyIgLz4KICAgICA8L2c+CiAgICA8L2c+CiAgICA8ZwogICBjbGFzcz0iY29tLnN1bi5zdGFyLmRyYXdpbmcuQ3VzdG9tU2hhcGUiCiAgIGlkPSJnMTUiPgogICAgIDxnCiAgIGlkPSJpZDQiPgogICAgICA8cmVjdAogICBjbGFzcz0iQm91bmRpbmdCb3giCiAgIHN0cm9rZT0ibm9uZSIKICAgZmlsbD0ibm9uZSIKICAgeD0iMzg4NSIKICAgeT0iMTA1NDciCiAgIHdpZHRoPSI3MzIiCiAgIGhlaWdodD0iNzMyIgogICBpZD0icmVjdDEzIiAvPgogICAgICA8cGF0aAogICBmaWxsPSIjZmZmZmZmIgogICBzdHJva2U9Im5vbmUiCiAgIGQ9Im0gNDYxNSwxMDkxMyBjIDAsNjMgLTE3LDEyNiAtNDksMTgyIC0zMiw1NSAtNzgsMTAxIC0xMzMsMTMzIC01NiwzMiAtMTE5LDQ5IC0xODIsNDkgLTY0LDAgLTEyNywtMTcgLTE4MywtNDkgLTU1LC0zMiAtMTAxLC03OCAtMTMzLC0xMzMgLTMyLC01NiAtNDksLTExOSAtNDksLTE4MiAwLC02NCAxNywtMTI3IDQ5LC0xODMgMzIsLTU1IDc4LC0xMDEgMTMzLC0xMzMgNTYsLTMyIDExOSwtNDkgMTgzLC00OSA2MywwIDEyNiwxNyAxODIsNDkgNTUsMzIgMTAxLDc4IDEzMywxMzMgMzIsNTYgNDksMTE5IDQ5LDE4MyB6IgogICBpZD0icGF0aDE0IiAvPgogICAgICA8cGF0aAogICBmaWxsPSJub25lIgogICBzdHJva2U9IiMwMDAwMDAiCiAgIGQ9Im0gNDYxNSwxMDkxMyBjIDAsNjMgLTE3LDEyNiAtNDksMTgyIC0zMiw1NSAtNzgsMTAxIC0xMzMsMTMzIC01NiwzMiAtMTE5LDQ5IC0xODIsNDkgLTY0LDAgLTEyNywtMTcgLTE4MywtNDkgLTU1LC0zMiAtMTAxLC03OCAtMTMzLC0xMzMgLTMyLC01NiAtNDksLTExOSAtNDksLTE4MiAwLC02NCAxNywtMTI3IDQ5LC0xODMgMzIsLTU1IDc4LC0xMDEgMTMzLC0xMzMgNTYsLTMyIDExOSwtNDkgMTgzLC00OSA2MywwIDEyNiwxNyAxODIsNDkgNTUsMzIgMTAxLDc4IDEzMywxMzMgMzIsNTYgNDksMTE5IDQ5LDE4MyB6IgogICBpZD0icGF0aDE1IiAvPgogICAgIDwvZz4KICAgIDwvZz4KICAgPC9nPgogICA8ZwogICBjbGFzcz0iVGV4dFNoYXBlIgogICBpZD0iZzE4Ij4KICAgIDxnCiAgIGlkPSJpZDUiPgogICAgIDxyZWN0CiAgIGNsYXNzPSJCb3VuZGluZ0JveCIKICAgc3Ryb2tlPSJub25lIgogICBmaWxsPSJub25lIgogICB4PSIzNzAwIgogICB5PSIxMDQxMiIKICAgd2lkdGg9IjEzMDEiCiAgIGhlaWdodD0iMTA0NCIKICAgaWQ9InJlY3QxNiIgLz4KICAgICA8dGV4dAogICBjbGFzcz0iU1ZHVGV4dFNoYXBlIgogICBpZD0idGV4dDE4Ij48dHNwYW4KICAgICBjbGFzcz0iVGV4dFBhcmFncmFwaCIKICAgICBpZD0idHNwYW4xOCI+PHRzcGFuCiAgICAgICBjbGFzcz0iVGV4dFBvc2l0aW9uIgogICAgICAgeD0iMzk1MCIKICAgICAgIHk9IjExMDc5IgogICAgICAgaWQ9InRzcGFuMTciPjx0c3BhbgogICAgICAgICBmb250LWZhbWlseT0iJ0FyaWFsIEJsYWNrJyIKICAgICAgICAgZm9udC1zaXplPSI0OTNweCIKICAgICAgICAgZm9udC13ZWlnaHQ9IjQwMCIKICAgICAgICAgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nQW5kR2x5cGhzIgogICAgICAgICBmaWxsPSIjMDAwMDAwIgogICAgICAgICBzdHJva2U9Im5vbmUiCiAgICAgICAgIHN0eWxlPSJ3aGl0ZS1zcGFjZTpwcmUiCiAgICAgICAgIGlkPSJ0c3BhbjE2Ij5BSTwvdHNwYW4+PC90c3Bhbj48L3RzcGFuPjwvdGV4dD4KICAgIDwvZz4KICAgPC9nPgogIDwvZz4KIDwvZz4KPC9zdmc+Cg==);
+}
+.markdown-preview.markdown-preview span.ai_075::before {
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  padding-right: 0.5em;
+  content: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgdmVyc2lvbj0iMS4yIgogICB3aWR0aD0iMTAuNTFtbSIKICAgaGVpZ2h0PSIxMC40NG1tIgogICB2aWV3Qm94PSIzNzMyIDExNjg1IDEwNTEgMTA0NCIKICAgcHJlc2VydmVBc3BlY3RSYXRpbz0ieE1pZFlNaWQiCiAgIGZpbGwtcnVsZT0iZXZlbm9kZCIKICAgc3Ryb2tlLXdpZHRoPSIyOC4yMjIiCiAgIHN0cm9rZS1saW5lam9pbj0icm91bmQiCiAgIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgIGlkPSJzdmcyMSIKICAgc29kaXBvZGk6ZG9jbmFtZT0iQUlfMDc1LnN2ZyIKICAgaW5rc2NhcGU6dmVyc2lvbj0iMS40LjMgKDBkMTVmNzUsIDIwMjUtMTItMjUpIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxzb2RpcG9kaTpuYW1lZHZpZXcKICAgaWQ9Im5hbWVkdmlldzIxIgogICBwYWdlY29sb3I9IiNmZmZmZmYiCiAgIGJvcmRlcmNvbG9yPSIjNjY2NjY2IgogICBib3JkZXJvcGFjaXR5PSIxLjAiCiAgIGlua3NjYXBlOnNob3dwYWdlc2hhZG93PSIyIgogICBpbmtzY2FwZTpwYWdlb3BhY2l0eT0iMC4wIgogICBpbmtzY2FwZTpwYWdlY2hlY2tlcmJvYXJkPSIwIgogICBpbmtzY2FwZTpkZXNrY29sb3I9IiNkMWQxZDEiCiAgIGlua3NjYXBlOmRvY3VtZW50LXVuaXRzPSJtbSIKICAgaW5rc2NhcGU6em9vbT0iMjAuNDUxOTg4IgogICBpbmtzY2FwZTpjeD0iMjMuNjY1MTgxIgogICBpbmtzY2FwZTpjeT0iMTkuNzI5MTMzIgogICBpbmtzY2FwZTp3aW5kb3ctd2lkdGg9IjE5MjAiCiAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjEwMDkiCiAgIGlua3NjYXBlOndpbmRvdy14PSIxOTEyIgogICBpbmtzY2FwZTp3aW5kb3cteT0iLTgiCiAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiCiAgIGlua3NjYXBlOmN1cnJlbnQtbGF5ZXI9InN2ZzIxIiAvPgogPGRlZnMKICAgaWQ9ImRlZnMyIj4KICA8Zm9udAogICBpZD0iRW1iZWRkZWRGb250XzEiCiAgIGhvcml6LWFkdi14PSIyMDQ4IgogICBob3Jpei1vcmlnaW4teD0iMCIKICAgaG9yaXotb3JpZ2luLXk9IjAiCiAgIHZlcnQtb3JpZ2luLXg9IjUxMiIKICAgdmVydC1vcmlnaW4teT0iNzY4IgogICB2ZXJ0LWFkdi15PSIxMDI0Ij4KICAgPGZvbnQtZmFjZQogICBmb250LWZhbWlseT0iQXJpYWwgQmxhY2sgZW1iZWRkZWQiCiAgIHVuaXRzLXBlci1lbT0iMjA0OCIKICAgZm9udC13ZWlnaHQ9Im5vcm1hbCIKICAgZm9udC1zdHlsZT0ibm9ybWFsIgogICBhc2NlbnQ9IjIyNDkiCiAgIGRlc2NlbnQ9IjYzNSIKICAgaWQ9ImZvbnQtZmFjZTEiIC8+CiAgIDxtaXNzaW5nLWdseXBoCiAgIGhvcml6LWFkdi14PSIyMDQ4IgogICBkPSJNIDAsMCBMIDIwNDcsMCAyMDQ3LDIwNDcgMCwyMDQ3IDAsMCBaICIKICAgaWQ9Im1pc3NpbmctZ2x5cGgxIiAvPgogICA8Z2x5cGgKICAgdW5pY29kZT0iSSIKICAgaG9yaXotYWR2LXg9IjQ1MyIKICAgZD0iTSAxNjgsMTQ2NiBMIDYyMiwxNDY2IDYyMiwwIDE2OCwwIDE2OCwxNDY2IFogIgogICBpZD0iZ2x5cGgxIiAvPgogICA8Z2x5cGgKICAgdW5pY29kZT0iQSIKICAgaG9yaXotYWR2LXg9IjE1OTAiCiAgIGQ9Ik0gMTA1MSwyNDIgTCA1MzcsMjQyIDQ2NiwwIDMsMCA1NTQsMTQ2NiAxMDQ4LDE0NjYgMTU5OSwwIDExMjUsMCAxMDUxLDI0MiBaIE0gOTU3LDU1OSBMIDc5NiwxMDg2IDYzNSw1NTkgOTU3LDU1OSBaICIKICAgaWQ9ImdseXBoMiIgLz4KICA8L2ZvbnQ+CiA8L2RlZnM+CiA8ZGVmcwogICBjbGFzcz0iRW1iZWRkZWRCdWxsZXRDaGFycyIKICAgaWQ9ImRlZnMxMSI+CiAgPGcKICAgaWQ9ImJ1bGxldC1jaGFyLXRlbXBsYXRlLTU3MzU2IgogICB0cmFuc2Zvcm09Im1hdHJpeCg0Ljg4MjgxMjVlLTQsMCwwLC00Ljg4MjgxMjVlLTQsMCwwKSI+CiAgIDxwYXRoCiAgIGQ9Ik0gNTgwLDExNDEgMTE2Myw1NzEgNTgwLDAgLTQsNTcxIFoiCiAgIGlkPSJwYXRoMiIgLz4KICA8L2c+CiAgPGcKICAgaWQ9ImJ1bGxldC1jaGFyLXRlbXBsYXRlLTU3MzU0IgogICB0cmFuc2Zvcm09Im1hdHJpeCg0Ljg4MjgxMjVlLTQsMCwwLC00Ljg4MjgxMjVlLTQsMCwwKSI+CiAgIDxwYXRoCiAgIGQ9Ik0gOCwxMTI4IEggMTEzNyBWIDAgSCA4IFoiCiAgIGlkPSJwYXRoMyIgLz4KICA8L2c+CiAgPGcKICAgaWQ9ImJ1bGxldC1jaGFyLXRlbXBsYXRlLTEwMTQ2IgogICB0cmFuc2Zvcm09Im1hdHJpeCg0Ljg4MjgxMjVlLTQsMCwwLC00Ljg4MjgxMjVlLTQsMCwwKSI+CiAgIDxwYXRoCiAgIGQ9Ik0gMTc0LDAgNjAyLDczOSAxNzQsMTQ4MSAxNDU2LDczOSBaIE0gMTM1OCw3MzkgMzA5LDEzNDYgNjU5LDczOSBaIgogICBpZD0icGF0aDQiIC8+CiAgPC9nPgogIDxnCiAgIGlkPSJidWxsZXQtY2hhci10ZW1wbGF0ZS0xMDEzMiIKICAgdHJhbnNmb3JtPSJtYXRyaXgoNC44ODI4MTI1ZS00LDAsMCwtNC44ODI4MTI1ZS00LDAsMCkiPgogICA8cGF0aAogICBkPSJNIDIwMTUsNzM5IDEyNzYsMCBIIDcxNyBsIDU0Myw1NDMgSCAxNzQgdiAzOTMgaCAxMDg2IGwgLTU0Myw1NDUgaCA1NTcgeiIKICAgaWQ9InBhdGg1IiAvPgogIDwvZz4KICA8ZwogICBpZD0iYnVsbGV0LWNoYXItdGVtcGxhdGUtMTAwMDciCiAgIHRyYW5zZm9ybT0ibWF0cml4KDQuODgyODEyNWUtNCwwLDAsLTQuODgyODEyNWUtNCwwLDApIj4KICAgPHBhdGgKICAgZD0ibSAwLC0yIGMgLTcsMTYgLTE2LDI5IC0yNSwzOSBsIDM4MSw1MzAgYyAtOTQsMjU2IC0xNDEsMzg1IC0xNDEsMzg3IDAsMjUgMTMsMzggNDAsMzggOSwwIDIxLC0yIDM0LC01IDIxLDQgNDIsMTIgNjUsMjUgbCAyNywtMTMgMTExLC0yNTEgMjgwLDMwMSA2NCwtMjUgMjQsMjUgYyAyMSwtMTAgNDEsLTI0IDYyLC00MyBDIDg4Niw5MzcgODM1LDg2MyA3NzAsNzg0IDc2OSw3ODMgNzEwLDcxNiA1OTQsNTg0IEwgNzc0LDIyMyBjIDAsLTI3IC0yMSwtNTUgLTYzLC04NCBsIDE2LC0yMCBDIDcxNyw5MCA2OTksNzYgNjcyLDc2IDY0MSw3NiA1NzAsMTc4IDQ1NywzODEgTCAxNjQsLTc2IGMgLTIyLC0zNCAtNTMsLTUxIC05MiwtNTEgLTQyLDAgLTYzLDE3IC02NCw1MSAtNyw5IC0xMCwyNCAtMTAsNDQgMCw5IDEsMTkgMiwzMCB6IgogICBpZD0icGF0aDYiIC8+CiAgPC9nPgogIDxnCiAgIGlkPSJidWxsZXQtY2hhci10ZW1wbGF0ZS0xMDAwNCIKICAgdHJhbnNmb3JtPSJtYXRyaXgoNC44ODI4MTI1ZS00LDAsMCwtNC44ODI4MTI1ZS00LDAsMCkiPgogICA8cGF0aAogICBkPSJNIDI4NSwtMzMgQyAxODIsLTMzIDExMSwzMCA3NCwxNTYgNTIsMjI4IDQxLDMzMyA0MSw0NzEgYyAwLDc4IDE0LDE0NSA0MSwyMDEgMzQsNzEgODcsMTA2IDE1OCwxMDYgNTMsMCA4OCwtMzEgMTA2LC05NCBsIDIzLC0xNzYgYyA4LC02NCAyOCwtOTcgNTksLTk4IGwgNzM1LDcwNiBjIDExLDExIDMzLDE3IDY2LDE3IDQyLDAgNjMsLTE1IDYzLC00NiBWIDk2NSBjIDAsLTM2IC0xMCwtNjQgLTMwLC04NCBMIDQ0Miw0NyBDIDM5MCwtNiAzMzgsLTMzIDI4NSwtMzMgWiIKICAgaWQ9InBhdGg3IiAvPgogIDwvZz4KICA8ZwogICBpZD0iYnVsbGV0LWNoYXItdGVtcGxhdGUtOTY3OSIKICAgdHJhbnNmb3JtPSJtYXRyaXgoNC44ODI4MTI1ZS00LDAsMCwtNC44ODI4MTI1ZS00LDAsMCkiPgogICA8cGF0aAogICBkPSJNIDgxMywwIEMgNjMyLDAgNDg5LDU0IDM4MywxNjEgMjc2LDI2OCAyMjMsNDExIDIyMyw1OTIgYyAwLDE4MSA1MywzMjQgMTYwLDQzMSAxMDYsMTA3IDI0OSwxNjEgNDMwLDE2MSAxNzksMCAzMjMsLTU0IDQzMiwtMTYxIDEwOCwtMTA3IDE2MiwtMjUxIDE2MiwtNDMxIDAsLTE4MCAtNTQsLTMyNCAtMTYyLC00MzEgQyAxMTM2LDU0IDk5MiwwIDgxMywwIFoiCiAgIGlkPSJwYXRoOCIgLz4KICA8L2c+CiAgPGcKICAgaWQ9ImJ1bGxldC1jaGFyLXRlbXBsYXRlLTgyMjYiCiAgIHRyYW5zZm9ybT0ibWF0cml4KDQuODgyODEyNWUtNCwwLDAsLTQuODgyODEyNWUtNCwwLDApIj4KICAgPHBhdGgKICAgZD0ibSAzNDYsNDU3IGMgLTczLDAgLTEzNywyNiAtMTkxLDc4IC01NCw1MSAtODEsMTE0IC04MSwxODggMCw3MyAyNywxMzYgODEsMTg4IDU0LDUyIDExOCw3OCAxOTEsNzggNzMsMCAxMzQsLTI2IDE4NSwtNzkgNTEsLTUxIDc3LC0xMTQgNzcsLTE4NyAwLC03NSAtMjUsLTEzNyAtNzYsLTE4OCAtNTAsLTUyIC0xMTIsLTc4IC0xODYsLTc4IHoiCiAgIGlkPSJwYXRoOSIgLz4KICA8L2c+CiAgPGcKICAgaWQ9ImJ1bGxldC1jaGFyLXRlbXBsYXRlLTgyMTEiCiAgIHRyYW5zZm9ybT0ibWF0cml4KDQuODgyODEyNWUtNCwwLDAsLTQuODgyODEyNWUtNCwwLDApIj4KICAgPHBhdGgKICAgZD0iTSAtNCw0NTkgSCAxMTM1IFYgNjA2IEggLTQgWiIKICAgaWQ9InBhdGgxMCIgLz4KICA8L2c+CiAgPGcKICAgaWQ9ImJ1bGxldC1jaGFyLXRlbXBsYXRlLTYxNTQ4IgogICB0cmFuc2Zvcm09Im1hdHJpeCg0Ljg4MjgxMjVlLTQsMCwwLC00Ljg4MjgxMjVlLTQsMCwwKSI+CiAgIDxwYXRoCiAgIGQ9Im0gMTczLDc0MCBjIDAsMTYzIDU4LDMwMyAxNzMsNDE5IDExNiwxMTUgMjU1LDE3MyA0MTksMTczIDE2MywwIDMwMiwtNTggNDE4LC0xNzMgMTE2LC0xMTYgMTc0LC0yNTYgMTc0LC00MTkgMCwtMTYzIC01OCwtMzAzIC0xNzQsLTQxOCBDIDEwNjcsMjA2IDkyOCwxNDggNzY1LDE0OCA2MDEsMTQ4IDQ2MiwyMDYgMzQ2LDMyMiAyMzEsNDM3IDE3Myw1NzcgMTczLDc0MCBaIgogICBpZD0icGF0aDExIiAvPgogIDwvZz4KIDwvZGVmcz4KIDxnCiAgIGNsYXNzPSJQYWdlIgogICBpZD0iZzIxIj4KICA8ZwogICBjbGFzcz0iR3JvdXAiCiAgIGlkPSJnMjAiPgogICA8ZwogICBjbGFzcz0iR3JvdXAiCiAgIGlkPSJnMTciPgogICAgPGcKICAgY2xhc3M9ImNvbS5zdW4uc3Rhci5kcmF3aW5nLkN1c3RvbVNoYXBlIgogICBpZD0iZzEzIj4KICAgICA8ZwogICBpZD0iaWQzIj4KICAgICAgPHJlY3QKICAgY2xhc3M9IkJvdW5kaW5nQm94IgogICBzdHJva2U9Im5vbmUiCiAgIGZpbGw9Im5vbmUiCiAgIHg9IjM3NjMiCiAgIHk9IjExNjg1IgogICB3aWR0aD0iMTAwMyIKICAgaGVpZ2h0PSIxMDAzIgogICBpZD0icmVjdDExIiAvPgogICAgICA8cGF0aAogICBmaWxsPSIjZmY4MDAwIgogICBzdHJva2U9Im5vbmUiCiAgIGQ9Im0gMzc2NCwxMjE4NiAxLDI1IDEsMjUgNCwyNCA0LDI1IDUsMjQgNywyNCA4LDIzIDksMjMgMTAsMjMgMTEsMjIgMTMsMjEgMTMsMjEgMTQsMjEgMTYsMTkgMTYsMTkgMTcsMTcgMTgsMTcgMTksMTYgMjAsMTYgMjEsMTQgMjEsMTMgMjEsMTIgMjMsMTEgMjIsOSAyNCw5IDIzLDcgMjQsNyAyNSw1IDI0LDQgMjUsMiAyNCwyIGggMjUgbCAyNSwtMSAyNSwtMiAyNCwtNCAyNSwtNSAyNCwtNSAyNCwtNyAyMywtOSAyMywtOSAyMiwtMTEgMjIsLTExIDIyLC0xMyAyMCwtMTQgMjAsLTE0IDE5LC0xNiAxOSwtMTcgMTcsLTE3IDE3LC0xOSAxNiwtMTkgMTQsLTIwIDE0LC0yMCAxMywtMjIgMTEsLTIyIDExLC0yMiA5LC0yMyA5LC0yMyA3LC0yNCA1LC0yNCA1LC0yNSA0LC0yNCAyLC0yNSAxLC0yNSB2IC0yNSBsIC0yLC0yNCAtMiwtMjUgLTQsLTI0IC01LC0yNSAtNywtMjQgLTcsLTIzIC05LC0yNCAtOSwtMjIgLTExLC0yMyAtMTIsLTIxIC0xMywtMjEgLTE0LC0yMSAtMTYsLTIwIC0xNiwtMTkgLTE3LC0xOCAtMTcsLTE3IC0xOSwtMTYgLTE5LC0xNiAtMjEsLTE0IC0yMSwtMTMgLTIxLC0xMyAtMjIsLTExIC0yMywtMTAgLTIzLC05IC0yMywtOCAtMjQsLTcgLTI0LC01IC0yNSwtNCAtMjQsLTQgLTI1LC0xIC0yNSwtMSB2IDUwMCB6IgogICBpZD0icGF0aDEyIiAvPgogICAgICA8cGF0aAogICBmaWxsPSJub25lIgogICBzdHJva2U9IiMzNDY1YTQiCiAgIGQ9Im0gMzc2NCwxMjE4NiAxLDI1IDEsMjUgNCwyNCA0LDI1IDUsMjQgNywyNCA4LDIzIDksMjMgMTAsMjMgMTEsMjIgMTMsMjEgMTMsMjEgMTQsMjEgMTYsMTkgMTYsMTkgMTcsMTcgMTgsMTcgMTksMTYgMjAsMTYgMjEsMTQgMjEsMTMgMjEsMTIgMjMsMTEgMjIsOSAyNCw5IDIzLDcgMjQsNyAyNSw1IDI0LDQgMjUsMiAyNCwyIGggMjUgbCAyNSwtMSAyNSwtMiAyNCwtNCAyNSwtNSAyNCwtNSAyNCwtNyAyMywtOSAyMywtOSAyMiwtMTEgMjIsLTExIDIyLC0xMyAyMCwtMTQgMjAsLTE0IDE5LC0xNiAxOSwtMTcgMTcsLTE3IDE3LC0xOSAxNiwtMTkgMTQsLTIwIDE0LC0yMCAxMywtMjIgMTEsLTIyIDExLC0yMiA5LC0yMyA5LC0yMyA3LC0yNCA1LC0yNCA1LC0yNSA0LC0yNCAyLC0yNSAxLC0yNSB2IC0yNSBsIC0yLC0yNCAtMiwtMjUgLTQsLTI0IC01LC0yNSAtNywtMjQgLTcsLTIzIC05LC0yNCAtOSwtMjIgLTExLC0yMyAtMTIsLTIxIC0xMywtMjEgLTE0LC0yMSAtMTYsLTIwIC0xNiwtMTkgLTE3LC0xOCAtMTcsLTE3IC0xOSwtMTYgLTE5LC0xNiAtMjEsLTE0IC0yMSwtMTMgLTIxLC0xMyAtMjIsLTExIC0yMywtMTAgLTIzLC05IC0yMywtOCAtMjQsLTcgLTI0LC01IC0yNSwtNCAtMjQsLTQgLTI1LC0xIC0yNSwtMSB2IDUwMCB6IgogICBpZD0icGF0aDEzIiAvPgogICAgIDwvZz4KICAgIDwvZz4KICAgIDxnCiAgIGNsYXNzPSJjb20uc3VuLnN0YXIuZHJhd2luZy5DdXN0b21TaGFwZSIKICAgaWQ9ImcxNSI+CiAgICAgPGcKICAgaWQ9ImlkNCI+CiAgICAgIDxyZWN0CiAgIGNsYXNzPSJCb3VuZGluZ0JveCIKICAgc3Ryb2tlPSJub25lIgogICBmaWxsPSJub25lIgogICB4PSIzOTEyIgogICB5PSIxMTg1MiIKICAgd2lkdGg9IjY3MSIKICAgaGVpZ2h0PSI2NzAiCiAgIGlkPSJyZWN0MTMiIC8+CiAgICAgIDxwYXRoCiAgIGZpbGw9IiNmZmZmZmYiCiAgIHN0cm9rZT0ibm9uZSIKICAgZD0ibSA0NTgxLDEyMTg3IGMgMCw1OCAtMTUsMTE2IC00NSwxNjYgLTI5LDUxIC03MSw5MyAtMTIyLDEyMiAtNTEsMzAgLTEwOCw0NSAtMTY3LDQ1IC01OSwwIC0xMTYsLTE1IC0xNjcsLTQ1IC01MSwtMjkgLTkzLC03MSAtMTIyLC0xMjIgLTMwLC01MCAtNDUsLTEwOCAtNDUsLTE2NiAwLC01OSAxNSwtMTE3IDQ1LC0xNjcgMjksLTUxIDcxLC05MyAxMjIsLTEyMiA1MSwtMzAgMTA4LC00NSAxNjcsLTQ1IDU5LDAgMTE2LDE1IDE2Nyw0NSA1MSwyOSA5Myw3MSAxMjIsMTIyIDMwLDUwIDQ1LDEwOCA0NSwxNjcgeiIKICAgaWQ9InBhdGgxNCIgLz4KICAgICAgPHBhdGgKICAgZmlsbD0ibm9uZSIKICAgc3Ryb2tlPSIjMDAwMDAwIgogICBkPSJtIDQ1ODEsMTIxODcgYyAwLDU4IC0xNSwxMTYgLTQ1LDE2NiAtMjksNTEgLTcxLDkzIC0xMjIsMTIyIC01MSwzMCAtMTA4LDQ1IC0xNjcsNDUgLTU5LDAgLTExNiwtMTUgLTE2NywtNDUgLTUxLC0yOSAtOTMsLTcxIC0xMjIsLTEyMiAtMzAsLTUwIC00NSwtMTA4IC00NSwtMTY2IDAsLTU5IDE1LC0xMTcgNDUsLTE2NyAyOSwtNTEgNzEsLTkzIDEyMiwtMTIyIDUxLC0zMCAxMDgsLTQ1IDE2NywtNDUgNTksMCAxMTYsMTUgMTY3LDQ1IDUxLDI5IDkzLDcxIDEyMiwxMjIgMzAsNTAgNDUsMTA4IDQ1LDE2NyB6IgogICBpZD0icGF0aDE1IiAvPgogICAgIDwvZz4KICAgIDwvZz4KICAgIDxnCiAgIGNsYXNzPSJjb20uc3VuLnN0YXIuZHJhd2luZy5DdXN0b21TaGFwZSIKICAgaWQ9ImcxNiI+CiAgICAgPGcKICAgaWQ9ImlkNSI+CiAgICAgIDxyZWN0CiAgIGNsYXNzPSJCb3VuZGluZ0JveCIKICAgc3Ryb2tlPSJub25lIgogICBmaWxsPSJub25lIgogICB4PSIzNzYzIgogICB5PSIxMTY4NSIKICAgd2lkdGg9IjEwMDQiCiAgIGhlaWdodD0iMTAwNCIKICAgaWQ9InJlY3QxNSIgLz4KICAgICAgPHBhdGgKICAgZmlsbD0ibm9uZSIKICAgc3Ryb2tlPSIjMzQ2NWE0IgogICBkPSJtIDQ3NjUsMTIxODcgYyAwLDg3IC0yMywxNzQgLTY3LDI1MCAtNDQsNzYgLTEwNywxMzkgLTE4MywxODMgLTc2LDQ0IC0xNjMsNjcgLTI1MCw2NyAtODgsMCAtMTc1LC0yMyAtMjUxLC02NyAtNzYsLTQ0IC0xMzksLTEwNyAtMTgzLC0xODMgLTQ0LC03NiAtNjcsLTE2MyAtNjcsLTI1MCAwLC04OCAyMywtMTc1IDY3LC0yNTEgNDQsLTc2IDEwNywtMTM5IDE4MywtMTgzIDc2LC00NCAxNjMsLTY3IDI1MSwtNjcgODcsMCAxNzQsMjMgMjUwLDY3IDc2LDQ0IDEzOSwxMDcgMTgzLDE4MyA0NCw3NiA2NywxNjMgNjcsMjUxIHoiCiAgIGlkPSJwYXRoMTYiIC8+CiAgICAgPC9nPgogICAgPC9nPgogICA8L2c+CiAgIDxnCiAgIGNsYXNzPSJUZXh0U2hhcGUiCiAgIGlkPSJnMTkiPgogICAgPGcKICAgaWQ9ImlkNiI+CiAgICAgPHJlY3QKICAgY2xhc3M9IkJvdW5kaW5nQm94IgogICBzdHJva2U9Im5vbmUiCiAgIGZpbGw9Im5vbmUiCiAgIHg9IjM3MzIiCiAgIHk9IjExNzI4IgogICB3aWR0aD0iMTI1MSIKICAgaGVpZ2h0PSIxMDAxIgogICBpZD0icmVjdDE3IiAvPgogICAgIDx0ZXh0CiAgIGNsYXNzPSJTVkdUZXh0U2hhcGUiCiAgIGlkPSJ0ZXh0MTkiPjx0c3BhbgogICAgIGNsYXNzPSJUZXh0UGFyYWdyYXBoIgogICAgIGlkPSJ0c3BhbjE5Ij48dHNwYW4KICAgICAgIGNsYXNzPSJUZXh0UG9zaXRpb24iCiAgICAgICB4PSIzOTgyIgogICAgICAgeT0iMTIzNTciCiAgICAgICBpZD0idHNwYW4xOCI+PHRzcGFuCiAgICAgICAgIGZvbnQtZmFtaWx5PSInQXJpYWwgQmxhY2snIgogICAgICAgICBmb250LXNpemU9IjQ1OHB4IgogICAgICAgICBmb250LXdlaWdodD0iNDAwIgogICAgICAgICBsZW5ndGhBZGp1c3Q9InNwYWNpbmdBbmRHbHlwaHMiCiAgICAgICAgIGZpbGw9IiMwMDAwMDAiCiAgICAgICAgIHN0cm9rZT0ibm9uZSIKICAgICAgICAgc3R5bGU9IndoaXRlLXNwYWNlOnByZSIKICAgICAgICAgaWQ9InRzcGFuMTciPkFJPC90c3Bhbj48L3RzcGFuPjwvdHNwYW4+PC90ZXh0PgogICAgPC9nPgogICA8L2c+CiAgPC9nPgogPC9nPgo8L3N2Zz4K);
+}
+.markdown-preview.markdown-preview span.ai_050::before {
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  padding-right: 0.5em;
+  content: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjIiIHdpZHRoPSIxMC44M21tIiBoZWlnaHQ9IjEwLjA0bW0iIHZpZXdCb3g9IjM3MjEgMTMwMTAgMTA4MyAxMDA0IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2Utd2lkdGg9IjI4LjIyMiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczpvb289Imh0dHA6Ly94bWwub3Blbm9mZmljZS5vcmcvc3ZnL2V4cG9ydCIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnByZXNlbnRhdGlvbj0iaHR0cDovL3N1bi5jb20veG1sbnMvc3Rhcm9mZmljZS9wcmVzZW50YXRpb24iIHhtbG5zOnNtaWw9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvU01JTDIwLyIgeG1sbnM6YW5pbT0idXJuOm9hc2lzOm5hbWVzOnRjOm9wZW5kb2N1bWVudDp4bWxuczphbmltYXRpb246MS4wIiB4bWxuczpzdmc9InVybjpvYXNpczpuYW1lczp0YzpvcGVuZG9jdW1lbnQ6eG1sbnM6c3ZnLWNvbXBhdGlibGU6MS4wIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KIDxkZWZzPgogIDxmb250IGlkPSJFbWJlZGRlZEZvbnRfMSIgaG9yaXotYWR2LXg9IjIwNDgiPgogICA8Zm9udC1mYWNlIGZvbnQtZmFtaWx5PSJBcmlhbCBCbGFjayBlbWJlZGRlZCIgdW5pdHMtcGVyLWVtPSIyMDQ4IiBmb250LXdlaWdodD0ibm9ybWFsIiBmb250LXN0eWxlPSJub3JtYWwiIGFzY2VudD0iMjI0OSIgZGVzY2VudD0iNjM1Ii8+CiAgIDxtaXNzaW5nLWdseXBoIGhvcml6LWFkdi14PSIyMDQ4IiBkPSJNIDAsMCBMIDIwNDcsMCAyMDQ3LDIwNDcgMCwyMDQ3IDAsMCBaICIvPgogICA8Z2x5cGggdW5pY29kZT0iSSIgaG9yaXotYWR2LXg9IjQ1MyIgZD0iTSAxNjgsMTQ2NiBMIDYyMiwxNDY2IDYyMiwwIDE2OCwwIDE2OCwxNDY2IFogIi8+CiAgIDxnbHlwaCB1bmljb2RlPSJBIiBob3Jpei1hZHYteD0iMTU5MCIgZD0iTSAxMDUxLDI0MiBMIDUzNywyNDIgNDY2LDAgMywwIDU1NCwxNDY2IDEwNDgsMTQ2NiAxNTk5LDAgMTEyNSwwIDEwNTEsMjQyIFogTSA5NTcsNTU5IEwgNzk2LDEwODYgNjM1LDU1OSA5NTcsNTU5IFogIi8+CiAgPC9mb250PgogPC9kZWZzPgogPGRlZnMgY2xhc3M9IkVtYmVkZGVkQnVsbGV0Q2hhcnMiPgogIDxnIGlkPSJidWxsZXQtY2hhci10ZW1wbGF0ZS01NzM1NiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAwMDQ4ODI4MTI1LC0wLjAwMDQ4ODI4MTI1KSI+CiAgIDxwYXRoIGQ9Ik0gNTgwLDExNDEgTCAxMTYzLDU3MSA1ODAsMCAtNCw1NzEgNTgwLDExNDEgWiIvPgogIDwvZz4KICA8ZyBpZD0iYnVsbGV0LWNoYXItdGVtcGxhdGUtNTczNTQiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMDA0ODgyODEyNSwtMC4wMDA0ODgyODEyNSkiPgogICA8cGF0aCBkPSJNIDgsMTEyOCBMIDExMzcsMTEyOCAxMTM3LDAgOCwwIDgsMTEyOCBaIi8+CiAgPC9nPgogIDxnIGlkPSJidWxsZXQtY2hhci10ZW1wbGF0ZS0xMDE0NiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAwMDQ4ODI4MTI1LC0wLjAwMDQ4ODI4MTI1KSI+CiAgIDxwYXRoIGQ9Ik0gMTc0LDAgTCA2MDIsNzM5IDE3NCwxNDgxIDE0NTYsNzM5IDE3NCwwIFogTSAxMzU4LDczOSBMIDMwOSwxMzQ2IDY1OSw3MzkgMTM1OCw3MzkgWiIvPgogIDwvZz4KICA8ZyBpZD0iYnVsbGV0LWNoYXItdGVtcGxhdGUtMTAxMzIiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMDA0ODgyODEyNSwtMC4wMDA0ODgyODEyNSkiPgogICA8cGF0aCBkPSJNIDIwMTUsNzM5IEwgMTI3NiwwIDcxNywwIDEyNjAsNTQzIDE3NCw1NDMgMTc0LDkzNiAxMjYwLDkzNiA3MTcsMTQ4MSAxMjc0LDE0ODEgMjAxNSw3MzkgWiIvPgogIDwvZz4KICA8ZyBpZD0iYnVsbGV0LWNoYXItdGVtcGxhdGUtMTAwMDciIHRyYW5zZm9ybT0ic2NhbGUoMC4wMDA0ODgyODEyNSwtMC4wMDA0ODgyODEyNSkiPgogICA8cGF0aCBkPSJNIDAsLTIgQyAtNywxNCAtMTYsMjcgLTI1LDM3IEwgMzU2LDU2NyBDIDI2Miw4MjMgMjE1LDk1MiAyMTUsOTU0IDIxNSw5NzkgMjI4LDk5MiAyNTUsOTkyIDI2NCw5OTIgMjc2LDk5MCAyODksOTg3IDMxMCw5OTEgMzMxLDk5OSAzNTQsMTAxMiBMIDM4MSw5OTkgNDkyLDc0OCA3NzIsMTA0OSA4MzYsMTAyNCA4NjAsMTA0OSBDIDg4MSwxMDM5IDkwMSwxMDI1IDkyMiwxMDA2IDg4Niw5MzcgODM1LDg2MyA3NzAsNzg0IDc2OSw3ODMgNzEwLDcxNiA1OTQsNTg0IEwgNzc0LDIyMyBDIDc3NCwxOTYgNzUzLDE2OCA3MTEsMTM5IEwgNzI3LDExOSBDIDcxNyw5MCA2OTksNzYgNjcyLDc2IDY0MSw3NiA1NzAsMTc4IDQ1NywzODEgTCAxNjQsLTc2IEMgMTQyLC0xMTAgMTExLC0xMjcgNzIsLTEyNyAzMCwtMTI3IDksLTExMCA4LC03NiAxLC02NyAtMiwtNTIgLTIsLTMyIC0yLC0yMyAtMSwtMTMgMCwtMiBaIi8+CiAgPC9nPgogIDxnIGlkPSJidWxsZXQtY2hhci10ZW1wbGF0ZS0xMDAwNCIgdHJhbnNmb3JtPSJzY2FsZSgwLjAwMDQ4ODI4MTI1LC0wLjAwMDQ4ODI4MTI1KSI+CiAgIDxwYXRoIGQ9Ik0gMjg1LC0zMyBDIDE4MiwtMzMgMTExLDMwIDc0LDE1NiA1MiwyMjggNDEsMzMzIDQxLDQ3MSA0MSw1NDkgNTUsNjE2IDgyLDY3MiAxMTYsNzQzIDE2OSw3NzggMjQwLDc3OCAyOTMsNzc4IDMyOCw3NDcgMzQ2LDY4NCBMIDM2OSw1MDggQyAzNzcsNDQ0IDM5Nyw0MTEgNDI4LDQxMCBMIDExNjMsMTExNiBDIDExNzQsMTEyNyAxMTk2LDExMzMgMTIyOSwxMTMzIDEyNzEsMTEzMyAxMjkyLDExMTggMTI5MiwxMDg3IEwgMTI5Miw5NjUgQyAxMjkyLDkyOSAxMjgyLDkwMSAxMjYyLDg4MSBMIDQ0Miw0NyBDIDM5MCwtNiAzMzgsLTMzIDI4NSwtMzMgWiIvPgogIDwvZz4KICA8ZyBpZD0iYnVsbGV0LWNoYXItdGVtcGxhdGUtOTY3OSIgdHJhbnNmb3JtPSJzY2FsZSgwLjAwMDQ4ODI4MTI1LC0wLjAwMDQ4ODI4MTI1KSI+CiAgIDxwYXRoIGQ9Ik0gODEzLDAgQyA2MzIsMCA0ODksNTQgMzgzLDE2MSAyNzYsMjY4IDIyMyw0MTEgMjIzLDU5MiAyMjMsNzczIDI3Niw5MTYgMzgzLDEwMjMgNDg5LDExMzAgNjMyLDExODQgODEzLDExODQgOTkyLDExODQgMTEzNiwxMTMwIDEyNDUsMTAyMyAxMzUzLDkxNiAxNDA3LDc3MiAxNDA3LDU5MiAxNDA3LDQxMiAxMzUzLDI2OCAxMjQ1LDE2MSAxMTM2LDU0IDk5MiwwIDgxMywwIFoiLz4KICA8L2c+CiAgPGcgaWQ9ImJ1bGxldC1jaGFyLXRlbXBsYXRlLTgyMjYiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMDA0ODgyODEyNSwtMC4wMDA0ODgyODEyNSkiPgogICA8cGF0aCBkPSJNIDM0Niw0NTcgQyAyNzMsNDU3IDIwOSw0ODMgMTU1LDUzNSAxMDEsNTg2IDc0LDY0OSA3NCw3MjMgNzQsNzk2IDEwMSw4NTkgMTU1LDkxMSAyMDksOTYzIDI3Myw5ODkgMzQ2LDk4OSA0MTksOTg5IDQ4MCw5NjMgNTMxLDkxMCA1ODIsODU5IDYwOCw3OTYgNjA4LDcyMyA2MDgsNjQ4IDU4Myw1ODYgNTMyLDUzNSA0ODIsNDgzIDQyMCw0NTcgMzQ2LDQ1NyBaIi8+CiAgPC9nPgogIDxnIGlkPSJidWxsZXQtY2hhci10ZW1wbGF0ZS04MjExIiB0cmFuc2Zvcm09InNjYWxlKDAuMDAwNDg4MjgxMjUsLTAuMDAwNDg4MjgxMjUpIj4KICAgPHBhdGggZD0iTSAtNCw0NTkgTCAxMTM1LDQ1OSAxMTM1LDYwNiAtNCw2MDYgLTQsNDU5IFoiLz4KICA8L2c+CiAgPGcgaWQ9ImJ1bGxldC1jaGFyLXRlbXBsYXRlLTYxNTQ4IiB0cmFuc2Zvcm09InNjYWxlKDAuMDAwNDg4MjgxMjUsLTAuMDAwNDg4MjgxMjUpIj4KICAgPHBhdGggZD0iTSAxNzMsNzQwIEMgMTczLDkwMyAyMzEsMTA0MyAzNDYsMTE1OSA0NjIsMTI3NCA2MDEsMTMzMiA3NjUsMTMzMiA5MjgsMTMzMiAxMDY3LDEyNzQgMTE4MywxMTU5IDEyOTksMTA0MyAxMzU3LDkwMyAxMzU3LDc0MCAxMzU3LDU3NyAxMjk5LDQzNyAxMTgzLDMyMiAxMDY3LDIwNiA5MjgsMTQ4IDc2NSwxNDggNjAxLDE0OCA0NjIsMjA2IDM0NiwzMjIgMjMxLDQzNyAxNzMsNTc3IDE3Myw3NDAgWiIvPgogIDwvZz4KIDwvZGVmcz4KIDxnIGNsYXNzPSJQYWdlIj4KICA8ZyBjbGFzcz0iR3JvdXAiPgogICA8ZyBjbGFzcz0iR3JvdXAiPgogICAgPGcgY2xhc3M9ImNvbS5zdW4uc3Rhci5kcmF3aW5nLkN1c3RvbVNoYXBlIj4KICAgICA8ZyBpZD0iaWQzIj4KICAgICAgPHJlY3QgY2xhc3M9IkJvdW5kaW5nQm94IiBzdHJva2U9Im5vbmUiIGZpbGw9Im5vbmUiIHg9IjQyMzEiIHk9IjEzMDEwIiB3aWR0aD0iNTA3IiBoZWlnaHQ9IjEwMDMiLz4KICAgICAgPHBhdGggZmlsbD0icmdiKDI1NSwyNTUsMCkiIHN0cm9rZT0ibm9uZSIgZD0iTSA0MjMyLDE0MDExIEwgNDI1NywxNDAxMSA0MjgyLDE0MDA5IDQzMDcsMTQwMDYgNDMzMSwxNDAwMiA0MzU2LDEzOTk2IDQzODAsMTM5OTAgNDQwNCwxMzk4MiA0NDI3LDEzOTczIDQ0NTAsMTM5NjMgNDQ3MiwxMzk1MiA0NDk0LDEzOTM5IDQ1MTUsMTM5MjYgNDUzNSwxMzkxMSA0NTU1LDEzODk2IDQ1NzQsMTM4ODAgNDU5MiwxMzg2MiA0NjA5LDEzODQ0IDQ2MjUsMTM4MjUgNDY0MCwxMzgwNSA0NjU1LDEzNzg1IDQ2NjgsMTM3NjMgNDY4MCwxMzc0MSA0NjkxLDEzNzE5IDQ3MDEsMTM2OTYgNDcwOSwxMzY3MyA0NzE3LDEzNjQ5IDQ3MjMsMTM2MjQgNDcyOCwxMzYwMCA0NzMyLDEzNTc1IDQ3MzQsMTM1NTAgNDczNiwxMzUyNSA0NzM2LDEzNTAxIDQ3MzUsMTM0NzYgNDczMiwxMzQ1MSA0NzI5LDEzNDI2IDQ3MjQsMTM0MDEgNDcxOCwxMzM3NyA0NzEwLDEzMzUzIDQ3MDIsMTMzMzAgNDY5MiwxMzMwNyA0NjgyLDEzMjg0IDQ2NzAsMTMyNjIgNDY1NywxMzI0MSA0NjQzLDEzMjIwIDQ2MjgsMTMyMDAgNDYxMiwxMzE4MSA0NTk1LDEzMTYzIDQ1NzcsMTMxNDUgNDU1OCwxMzEyOSA0NTM5LDEzMTEzIDQ1MTgsMTMwOTggNDQ5NywxMzA4NSA0NDc2LDEzMDcyIDQ0NTMsMTMwNjEgNDQzMSwxMzA1MCA0NDA3LDEzMDQxIDQzODQsMTMwMzMgNDM2MCwxMzAyNyA0MzM1LDEzMDIxIDQzMTEsMTMwMTcgNDI4NiwxMzAxMyA0MjYxLDEzMDEyIDQyMzYsMTMwMTEgNDIzNiwxMzUxMSA0MjMyLDE0MDExIFogIi8+CiAgICAgIDxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiKDUyLDEwMSwxNjQpIiBkPSJNIDQyMzIsMTQwMTEgTCA0MjU3LDE0MDExIDQyODIsMTQwMDkgNDMwNywxNDAwNiA0MzMxLDE0MDAyIDQzNTYsMTM5OTYgNDM4MCwxMzk5MCA0NDA0LDEzOTgyIDQ0MjcsMTM5NzMgNDQ1MCwxMzk2MyA0NDcyLDEzOTUyIDQ0OTQsMTM5MzkgNDUxNSwxMzkyNiA0NTM1LDEzOTExIDQ1NTUsMTM4OTYgNDU3NCwxMzg4MCA0NTkyLDEzODYyIDQ2MDksMTM4NDQgNDYyNSwxMzgyNSA0NjQwLDEzODA1IDQ2NTUsMTM3ODUgNDY2OCwxMzc2MyA0NjgwLDEzNzQxIDQ2OTEsMTM3MTkgNDcwMSwxMzY5NiA0NzA5LDEzNjczIDQ3MTcsMTM2NDkgNDcyMywxMzYyNCA0NzI4LDEzNjAwIDQ3MzIsMTM1NzUgNDczNCwxMzU1MCA0NzM2LDEzNTI1IDQ3MzYsMTM1MDEgNDczNSwxMzQ3NiA0NzMyLDEzNDUxIDQ3MjksMTM0MjYgNDcyNCwxMzQwMSA0NzE4LDEzMzc3IDQ3MTAsMTMzNTMgNDcwMiwxMzMzMCA0NjkyLDEzMzA3IDQ2ODIsMTMyODQgNDY3MCwxMzI2MiA0NjU3LDEzMjQxIDQ2NDMsMTMyMjAgNDYyOCwxMzIwMCA0NjEyLDEzMTgxIDQ1OTUsMTMxNjMgNDU3NywxMzE0NSA0NTU4LDEzMTI5IDQ1MzksMTMxMTMgNDUxOCwxMzA5OCA0NDk3LDEzMDg1IDQ0NzYsMTMwNzIgNDQ1MywxMzA2MSA0NDMxLDEzMDUwIDQ0MDcsMTMwNDEgNDM4NCwxMzAzMyA0MzYwLDEzMDI3IDQzMzUsMTMwMjEgNDMxMSwxMzAxNyA0Mjg2LDEzMDEzIDQyNjEsMTMwMTIgNDIzNiwxMzAxMSA0MjM2LDEzNTExIDQyMzIsMTQwMTEgWiAiLz4KICAgICA8L2c+CiAgICA8L2c+CiAgICA8ZyBjbGFzcz0iY29tLnN1bi5zdGFyLmRyYXdpbmcuQ3VzdG9tU2hhcGUiPgogICAgIDxnIGlkPSJpZDQiPgogICAgICA8cmVjdCBjbGFzcz0iQm91bmRpbmdCb3giIHN0cm9rZT0ibm9uZSIgZmlsbD0ibm9uZSIgeD0iMzg4NCIgeT0iMTMxNzciIHdpZHRoPSI2NzEiIGhlaWdodD0iNjcwIi8+CiAgICAgIDxwYXRoIGZpbGw9InJnYigyNTUsMjU1LDI1NSkiIHN0cm9rZT0ibm9uZSIgZD0iTSA0NTUzLDEzNTEyIEMgNDU1MywxMzU3MCA0NTM4LDEzNjI4IDQ1MDgsMTM2NzggNDQ3OSwxMzcyOSA0NDM3LDEzNzcxIDQzODYsMTM4MDAgNDMzNSwxMzgzMCA0Mjc4LDEzODQ1IDQyMTksMTM4NDUgNDE2MCwxMzg0NSA0MTAzLDEzODMwIDQwNTIsMTM4MDAgNDAwMSwxMzc3MSAzOTU5LDEzNzI5IDM5MzAsMTM2NzggMzkwMCwxMzYyOCAzODg1LDEzNTcwIDM4ODUsMTM1MTIgMzg4NSwxMzQ1MyAzOTAwLDEzMzk1IDM5MzAsMTMzNDUgMzk1OSwxMzI5NCA0MDAxLDEzMjUyIDQwNTIsMTMyMjMgNDEwMywxMzE5MyA0MTYwLDEzMTc4IDQyMTksMTMxNzggNDI3OCwxMzE3OCA0MzM1LDEzMTkzIDQzODYsMTMyMjMgNDQzNywxMzI1MiA0NDc5LDEzMjk0IDQ1MDgsMTMzNDUgNDUzOCwxMzM5NSA0NTUzLDEzNDUzIDQ1NTMsMTM1MTIgTCA0NTUzLDEzNTEyIFogIi8+CiAgICAgIDxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiKDAsMCwwKSIgZD0iTSA0NTUzLDEzNTEyIEMgNDU1MywxMzU3MCA0NTM4LDEzNjI4IDQ1MDgsMTM2NzggNDQ3OSwxMzcyOSA0NDM3LDEzNzcxIDQzODYsMTM4MDAgNDMzNSwxMzgzMCA0Mjc4LDEzODQ1IDQyMTksMTM4NDUgNDE2MCwxMzg0NSA0MTAzLDEzODMwIDQwNTIsMTM4MDAgNDAwMSwxMzc3MSAzOTU5LDEzNzI5IDM5MzAsMTM2NzggMzkwMCwxMzYyOCAzODg1LDEzNTcwIDM4ODUsMTM1MTIgMzg4NSwxMzQ1MyAzOTAwLDEzMzk1IDM5MzAsMTMzNDUgMzk1OSwxMzI5NCA0MDAxLDEzMjUyIDQwNTIsMTMyMjMgNDEwMywxMzE5MyA0MTYwLDEzMTc4IDQyMTksMTMxNzggNDI3OCwxMzE3OCA0MzM1LDEzMTkzIDQzODYsMTMyMjMgNDQzNywxMzI1MiA0NDc5LDEzMjk0IDQ1MDgsMTMzNDUgNDUzOCwxMzM5NSA0NTUzLDEzNDUzIDQ1NTMsMTM1MTIgWiAiLz4KICAgICA8L2c+CiAgICA8L2c+CiAgICA8ZyBjbGFzcz0iY29tLnN1bi5zdGFyLmRyYXdpbmcuQ3VzdG9tU2hhcGUiPgogICAgIDxnIGlkPSJpZDUiPgogICAgICA8cmVjdCBjbGFzcz0iQm91bmRpbmdCb3giIHN0cm9rZT0ibm9uZSIgZmlsbD0ibm9uZSIgeD0iMzczNSIgeT0iMTMwMTAiIHdpZHRoPSIxMDA0IiBoZWlnaHQ9IjEwMDQiLz4KICAgICAgPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2IoNTIsMTAxLDE2NCkiIGQ9Ik0gNDczNywxMzUxMiBDIDQ3MzcsMTM1OTkgNDcxNCwxMzY4NiA0NjcwLDEzNzYyIDQ2MjYsMTM4MzggNDU2MywxMzkwMSA0NDg3LDEzOTQ1IDQ0MTEsMTM5ODkgNDMyNCwxNDAxMiA0MjM3LDE0MDEyIDQxNDksMTQwMTIgNDA2MiwxMzk4OSAzOTg2LDEzOTQ1IDM5MTAsMTM5MDEgMzg0NywxMzgzOCAzODAzLDEzNzYyIDM3NTksMTM2ODYgMzczNiwxMzU5OSAzNzM2LDEzNTEyIDM3MzYsMTM0MjQgMzc1OSwxMzMzNyAzODAzLDEzMjYxIDM4NDcsMTMxODUgMzkxMCwxMzEyMiAzOTg2LDEzMDc4IDQwNjIsMTMwMzQgNDE0OSwxMzAxMSA0MjM3LDEzMDExIDQzMjQsMTMwMTEgNDQxMSwxMzAzNCA0NDg3LDEzMDc4IDQ1NjMsMTMxMjIgNDYyNiwxMzE4NSA0NjcwLDEzMjYxIDQ3MTQsMTMzMzcgNDczNywxMzQyNCA0NzM3LDEzNTEyIFogIi8+CiAgICAgPC9nPgogICAgPC9nPgogICA8L2c+CiAgIDxnIGNsYXNzPSJUZXh0U2hhcGUiPgogICAgPGcgaWQ9ImlkNiI+CiAgICAgPHJlY3QgY2xhc3M9IkJvdW5kaW5nQm94IiBzdHJva2U9Im5vbmUiIGZpbGw9Im5vbmUiIHg9IjM3MjEiIHk9IjEzMDQyIiB3aWR0aD0iMTA4MyIgaGVpZ2h0PSI4OTYiLz4KICAgICA8dGV4dCBjbGFzcz0iU1ZHVGV4dFNoYXBlIj48dHNwYW4gY2xhc3M9IlRleHRQYXJhZ3JhcGgiPjx0c3BhbiBjbGFzcz0iVGV4dFBvc2l0aW9uIiB4PSIzOTcxIiB5PSIxMzY3MSI+PHRzcGFuIGZvbnQtZmFtaWx5PSJBcmlhbCBCbGFjayIgZm9udC1zaXplPSI0NThweCIgZm9udC13ZWlnaHQ9IjQwMCIgbGVuZ3RoQWRqdXN0PSJzcGFjaW5nQW5kR2x5cGhzIiB0ZXh0TGVuZ3RoPSI1MzQiIGZpbGw9InJnYigwLDAsMCkiIHN0cm9rZT0ibm9uZSIgc3R5bGU9IndoaXRlLXNwYWNlOiBwcmUiPkFJPC90c3Bhbj48L3RzcGFuPjwvdHNwYW4+PC90ZXh0PgogICAgPC9nPgogICA8L2c+CiAgPC9nPgogPC9nPgo8L3N2Zz4=);
+}
+.markdown-preview.markdown-preview span.ai_025::before {
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  padding-right: 0.5em;
+  content: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjIiIHdpZHRoPSIxMC42Mm1tIiBoZWlnaHQ9IjEwLjA0bW0iIHZpZXdCb3g9IjM2ODkgMTQyOTMgMTA2MiAxMDA0IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2Utd2lkdGg9IjI4LjIyMiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczpvb289Imh0dHA6Ly94bWwub3Blbm9mZmljZS5vcmcvc3ZnL2V4cG9ydCIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnByZXNlbnRhdGlvbj0iaHR0cDovL3N1bi5jb20veG1sbnMvc3Rhcm9mZmljZS9wcmVzZW50YXRpb24iIHhtbG5zOnNtaWw9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvU01JTDIwLyIgeG1sbnM6YW5pbT0idXJuOm9hc2lzOm5hbWVzOnRjOm9wZW5kb2N1bWVudDp4bWxuczphbmltYXRpb246MS4wIiB4bWxuczpzdmc9InVybjpvYXNpczpuYW1lczp0YzpvcGVuZG9jdW1lbnQ6eG1sbnM6c3ZnLWNvbXBhdGlibGU6MS4wIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KIDxkZWZzPgogIDxmb250IGlkPSJFbWJlZGRlZEZvbnRfMSIgaG9yaXotYWR2LXg9IjIwNDgiPgogICA8Zm9udC1mYWNlIGZvbnQtZmFtaWx5PSJBcmlhbCBCbGFjayBlbWJlZGRlZCIgdW5pdHMtcGVyLWVtPSIyMDQ4IiBmb250LXdlaWdodD0ibm9ybWFsIiBmb250LXN0eWxlPSJub3JtYWwiIGFzY2VudD0iMjI0OSIgZGVzY2VudD0iNjM1Ii8+CiAgIDxtaXNzaW5nLWdseXBoIGhvcml6LWFkdi14PSIyMDQ4IiBkPSJNIDAsMCBMIDIwNDcsMCAyMDQ3LDIwNDcgMCwyMDQ3IDAsMCBaICIvPgogICA8Z2x5cGggdW5pY29kZT0iSSIgaG9yaXotYWR2LXg9IjQ1MyIgZD0iTSAxNjgsMTQ2NiBMIDYyMiwxNDY2IDYyMiwwIDE2OCwwIDE2OCwxNDY2IFogIi8+CiAgIDxnbHlwaCB1bmljb2RlPSJBIiBob3Jpei1hZHYteD0iMTU5MCIgZD0iTSAxMDUxLDI0MiBMIDUzNywyNDIgNDY2LDAgMywwIDU1NCwxNDY2IDEwNDgsMTQ2NiAxNTk5LDAgMTEyNSwwIDEwNTEsMjQyIFogTSA5NTcsNTU5IEwgNzk2LDEwODYgNjM1LDU1OSA5NTcsNTU5IFogIi8+CiAgPC9mb250PgogPC9kZWZzPgogPGRlZnMgY2xhc3M9IkVtYmVkZGVkQnVsbGV0Q2hhcnMiPgogIDxnIGlkPSJidWxsZXQtY2hhci10ZW1wbGF0ZS01NzM1NiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAwMDQ4ODI4MTI1LC0wLjAwMDQ4ODI4MTI1KSI+CiAgIDxwYXRoIGQ9Ik0gNTgwLDExNDEgTCAxMTYzLDU3MSA1ODAsMCAtNCw1NzEgNTgwLDExNDEgWiIvPgogIDwvZz4KICA8ZyBpZD0iYnVsbGV0LWNoYXItdGVtcGxhdGUtNTczNTQiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMDA0ODgyODEyNSwtMC4wMDA0ODgyODEyNSkiPgogICA8cGF0aCBkPSJNIDgsMTEyOCBMIDExMzcsMTEyOCAxMTM3LDAgOCwwIDgsMTEyOCBaIi8+CiAgPC9nPgogIDxnIGlkPSJidWxsZXQtY2hhci10ZW1wbGF0ZS0xMDE0NiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAwMDQ4ODI4MTI1LC0wLjAwMDQ4ODI4MTI1KSI+CiAgIDxwYXRoIGQ9Ik0gMTc0LDAgTCA2MDIsNzM5IDE3NCwxNDgxIDE0NTYsNzM5IDE3NCwwIFogTSAxMzU4LDczOSBMIDMwOSwxMzQ2IDY1OSw3MzkgMTM1OCw3MzkgWiIvPgogIDwvZz4KICA8ZyBpZD0iYnVsbGV0LWNoYXItdGVtcGxhdGUtMTAxMzIiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMDA0ODgyODEyNSwtMC4wMDA0ODgyODEyNSkiPgogICA8cGF0aCBkPSJNIDIwMTUsNzM5IEwgMTI3NiwwIDcxNywwIDEyNjAsNTQzIDE3NCw1NDMgMTc0LDkzNiAxMjYwLDkzNiA3MTcsMTQ4MSAxMjc0LDE0ODEgMjAxNSw3MzkgWiIvPgogIDwvZz4KICA8ZyBpZD0iYnVsbGV0LWNoYXItdGVtcGxhdGUtMTAwMDciIHRyYW5zZm9ybT0ic2NhbGUoMC4wMDA0ODgyODEyNSwtMC4wMDA0ODgyODEyNSkiPgogICA8cGF0aCBkPSJNIDAsLTIgQyAtNywxNCAtMTYsMjcgLTI1LDM3IEwgMzU2LDU2NyBDIDI2Miw4MjMgMjE1LDk1MiAyMTUsOTU0IDIxNSw5NzkgMjI4LDk5MiAyNTUsOTkyIDI2NCw5OTIgMjc2LDk5MCAyODksOTg3IDMxMCw5OTEgMzMxLDk5OSAzNTQsMTAxMiBMIDM4MSw5OTkgNDkyLDc0OCA3NzIsMTA0OSA4MzYsMTAyNCA4NjAsMTA0OSBDIDg4MSwxMDM5IDkwMSwxMDI1IDkyMiwxMDA2IDg4Niw5MzcgODM1LDg2MyA3NzAsNzg0IDc2OSw3ODMgNzEwLDcxNiA1OTQsNTg0IEwgNzc0LDIyMyBDIDc3NCwxOTYgNzUzLDE2OCA3MTEsMTM5IEwgNzI3LDExOSBDIDcxNyw5MCA2OTksNzYgNjcyLDc2IDY0MSw3NiA1NzAsMTc4IDQ1NywzODEgTCAxNjQsLTc2IEMgMTQyLC0xMTAgMTExLC0xMjcgNzIsLTEyNyAzMCwtMTI3IDksLTExMCA4LC03NiAxLC02NyAtMiwtNTIgLTIsLTMyIC0yLC0yMyAtMSwtMTMgMCwtMiBaIi8+CiAgPC9nPgogIDxnIGlkPSJidWxsZXQtY2hhci10ZW1wbGF0ZS0xMDAwNCIgdHJhbnNmb3JtPSJzY2FsZSgwLjAwMDQ4ODI4MTI1LC0wLjAwMDQ4ODI4MTI1KSI+CiAgIDxwYXRoIGQ9Ik0gMjg1LC0zMyBDIDE4MiwtMzMgMTExLDMwIDc0LDE1NiA1MiwyMjggNDEsMzMzIDQxLDQ3MSA0MSw1NDkgNTUsNjE2IDgyLDY3MiAxMTYsNzQzIDE2OSw3NzggMjQwLDc3OCAyOTMsNzc4IDMyOCw3NDcgMzQ2LDY4NCBMIDM2OSw1MDggQyAzNzcsNDQ0IDM5Nyw0MTEgNDI4LDQxMCBMIDExNjMsMTExNiBDIDExNzQsMTEyNyAxMTk2LDExMzMgMTIyOSwxMTMzIDEyNzEsMTEzMyAxMjkyLDExMTggMTI5MiwxMDg3IEwgMTI5Miw5NjUgQyAxMjkyLDkyOSAxMjgyLDkwMSAxMjYyLDg4MSBMIDQ0Miw0NyBDIDM5MCwtNiAzMzgsLTMzIDI4NSwtMzMgWiIvPgogIDwvZz4KICA8ZyBpZD0iYnVsbGV0LWNoYXItdGVtcGxhdGUtOTY3OSIgdHJhbnNmb3JtPSJzY2FsZSgwLjAwMDQ4ODI4MTI1LC0wLjAwMDQ4ODI4MTI1KSI+CiAgIDxwYXRoIGQ9Ik0gODEzLDAgQyA2MzIsMCA0ODksNTQgMzgzLDE2MSAyNzYsMjY4IDIyMyw0MTEgMjIzLDU5MiAyMjMsNzczIDI3Niw5MTYgMzgzLDEwMjMgNDg5LDExMzAgNjMyLDExODQgODEzLDExODQgOTkyLDExODQgMTEzNiwxMTMwIDEyNDUsMTAyMyAxMzUzLDkxNiAxNDA3LDc3MiAxNDA3LDU5MiAxNDA3LDQxMiAxMzUzLDI2OCAxMjQ1LDE2MSAxMTM2LDU0IDk5MiwwIDgxMywwIFoiLz4KICA8L2c+CiAgPGcgaWQ9ImJ1bGxldC1jaGFyLXRlbXBsYXRlLTgyMjYiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMDA0ODgyODEyNSwtMC4wMDA0ODgyODEyNSkiPgogICA8cGF0aCBkPSJNIDM0Niw0NTcgQyAyNzMsNDU3IDIwOSw0ODMgMTU1LDUzNSAxMDEsNTg2IDc0LDY0OSA3NCw3MjMgNzQsNzk2IDEwMSw4NTkgMTU1LDkxMSAyMDksOTYzIDI3Myw5ODkgMzQ2LDk4OSA0MTksOTg5IDQ4MCw5NjMgNTMxLDkxMCA1ODIsODU5IDYwOCw3OTYgNjA4LDcyMyA2MDgsNjQ4IDU4Myw1ODYgNTMyLDUzNSA0ODIsNDgzIDQyMCw0NTcgMzQ2LDQ1NyBaIi8+CiAgPC9nPgogIDxnIGlkPSJidWxsZXQtY2hhci10ZW1wbGF0ZS04MjExIiB0cmFuc2Zvcm09InNjYWxlKDAuMDAwNDg4MjgxMjUsLTAuMDAwNDg4MjgxMjUpIj4KICAgPHBhdGggZD0iTSAtNCw0NTkgTCAxMTM1LDQ1OSAxMTM1LDYwNiAtNCw2MDYgLTQsNDU5IFoiLz4KICA8L2c+CiAgPGcgaWQ9ImJ1bGxldC1jaGFyLXRlbXBsYXRlLTYxNTQ4IiB0cmFuc2Zvcm09InNjYWxlKDAuMDAwNDg4MjgxMjUsLTAuMDAwNDg4MjgxMjUpIj4KICAgPHBhdGggZD0iTSAxNzMsNzQwIEMgMTczLDkwMyAyMzEsMTA0MyAzNDYsMTE1OSA0NjIsMTI3NCA2MDEsMTMzMiA3NjUsMTMzMiA5MjgsMTMzMiAxMDY3LDEyNzQgMTE4MywxMTU5IDEyOTksMTA0MyAxMzU3LDkwMyAxMzU3LDc0MCAxMzU3LDU3NyAxMjk5LDQzNyAxMTgzLDMyMiAxMDY3LDIwNiA5MjgsMTQ4IDc2NSwxNDggNjAxLDE0OCA0NjIsMjA2IDM0NiwzMjIgMjMxLDQzNyAxNzMsNTc3IDE3Myw3NDAgWiIvPgogIDwvZz4KIDwvZGVmcz4KIDxnIGNsYXNzPSJQYWdlIj4KICA8ZyBjbGFzcz0iR3JvdXAiPgogICA8ZyBjbGFzcz0iR3JvdXAiPgogICAgPGcgY2xhc3M9ImNvbS5zdW4uc3Rhci5kcmF3aW5nLkN1c3RvbVNoYXBlIj4KICAgICA8ZyBpZD0iaWQzIj4KICAgICAgPHJlY3QgY2xhc3M9IkJvdW5kaW5nQm94IiBzdHJva2U9Im5vbmUiIGZpbGw9Im5vbmUiIHg9IjQyMzMiIHk9IjE0MjkzIiB3aWR0aD0iNTAzIiBoZWlnaHQ9IjUwMyIvPgogICAgICA8cGF0aCBmaWxsPSJyZ2IoMTE0LDE1OSwyMDcpIiBzdHJva2U9Im5vbmUiIGQ9Ik0gNDczNCwxNDc4NCBMIDQ3MzMsMTQ3NTggNDczMCwxNDczMiA0NzI2LDE0NzA3IDQ3MjEsMTQ2ODIgNDcxNSwxNDY1NyA0NzA3LDE0NjMyIDQ2OTgsMTQ2MDggNDY4OCwxNDU4NCA0Njc2LDE0NTYxIDQ2NjQsMTQ1MzggNDY1MCwxNDUxNiA0NjM1LDE0NDk1IDQ2MTksMTQ0NzUgNDYwMiwxNDQ1NSA0NTg0LDE0NDM3IDQ1NjUsMTQ0MTkgNDU0NSwxNDQwMyA0NTI1LDE0Mzg3IDQ1MDMsMTQzNzMgNDQ4MSwxNDM1OSA0NDU4LDE0MzQ3IDQ0MzUsMTQzMzYgNDQxMSwxNDMyNiA0Mzg3LDE0MzE4IDQzNjIsMTQzMTEgNDMzNywxNDMwNSA0MzExLDE0MzAwIDQyODYsMTQyOTcgNDI2MCwxNDI5NSA0MjM0LDE0Mjk0IDQyMzQsMTQ3OTQgNDczNCwxNDc4NCBaICIvPgogICAgICA8cGF0aCBmaWxsPSJub25lIiBzdHJva2U9InJnYig1MiwxMDEsMTY0KSIgZD0iTSA0NzM0LDE0Nzg0IEwgNDczMywxNDc1OCA0NzMwLDE0NzMyIDQ3MjYsMTQ3MDcgNDcyMSwxNDY4MiA0NzE1LDE0NjU3IDQ3MDcsMTQ2MzIgNDY5OCwxNDYwOCA0Njg4LDE0NTg0IDQ2NzYsMTQ1NjEgNDY2NCwxNDUzOCA0NjUwLDE0NTE2IDQ2MzUsMTQ0OTUgNDYxOSwxNDQ3NSA0NjAyLDE0NDU1IDQ1ODQsMTQ0MzcgNDU2NSwxNDQxOSA0NTQ1LDE0NDAzIDQ1MjUsMTQzODcgNDUwMywxNDM3MyA0NDgxLDE0MzU5IDQ0NTgsMTQzNDcgNDQzNSwxNDMzNiA0NDExLDE0MzI2IDQzODcsMTQzMTggNDM2MiwxNDMxMSA0MzM3LDE0MzA1IDQzMTEsMTQzMDAgNDI4NiwxNDI5NyA0MjYwLDE0Mjk1IDQyMzQsMTQyOTQgNDIzNCwxNDc5NCA0NzM0LDE0Nzg0IFogIi8+CiAgICAgPC9nPgogICAgPC9nPgogICAgPGcgY2xhc3M9ImNvbS5zdW4uc3Rhci5kcmF3aW5nLkN1c3RvbVNoYXBlIj4KICAgICA8ZyBpZD0iaWQ0Ij4KICAgICAgPHJlY3QgY2xhc3M9IkJvdW5kaW5nQm94IiBzdHJva2U9Im5vbmUiIGZpbGw9Im5vbmUiIHg9IjM4ODIiIHk9IjE0NDYwIiB3aWR0aD0iNjcxIiBoZWlnaHQ9IjY3MCIvPgogICAgICA8cGF0aCBmaWxsPSJyZ2IoMjU1LDI1NSwyNTUpIiBzdHJva2U9Im5vbmUiIGQ9Ik0gNDU1MSwxNDc5NSBDIDQ1NTEsMTQ4NTMgNDUzNiwxNDkxMSA0NTA2LDE0OTYxIDQ0NzcsMTUwMTIgNDQzNSwxNTA1NCA0Mzg0LDE1MDgzIDQzMzMsMTUxMTMgNDI3NiwxNTEyOCA0MjE3LDE1MTI4IDQxNTgsMTUxMjggNDEwMSwxNTExMyA0MDUwLDE1MDgzIDM5OTksMTUwNTQgMzk1NywxNTAxMiAzOTI4LDE0OTYxIDM4OTgsMTQ5MTEgMzg4MywxNDg1MyAzODgzLDE0Nzk1IDM4ODMsMTQ3MzYgMzg5OCwxNDY3OCAzOTI4LDE0NjI4IDM5NTcsMTQ1NzcgMzk5OSwxNDUzNSA0MDUwLDE0NTA2IDQxMDEsMTQ0NzYgNDE1OCwxNDQ2MSA0MjE3LDE0NDYxIDQyNzYsMTQ0NjEgNDMzMywxNDQ3NiA0Mzg0LDE0NTA2IDQ0MzUsMTQ1MzUgNDQ3NywxNDU3NyA0NTA2LDE0NjI4IDQ1MzYsMTQ2NzggNDU1MSwxNDczNiA0NTUxLDE0Nzk1IEwgNDU1MSwxNDc5NSBaICIvPgogICAgICA8cGF0aCBmaWxsPSJub25lIiBzdHJva2U9InJnYigwLDAsMCkiIGQ9Ik0gNDU1MSwxNDc5NSBDIDQ1NTEsMTQ4NTMgNDUzNiwxNDkxMSA0NTA2LDE0OTYxIDQ0NzcsMTUwMTIgNDQzNSwxNTA1NCA0Mzg0LDE1MDgzIDQzMzMsMTUxMTMgNDI3NiwxNTEyOCA0MjE3LDE1MTI4IDQxNTgsMTUxMjggNDEwMSwxNTExMyA0MDUwLDE1MDgzIDM5OTksMTUwNTQgMzk1NywxNTAxMiAzOTI4LDE0OTYxIDM4OTgsMTQ5MTEgMzg4MywxNDg1MyAzODgzLDE0Nzk1IDM4ODMsMTQ3MzYgMzg5OCwxNDY3OCAzOTI4LDE0NjI4IDM5NTcsMTQ1NzcgMzk5OSwxNDUzNSA0MDUwLDE0NTA2IDQxMDEsMTQ0NzYgNDE1OCwxNDQ2MSA0MjE3LDE0NDYxIDQyNzYsMTQ0NjEgNDMzMywxNDQ3NiA0Mzg0LDE0NTA2IDQ0MzUsMTQ1MzUgNDQ3NywxNDU3NyA0NTA2LDE0NjI4IDQ1MzYsMTQ2NzggNDU1MSwxNDczNiA0NTUxLDE0Nzk1IFogIi8+CiAgICAgPC9nPgogICAgPC9nPgogICAgPGcgY2xhc3M9ImNvbS5zdW4uc3Rhci5kcmF3aW5nLkN1c3RvbVNoYXBlIj4KICAgICA8ZyBpZD0iaWQ1Ij4KICAgICAgPHJlY3QgY2xhc3M9IkJvdW5kaW5nQm94IiBzdHJva2U9Im5vbmUiIGZpbGw9Im5vbmUiIHg9IjM3MzMiIHk9IjE0MjkzIiB3aWR0aD0iMTAwNCIgaGVpZ2h0PSIxMDA0Ii8+CiAgICAgIDxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiKDUyLDEwMSwxNjQpIiBkPSJNIDQ3MzUsMTQ3OTUgQyA0NzM1LDE0ODgyIDQ3MTIsMTQ5NjkgNDY2OCwxNTA0NSA0NjI0LDE1MTIxIDQ1NjEsMTUxODQgNDQ4NSwxNTIyOCA0NDA5LDE1MjcyIDQzMjIsMTUyOTUgNDIzNSwxNTI5NSA0MTQ3LDE1Mjk1IDQwNjAsMTUyNzIgMzk4NCwxNTIyOCAzOTA4LDE1MTg0IDM4NDUsMTUxMjEgMzgwMSwxNTA0NSAzNzU3LDE0OTY5IDM3MzQsMTQ4ODIgMzczNCwxNDc5NSAzNzM0LDE0NzA3IDM3NTcsMTQ2MjAgMzgwMSwxNDU0NCAzODQ1LDE0NDY4IDM5MDgsMTQ0MDUgMzk4NCwxNDM2MSA0MDYwLDE0MzE3IDQxNDcsMTQyOTQgNDIzNSwxNDI5NCA0MzIyLDE0Mjk0IDQ0MDksMTQzMTcgNDQ4NSwxNDM2MSA0NTYxLDE0NDA1IDQ2MjQsMTQ0NjggNDY2OCwxNDU0NCA0NzEyLDE0NjIwIDQ3MzUsMTQ3MDcgNDczNSwxNDc5NSBaICIvPgogICAgIDwvZz4KICAgIDwvZz4KICAgPC9nPgogICA8ZyBjbGFzcz0iVGV4dFNoYXBlIj4KICAgIDxnIGlkPSJpZDYiPgogICAgIDxyZWN0IGNsYXNzPSJCb3VuZGluZ0JveCIgc3Ryb2tlPSJub25lIiBmaWxsPSJub25lIiB4PSIzNjg5IiB5PSIxNDMzMSIgd2lkdGg9IjEwNjIiIGhlaWdodD0iODk2Ii8+CiAgICAgPHRleHQgY2xhc3M9IlNWR1RleHRTaGFwZSI+PHRzcGFuIGNsYXNzPSJUZXh0UGFyYWdyYXBoIj48dHNwYW4gY2xhc3M9IlRleHRQb3NpdGlvbiIgeD0iMzkzOSIgeT0iMTQ5NjAiPjx0c3BhbiBmb250LWZhbWlseT0iQXJpYWwgQmxhY2siIGZvbnQtc2l6ZT0iNDU5cHgiIGZvbnQtd2VpZ2h0PSI0MDAiIGxlbmd0aEFkanVzdD0ic3BhY2luZ0FuZEdseXBocyIgdGV4dExlbmd0aD0iNTM0IiBmaWxsPSJyZ2IoMCwwLDApIiBzdHJva2U9Im5vbmUiIHN0eWxlPSJ3aGl0ZS1zcGFjZTogcHJlIj5BSTwvdHNwYW4+PC90c3Bhbj48L3RzcGFuPjwvdGV4dD4KICAgIDwvZz4KICAgPC9nPgogIDwvZz4KIDwvZz4KPC9zdmc+);
+}
+.markdown-preview.markdown-preview span.ai_000::before {
+  height: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  padding-right: 0.5em;
+  content: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj4KPHN2ZyB2ZXJzaW9uPSIxLjIiIHdpZHRoPSIxMS4wOW1tIiBoZWlnaHQ9IjEwLjU2bW0iIHZpZXdCb3g9IjM2OTcgMTU1ODUgMTEwOSAxMDU2IiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWlkWU1pZCIgZmlsbC1ydWxlPSJldmVub2RkIiBzdHJva2Utd2lkdGg9IjI4LjIyMiIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczpvb289Imh0dHA6Ly94bWwub3Blbm9mZmljZS5vcmcvc3ZnL2V4cG9ydCIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnByZXNlbnRhdGlvbj0iaHR0cDovL3N1bi5jb20veG1sbnMvc3Rhcm9mZmljZS9wcmVzZW50YXRpb24iIHhtbG5zOnNtaWw9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvU01JTDIwLyIgeG1sbnM6YW5pbT0idXJuOm9hc2lzOm5hbWVzOnRjOm9wZW5kb2N1bWVudDp4bWxuczphbmltYXRpb246MS4wIiB4bWxuczpzdmc9InVybjpvYXNpczpuYW1lczp0YzpvcGVuZG9jdW1lbnQ6eG1sbnM6c3ZnLWNvbXBhdGlibGU6MS4wIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KIDxkZWZzPgogIDxmb250IGlkPSJFbWJlZGRlZEZvbnRfMSIgaG9yaXotYWR2LXg9IjIwNDgiPgogICA8Zm9udC1mYWNlIGZvbnQtZmFtaWx5PSJBcmlhbCBCbGFjayBlbWJlZGRlZCIgdW5pdHMtcGVyLWVtPSIyMDQ4IiBmb250LXdlaWdodD0ibm9ybWFsIiBmb250LXN0eWxlPSJub3JtYWwiIGFzY2VudD0iMjI0OSIgZGVzY2VudD0iNjM1Ii8+CiAgIDxtaXNzaW5nLWdseXBoIGhvcml6LWFkdi14PSIyMDQ4IiBkPSJNIDAsMCBMIDIwNDcsMCAyMDQ3LDIwNDcgMCwyMDQ3IDAsMCBaICIvPgogICA8Z2x5cGggdW5pY29kZT0iSSIgaG9yaXotYWR2LXg9IjQ1MyIgZD0iTSAxNjgsMTQ2NiBMIDYyMiwxNDY2IDYyMiwwIDE2OCwwIDE2OCwxNDY2IFogIi8+CiAgIDxnbHlwaCB1bmljb2RlPSJBIiBob3Jpei1hZHYteD0iMTU5MCIgZD0iTSAxMDUxLDI0MiBMIDUzNywyNDIgNDY2LDAgMywwIDU1NCwxNDY2IDEwNDgsMTQ2NiAxNTk5LDAgMTEyNSwwIDEwNTEsMjQyIFogTSA5NTcsNTU5IEwgNzk2LDEwODYgNjM1LDU1OSA5NTcsNTU5IFogIi8+CiAgPC9mb250PgogPC9kZWZzPgogPGRlZnMgY2xhc3M9IkVtYmVkZGVkQnVsbGV0Q2hhcnMiPgogIDxnIGlkPSJidWxsZXQtY2hhci10ZW1wbGF0ZS01NzM1NiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAwMDQ4ODI4MTI1LC0wLjAwMDQ4ODI4MTI1KSI+CiAgIDxwYXRoIGQ9Ik0gNTgwLDExNDEgTCAxMTYzLDU3MSA1ODAsMCAtNCw1NzEgNTgwLDExNDEgWiIvPgogIDwvZz4KICA8ZyBpZD0iYnVsbGV0LWNoYXItdGVtcGxhdGUtNTczNTQiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMDA0ODgyODEyNSwtMC4wMDA0ODgyODEyNSkiPgogICA8cGF0aCBkPSJNIDgsMTEyOCBMIDExMzcsMTEyOCAxMTM3LDAgOCwwIDgsMTEyOCBaIi8+CiAgPC9nPgogIDxnIGlkPSJidWxsZXQtY2hhci10ZW1wbGF0ZS0xMDE0NiIgdHJhbnNmb3JtPSJzY2FsZSgwLjAwMDQ4ODI4MTI1LC0wLjAwMDQ4ODI4MTI1KSI+CiAgIDxwYXRoIGQ9Ik0gMTc0LDAgTCA2MDIsNzM5IDE3NCwxNDgxIDE0NTYsNzM5IDE3NCwwIFogTSAxMzU4LDczOSBMIDMwOSwxMzQ2IDY1OSw3MzkgMTM1OCw3MzkgWiIvPgogIDwvZz4KICA8ZyBpZD0iYnVsbGV0LWNoYXItdGVtcGxhdGUtMTAxMzIiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMDA0ODgyODEyNSwtMC4wMDA0ODgyODEyNSkiPgogICA8cGF0aCBkPSJNIDIwMTUsNzM5IEwgMTI3NiwwIDcxNywwIDEyNjAsNTQzIDE3NCw1NDMgMTc0LDkzNiAxMjYwLDkzNiA3MTcsMTQ4MSAxMjc0LDE0ODEgMjAxNSw3MzkgWiIvPgogIDwvZz4KICA8ZyBpZD0iYnVsbGV0LWNoYXItdGVtcGxhdGUtMTAwMDciIHRyYW5zZm9ybT0ic2NhbGUoMC4wMDA0ODgyODEyNSwtMC4wMDA0ODgyODEyNSkiPgogICA8cGF0aCBkPSJNIDAsLTIgQyAtNywxNCAtMTYsMjcgLTI1LDM3IEwgMzU2LDU2NyBDIDI2Miw4MjMgMjE1LDk1MiAyMTUsOTU0IDIxNSw5NzkgMjI4LDk5MiAyNTUsOTkyIDI2NCw5OTIgMjc2LDk5MCAyODksOTg3IDMxMCw5OTEgMzMxLDk5OSAzNTQsMTAxMiBMIDM4MSw5OTkgNDkyLDc0OCA3NzIsMTA0OSA4MzYsMTAyNCA4NjAsMTA0OSBDIDg4MSwxMDM5IDkwMSwxMDI1IDkyMiwxMDA2IDg4Niw5MzcgODM1LDg2MyA3NzAsNzg0IDc2OSw3ODMgNzEwLDcxNiA1OTQsNTg0IEwgNzc0LDIyMyBDIDc3NCwxOTYgNzUzLDE2OCA3MTEsMTM5IEwgNzI3LDExOSBDIDcxNyw5MCA2OTksNzYgNjcyLDc2IDY0MSw3NiA1NzAsMTc4IDQ1NywzODEgTCAxNjQsLTc2IEMgMTQyLC0xMTAgMTExLC0xMjcgNzIsLTEyNyAzMCwtMTI3IDksLTExMCA4LC03NiAxLC02NyAtMiwtNTIgLTIsLTMyIC0yLC0yMyAtMSwtMTMgMCwtMiBaIi8+CiAgPC9nPgogIDxnIGlkPSJidWxsZXQtY2hhci10ZW1wbGF0ZS0xMDAwNCIgdHJhbnNmb3JtPSJzY2FsZSgwLjAwMDQ4ODI4MTI1LC0wLjAwMDQ4ODI4MTI1KSI+CiAgIDxwYXRoIGQ9Ik0gMjg1LC0zMyBDIDE4MiwtMzMgMTExLDMwIDc0LDE1NiA1MiwyMjggNDEsMzMzIDQxLDQ3MSA0MSw1NDkgNTUsNjE2IDgyLDY3MiAxMTYsNzQzIDE2OSw3NzggMjQwLDc3OCAyOTMsNzc4IDMyOCw3NDcgMzQ2LDY4NCBMIDM2OSw1MDggQyAzNzcsNDQ0IDM5Nyw0MTEgNDI4LDQxMCBMIDExNjMsMTExNiBDIDExNzQsMTEyNyAxMTk2LDExMzMgMTIyOSwxMTMzIDEyNzEsMTEzMyAxMjkyLDExMTggMTI5MiwxMDg3IEwgMTI5Miw5NjUgQyAxMjkyLDkyOSAxMjgyLDkwMSAxMjYyLDg4MSBMIDQ0Miw0NyBDIDM5MCwtNiAzMzgsLTMzIDI4NSwtMzMgWiIvPgogIDwvZz4KICA8ZyBpZD0iYnVsbGV0LWNoYXItdGVtcGxhdGUtOTY3OSIgdHJhbnNmb3JtPSJzY2FsZSgwLjAwMDQ4ODI4MTI1LC0wLjAwMDQ4ODI4MTI1KSI+CiAgIDxwYXRoIGQ9Ik0gODEzLDAgQyA2MzIsMCA0ODksNTQgMzgzLDE2MSAyNzYsMjY4IDIyMyw0MTEgMjIzLDU5MiAyMjMsNzczIDI3Niw5MTYgMzgzLDEwMjMgNDg5LDExMzAgNjMyLDExODQgODEzLDExODQgOTkyLDExODQgMTEzNiwxMTMwIDEyNDUsMTAyMyAxMzUzLDkxNiAxNDA3LDc3MiAxNDA3LDU5MiAxNDA3LDQxMiAxMzUzLDI2OCAxMjQ1LDE2MSAxMTM2LDU0IDk5MiwwIDgxMywwIFoiLz4KICA8L2c+CiAgPGcgaWQ9ImJ1bGxldC1jaGFyLXRlbXBsYXRlLTgyMjYiIHRyYW5zZm9ybT0ic2NhbGUoMC4wMDA0ODgyODEyNSwtMC4wMDA0ODgyODEyNSkiPgogICA8cGF0aCBkPSJNIDM0Niw0NTcgQyAyNzMsNDU3IDIwOSw0ODMgMTU1LDUzNSAxMDEsNTg2IDc0LDY0OSA3NCw3MjMgNzQsNzk2IDEwMSw4NTkgMTU1LDkxMSAyMDksOTYzIDI3Myw5ODkgMzQ2LDk4OSA0MTksOTg5IDQ4MCw5NjMgNTMxLDkxMCA1ODIsODU5IDYwOCw3OTYgNjA4LDcyMyA2MDgsNjQ4IDU4Myw1ODYgNTMyLDUzNSA0ODIsNDgzIDQyMCw0NTcgMzQ2LDQ1NyBaIi8+CiAgPC9nPgogIDxnIGlkPSJidWxsZXQtY2hhci10ZW1wbGF0ZS04MjExIiB0cmFuc2Zvcm09InNjYWxlKDAuMDAwNDg4MjgxMjUsLTAuMDAwNDg4MjgxMjUpIj4KICAgPHBhdGggZD0iTSAtNCw0NTkgTCAxMTM1LDQ1OSAxMTM1LDYwNiAtNCw2MDYgLTQsNDU5IFoiLz4KICA8L2c+CiAgPGcgaWQ9ImJ1bGxldC1jaGFyLXRlbXBsYXRlLTYxNTQ4IiB0cmFuc2Zvcm09InNjYWxlKDAuMDAwNDg4MjgxMjUsLTAuMDAwNDg4MjgxMjUpIj4KICAgPHBhdGggZD0iTSAxNzMsNzQwIEMgMTczLDkwMyAyMzEsMTA0MyAzNDYsMTE1OSA0NjIsMTI3NCA2MDEsMTMzMiA3NjUsMTMzMiA5MjgsMTMzMiAxMDY3LDEyNzQgMTE4MywxMTU5IDEyOTksMTA0MyAxMzU3LDkwMyAxMzU3LDc0MCAxMzU3LDU3NyAxMjk5LDQzNyAxMTgzLDMyMiAxMDY3LDIwNiA5MjgsMTQ4IDc2NSwxNDggNjAxLDE0OCA0NjIsMjA2IDM0NiwzMjIgMjMxLDQzNyAxNzMsNTc3IDE3Myw3NDAgWiIvPgogIDwvZz4KIDwvZGVmcz4KIDxnIGNsYXNzPSJQYWdlIj4KICA8ZyBjbGFzcz0iR3JvdXAiPgogICA8ZyBjbGFzcz0iY29tLnN1bi5zdGFyLmRyYXdpbmcuQ3VzdG9tU2hhcGUiPgogICAgPGcgaWQ9ImlkMyI+CiAgICAgPHJlY3QgY2xhc3M9IkJvdW5kaW5nQm94IiBzdHJva2U9Im5vbmUiIGZpbGw9Im5vbmUiIHg9IjM2OTciIHk9IjE1NTg1IiB3aWR0aD0iMTA1NiIgaGVpZ2h0PSIxMDU2Ii8+CiAgICAgPHBhdGggZmlsbD0icmdiKDI1NSwyNTUsMjU1KSIgc3Ryb2tlPSJub25lIiBkPSJNIDQ3MjUsMTYxMTMgQyA0NzI1LDE2MjAwIDQ3MDIsMTYyODcgNDY1OCwxNjM2MyA0NjE0LDE2NDM5IDQ1NTEsMTY1MDIgNDQ3NSwxNjU0NiA0Mzk5LDE2NTkwIDQzMTIsMTY2MTMgNDIyNSwxNjYxMyA0MTM3LDE2NjEzIDQwNTAsMTY1OTAgMzk3NCwxNjU0NiAzODk4LDE2NTAyIDM4MzUsMTY0MzkgMzc5MSwxNjM2MyAzNzQ3LDE2Mjg3IDM3MjQsMTYyMDAgMzcyNCwxNjExMyAzNzI0LDE2MDI1IDM3NDcsMTU5MzggMzc5MSwxNTg2MiAzODM1LDE1Nzg2IDM4OTgsMTU3MjMgMzk3NCwxNTY3OSA0MDUwLDE1NjM1IDQxMzcsMTU2MTIgNDIyNSwxNTYxMiA0MzEyLDE1NjEyIDQzOTksMTU2MzUgNDQ3NSwxNTY3OSA0NTUxLDE1NzIzIDQ2MTQsMTU3ODYgNDY1OCwxNTg2MiA0NzAyLDE1OTM4IDQ3MjUsMTYwMjUgNDcyNSwxNjExMyBMIDQ3MjUsMTYxMTMgWiAiLz4KICAgICA8cGF0aCBmaWxsPSJub25lIiBzdHJva2U9InJnYig1MiwxMDEsMTY0KSIgc3Ryb2tlLXdpZHRoPSI1MyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0iTSA0NzI1LDE2MTEzIEMgNDcyNSwxNjIwMCA0NzAyLDE2Mjg3IDQ2NTgsMTYzNjMgNDYxNCwxNjQzOSA0NTUxLDE2NTAyIDQ0NzUsMTY1NDYgNDM5OSwxNjU5MCA0MzEyLDE2NjEzIDQyMjUsMTY2MTMgNDEzNywxNjYxMyA0MDUwLDE2NTkwIDM5NzQsMTY1NDYgMzg5OCwxNjUwMiAzODM1LDE2NDM5IDM3OTEsMTYzNjMgMzc0NywxNjI4NyAzNzI0LDE2MjAwIDM3MjQsMTYxMTMgMzcyNCwxNjAyNSAzNzQ3LDE1OTM4IDM3OTEsMTU4NjIgMzgzNSwxNTc4NiAzODk4LDE1NzIzIDM5NzQsMTU2NzkgNDA1MCwxNTYzNSA0MTM3LDE1NjEyIDQyMjUsMTU2MTIgNDMxMiwxNTYxMiA0Mzk5LDE1NjM1IDQ0NzUsMTU2NzkgNDU1MSwxNTcyMyA0NjE0LDE1Nzg2IDQ2NTgsMTU4NjIgNDcwMiwxNTkzOCA0NzI1LDE2MDI1IDQ3MjUsMTYxMTMgWiAiLz4KICAgIDwvZz4KICAgPC9nPgogICA8ZyBjbGFzcz0iY29tLnN1bi5zdGFyLmRyYXdpbmcuQ3VzdG9tU2hhcGUiPgogICAgPGcgaWQ9ImlkNCI+CiAgICAgPHJlY3QgY2xhc3M9IkJvdW5kaW5nQm94IiBzdHJva2U9Im5vbmUiIGZpbGw9Im5vbmUiIHg9IjM4MzMiIHk9IjE1NzIxIiB3aWR0aD0iNzg0IiBoZWlnaHQ9Ijc4NCIvPgogICAgIDxwYXRoIGZpbGw9InJnYigyNTUsMjU1LDI1NSkiIHN0cm9rZT0ibm9uZSIgZD0iTSA0NTg5LDE2MTEzIEMgNDU4OSwxNjE3NiA0NTcyLDE2MjM5IDQ1NDAsMTYyOTUgNDUwOCwxNjM1MCA0NDYyLDE2Mzk2IDQ0MDcsMTY0MjggNDM1MSwxNjQ2MCA0Mjg4LDE2NDc3IDQyMjUsMTY0NzcgNDE2MSwxNjQ3NyA0MDk4LDE2NDYwIDQwNDIsMTY0MjggMzk4NywxNjM5NiAzOTQxLDE2MzUwIDM5MDksMTYyOTUgMzg3NywxNjIzOSAzODYwLDE2MTc2IDM4NjAsMTYxMTMgMzg2MCwxNjA0OSAzODc3LDE1OTg2IDM5MDksMTU5MzAgMzk0MSwxNTg3NSAzOTg3LDE1ODI5IDQwNDIsMTU3OTcgNDA5OCwxNTc2NSA0MTYxLDE1NzQ4IDQyMjUsMTU3NDggNDI4OCwxNTc0OCA0MzUxLDE1NzY1IDQ0MDcsMTU3OTcgNDQ2MiwxNTgyOSA0NTA4LDE1ODc1IDQ1NDAsMTU5MzAgNDU3MiwxNTk4NiA0NTg5LDE2MDQ5IDQ1ODksMTYxMTMgTCA0NTg5LDE2MTEzIFogIi8+CiAgICAgPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSJyZ2IoNDIsOTYsMTUzKSIgc3Ryb2tlLXdpZHRoPSI1MyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgZD0iTSA0NTg5LDE2MTEzIEMgNDU4OSwxNjE3NiA0NTcyLDE2MjM5IDQ1NDAsMTYyOTUgNDUwOCwxNjM1MCA0NDYyLDE2Mzk2IDQ0MDcsMTY0MjggNDM1MSwxNjQ2MCA0Mjg4LDE2NDc3IDQyMjUsMTY0NzcgNDE2MSwxNjQ3NyA0MDk4LDE2NDYwIDQwNDIsMTY0MjggMzk4NywxNjM5NiAzOTQxLDE2MzUwIDM5MDksMTYyOTUgMzg3NywxNjIzOSAzODYwLDE2MTc2IDM4NjAsMTYxMTMgMzg2MCwxNjA0OSAzODc3LDE1OTg2IDM5MDksMTU5MzAgMzk0MSwxNTg3NSAzOTg3LDE1ODI5IDQwNDIsMTU3OTcgNDA5OCwxNTc2NSA0MTYxLDE1NzQ4IDQyMjUsMTU3NDggNDI4OCwxNTc0OCA0MzUxLDE1NzY1IDQ0MDcsMTU3OTcgNDQ2MiwxNTgyOSA0NTA4LDE1ODc1IDQ1NDAsMTU5MzAgNDU3MiwxNTk4NiA0NTg5LDE2MDQ5IDQ1ODksMTYxMTMgWiAiLz4KICAgIDwvZz4KICAgPC9nPgogICA8ZyBjbGFzcz0iVGV4dFNoYXBlIj4KICAgIDxnIGlkPSJpZDUiPgogICAgIDxyZWN0IGNsYXNzPSJCb3VuZGluZ0JveCIgc3Ryb2tlPSJub25lIiBmaWxsPSJub25lIiB4PSIzNzA5IiB5PSIxNTY0OCIgd2lkdGg9IjEwOTciIGhlaWdodD0iODk2Ii8+CiAgICAgPHRleHQgY2xhc3M9IlNWR1RleHRTaGFwZSI+PHRzcGFuIGNsYXNzPSJUZXh0UGFyYWdyYXBoIj48dHNwYW4gY2xhc3M9IlRleHRQb3NpdGlvbiIgeD0iMzk1OSIgeT0iMTYyNzciPjx0c3BhbiBmb250LWZhbWlseT0iQXJpYWwgQmxhY2siIGZvbnQtc2l6ZT0iNDU5cHgiIGZvbnQtd2VpZ2h0PSI0MDAiIGxlbmd0aEFkanVzdD0ic3BhY2luZ0FuZEdseXBocyIgdGV4dExlbmd0aD0iNTM0IiBmaWxsPSJyZ2IoNDIsOTYsMTUzKSIgc3Ryb2tlPSJub25lIiBzdHlsZT0id2hpdGUtc3BhY2U6IHByZSI+QUk8L3RzcGFuPjwvdHNwYW4+PC90c3Bhbj48L3RleHQ+CiAgICA8L2c+CiAgIDwvZz4KICA8L2c+CiA8L2c+Cjwvc3ZnPg==);
+}
+
+      </style>
+      <script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script>
+    </head>
+    <body for="html-export">
+      <div class="crossnote markdown-preview  ">
+      
+<div style="text-align:right;font-size:small;margin:0pt;padding:0pt">
+Last-modified: 2026/05/14 16:52:21
+</div>
+<p></p>
+<p><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css"></p>
+<h1 id="gleifの-検証可能verifiableなデジタル法人アイデンティティvlei">GLEIFの "検証可能(verifiable)"なデジタル法人アイデンティティ(vLEI) </h1>
+<div class="md-toc">
+<details open="" class="md-toc-details">
+<summary class="md-toc-link-wrapper" data-level="0">
+  <a href="#gleifの-検証可能verifiableなデジタル法人アイデンティティvlei" class="md-toc-link">GLEIFの "検証可能(verifiable)"なデジタル法人アイデンティティ(vLEI)</a>
+</summary>
+<details open="" class="md-toc-details">
+<summary class="md-toc-link-wrapper" data-level="1">
+  <a href="#概要" class="md-toc-link">概要</a>
+</summary>
+<details open="" class="md-toc-details">
+<summary class="md-toc-link-wrapper" data-level="2">
+  <a href="#vleileiの金融業界以外への広がり" class="md-toc-link">vLEI/LEIの金融業界以外への広がり</a>
+</summary>
+<div class="md-toc-link-wrapper" data-level="3">
+  <a href="#vleiと欧州eidas" class="md-toc-link">vLEIと欧州eIDAS</a>
+</div>
+</details>
+</details>
+<details open="" class="md-toc-details">
+<summary class="md-toc-link-wrapper" data-level="1">
+  <a href="#vleiの企業の組織単位の発行" class="md-toc-link">ｖLEIの企業の組織単位の発行</a>
+</summary>
+<div class="md-toc-link-wrapper" data-level="2">
+  <a href="#vlei発行の要件" class="md-toc-link">vLEI発行の要件</a>
+</div>
+<div class="md-toc-link-wrapper" data-level="2">
+  <a href="#vlei失効revocationについて" class="md-toc-link">vLEI失効(Revocation)について</a>
+</div>
+</details>
+<details open="" class="md-toc-details">
+<summary class="md-toc-link-wrapper" data-level="1">
+  <a href="#vlei-を構成する関係者" class="md-toc-link">vLEI を構成する関係者</a>
+</summary>
+<div class="md-toc-link-wrapper" data-level="2">
+  <a href="#適格vlei発行者qviqualified-vlei-issuer" class="md-toc-link">適格vLEI発行者(QVI：Qualified vLEI Issuer)</a>
+</div>
+</details>
+<details open="" class="md-toc-details">
+<summary class="md-toc-link-wrapper" data-level="1">
+  <a href="#vlei役割クレデンシャルvlei-role-credentialsの検証" class="md-toc-link">vLEI役割クレデンシャル(vLEI Role Credentials)の検証</a>
+</summary>
+<div class="md-toc-link-wrapper" data-level="2">
+  <a href="#検証の手順と仕組み" class="md-toc-link">検証の手順と仕組み</a>
+</div>
+<div class="md-toc-link-wrapper" data-level="2">
+  <a href="#検証時の注意点" class="md-toc-link">検証時の注意点</a>
+</div>
+</details>
+<details open="" class="md-toc-details">
+<summary class="md-toc-link-wrapper" data-level="1">
+  <a href="#vleiの主要要素技術" class="md-toc-link">vLEIの主要要素技術</a>
+</summary>
+<div class="md-toc-link-wrapper" data-level="2">
+  <a href="#vleiとdidvcの関係" class="md-toc-link">vLEIとDID/VCの関係</a>
+</div>
+</details>
+<details open="" class="md-toc-details">
+<summary class="md-toc-link-wrapper" data-level="1">
+  <a href="#appendix" class="md-toc-link">Appendix</a>
+</summary>
+<div class="md-toc-link-wrapper" data-level="2">
+  <a href="#gleif-ai" class="md-toc-link">GLEIF AI</a>
+</div>
+</details>
+</details>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">本文書は AIを用いて作成した文書をもとにしています。</p>
+<p>Google NoteBookLMを用いて参照先の文書を分析、出力された内容をもとに、作成しています。<br>
+<span class="ai_050">AIの出力を再構成して生成。部分的なFact Checkのみ実施。</span></p>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">参照</p>
+<ul>
+<li><a href="https://www.gleif.org/ja">ホーム – GLEIF</a>
+<ul>
+<li><a href="https://www.gleif.org/ja/organizational-identity/get-an-lei-vlei/get-a-vlei#">vLEI 発行者のリスト</a></li>
+<li><a href="https://www.gleif.org/ja/organizational-identity/get-an-lei-vlei">LEI/vLEIを取得する - 組織のアイデンティティ – GLEIF</a></li>
+<li><a href="https://www.gleif.org/ja/organizational-identity/become-an-lei-issuer/required-documents#">必要書類 - LEI発行者になる</a></li>
+<li><a href="https://www.gleif.org/ja/organizational-identity/become-a-vlei-issuer-qvi/required-documents">必要書類 - vLEI発行者になる</a></li>
+<li><a href="https://www.gleif.org/ja/organizational-identity/become-a-vlei-issuer-qvi/vlei-ecosystem-governance-framework#">vLEI エコシステム・ガバナンス・フレームワーク - vLEI発行者になる</a></li>
+<li><a href="https://ai.gleif.org/">GLEIF AI</a></li>
+</ul>
+</li>
+<li><a href="https://www.vlei.wiki/">vLEI.wiki - Verifiable Legal Entity Identifier Knowledge Base</a></li>
+<li><a href="https://trustoverip.org/our-work/deliverables/">Deliverables - Trust Over IP</a></li>
+</ul>
+</div>
+<h2 id="概要">概要 </h2>
+<p><strong>LEI(Legal Entity Identifier)</strong> は、2008年の金融危機において、取引相手（法⼈）をグローバルで特定できないことが、リスク把握や管理するうえで大きな課題として認識されたことから、世界共通の法人識別子として整備されました。<br>
+G20においてLEIの整備の要請が<a href="https://www.fsb.org/">FSB(Financial Stability Board)</a>に対して行われ、その提言に基づき、LEIは一法人に対して一意となる国際標準 ISO 17442（Part 1） に基づく、20文字の英数字コードとして整備されました。FSBにより<a href="https://www.gleif.org/en">GLEIF(Global Legal Entity Identifier Foundation)</a>が設立され、金融取引を行う法人の身元を国際的に識別するためのLEI（取引主体識別子）システムを運用・管理しています。</p>
+<p><strong>vLEI(verifiable LEI)</strong> は、2020年に発表されたLEIをベースにしつつ、<strong>暗号技術等により"検証可能(verifiable)"なデジタル法人アイデンティティ</strong>として利用できるようにする構想です。<br>
+GLEIFはvLEIの運用・統治の枠組みとして <strong>vLEI Ecosystem Governance Framework(EGF)</strong> を公開しており、これは <strong>Trust over IP(ToIP)のGovernance Metamodel</strong> に基づくものとなっています。</p>
+<div class="admonition hint">
+<p class="admonition-title">参照</p>
+<ul>
+<li>
+<p><a href="https://www.gleif.org/en/about/history">GLEIF「History」</a> (<a href="https://www.gleif.org/en/about/history">gleif.org</a>)</p>
+</li>
+<li>
+<p><a href="https://www.gleif.org/en/about/governance">GLEIF「Governance」</a> (<a href="https://www.gleif.org/en/about/governance">gleif.org</a>)</p>
+</li>
+<li>
+<p><a href="https://www.gleif.org/en/about-lei/iso-17442-the-lei-code-structure">GLEIF「ISO 17442 / LEI code structure」</a> (<a href="https://www.gleif.org/en/about-lei/iso-17442-the-lei-code-structure">gleif.org</a>)</p>
+</li>
+<li>
+<p><a href="https://www.gleif.org/en/timeline/">GLEIF「10 Years of GLEIF（timeline）」</a> (<a href="https://www.gleif.org/en/timeline/">gleif.org</a>)</p>
+</li>
+<li>
+<p><a href="https://www.gleif.org/en/lei-solutions/gleifs-digital-strategy-for-the-lei/introducing-the-verifiable-lei-vlei">GLEIF「Introducing the verifiable LEI (vLEI) / vLEI EGF」</a> (<a href="https://www.gleif.org/en/lei-solutions/gleifs-digital-strategy-for-the-lei/introducing-the-verifiable-lei-vlei">gleif.org</a>)</p>
+</li>
+<li>
+<p><a href="https://www.gleif.org/media/pages/organizational-identity/become-a-vlei-issuer-qvi/vlei-ecosystem-governance-framework/ce5ae07b67-1774607226/2026-03-25_vlei-egf-v4.0-primary-document_v1.2_final.pdf">vLEI EGF v4.0 primary document (PDF)</a> (<a href="https://www.gleif.org/media/pages/organizational-identity/become-a-vlei-issuer-qvi/vlei-ecosystem-governance-framework/ce5ae07b67-1774607226/2026-03-25_vlei-egf-v4.0-primary-document_v1.2_final.pdf">gleif.org</a>)</p>
+</li>
+<li>
+<p><a href="https://www.gleif.org/organizational-identity/become-a-vlei-issuer-qvi/vlei-ecosystem-governance-framework/2026-03-25_vlei-egf-v4.0-governance-requirements_v1.1_final.pdf">vLEI EGF v4.0 Governance Requirements (PDF)</a> (<a href="https://www.gleif.org/organizational-identity/become-a-vlei-issuer-qvi/vlei-ecosystem-governance-framework/2026-03-25_vlei-egf-v4.0-governance-requirements_v1.1_final.pdf">gleif.org</a>)</p>
+</li>
+</ul>
+</div>
+<h3 id="vleileiの金融業界以外への広がり">vLEI/LEIの金融業界以外への広がり </h3>
+<p>LEIはもともと金融危機を背景に金融機関向けとして適用が始まりました。しかし、企業・組織は金融機関と取引関係があるため、必然的に一般の企業・組織にもLEIの適用範囲が拡大されました。vLEIもまた、LEIと同様に金融機関向けに限定されるものではありません。</p>
+<p>LEIが主に金融取引の透明性を高めるために導入されたのに対し、vLEI（検証可能なLEI）は、更にデジタルエコノミー全体の信頼性を高めることを目的としています。</p>
+<p>vLEIは、デジタル環境における企業の身元を証明する「デジタルパスポート」として機能し、あらゆる業界の企業が、国境を越えた取引やデータ交換をより安全かつ効率的に行うことを可能にします。<br>
+また、 サーキュラーエコノミーにおいて注目されているデジタルプロダクトパスポートなどでもサプライチェーン／バリューチェンにおける企業・組織の身元保証のデジタルインフラとして候補の一つとなっています(参照: <a href="https://unece.org/trade/documents/2025/06/standards/white-paper-globally-unique-identifiers-supply-chains">White Paper on Globally Unique Identifiers in Supply Chains</a>、CEN/CENELEC JTC24等)。</p>
+<p>金融機関以外でのvLEIの利用例としては以下の物が挙げられます。</p>
+<ul>
+<li><strong>サプライチェーン管理</strong>: 企業の調達担当者が、新規のサプライヤーとオンラインで契約する際、vLEIを通じて相手企業の真正性を瞬時に検証できます。これにより、不正な取引先との契約リスクを低減できます。</li>
+<li><strong>法務・契約プロセス</strong>: 企業間の電子契約において、vLEIを持つ法務担当者が、法的に有効な電子署名を行うことで、契約の真正性と法的有効性を確保できます。</li>
+<li><strong>eコマースとオンラインプラットフォーム</strong>: オンラインマーケットプレイスの運営者は、出店する事業者がvLEIを提示することで、その事業者が実在する企業であることを証明できます。これにより、消費者は安心して取引を行うことができます。</li>
+<li><strong>行政手続き</strong>: 将来的に、政府機関がvLEIを公共サービスの認証に利用するようになれば、企業は複雑な手続きをオンラインで効率的に行うことができるようになります。</li>
+</ul>
+<h4 id="vleiと欧州eidas">vLEIと欧州eIDAS </h4>
+<p>デジタルID環境の推進で先行する欧州では、 法規制化によるeIDAS環境の展開が進められています。欧州ESPR/DPPなどの利用を想定した法人向けとしてはEUBW(EU Business Wallet)の法規制化が進められています。</p>
+<p>GLEIFの文書内では、vLEIとeIDASは競合するものではなく、eIDASに準拠した高信頼のデジタルIDスキームやトラストサービスの運用基準を、vLEIの身元確認プロセスや発行者の適格性評価の基盤として組み込み、信頼性を担保するために活用する関係にあると説明されています。</p>
+<p>vLEIエコシステムにおける欧州eIDASとの関係については、主に以下の2つの観点での連携や基準の活用がGLEIF文書内で言及されています。</p>
+<ol>
+<li>
+<p><strong>担当者の身元保証(Identity Assurance)スキームとしての利用</strong>:<br>
+vLEIエコシステムでは、法人vLEIクレデンシャルや役割クレデンシャル(OORやECR)、あるいは適格vLEI発行者(QVI)の担当者クレデンシャルを発行する前に、それらの役割を担う個人(LAR、OOR担当者、ECR担当者、QARなど)の厳格な身元保証(Identity Assurance)を行う必要があります。 この身元保証の手段として、<strong>特定のデジタルIDスキームからの有効なデジタル身元クレデンシャルの提示</strong>が認められています。<br>
+欧州(EU)においては、eIDAS規則の下で通知されたeIDスキームのうち、「High(高)」または「Substantial(相当)」の保証レベル(Level of Assurance)を持つスキームのみが、vLEIの身元保証プロセスに利用できると指定されています。</p>
+</li>
+<li>
+<p><strong>適格vLEI発行者(QVI)の資格審査プロセス(Qualification)の簡素化</strong>:<br>
+機関が適格vLEI発行者(QVI)になるためには、GLEIFによる厳格な資格審査プログラムを完了する必要がありますが、申請機関が特定の国際的なセキュリティ・運用認証をすでに保持している場合、審査要件(チェックリスト)の一部が免除されるなど、プロセスが簡素化される対象となります。 この簡素化の対象となる認定資格の一つとして、ISO 20000やISO 27001、WEB-TRUSTなどと並び、 <strong>「eIDAS ETSI EN 319 401」</strong> が含まれています。</p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">QVI、OOR、ECR、LAR、OOR担当者、ECR担当者、QARなど</p>
+<p>固有名詞や、処理フローについては後述「vLEI を構成する関係者」を参照してください。</p>
+</div>
+<h2 id="vleiの企業の組織単位の発行">ｖLEIの企業の組織単位の発行 </h2>
+<p>DPPなどの発行情報の電子署名やサービス利用時のアカウント認証にvLEIを用いることを考えた場合、一つの企業で唯一無二のvLEIを利用することは、既存の対外的な契約の全てにおいて社長印を押すようなものであり、特に大きな企業・組織において非常に不便です。</p>
+<p>既存の大きな組織で対象契約の規模などに応じて、権限委譲により各組織・部門が個別に社印を管理・利用するのと同様に、vLEIも組織単位で発行・管理できることが望ましいです。このニーズに応えるのが「<strong>vLEI役割クレデンシャル(vLEI Role Credentials)</strong>」です。これにより組織内の特定の役割や部門に紐づくデジタルIDを発行することで、柔軟な権限管理と効率的な運用が可能となります。</p>
+<p>vLEIのエコシステムにおいて、企業の組織単位や特定の役割(役員や担当者など)に対するCredentialの発行は、「<strong>vLEI役割クレデンシャル(vLEI Role Credentials)</strong>」として扱われます。<br>
+これには主に以下の2つの種類が存在します。</p>
+<ol>
+<li><strong>法人公式組織役割(OOR)vLEI Credential</strong>:<br>
+法人の公式な代表者や役員(CEOや取締役など)に対して発行されます。この役割は、公的な情報源や法人の公式文書（定款や取締役会議事録、在職証明書など）によって検証可能なものである必要があります。</li>
+<li><strong>法人エンゲージメントコンテキスト役割（ECR）vLEI Credential</strong>:<br>
+公式な役職ではないものの、特定の業務機能やエンゲージメントのコンテキストにおいて法人を代表する担当者に対して発行されます。</li>
+</ol>
+<h3 id="vlei発行の要件">vLEI発行の要件 </h3>
+<p>組織内の役割に対してvLEI Credentialを発行するためには、以下のプロセスと条件を満たす必要があります。</p>
+<ul>
+<li><strong>前提条件</strong>:<br>
+法人自体が、適格vLEI発行者（QVI）から「法人vLEI Credential(Legal Entity vLEI Credential)」を既に取得している必要があります。</li>
+<li><strong>LAR（法人認定代表者）による承認</strong>:<br>
+役割クレデンシャルを発行するためには、法人の認定代表者(LAR)が、発行を許可・指示するための「承認vLEIクレデンシャル(AUTH vLEI Credential)」を事前に発行する必要があります。</li>
+<li><strong>発行主体</strong>:
+<ul>
+<li>OOR:vLEIクレデンシャルは、法人が契約している <strong>適格vLEI発行者(QVI)</strong> によってのみ発行されます。</li>
+<li>ECR:vLEIクレデンシャルは、QVIによって発行されることも、法人自身(LAR)が直接発行することも可能です。</li>
+</ul>
+</li>
+<li><strong>厳格な身元確認(Identity Verification)</strong>:<br>
+役割を付与される人物(OOR Person または ECR Person)は、Credentialが発行される前に、身元保証(Identity AssuranceおよびIdentity Authentication)を受ける必要があります。これは通常、ビデオ通話などを用いたリアルタイムなOOBI(Out-of-Band-Introduction)セッションを通じて行われ、ビデオフィルターの禁止などが義務付けられています。</li>
+</ul>
+<h3 id="vlei失効revocationについて">vLEI失効(Revocation)について </h3>
+<p>役割を与えられた人物が、異動や退職などによってその役職・担当から外れた場合、法人は直ちにその役割クレデンシャルを失効させる必要があります。<br>
+企業や組織が「法人vLEIクレデンシャル」が何らかの理由で失効した場合、その法人に紐づいて発行されたすべての役割クレデンシャル(OORおよびECR)の検証も自動的に失敗する(無効になる)仕組みが構築されています(参照: verifiable LEI (vLEI) EGF v4.0 vLEI Issuer Qualification Agreement Appendix 5 "Manage Legal Entity vLEI Credentials and Legal Entity Official Organizational Role vLEI Credentials")。</p>
+<h2 id="vlei-を構成する関係者">vLEI を構成する関係者 </h2>
+<p>vLEIエコシステム(トラストコミュニティ)を構成する主要なステークホルダーとその役割は以下の通りです。</p>
+<ol>
+<li>
+<p><strong>GLEIF (Global Legal Entity Identifier Foundation)</strong>:<br>
+Global LEI System (GLEIS) 全体の運営と管理を行う非営利組織です。vLEIエコシステムにおけるデジタルの「信頼のルート(Root of Trust)」として機能し、後述する適格vLEI発行者(QVI)の資格審査・認定を行うとともに、vLEIの信頼チェーンの基盤を保護します。</p>
+</li>
+<li>
+<p><strong>LEI発行者 (LEI Issuer)</strong>:<br>
+GLEIFから認定を受け、法人の情報を検証して新たなLEI(Legal Entity Identifier)および関連する参照データを登録・発行し、GLEISに提供する機関です。vLEIの基盤となる大元のLEIデータを提供します。</p>
+</li>
+<li>
+<p><strong>適格vLEI発行者(QVI: Qualified vLEI Issuer)</strong>:<br>
+GLEIFの要件を満たし、資格を付与された組織です。法人に対する「法人vLEIクレデンシャル（Legal Entity vLEI Credential）」の発行に加え、法人の役員に対する「OOR vLEIク Credential」や業務担当者に対する「ECR vLEI Credential」の発行を担います。</p>
+</li>
+<li>
+<p><strong>法人 (Legal Entity)</strong>:<br>
+LEIの登録資格を満たし、特定の司法管轄区の法律に基づいて組織された企業などの法人です。vLEIエコシステムにおいては、法人内部に以下の重要な管理者（役割）を配置します。</p>
+<ul>
+<li><strong>指定認定代表者 (DAR</strong>: Designated Authorized Representative)：法人を代表して公式に行動する権限を持つ人物です。QVIとのvLEI発行に関する契約を締結し、実務を担当するLAR（法人認定代表者）を指名します。</li>
+<li><strong>法人認定代表者 (LAR</strong>: Legal Entity Authorized Representative)：DARによって指名され、法人vLEIクレデンシャルや各種役割クレデンシャル（OORおよびECR）の発行および失効を要求・承認する実務権限を持つ担当者です。</li>
+</ul>
+</li>
+<li>
+<p><strong>法人公式組織役割担当者 (OOR Persons: Official Organizational Role Persons)</strong>:<br>
+CEOや取締役など、法人を公式な役割として代表する個人です。身元確認および役割の検証を経たうえで、OOR vLEIクレデンシャルを保持します。</p>
+</li>
+<li>
+<p><strong>法人エンゲージメントコンテキスト役割担当者 (ECR Persons: Engagement Context Role Persons)</strong>:<br>
+公式な役職（役員等）ではないものの、特定の機能的な役割(購買や品質管理などのコンテキスト)で法人を代表する個人です。ECR vLEIクレデンシャルを保持します。</p>
+</li>
+<li>
+<p><strong>vLEIユーザー / 検証者 (vLEI User)</strong>:<br>
+適用可能なあらゆるユースケース（電子署名、取引の承認、顧客のオンボーディングなど）において、提示されたvLEIクレデンシャルを利用および暗号的に検証するすべてのユーザーやシステムです。</p>
+</li>
+</ol>
+<p class="dot"><!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+
+<!-- Generated by graphviz version 12.2.0 (20241103.1931)
+ -->
+<!-- Title: vLEI_Ecosystem Pages: 1 -->
+<svg width="667pt" height="384pt" viewBox="0.00 0.00 666.67 384.06" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 380.06)">
+<title>vLEI_Ecosystem</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-380.06 662.67,-380.06 662.67,4 -4,4"></polygon>
+<g id="clust1" class="cluster">
+<title>cluster_LE</title>
+<polygon fill="#f5f5f5" stroke="black" stroke-dasharray="5,2" points="8,-8 8,-368.06 190,-368.06 190,-8 8,-8"></polygon>
+<text text-anchor="middle" x="99" y="-351.46" font-family="Times,serif" font-size="14.00">法人 (Legal Entity)</text>
+</g>
+<!-- GLEIF -->
+<g id="node1" class="node">
+<title>GLEIF</title>
+<ellipse fill="#e1f5fe" stroke="black" cx="490" cy="-217.37" rx="121.95" ry="28.57"></ellipse>
+<text text-anchor="middle" x="490" y="-225.47" font-family="Times,serif" font-size="9.00">GLEIF</text>
+<text text-anchor="middle" x="490" y="-214.67" font-family="Times,serif" font-size="9.00">(Global Legal Entity Identifier Foundation)</text>
+<text text-anchor="middle" x="490" y="-203.87" font-family="Times,serif" font-size="9.00">【信頼のルート】</text>
+</g>
+<!-- QVI -->
+<g id="node2" class="node">
+<title>QVI</title>
+<path fill="#e8f5e9" stroke="black" d="M403.61,-138.4C403.61,-138.4 306.39,-138.4 306.39,-138.4 300.39,-138.4 294.39,-132.4 294.39,-126.4 294.39,-126.4 294.39,-114.4 294.39,-114.4 294.39,-108.4 300.39,-102.4 306.39,-102.4 306.39,-102.4 403.61,-102.4 403.61,-102.4 409.61,-102.4 415.61,-108.4 415.61,-114.4 415.61,-114.4 415.61,-126.4 415.61,-126.4 415.61,-132.4 409.61,-138.4 403.61,-138.4"></path>
+<text text-anchor="middle" x="355" y="-123.1" font-family="Times,serif" font-size="9.00">適格vLEI発行者</text>
+<text text-anchor="middle" x="355" y="-112.3" font-family="Times,serif" font-size="9.00">(QVI: Qualified vLEI Issuer)</text>
+</g>
+<!-- GLEIF&#45;&gt;QVI -->
+<g id="edge3" class="edge">
+<title>GLEIF-&gt;QVI</title>
+<path fill="none" stroke="black" d="M452.39,-189.91C432.51,-175.92 408.28,-158.88 388.96,-145.29"></path>
+<polygon fill="black" stroke="black" points="391.07,-142.49 380.87,-139.6 387.04,-148.22 391.07,-142.49"></polygon>
+<text text-anchor="middle" x="471.5" y="-161.8" font-family="Times,serif" font-size="6.00"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;資格付与・QVI vLEIクレデンシャル発行</text>
+</g>
+<!-- LE -->
+<g id="node4" class="node">
+<title>LE</title>
+<path fill="white" stroke="black" d="M90.37,-335.26C90.37,-335.26 47.63,-335.26 47.63,-335.26 41.63,-335.26 35.63,-329.26 35.63,-323.26 35.63,-323.26 35.63,-311.26 35.63,-311.26 35.63,-305.26 41.63,-299.26 47.63,-299.26 47.63,-299.26 90.37,-299.26 90.37,-299.26 96.37,-299.26 102.37,-305.26 102.37,-311.26 102.37,-311.26 102.37,-323.26 102.37,-323.26 102.37,-329.26 96.37,-335.26 90.37,-335.26"></path>
+<text text-anchor="middle" x="69" y="-319.96" font-family="Times,serif" font-size="9.00">法人</text>
+<text text-anchor="middle" x="69" y="-309.16" font-family="Times,serif" font-size="9.00">(Legal Entity)</text>
+</g>
+<!-- QVI&#45;&gt;LE -->
+<g id="edge5" class="edge">
+<title>QVI-&gt;LE</title>
+<path fill="none" stroke="black" d="M294.28,-132.2C257.73,-141.56 212.62,-158.55 182.67,-188.8 163.57,-208.1 177.23,-224.16 161,-245.93 147.22,-264.43 127.31,-280.48 109.53,-292.55"></path>
+<polygon fill="black" stroke="black" points="107.64,-289.61 101.19,-298.02 111.47,-295.46 107.64,-289.61"></polygon>
+<text text-anchor="middle" x="214.34" y="-215.57" font-family="Times,serif" font-size="6.00"> 法人vLEIクレデンシャル発行</text>
+</g>
+<!-- OOR_Person -->
+<g id="node7" class="node">
+<title>OOR_Person</title>
+<path fill="white" stroke="black" d="M169.88,-335.26C169.88,-335.26 132.12,-335.26 132.12,-335.26 126.12,-335.26 120.12,-329.26 120.12,-323.26 120.12,-323.26 120.12,-311.26 120.12,-311.26 120.12,-305.26 126.12,-299.26 132.12,-299.26 132.12,-299.26 169.88,-299.26 169.88,-299.26 175.88,-299.26 181.88,-305.26 181.88,-311.26 181.88,-311.26 181.88,-323.26 181.88,-323.26 181.88,-329.26 175.88,-335.26 169.88,-335.26"></path>
+<text text-anchor="middle" x="151" y="-314.56" font-family="Times,serif" font-size="9.00">OOR Person</text>
+</g>
+<!-- QVI&#45;&gt;OOR_Person -->
+<g id="edge8" class="edge">
+<title>QVI-&gt;OOR_Person</title>
+<path fill="none" stroke="black" d="M337.01,-138.76C323.64,-152 305.25,-170.94 290.5,-188.8 270.69,-212.81 272,-223.91 250,-245.93 232.24,-263.72 209.55,-280.19 190.37,-292.72"></path>
+<polygon fill="black" stroke="black" points="188.53,-289.74 181.99,-298.08 192.3,-295.64 188.53,-289.74"></polygon>
+<text text-anchor="middle" x="324.75" y="-219.17" font-family="Times,serif" font-size="6.00"> OOR vLEIクレデンシャル発行</text>
+<text text-anchor="middle" x="324.75" y="-211.97" font-family="Times,serif" font-size="6.00">(厳格な身元確認後)</text>
+</g>
+<!-- ECR_Person -->
+<g id="node8" class="node">
+<title>ECR_Person</title>
+<path fill="white" stroke="black" d="M170.13,-52C170.13,-52 133.87,-52 133.87,-52 127.87,-52 121.87,-46 121.87,-40 121.87,-40 121.87,-28 121.87,-28 121.87,-22 127.87,-16 133.87,-16 133.87,-16 170.13,-16 170.13,-16 176.13,-16 182.13,-22 182.13,-28 182.13,-28 182.13,-40 182.13,-40 182.13,-46 176.13,-52 170.13,-52"></path>
+<text text-anchor="middle" x="152" y="-31.3" font-family="Times,serif" font-size="9.00">ECR Person</text>
+</g>
+<!-- QVI&#45;&gt;ECR_Person -->
+<g id="edge9" class="edge">
+<title>QVI-&gt;ECR_Person</title>
+<path fill="none" stroke="black" d="M312.94,-101.91C277.68,-87.25 227.65,-66.45 192.76,-51.95"></path>
+<polygon fill="black" stroke="black" points="194.43,-48.85 183.85,-48.24 191.74,-55.31 194.43,-48.85"></polygon>
+<text text-anchor="middle" x="305.4" y="-79" font-family="Times,serif" font-size="6.00"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ECR vLEIクレデンシャル発行</text>
+<text text-anchor="middle" x="305.4" y="-71.8" font-family="Times,serif" font-size="6.00">(QVIへの委託時)</text>
+</g>
+<!-- Verifier -->
+<g id="node3" class="node">
+<title>Verifier</title>
+<ellipse fill="#fff3e0" stroke="black" cx="490" cy="-317.26" rx="64.67" ry="20.93"></ellipse>
+<text text-anchor="middle" x="490" y="-319.96" font-family="Times,serif" font-size="9.00">vLEIユーザー/検証者</text>
+<text text-anchor="middle" x="490" y="-309.16" font-family="Times,serif" font-size="9.00">(Verifier / Validator)</text>
+</g>
+<!-- Verifier&#45;&gt;GLEIF -->
+<g id="edge13" class="edge">
+<title>Verifier-&gt;GLEIF</title>
+<path fill="none" stroke="gray" stroke-dasharray="1,5" d="M490,-295.98C490,-284.89 490,-270.77 490,-257.62"></path>
+<polygon fill="gray" stroke="gray" points="493.5,-257.93 490,-247.93 486.5,-257.93 493.5,-257.93"></polygon>
+<text text-anchor="middle" x="535.99" y="-272.93" font-family="Times,serif" font-size="6.00"> 信頼のルートまでの出所(Provenance)検証</text>
+<text text-anchor="middle" x="535.99" y="-265.73" font-family="Times,serif" font-size="6.00">および失効状態の確認</text>
+</g>
+<!-- LE&#45;&gt;QVI -->
+<g id="edge4" class="edge">
+<title>LE-&gt;QVI</title>
+<path fill="none" stroke="black" d="M74.44,-299.2C84.39,-268.72 105.79,-206.46 120.17,-188.8 136.62,-168.6 144.87,-166.2 169,-156.4 205.12,-141.72 247.72,-133.13 283.03,-128.14"></path>
+<polygon fill="black" stroke="black" points="283.27,-131.64 292.72,-126.84 282.34,-124.7 283.27,-131.64"></polygon>
+<text text-anchor="middle" x="140.59" y="-215.57" font-family="Times,serif" font-size="6.00"> vLEIサービス契約</text>
+</g>
+<!-- DAR -->
+<g id="node5" class="node">
+<title>DAR</title>
+<path fill="white" stroke="black" d="M58,-235.37C58,-235.37 28,-235.37 28,-235.37 22,-235.37 16,-229.37 16,-223.37 16,-223.37 16,-211.37 16,-211.37 16,-205.37 22,-199.37 28,-199.37 28,-199.37 58,-199.37 58,-199.37 64,-199.37 70,-205.37 70,-211.37 70,-211.37 70,-223.37 70,-223.37 70,-229.37 64,-235.37 58,-235.37"></path>
+<text text-anchor="middle" x="43" y="-214.67" font-family="Times,serif" font-size="9.00">DAR</text>
+</g>
+<!-- LE&#45;&gt;DAR -->
+<g id="edge1" class="edge">
+<title>LE-&gt;DAR</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M64.47,-299.21C59.73,-281.35 52.32,-253.46 47.56,-235.55"></path>
+<text text-anchor="middle" x="67.33" y="-269.33" font-family="Times,serif" font-size="6.00">権限付与</text>
+</g>
+<!-- LAR -->
+<g id="node6" class="node">
+<title>LAR</title>
+<path fill="white" stroke="black" d="M58,-138.4C58,-138.4 28,-138.4 28,-138.4 22,-138.4 16,-132.4 16,-126.4 16,-126.4 16,-114.4 16,-114.4 16,-108.4 22,-102.4 28,-102.4 28,-102.4 58,-102.4 58,-102.4 64,-102.4 70,-108.4 70,-114.4 70,-114.4 70,-126.4 70,-126.4 70,-132.4 64,-138.4 58,-138.4"></path>
+<text text-anchor="middle" x="43" y="-117.7" font-family="Times,serif" font-size="9.00">LAR</text>
+</g>
+<!-- DAR&#45;&gt;LAR -->
+<g id="edge2" class="edge">
+<title>DAR-&gt;LAR</title>
+<path fill="none" stroke="black" d="M43,-198.95C43,-185.29 43,-166 43,-150.08"></path>
+<polygon fill="black" stroke="black" points="46.5,-150.22 43,-140.22 39.5,-150.22 46.5,-150.22"></polygon>
+<text text-anchor="middle" x="58.75" y="-161.8" font-family="Times,serif" font-size="6.00"> &nbsp;&nbsp;&nbsp;LARを指名</text>
+</g>
+<!-- LAR&#45;&gt;QVI -->
+<g id="edge6" class="edge">
+<title>LAR-&gt;QVI</title>
+<path fill="none" stroke="black" d="M70.41,-120.4C117.43,-120.4 214.92,-120.4 282.61,-120.4"></path>
+<polygon fill="black" stroke="black" points="282.53,-123.9 292.53,-120.4 282.53,-116.9 282.53,-123.9"></polygon>
+<text text-anchor="middle" x="182.2" y="-132.4" font-family="Times,serif" font-size="6.00"> 承認(AUTH) vLEIクレデンシャル発行 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+<text text-anchor="middle" x="182.2" y="-125.2" font-family="Times,serif" font-size="6.00">(OOR/ECR発行の許可・指示) &nbsp;&nbsp;&nbsp;</text>
+</g>
+<!-- LAR&#45;&gt;LAR -->
+<g id="edge7" class="edge">
+<title>LAR-&gt;LAR</title>
+<path fill="none" stroke="black" d="M70.24,-128.49C80.02,-128.67 88,-125.97 88,-120.4 88,-117.27 85.48,-115.04 81.53,-113.73"></path>
+<polygon fill="black" stroke="black" points="82.1,-110.27 71.74,-112.5 81.23,-117.22 82.1,-110.27"></polygon>
+<text text-anchor="middle" x="135.24" y="-132.8" font-family="Times,serif" font-size="6.00"> </text>
+<text text-anchor="middle" x="135.24" y="-111.6" font-family="Times,serif" font-size="6.00"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;承認(AUTH) vLEIクレデンシャル発行</text>
+<text text-anchor="middle" x="135.24" y="-104.4" font-family="Times,serif" font-size="6.00">(法人がECRを直接発行する場合)</text>
+</g>
+<!-- LAR&#45;&gt;ECR_Person -->
+<g id="edge10" class="edge">
+<title>LAR-&gt;ECR_Person</title>
+<path fill="none" stroke="black" d="M65.58,-101.91C81.52,-89.58 103.06,-72.89 120.66,-59.27"></path>
+<polygon fill="black" stroke="black" points="122.48,-62.28 128.25,-53.39 118.2,-56.75 122.48,-62.28"></polygon>
+<text text-anchor="middle" x="142.27" y="-79" font-family="Times,serif" font-size="6.00"> ECR vLEIクレデンシャル直接発行</text>
+<text text-anchor="middle" x="142.27" y="-71.8" font-family="Times,serif" font-size="6.00">(法人自身での発行時)</text>
+</g>
+<!-- OOR_Person&#45;&gt;Verifier -->
+<g id="edge11" class="edge">
+<title>OOR_Person-&gt;Verifier</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M182.28,-317.26C234.48,-317.26 340.8,-317.26 413.71,-317.26"></path>
+<polygon fill="black" stroke="black" points="413.6,-320.76 423.6,-317.26 413.6,-313.76 413.6,-320.76"></polygon>
+<text text-anchor="middle" x="303.6" y="-329.26" font-family="Times,serif" font-size="6.00"> クレデンシャル提示</text>
+<text text-anchor="middle" x="303.6" y="-322.06" font-family="Times,serif" font-size="6.00">(IPEXプロトコル等)</text>
+</g>
+<!-- ECR_Person&#45;&gt;Verifier -->
+<g id="edge12" class="edge">
+<title>ECR_Person-&gt;Verifier</title>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M182.53,-38.24C221.69,-42.9 291.4,-52.85 349,-70 475.43,-107.65 548.95,-78.3 621,-188.8 644.34,-224.59 622.16,-255.58 586,-278.33 573.79,-286.01 559.77,-292.61 546.28,-298.05"></path>
+<polygon fill="black" stroke="black" points="545.11,-294.76 537.04,-301.62 547.63,-301.29 545.11,-294.76"></polygon>
+<text text-anchor="middle" x="633.17" y="-165.4" font-family="Times,serif" font-size="6.00"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;クレデンシャル提示</text>
+<text text-anchor="middle" x="633.17" y="-158.2" font-family="Times,serif" font-size="6.00">(IPEXプロトコル等)</text>
+</g>
+</g>
+</svg>
+</p><div class="admonition attention">
+<p class="admonition-title">企業・組織における対応</p>
+<p>LEI(vLEI)はUNECE/UNTPや欧州ESPR/DPPなどにおいても候補技術となっています。<br>
+上図の通り、vLEIエコシステムは、GLEIFを信頼のルートとして、QVIが法人やその関係者にvLEIクレデンシャルを発行し、ユーザーがそれを検証する構造となっています。この構造では、企業内・組織内に対応するデジタル環境・規則そして教育が必須となります。更には、既存の承認ワークフローとの統合などが必要となり、<strong>対応するためには相応のコストと期間が必要</strong>になります。<br>
+また、日本の企業では組織中心の認証(社印、部門印など)が中心ですが、 <strong>グローバルでは 個人レベル(責任者、担当者など)の認証</strong> が重視されている点に注意が必要です。</p>
+</div>
+<h3 id="適格vlei発行者qviqualified-vlei-issuer">適格vLEI発行者(QVI：Qualified vLEI Issuer) </h3>
+<p><strong>適格vLEI発行者(QVI：Qualified vLEI Issuer)</strong> は、vLEIエコシステムにおいて中核的な役割を担う組織です。GLEIF(Global Legal Entity Identifier Foundation)から厳格な審査を受けて認定され、法人やその代表者に対するデジタルアイデンティティ（vLEIクレデンシャル）の安全な発行、管理、失効を行います。<br>
+QVIに関する詳細な仕組みや役割、ビジネス上の特徴は以下の通りです。</p>
+<ol>
+<li>
+<p><strong>主な役割と発行するクレデンシャル</strong>:<br>
+QVIは、法人が「誰であるか」をデジタル空間で証明するための以下のクレデンシャルを発行します。</p>
+<ul>
+<li><strong>法人vLEIクレデンシャル</strong>: 対象となる法人のLEI（法人識別子）ステータスが「Active(有効)」かつ登録ステータスが「Issued(発行済み)」等であることを確認した上で発行します。</li>
+<li><strong>役割クレデンシャル(OORおよびECR)</strong>: 法人の認定代表者(LAR)からの「承認(AUTH)クレデンシャル」による指示に基づき、法人の公式な役員(OOR Person)や特定の業務担当者(ECR Person)に対してクレデンシャルを発行します。</li>
+</ul>
+<p>また、QVIはこれらのクレデンシャルを発行・失効させた際、GLEIFが提供する「vLEI Reporting API」を通じて直ちにGLEIFへ報告し、情報を同期させる義務があります。</p>
+</li>
+<li>
+<p><strong>厳格な身元確認(Identity Verification)</strong>:<br>
+QVIは、クレデンシャルを発行する前に、対象者（法人の代表者や担当者、およびQVI自身の担当者）に対して極めて厳格な身元確認を行う責任を負います。 これには以下の2つのステップが含まれます。</p>
+<ul>
+<li><strong>Identity Assurance(身元保証)</strong>: 対象者が名乗っている通りの本人であることを、公的な身分証明書やeIDASで認められた高信頼のデジタルIDなどを通じて確認します。</li>
+<li><strong>Identity Authentication(身元認証)</strong>: 対象者が正しい暗号鍵(ウォレット)をコントロールしていることを確認します。これは、QVIの担当者(QAR)と対象者との間で、ビデオフィルターの利用が禁止されたリアルタイムのビデオ通話等(OOBIセッション)を実施し、チャレンジ・レスポンス方式の暗号的検証を通じて行われます。</li>
+</ul>
+</li>
+<li>
+<p><strong>法人LEIステータスの監視と失効管理</strong>:<br>
+QVIはクレデンシャルを発行して終わりではなく、対象法人のLEIステータスを定期的に監視する義務があります。 法人がLEIの年次更新を怠り、ステータスが要件を満たさなくなった場合(失効した場合など)、QVIは対象の「法人vLEIクレデンシャル」を直ちに失効(Revocation)させなければなりません。これにより、法人に紐づくすべての役割クレデンシャルも連鎖的に無効化されます。</p>
+</li>
+<li>
+<p><strong>ビジネスモデルと独立採算</strong>:<br>
+QVIのビジネスモデルは競争を促進するように設計されています。</p>
+<ul>
+<li><strong>手数料の自由設定</strong>: QVIはvLEIの発行や失効に対する手数料を自由に設定し、毎年見直すことができます。</li>
+<li><strong>付加価値サービスの提供</strong>: クレデンシャルウォレットの管理など、vLEIに関連する追加サービスを法人に提供することも可能です。</li>
+<li><strong>独立採算</strong>: GLEIFからQVIの運営に対する資金援助は一切行われないため、QVIは自らの責任で持続可能な財務基盤を構築する必要があります。</li>
+</ul>
+</li>
+<li>
+<p><strong>資格の取得と維持</strong>:<br>
+QVIになるためには、GLEIFの「vLEI Issuer Qualification Program（資格審査プログラム）」を完了する必要があります。</p>
+<ul>
+<li><strong>審査プロセス</strong>: NDAの締結、財務・運用・技術的要件を満たしているかを示す自己評価チェックリストの提出、そしてGLEIFとの間で技術的なドライラン(テスト発行)を成功させる必要があります。</li>
+<li><strong>年次審査とトラストマーク</strong>: 資格取得後は、毎年「Annual vLEI Issuer Qualification（年次資格審査）」を通過してコンプライアンスを証明し続ける必要があります。認定されている期間中は、自社のウェブサイト等で公式な「QVI TrustMark(トラストマーク)」を表示することが許可されます。</li>
+</ul>
+</li>
+<li>
+<p><strong>技術的基盤とサードパーティの利用</strong>:<br>
+QVIのシステムは「KERI」インフラに基づいて構築されます。QVIはGLEIFから委任された識別子(Delegated AIDs)を受け取り、少なくとも3人の署名者のうち2人の承認を必要とするマルチシグ(複数署名)による高度な鍵管理や、分散型のWitness(証人)プールの運用を行います。<br>
+また、QVIはITインフラの運用や身元確認の補助機能の一部をサードパーティ（外部業者）に委託できますが、セキュリティやコンプライアンスに関する最終的な責任は常にQVI自身が負うことになります。</p>
+</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">vLEIのQVI機関</p>
+<p>vLEIのQVI機関は<a href="gleif.org">GLEIF</a>の<a href="https://www.gleif.org/ja/organizational-identity/get-an-lei-vlei/get-a-vlei#">VLEIを取得する</a>に公開されています。    (LEIのQVI機関については<a href="https://www.gleif.org/ja/organizational-identity/get-an-lei-vlei/get-an-lei-find-lei-issuing-organizations#">LEIの取得</a>から検索可能)</p>
+</div>
+<h2 id="vlei役割クレデンシャルvlei-role-credentialsの検証">vLEI役割クレデンシャル(vLEI Role Credentials)の検証 </h2>
+<p>企業内の組織単位で利用する vLEI役割クレデンシャル(vLEI Role Credentials)の検証手順と注意点は、以下の通りです。</p>
+<h3 id="検証の手順と仕組み">検証の手順と仕組み </h3>
+<ol>
+<li><strong>KERIインフラを利用した暗号的検証</strong>:<br>
+検証者(VerifierおよびValidator)は、KERI(Key Event Receipt Infrastructure)プロトコルを用いて、クレデンシャルやイベントメッセージに付与されたデジタル署名が、その発行時点での正当な制御キー(鍵ペア)によって行われたものであるかを暗号的に確認します。</li>
+<li><strong>信頼のチェーン(Provenance Chain)の検証</strong>:<br>
+vLEIクレデンシャルは、ToIPのACDC(Authentic Chained Data Container)仕様に基づくチェーン型クレデンシャルです。各クレデンシャルは、上位のクレデンシャルへの参照(SAID)を含んでおり、チェーンをさかのぼって検証が行われます。<br>
+例えば、OORクレデンシャルやQVI(適格vLEI発行者)が発行したECRクレデンシャルの場合、「役割クレデンシャル」→「承認(AUTH)クレデンシャル」→「法人(Legal Entity)vLEIクレデンシャル」という順序で出所を確認します。</li>
+<li><strong>失効(Revocation)状態の確認</strong>:<br>
+チェーンに連なる上位のvLEIクレデンシャルのうち、 <strong>どれか一つでも失効していると、その役割クレデンシャルの検証は失敗(無効)</strong> となります。大元の法人vLEIクレデンシャルが失効した場合、それに紐づくすべての役割クレデンシャル(OORおよびECR)の検証も失敗する仕組みになっています。</li>
+</ol>
+<h3 id="検証時の注意点">検証時の注意点 </h3>
+<ol>
+<li><strong>失効前に行われたデジタル署名の有効性</strong>:<br>
+法人vLEIクレデンシャルが失効すると、それに紐づく役割クレデンシャルでの新たな検証は失敗するようになりますが、クレデンシャルが失効する前に既に行われていたデジタル署名については、引き続き有効性を保持します。</li>
+<li><strong>発行元QVIの資格終了と猶予期間(Grace Period)</strong>:<br>
+クレデンシャルを発行したQVIが何らかの理由で運営を終了し、QVI自身のクレデンシャルが失効した場合、QVIクレデンシャルの失効日から <strong>90日間の猶予期間(Grace Period)</strong> が設けられています。この期間が終了すると信頼のチェーンが完全に途切れてしまうため、検証者はそれらの役割クレデンシャルを無効(検証不可)として扱わなければなりません。</li>
+<li><strong>クレデンシャルが保証する信頼性の範囲</strong>:<br>
+有効で未失効の役割クレデンシャルが正しく検証されたとしても、それは単に「対象者がその法人で特定の役割を持っていること」を証明するものです。その法人自体がビジネス上信頼できるか、誠実であるか、取引が安全であるか、あるいは法令を遵守していることまでを保証するものではない点に注意が必要です。</li>
+<li><strong>誤用に対する法人の責任</strong>:<br>
+法人は、自らが承認または発行した役割クレデンシャルの使用について責任を負います。法人の公式代表者や業務担当者によってクレデンシャルが誤用(不正使用)された場合、その責任は法人が負うことになります。</li>
+</ol>
+<p>なお、vLEIエコシステムにおいては、クレデンシャルを検証する者(Verifier)に対して特別な制限は設けられておらず、要件を満たせば誰でも検証を行うことが可能です。</p>
+<h2 id="vleiの主要要素技術">vLEIの主要要素技術 </h2>
+<p>vLEI（verifiable LEI）エコシステムを支える主要な要素技術として、以下のものが挙げられます。</p>
+<ol>
+<li><strong>KERI (Key Event Receipt Infrastructure)</strong>:<br>
+KERIは、ブロックチェーンなどの特定の分散型台帳技術(DLT)に依存しない、台帳不要（Ledgerless）の分散型鍵管理インフラストラクチャ(DKMI)プロトコルです。従来のPKI(公開鍵基盤)が中央集権的な管理によって信頼を構築していたのに対し、KERIは暗号的な証明を用いた分散型の信頼のルートを確立します。vLEIの暗号基盤や鍵管理はこのKERIプロトコルに基づいて構築されており、特定のネットワークに縛られない高度な相互運用性とセキュリティを実現しています。<br>
+参照： KERI specification <a href="https://trustoverip.github.io/kswg-keri-specification/">Web</a>、<a href="https://trustoverip.org/wp-content/uploads/KERI-V1.1-2026-01-21.pdf">PDF</a></li>
+<li><strong>ACDC (Authentic Chained Data Container)</strong>:<br>
+ACDCは、Trust over IP (ToIP) Foundationによって開発された検証可能なクレデンシャル(Verifiable Credential)のフォーマットです。vLEIはこのACDCの設計を採用しており、クレデンシャル同士を暗号的に結びつける(チェーン化する)ことが可能です。例えば、役割クレデンシャルから大元の法人vLEIクレデンシャルまで、その出所をたどって安全に検証できる仕組みを提供します。<br>
+参照: ACDC specification <a href="https://trustoverip.github.io/kswg-acdc-specification/">Web</a>、<a href="https://trustoverip.org/wp-content/uploads/ACDC-V1.1-2026-01-21.pdf">PDF</a></li>
+<li><strong>CESR (Composable Event Streaming Representation)</strong>:<br>
+CESRは、テキスト形式とバイナリ形式の二重エンコーディングを提供するフォーマットです。テキストとバイナリを自由に連結・変換できる(Composability)という独自の特性を持っており、KERIなどのプロトコルでのデータ表現やストリーミングに用いられています。<br>
+参照: CESR specification <a href="https://trustoverip.github.io/kswg-cesr-specification/">Web</a>、<a href="https://trustoverip.org/wp-content/uploads/CESR-V1.1-2026-01-21.pdf">PDF</a></li>
+<li><strong>IPEX (Issuance and Presentation Exchange)</strong>:<br>
+IPEXは、ACDC仕様の一部として定義されているプロトコルです。vLEIクレデンシャル（ACDC）の安全な「発行(Issuance)」および「提示(Presentation)」のやり取りを行うための標準的なフローを提供します。<br>
+参照： <a href="https://www.ietf.org/archive/id/draft-ssmith-ipex-00.html">Issuance and Presentation Exchange Protocol</a></li>
+<li><strong>DID (Decentralized Identifier:分散型識別子)</strong>:<br>
+vLEIインフラでは、個人や組織を一意に識別するためにDIDが用いられます。GLEIFはKERIのインフラを活用した did:keri メソッドの開発を支援しており、またGLEIFが承認するDIDメソッドとして did:webs も指定されています。これらの識別子は、vLEIの各クレデンシャルと対象者を暗号的に紐づける基盤となります。<br>
+参照: <a href="https://www.trustoverip.org/news/2023/12/15/announcing-public-review-of-the-didwebs-method-specification/">Announcing Public Review of the did:webs Method Specification - Trust Over IP</a></li>
+</ol>
+<h3 id="vleiとdidvcの関係">vLEIとDID/VCの関係 </h3>
+<p>vLEIエコシステムにおいて、<a href="https://www.w3.org/TR/did-1.1/">DID(Decentralized Identifier：分散型識別子)</a>と<a href="https://www.w3.org/TR/vc-data-model-2.0/">VC(Verifiable Credential：検証可能なクレデンシャル)</a>は、主に <strong>KERI(Key Event Receipt Infrastructure)プロトコルとACDC(Authentic Chained Data Container)</strong> フォーマットを基盤として緊密に連携しています。</p>
+<p>両者の技術的な連携は、以下のとおりです。<br>
+DID(AID)による自律的でセキュアなID・鍵管理基盤の上に、VC(ACDC)による検証可能で追跡可能なデータコンテナ技術が組み合わさることで、vLEIの信頼のチェーン(GLEIF → 適格vLEI発行者 → 法人 → 法人代表者・担当者)が安全に構築されています。</p>
+<ol>
+<li>
+<p><strong>DID技術としての「AID(Autonomic Identifier)」</strong>:<br>
+vLEIエコシステムでは、個人や組織を一意に識別するための基盤として、KERIプロトコルに基づく「AID(自律型識別子：Autonomic Identifier)」が使用されます。このAIDは実質的にDIDとして機能し、以下の特徴を持ちます。</p>
+<ul>
+<li><strong>DIDメソッド</strong>: ネイティブなDIDメソッドとして did:keri の開発が進められているほか、GLEIFが承認するDIDメソッドとして did:webs も指定されています。</li>
+<li><strong>分散型鍵管理</strong>: AIDは特定の台帳に依存(ブロックチェーン利用など)せず、暗号的な証明による分散型の信頼のルートを確立します。これにより、参加者は自身の暗号鍵を直接制御し、必要に応じて安全に鍵のローテーション（更新）や回復を行うことができます。</li>
+</ul>
+</li>
+<li>
+<p><strong>VC技術としての「ACDC(Authentic Chained Data Container)」</strong>:<br>
+LEIデータや法人の役割情報は、Trust over IP(ToIP) Foundationが策定したACDC仕様に基づくVCとしてカプセル化(ラップ)されます。</p>
+<ul>
+<li><strong>チェーン構造(Provenance Chain)</strong>: ACDCの特徴は、クレデンシャル同士を暗号的に結びつけることができる点です。各クレデンシャルは「SAID(Self-Addressing Identifier)」と呼ばれる暗号ダイジェストを含んでおり、これによって上位のクレデンシャル(ソース)への参照を行い、改ざん不可能なチェーンを形成します。</li>
+</ul>
+</li>
+<li>
+<p><strong>DIDとVCの連携メカニズム</strong>:<br>
+これら2つの技術は、以下のように連携して安全なデジタル証明システムを機能させています。</p>
+<ul>
+<li><strong>発行者(Issuer)と保持者(Holder)のバインディング</strong>: vLEIクレデンシャル（ACDC）は、常に発行者のAID(DID)から保持者のAID(DID)に対して発行されます。システム上、クレデンシャルの発行者と保持者の識別子は必ずKERIのAIDでなければなりません。これにより、クレデンシャルはその対象となる個人または組織の公開鍵/秘密鍵ペア(ウォレット)と暗号的に強力に結び付けられます。</li>
+<li><strong>発行・提示プロトコル(IPEX)</strong>: AID間でACDCクレデンシャルを安全に発行(Issuance)および提示(Presentation)するためのプロトコルとして、「IPEX(Issuance and Presentation Exchange)」が使用されます。</li>
+<li><strong>ブロックチェーン等への非依存(Ledgerless)</strong>: DID(AID)の鍵状態の追跡やVC（ACDC）の署名検証は、KERIのWitness(証人)やWatcher(監視者)と呼ばれるコンポーネントネットワークを通じて行われます。この仕組みにより、特定のブロックチェーンネットワークなどに縛られることなく、極めて高い相互運用性を維持したまま、クレデンシャルの正当性を自動的かつ瞬時に検証することが可能になっています。</li>
+</ul>
+</li>
+</ol>
+<h2 id="appendix">Appendix </h2>
+<h3 id="gleif-ai">GLEIF AI </h3>
+<p>GLEIFのWebサイトでは、GLEIF発行文書を入力としたAIチャットが用意されています。<br>
+ｌｐｍｐ<a href="https://ai.gleif.org/">GLEIF AI</a>は、日本語での質問が可能です。ただし、以下の点に注意が必要です。</p>
+<ul>
+<li>日本語の回答を指示しない限りは、回答が英語で行われます。</li>
+<li>回答は、文章より箇条書きの形式中心で行われます。</li>
+</ul>
+<hr style="margin-bottom:1ex;">
+<div style="text-align:right;font-size:small;">
+</div>
+
+      </div>
+      <div class="md-sidebar-toc"><div class="md-toc">
+<details open="" class="md-toc-details">
+<summary class="md-toc-link-wrapper" data-level="0">
+  <a href="#gleifの-検証可能verifiableなデジタル法人アイデンティティvlei" class="md-toc-link">GLEIFの "検証可能(verifiable)"なデジタル法人アイデンティティ(vLEI)</a>
+</summary>
+<details open="" class="md-toc-details">
+<summary class="md-toc-link-wrapper" data-level="1">
+  <a href="#概要" class="md-toc-link">概要</a>
+</summary>
+<details open="" class="md-toc-details">
+<summary class="md-toc-link-wrapper" data-level="2">
+  <a href="#vleileiの金融業界以外への広がり" class="md-toc-link">vLEI/LEIの金融業界以外への広がり</a>
+</summary>
+<div class="md-toc-link-wrapper" data-level="3">
+  <a href="#vleiと欧州eidas" class="md-toc-link">vLEIと欧州eIDAS</a>
+</div>
+</details>
+</details>
+<details open="" class="md-toc-details">
+<summary class="md-toc-link-wrapper" data-level="1">
+  <a href="#vleiの企業の組織単位の発行" class="md-toc-link">ｖLEIの企業の組織単位の発行</a>
+</summary>
+<div class="md-toc-link-wrapper" data-level="2">
+  <a href="#vlei発行の要件" class="md-toc-link">vLEI発行の要件</a>
+</div>
+<div class="md-toc-link-wrapper" data-level="2">
+  <a href="#vlei失効revocationについて" class="md-toc-link">vLEI失効(Revocation)について</a>
+</div>
+</details>
+<details open="" class="md-toc-details">
+<summary class="md-toc-link-wrapper" data-level="1">
+  <a href="#vlei-を構成する関係者" class="md-toc-link">vLEI を構成する関係者</a>
+</summary>
+<div class="md-toc-link-wrapper" data-level="2">
+  <a href="#適格vlei発行者qviqualified-vlei-issuer" class="md-toc-link">適格vLEI発行者(QVI：Qualified vLEI Issuer)</a>
+</div>
+</details>
+<details open="" class="md-toc-details">
+<summary class="md-toc-link-wrapper" data-level="1">
+  <a href="#vlei役割クレデンシャルvlei-role-credentialsの検証" class="md-toc-link">vLEI役割クレデンシャル(vLEI Role Credentials)の検証</a>
+</summary>
+<div class="md-toc-link-wrapper" data-level="2">
+  <a href="#検証の手順と仕組み" class="md-toc-link">検証の手順と仕組み</a>
+</div>
+<div class="md-toc-link-wrapper" data-level="2">
+  <a href="#検証時の注意点" class="md-toc-link">検証時の注意点</a>
+</div>
+</details>
+<details open="" class="md-toc-details">
+<summary class="md-toc-link-wrapper" data-level="1">
+  <a href="#vleiの主要要素技術" class="md-toc-link">vLEIの主要要素技術</a>
+</summary>
+<div class="md-toc-link-wrapper" data-level="2">
+  <a href="#vleiとdidvcの関係" class="md-toc-link">vLEIとDID/VCの関係</a>
+</div>
+</details>
+<details open="" class="md-toc-details">
+<summary class="md-toc-link-wrapper" data-level="1">
+  <a href="#appendix" class="md-toc-link">Appendix</a>
+</summary>
+<div class="md-toc-link-wrapper" data-level="2">
+  <a href="#gleif-ai" class="md-toc-link">GLEIF AI</a>
+</div>
+</details>
+</details>
+</div>
+</div>
+      <a id="sidebar-toc-btn">≡</a>
+    
+    
+    
+    
+    
+    
+<script>
+document.body.setAttribute('html-show-sidebar-toc', true)
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  
+    </body></html>
