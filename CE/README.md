@@ -1,3 +1,7 @@
+# サーキュラーエコノミー関連情報の紹介ページ
+
+グローバルで進むサーキュラーエコノミーへの対応に関する情報を製造業関連を中心にピックアップし、ポイントをまとめて紹介するページ。
+スマートマニュファクチャリング、データ連携を含めて紹介しています。
 
 - [Digital Product Passports Festival 2025のまとめ](https://maundergit.github.io/Pages/CE/GN_CoE_Webiner_Digital%20Product%20Passports%20Festival%202025.html)
 - [CEN/CENELEC Guidelines to create a Digital Product Passport- CWA 18186の要約](https://maundergit.github.io/Pages/CE/GN-02_CENCENELEC-Guidelines%20to%20create%20a%20Digital%20Product%20Passport.html)
