@@ -12,4 +12,4 @@
 - [CEN/CENELEC and ETSI Coordination Group on Smart Manufacturing の概要](https://maundergit.github.io/Pages/CE/GN-CENCENELEC%20and%20ETSI%20Coordination%20Group%20on%20Smart%20Manufacturing%20-%20Recommendation%20Paper.html)
 - [GLEIF "検証可能(verifiable)"なデジタル法人アイデンティティ(vLEI) の概要](https://maundergit.github.io/Pages/CE/GN-GLEIF_vLEI.html)
 - [OPC-UA & Catena-X: Enabling Seamless Industrial Data Exchange for Digital Product Passports の概要](https://maundergit.github.io/Pages/CE/GN-OPC-UA%20&%20Catena-X%20Enabling%20Seamless%20Industrial%20Data%20Exchange%20for%20Digital%20Product%20Passports.html)
-- [CIRPASS2-DPP STANDARDISATION INITATIVES & PROJECTS AROUND THE WORLDの概要](https://maundergit.github.io/Pages/CE/GN-CIRPASS2-DPP STANDARDISATION INITATIVES & PROJECTS AROUND THE WORLD.html)
+- [CIRPASS2-DPP STANDARDISATION INITATIVES & PROJECTS AROUND THE WORLDの概要](https://maundergit.github.io/Pages/CE/GN-CIRPASS2-DPP%20STANDARDISATION%20INITATIVES%20&%20PROJECTS%20AROUND%20THE%20WORLD.html)
