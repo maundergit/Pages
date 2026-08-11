@@ -13,3 +13,4 @@
 - [GLEIF "検証可能(verifiable)"なデジタル法人アイデンティティ(vLEI) の概要](https://maundergit.github.io/Pages/CE/GN-GLEIF_vLEI.html)
 - [OPC-UA & Catena-X: Enabling Seamless Industrial Data Exchange for Digital Product Passports の概要](https://maundergit.github.io/Pages/CE/GN-OPC-UA%20&%20Catena-X%20Enabling%20Seamless%20Industrial%20Data%20Exchange%20for%20Digital%20Product%20Passports.html)
 - [CIRPASS2-DPP STANDARDISATION INITATIVES & PROJECTS AROUND THE WORLDの概要](https://maundergit.github.io/Pages/CE/GN-CIRPASS2-DPP%20STANDARDISATION%20INITATIVES%20&%20PROJECTS%20AROUND%20THE%20WORLD.html)
+- [NA A Vision for the Manufacturing USA Program in 2030 and 2035 (2026)の概要](https://maundergit.github.io/Pages/CE/GN-NA-A%20Vision%20for%20the%20Manufacturing%20USA%20Program%20in%202030%20and%202035%20(2026).html)
